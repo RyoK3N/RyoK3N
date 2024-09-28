@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Reiyo
 - 👀 I’m interested in AI, Machine Learning and Deeplearning
 - 🌱 I’m currently working as an Intern @Sparrowup 
-- 💞️ I’m looking to collaborate on Machine Learning and AI Projects
+- 🦾 I’m looking to collaborate on Machine Learning and AI Projects
 - 📫 You can reach me @reiyo113@gmail.com
 
 <!---
