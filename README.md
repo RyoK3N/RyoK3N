@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="https://github.com/RyoK3N">
-    <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Machine+Learning+Engineer;love+merging+technology+with+creativity&center=true&width=500&height=50">
+    <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=love+merging+technology+with+creativity&center=true&width=500&height=50">
   </a>
 </p>
 
