@@ -1,11 +1,5 @@
-<h1 align="center">Hi there, I'm Reiyo 👋</h1>
-<h3 align="center">Machine Learning Engineer</h3>
-
-<p align="center">
-  <a href="https://github.com/RyoK3N">
-    <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Machine+Learning+Engineer;Always+Learning+New+Things&center=true&width=500&height=50">
-  </a>
-</p>
+<h1 align="center">Hi I'm Reiyo 👋</h1>
+<h3 align="center">A Machine Learning Engineer</h3>
 
 ---
 
