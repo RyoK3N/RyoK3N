@@ -80,7 +80,6 @@
 
 - **Technologies:** Python, TensorFlow, Keras
 - **Features:** Implements curriculum learning strategies for training LSTM models.
-- **Highlights:** Enhances model performance by gradually increasing task complexity.
 
 #### [HANTransformer](https://github.com/RyoK3N/HANTransformer) 📝
 
@@ -88,13 +87,12 @@
 
 - **Technologies:** Python, PyTorch
 - **Features:** Combines HAN and Transformer models for improved text classification.
-- **Highlights:** Achieved significant accuracy improvements on benchmark datasets.
 
 #### [Anomaly Detection for Stocks](https://github.com/RyoK3N/Anomaly_Detection_for_Stocks) 📈
 
 *Detecting anomalies in stock market data using machine learning techniques.*
 
-- **Technologies:** Python, Scikit-learn, Pandas
+- **Technologies:** Python, Scikit-learn, Pandas, Pytorch
 - **Features:** Implements various algorithms to identify unusual patterns in stock data.
 - **Highlights:** Helps in early detection of market anomalies for better decision-making.
 
