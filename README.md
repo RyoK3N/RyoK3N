@@ -1,5 +1,5 @@
 <h1 align="center">Hi there, I'm Reiyo 👋</h1>
-<h3 align="center">Passionate Machine Learning Engineer</h3>
+<h3 align="center">Machine Learning Engineer</h3>
 
 <p align="center">
   <a href="https://github.com/RyoK3N">
@@ -9,12 +9,12 @@
 
 ---
 
-- 🔭 I’m currently working on **exciting machine learning projects**
-- 🌱 I’m exploring **Reinforcement Learning , Advanced NLP and 3D Computer Graphics **
-- 👯 I’m looking to collaborate on **Open Source AI Projects**
-- 💬 Ask me about **Machine Learning, AI, and Data Science**
-- 📫 How to reach me: **[LinkedIn](https://linkedin.com/in/reiyo06)**
-- ⚡ Fun fact: **I love merging technology with creativity**
+- I’m currently working on **exciting machine learning projects**
+- And exploring **Reinforcement Learning , Advanced NLP and 3D Computer Graphics **
+- Looking to collaborate on cool **Open Source AI Projects**
+- Ask me about **Machine Learning, AI, and Data Science**
+- How to reach me: **[LinkedIn](https://linkedin.com/in/reiyo06)**
+**I love merging technology with creativity**
 
 ---
 
