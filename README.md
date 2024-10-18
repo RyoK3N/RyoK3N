@@ -14,8 +14,12 @@
 - Looking to collaborate on cool __Open Source AI Projects__
 - Ask me about **Machine Learning, AI, and Data Science**
 - How to reach me: **[LinkedIn](https://linkedin.com/in/reiyo06)**
-  
-**I love merging technology with creativity**
+
+<p align="center">
+  <a href="https://github.com/RyoK3N">
+    <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Machine+Learning+Engineer;love+merging+technology+with+creativity&center=true&width=500&height=50">
+  </a>
+</p>
 
 ---
 
