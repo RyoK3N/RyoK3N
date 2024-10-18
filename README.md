@@ -10,7 +10,7 @@
 ---
 
 - I’m currently working on **exciting machine learning projects**
-- And exploring **Reinforcement Learning , Advanced NLP and 3D Computer Graphics **
+- And exploring __Reinforcement Learning , Advanced NLP and 3D Computer Graphics__
 - Looking to collaborate on cool __Open Source AI Projects__
 - Ask me about **Machine Learning, AI, and Data Science**
 - How to reach me: **[LinkedIn](https://linkedin.com/in/reiyo06)**
