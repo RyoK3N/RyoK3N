@@ -61,39 +61,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RyoK3N&layout=compact&theme=radical" alt="Top Languages" />
 </p>
 
----
 
-### 🚀 Featured Projects:
-
-#### [Music3x](https://github.com/RyoK3N/Music3x) 🎵
-
-*A one-stop destination for innovative music tools and projects aimed at empowering creativity and exploration in sound.*
-
-- **Technologies:** Python, C, Pygame, Tkinter
-- **Features:** Music library, drum pad, graphical interface
-- **Highlights:** Combines music and technology to create interactive tools.
-
-#### [Curriculum Learning](https://github.com/RyoK3N/Curriculum-_Learning) 📚
-
-*Curriculum Learning in LSTM-Based Sequence-to-Sequence Models.*
-
-- **Technologies:** Python, TensorFlow, Keras
-- **Features:** Implements curriculum learning strategies for training LSTM models.
-
-#### [HANTransformer](https://github.com/RyoK3N/HANTransformer) 📝
-
-*Leveraging Hierarchical Attention Network with Transformer for document classification tasks using the 20 Newsgroups dataset.*
-
-- **Technologies:** Python, PyTorch
-- **Features:** Combines HAN and Transformer models for improved text classification.
-
-#### [Anomaly Detection for Stocks](https://github.com/RyoK3N/Anomaly_Detection_for_Stocks) 📈
-
-*Detecting anomalies in stock market data using machine learning techniques.*
-
-- **Technologies:** Python, Scikit-learn, Pandas, Pytorch
-- **Features:** Implements various algorithms to identify unusual patterns in stock data.
-- **Highlights:** Helps in early detection of market anomalies for better decision-making.
 
 ---
 
