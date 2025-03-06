@@ -16,6 +16,11 @@
 </p>
 
 ---
+### 🚀 [My Portfolio](https://oreiyo.space)
+
+Check out my latest projects, research papers, and blogs at [oreiyo.space](https://oreiyo.space).
+
+---
 
 ### 🛠️ Languages and Tools:
 
