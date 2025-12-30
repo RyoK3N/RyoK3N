@@ -1,24 +1,16 @@
-# AI Agent Requirements (Enhanced)
-# For use with GitHub Actions workflow
+# AI Agent Requirements (Fixed for InferenceClient)
+
+# CRITICAL: Use huggingface-hub for InferenceClient
+huggingface-hub>=0.20.0
 
 # GitHub API Integration
 PyGithub>=2.3.0
 
-# HTTP Requests with retry support
+# HTTP Requests (for fallback)
 requests>=2.31.0
-urllib3>=2.0.0
 
 # Date/Time handling
 python-dateutil>=2.8.2
 
-# Enhanced error handling and retry logic
-tenacity>=8.2.3
-
-# Emoji support for better formatting
-emoji>=2.10.0
-
-# Environment variable management (optional, for local testing)
+# Optional: Environment management for local testing
 python-dotenv>=1.0.0
-
-# JSON schema validation (optional, for data validation)
-jsonschema>=4.20.0
