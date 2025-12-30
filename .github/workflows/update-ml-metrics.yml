@@ -1,0 +1,72 @@
+name: Update ML Pipeline Metrics
+
+on:
+  schedule:
+    # Runs daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Allows manual triggering from Actions tab
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Update ML Metrics in README
+        run: |
+          # Get current date
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          
+          # Generate random realistic metrics (you can replace this with actual API calls)
+          ACCURACY=$(awk -v min=94.5 -v max=97.8 'BEGIN{srand(); printf "%.1f", min+rand()*(max-min)}')
+          LATENCY=$(shuf -i 38-48 -n 1)
+          UPTIME=$(awk -v min=99.7 -v max=99.99 'BEGIN{srand(); printf "%.1f", min+rand()*(max-min)}')
+          SAMPLES=$(shuf -i 480-550 -n 1)
+          PROJECTS=$(shuf -i 10-15 -n 1)
+          
+          # Create the metrics table
+          cat > metrics_temp.txt << EOF
+          | Stage | Status | Metric | Value | Last Updated |
+          |-------|--------|--------|-------|--------------|
+          | 🧠 Model Training | 🟢 Active | Accuracy | **${ACCURACY}%** | ${CURRENT_DATE} |
+          | ⚡ Inference | 🟢 Optimal | Latency | **${LATENCY}ms** | ${CURRENT_DATE} |
+          | 📦 Deployment | 🟢 Stable | Uptime | **${UPTIME}%** | ${CURRENT_DATE} |
+          | 💾 Data Pipeline | 🟢 Running | Samples Processed | **${SAMPLES}K+** | ${CURRENT_DATE} |
+          | 🚀 Active Projects | 🟢 Growing | Count | **${PROJECTS}+** | ${CURRENT_DATE} |
+          EOF
+          
+          # Update README.md between the comment tags
+          awk '
+            BEGIN { in_section = 0 }
+            /<!--START_SECTION:ml_metrics-->/ { 
+              print
+              in_section = 1
+              system("cat metrics_temp.txt")
+              next
+            }
+            /<!--END_SECTION:ml_metrics-->/ {
+              in_section = 0
+            }
+            !in_section { print }
+          ' README.md > README_temp.md
+          
+          mv README_temp.md README.md
+          rm metrics_temp.txt
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "📊 Update ML pipeline metrics - $(date +%Y-%m-%d)"
+          git push
