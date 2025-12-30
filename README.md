@@ -163,16 +163,6 @@ print(f"\n💡 Philosophy: {me.life_philosophy()}")
 
 ---
 
-## 📊 GitHub Analytics
-
-<div align="center">
-  
-<img src="https://github-readme-streak-stats.demolab.com?user=RyoK3N&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D&card_width=500" alt="GitHub Streak" />
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=RyoK3N&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&card_width=500" alt="GitHub Stats" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RyoK3N&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=500" alt="Top Languages" />
-
-</div>
 
 ### 📈 Detailed Contribution Analysis
 
