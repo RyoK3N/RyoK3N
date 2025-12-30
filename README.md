@@ -161,6 +161,13 @@ print(f"\n💡 Philosophy: {me.life_philosophy()}")
 
 ---
 
+## 🔥 Recent Activity
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
+---
+
 ### 📈 Detailed Contribution Analysis
 
 <div align="center">
@@ -175,7 +182,21 @@ print(f"\n💡 Philosophy: {me.life_philosophy()}")
 
 </div>
 
+---
 
+## 📊 Weekly Development Breakdown
+
+<!--START_SECTION:waka-->
+```text
+Python       12 hrs 45 mins  ████████████░░░░░░░░  55.2%
+C++           4 hrs 32 mins  ████░░░░░░░░░░░░░░░░  19.7%
+Jupyter       3 hrs 15 mins  ███░░░░░░░░░░░░░░░░░  14.1%
+Markdown      1 hr 23 mins   █░░░░░░░░░░░░░░░░░░░   6.0%
+Other         1 hr 10 mins   █░░░░░░░░░░░░░░░░░░░   5.0%
+```
+<!--END_SECTION:waka-->
+
+---
 
 ### 📉 Contribution Activity
 
@@ -347,20 +368,6 @@ technical_skills:
 
 ---
 
-## 📈 Weekly Development Breakdown
-
-<!--START_SECTION:waka-->
-```text
-Python       12 hrs 45 mins  ████████████░░░░░░░░  55.2%
-C++           4 hrs 32 mins  ████░░░░░░░░░░░░░░░░  19.7%
-Jupyter       3 hrs 15 mins  ███░░░░░░░░░░░░░░░░░  14.1%
-Markdown      1 hr 23 mins   █░░░░░░░░░░░░░░░░░░░   6.0%
-Other         1 hr 10 mins   █░░░░░░░░░░░░░░░░░░░   5.0%
-```
-<!--END_SECTION:waka-->
-
----
-
 ## 🎯 2025 Goals & Roadmap
 
 <div align="center">
@@ -441,7 +448,6 @@ print(reach_out())
 ### 💭 Random Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
-
 
 ---
 
