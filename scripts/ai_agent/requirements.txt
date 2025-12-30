@@ -1,21 +1,24 @@
-# AI Agent Requirements
+# AI Agent Requirements (Enhanced)
 # For use with GitHub Actions workflow
 
-# GitHub API
-PyGithub>=2.1.1
+# GitHub API Integration
+PyGithub>=2.3.0
 
-# HTTP Requests
+# HTTP Requests with retry support
 requests>=2.31.0
+urllib3>=2.0.0
 
 # Date/Time handling
 python-dateutil>=2.8.2
 
-# JSON handling (built-in, but included for clarity)
-# json (standard library)
+# Enhanced error handling and retry logic
+tenacity>=8.2.3
 
-# Hugging Face Integration (optional - using API directly)
-# transformers>=4.35.0
-# torch>=2.1.0
+# Emoji support for better formatting
+emoji>=2.10.0
 
-# Utilities
-pathlib  # standard library in Python 3.4+
+# Environment variable management (optional, for local testing)
+python-dotenv>=1.0.0
+
+# JSON schema validation (optional, for data validation)
+jsonschema>=4.20.0
