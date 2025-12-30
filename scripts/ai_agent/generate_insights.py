@@ -1,42 +1,37 @@
 #!/usr/bin/env python3
 """
 AI Agent - Insights Generation Module 
-Uses Hugging Face API to generate intelligent insights from repository analysis.
-Now with better error handling, multiple model support, and retry logic.
+Uses Hugging Face InferenceClient for serverless inference.
+Updated to use the new huggingface_hub.InferenceClient API.
 """
 
 import os
 import json
-import requests
 import time
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional
+
+# Import the correct client
+try:
+    from huggingface_hub import InferenceClient
+    print("✅ InferenceClient imported successfully")
+except ImportError:
+    print("❌ ERROR: huggingface_hub not installed!")
+    print("   Run: pip install huggingface-hub")
+    exit(1)
 
 # Configuration
 DATA_DIR = Path(__file__).parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
-# NEW Hugging Face Router URL (Updated)
-HF_API_BASE = "https://api-inference.huggingface.co/models/"
-
-# Multiple models with fallback support
-HF_MODELS = {
-    "llama-3.1-8b": "meta-llama/Llama-3.1-8B-Instruct",
-    "llama-3.2-3b": "meta-llama/Llama-3.2-3B-Instruct",
-    "qwen-2.5-7b": "Qwen/Qwen2.5-7B-Instruct",
-    "mistral-7b": "mistralai/Mistral-7B-Instruct-v0.3",
-    "gemma-2-9b": "google/gemma-2-9b-it",
-    "phi-3-mini": "microsoft/Phi-3-mini-4k-instruct"
-}
-
-# Model priority order (will try in this order)
-MODEL_PRIORITY = [
-    "qwen-2.5-7b",      # Fast and accurate
-    "llama-3.2-3b",     # Lightweight Llama
-    "mistral-7b",       # Reliable fallback
-    "phi-3-mini",       # Compact option
-    "gemma-2-9b",       # Google's model
+# Multiple models to try (serverless inference compatible models)
+MODEL_LIST = [
+    "Qwen/Qwen2.5-7B-Instruct",
+    "meta-llama/Llama-3.2-3B-Instruct",
+    "mistralai/Mistral-7B-Instruct-v0.3",
+    "microsoft/Phi-3-mini-4k-instruct",
+    "HuggingFaceH4/zephyr-7b-beta",
 ]
 
 def load_analysis_data() -> Dict[str, Any]:
@@ -49,236 +44,184 @@ def load_analysis_data() -> Dict[str, Any]:
     with open(analysis_file, 'r') as f:
         return json.load(f)
 
-def query_huggingface_api(
+def query_model(
+    client: InferenceClient,
     prompt: str,
-    model_key: str = "qwen-2.5-7b",
+    model: str,
     max_tokens: int = 500,
     temperature: float = 0.7,
-    retry_count: int = 3
+    retry_count: int = 2
 ) -> Optional[str]:
-    """Query Hugging Face Inference API with retry logic."""
-    api_key = os.getenv("HF_API_KEY")
-    if not api_key:
-        raise ValueError("HF_API_KEY environment variable not set")
-    
-    model_id = HF_MODELS.get(model_key, HF_MODELS["qwen-2.5-7b"])
-    model_url = HF_API_BASE + model_id
-    
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json"
-    }
-    
-    # Enhanced payload with better parameters
-    payload = {
-        "inputs": prompt,
-        "parameters": {
-            "max_new_tokens": max_tokens,
-            "temperature": temperature,
-            "top_p": 0.95,
-            "top_k": 50,
-            "repetition_penalty": 1.1,
-            "return_full_text": False,
-            "do_sample": True
-        },
-        "options": {
-            "wait_for_model": True,
-            "use_cache": False
-        }
-    }
+    """Query a model using InferenceClient with retry logic."""
     
     for attempt in range(retry_count):
         try:
-            print(f"🧠 Querying {model_key} model (attempt {attempt + 1}/{retry_count})...")
+            print(f"🧠 Querying {model.split('/')[-1]} (attempt {attempt + 1}/{retry_count})...")
             
-            response = requests.post(
-                model_url,
-                headers=headers,
-                json=payload,
-                timeout=120  # Increased timeout
+            response = client.text_generation(
+                prompt,
+                model=model,
+                max_new_tokens=max_tokens,
+                temperature=temperature,
+                top_p=0.95,
+                repetition_penalty=1.1,
+                do_sample=True,
+                return_full_text=False
             )
             
-            if response.status_code == 200:
-                result = response.json()
+            if response and isinstance(response, str) and len(response) > 50:
+                print(f"✅ Generated {len(response)} characters")
+                return response.strip()
+            else:
+                print(f"⚠️  Response too short or invalid")
                 
-                # Handle different response formats
-                if isinstance(result, list) and len(result) > 0:
-                    text = result[0].get("generated_text", "").strip()
-                elif isinstance(result, dict):
-                    text = result.get("generated_text", "").strip()
-                else:
-                    text = str(result).strip()
-                
-                if text:
-                    print(f"✅ Successfully generated {len(text)} characters")
-                    return text
-                else:
-                    print(f"⚠️  Empty response from model")
-                    
-            elif response.status_code == 503:
-                # Model is loading
-                wait_time = min(20 * (attempt + 1), 60)
+        except Exception as e:
+            error_msg = str(e).lower()
+            
+            if "503" in error_msg or "loading" in error_msg:
+                wait_time = 20 * (attempt + 1)
                 print(f"⏳ Model loading, waiting {wait_time}s...")
                 time.sleep(wait_time)
                 continue
-                
-            elif response.status_code == 429:
-                # Rate limited
+            elif "429" in error_msg or "rate" in error_msg:
                 wait_time = 30 * (attempt + 1)
                 print(f"⏳ Rate limited, waiting {wait_time}s...")
                 time.sleep(wait_time)
                 continue
-                
             else:
-                print(f"⚠️  API request failed: {response.status_code}")
-                print(f"Response: {response.text[:500]}")
-                
-                # Wait before retry
+                print(f"⚠️  Error: {str(e)[:200]}")
                 if attempt < retry_count - 1:
-                    time.sleep(10 * (attempt + 1))
-                    
-        except requests.exceptions.Timeout:
-            print(f"⏱️  Request timeout (attempt {attempt + 1})")
-            if attempt < retry_count - 1:
-                time.sleep(15)
-        except Exception as e:
-            print(f"❌ Error querying API: {e}")
-            if attempt < retry_count - 1:
-                time.sleep(10)
+                    time.sleep(10)
     
     return None
 
 def query_with_fallback(
+    client: InferenceClient,
     prompt: str,
-    task_name: str = "analysis",
+    task_name: str = "generation",
     max_tokens: int = 500,
     temperature: float = 0.7
 ) -> str:
-    """Query API with automatic fallback to alternative models."""
-    print(f"\n🎯 Starting {task_name} generation...")
+    """Query with automatic model fallback."""
+    print(f"\n{'='*60}")
+    print(f"🎯 Starting {task_name}...")
+    print(f"{'='*60}")
     
-    for model_key in MODEL_PRIORITY:
-        print(f"\n📡 Trying {model_key}...")
-        result = query_huggingface_api(
+    for model in MODEL_LIST:
+        print(f"\n📡 Trying {model}...")
+        result = query_model(
+            client,
             prompt,
-            model_key=model_key,
+            model,
             max_tokens=max_tokens,
             temperature=temperature,
-            retry_count=2  # 2 retries per model
+            retry_count=2
         )
         
         if result:
-            print(f"✅ Successfully used {model_key} for {task_name}")
+            print(f"✅ Success with {model}")
             return result
+        else:
+            print(f"❌ Failed with {model}, trying next...")
     
-    # All models failed
+    # All models failed - return None
     print(f"❌ All models failed for {task_name}")
     return None
 
 def create_analysis_prompt(data: Dict[str, Any]) -> str:
-    """Create a structured prompt for repository analysis."""
+    """Create prompt for repository analysis."""
     commits = data["commits"]
     prs = data["pull_requests"]
     issues = data["issues"]
     code = data["code"]
     
-    # Get recent commit messages
-    recent_work = ', '.join(commits['commit_messages'][:5]) if commits.get('commit_messages') else 'No recent commits'
+    recent_work = ', '.join(commits.get('commit_messages', [])[:5]) or 'No recent commits'
     
-    prompt = f"""Analyze this software repository's recent activity and provide insights.
+    prompt = f"""Analyze this software repository activity and provide insights.
 
 REPOSITORY ACTIVITY (Last 7 Days):
-• Commits: {commits.get('total_commits', 0)} commits (avg {commits.get('daily_average', 0):.1f}/day)
+• Commits: {commits.get('total_commits', 0)} commits ({commits.get('daily_average', 0):.1f}/day average)
 • Top Contributor: {commits.get('top_author', 'Unknown')}
 • Recent Work: {recent_work}
 • Pull Requests: {prs.get('merged', 0)} merged, {prs.get('open', 0)} open
-• Issues: {issues.get('closed', 0)} closed, {issues.get('open', 0)} open  
+• Issues: {issues.get('closed', 0)} closed, {issues.get('open', 0)} open
 • Primary Language: {code.get('primary_language', 'Unknown')}
 
-Write a concise 3-4 sentence analysis covering:
-1. Overall development activity and pace
-2. Key focus areas or patterns
-3. One specific observation or suggestion
-
-Keep it professional, insightful, and natural. No bullet points."""
+Write a concise 3-4 sentence analysis covering: development activity level, key focus areas, and one specific observation. Keep it professional and natural. No bullet points or special formatting."""
 
     return prompt
 
 def create_recommendation_prompt(data: Dict[str, Any]) -> str:
-    """Create a prompt for actionable recommendations."""
+    """Create prompt for recommendations."""
     commits = data["commits"]
     code = data["code"]
-    prs = data["pull_requests"]
     
-    recent_messages = commits.get('commit_messages', [])[:3]
-    work_summary = ', '.join(recent_messages) if recent_messages else 'general development'
+    recent = ', '.join(commits.get('commit_messages', [])[:3]) or 'general development'
     
-    prompt = f"""You are a senior software engineering advisor. Provide 3 specific recommendations for this repository.
+    prompt = f"""Provide 3 specific recommendations for improving this repository.
 
 CURRENT STATE:
-• Daily commit rate: {commits.get('daily_average', 0):.1f}
+• Daily commits: {commits.get('daily_average', 0):.1f}
 • Primary language: {code.get('primary_language', 'Unknown')}
-• Recent work focuses on: {work_summary}
-• PR merge time: {prs.get('avg_merge_time_hours', 0):.1f} hours
+• Recent focus: {recent}
 
-Give exactly 3 actionable recommendations (one sentence each) for improving:
-- Code quality
-- Development workflow  
-- Project organization
+Give exactly 3 recommendations (one sentence each) for: code quality, development workflow, and project organization.
 
-Format as a numbered list (1., 2., 3.) with no extra text."""
+Format as numbered list:
+1. [recommendation]
+2. [recommendation]
+3. [recommendation]"""
 
     return prompt
 
 def create_prediction_prompt(data: Dict[str, Any]) -> str:
-    """Create a prompt for predicting future development focus."""
+    """Create prompt for predictions."""
     commits = data["commits"]
     prs = data["pull_requests"]
     
-    commit_msgs = commits.get('commit_messages', [])[:5]
-    pr_titles = prs.get('merged_titles', [])[:3]
+    recent_activity = commits.get('commit_messages', [])[:5] + prs.get('merged_titles', [])[:3]
+    activity = ', '.join(recent_activity[:5]) or 'general development'
     
-    recent_activity = []
-    if commit_msgs:
-        recent_activity.extend(commit_msgs)
-    if pr_titles:
-        recent_activity.extend(pr_titles)
-    
-    activity_summary = ', '.join(recent_activity[:5]) if recent_activity else 'general development work'
-    
-    prompt = f"""Based on this repository's recent patterns, predict likely development focus for next week.
+    prompt = f"""Based on recent patterns, predict 3 development focus areas for next week.
 
 RECENT ACTIVITY:
-• {commits.get('total_commits', 0)} commits in the last week
-• Recent changes: {activity_summary}
+• {commits.get('total_commits', 0)} commits last week
+• Recent changes: {activity}
 • Primary language: {data['code'].get('primary_language', 'Unknown')}
 
-Predict 3 specific, realistic development areas for next week based on the patterns above.
-
-Format as a numbered list (1., 2., 3.) with no extra text. Be specific and concrete."""
+Predict 3 specific, realistic areas. Format as numbered list:
+1. [prediction]
+2. [prediction]
+3. [prediction]"""
 
     return prompt
 
 def create_summary_prompt(data: Dict[str, Any]) -> str:
-    """Create a one-line impactful summary."""
+    """Create one-line summary."""
     commits = data["commits"]
     
-    prompt = f"""Write ONE compelling sentence (max 20 words) summarizing this week's development:
-
+    prompt = f"""Write ONE sentence (max 15 words) summarizing this week's development:
 • {commits.get('total_commits', 0)} commits
 • Focus: {', '.join(commits.get('commit_messages', [])[:2])}
 
-Make it engaging and specific. Just the sentence, nothing else."""
+Just the sentence, nothing else."""
 
     return prompt
 
 def generate_insights(data: Dict[str, Any]) -> Dict[str, Any]:
-    """Generate comprehensive AI insights from analysis data."""
-    print("🤖 Generating AI insights with enhanced fallback system...")
+    """Generate AI insights using InferenceClient."""
+    print("🤖 Generating AI insights with InferenceClient...")
+    
+    # Initialize client
+    api_key = os.getenv("HF_API_KEY") or os.getenv("HF_TOKEN")
+    if not api_key:
+        raise ValueError("HF_API_KEY or HF_TOKEN environment variable not set")
+    
+    client = InferenceClient(token=api_key)
+    print(f"✅ InferenceClient initialized")
     
     insights = {
         "timestamp": datetime.now().isoformat(),
-        "models_attempted": [],
         "generation_time_seconds": 0,
         "analysis": None,
         "recommendations": None,
@@ -288,14 +231,10 @@ def generate_insights(data: Dict[str, Any]) -> Dict[str, Any]:
     
     start_time = time.time()
     
-    # Generate main analysis
-    print("\n" + "="*60)
+    # Generate analysis
     analysis_prompt = create_analysis_prompt(data)
     insights["analysis"] = query_with_fallback(
-        analysis_prompt,
-        task_name="analysis",
-        max_tokens=400,
-        temperature=0.7
+        client, analysis_prompt, "analysis", max_tokens=400, temperature=0.7
     )
     
     if not insights["analysis"]:
@@ -307,13 +246,9 @@ def generate_insights(data: Dict[str, Any]) -> Dict[str, Any]:
         )
     
     # Generate recommendations
-    print("\n" + "="*60)
     rec_prompt = create_recommendation_prompt(data)
     insights["recommendations"] = query_with_fallback(
-        rec_prompt,
-        task_name="recommendations",
-        max_tokens=300,
-        temperature=0.7
+        client, rec_prompt, "recommendations", max_tokens=300, temperature=0.7
     )
     
     if not insights["recommendations"]:
@@ -324,13 +259,9 @@ def generate_insights(data: Dict[str, Any]) -> Dict[str, Any]:
         )
     
     # Generate predictions
-    print("\n" + "="*60)
     pred_prompt = create_prediction_prompt(data)
     insights["predictions"] = query_with_fallback(
-        pred_prompt,
-        task_name="predictions",
-        max_tokens=300,
-        temperature=0.8
+        client, pred_prompt, "predictions", max_tokens=300, temperature=0.8
     )
     
     if not insights["predictions"]:
@@ -340,20 +271,15 @@ def generate_insights(data: Dict[str, Any]) -> Dict[str, Any]:
             "3. Documentation updates and code quality improvements"
         )
     
-    # Generate quick summary
-    print("\n" + "="*60)
+    # Generate summary
     summary_prompt = create_summary_prompt(data)
     insights["summary"] = query_with_fallback(
-        summary_prompt,
-        task_name="summary",
-        max_tokens=50,
-        temperature=0.7
+        client, summary_prompt, "summary", max_tokens=50, temperature=0.7
     )
     
     if not insights["summary"]:
-        insights["summary"] = f"Strong development week with {data['commits'].get('total_commits', 0)} commits focused on core features."
+        insights["summary"] = f"Strong development week with {data['commits'].get('total_commits', 0)} commits."
     
-    # Calculate generation time
     insights["generation_time_seconds"] = round(time.time() - start_time, 2)
     
     return insights
@@ -385,10 +311,14 @@ def main():
         print("📋 GENERATED INSIGHTS PREVIEW")
         print("="*60)
         
-        print(f"\n📌 Summary:\n{insights['summary']}")
-        print(f"\n💡 Analysis:\n{insights['analysis'][:300]}...")
-        print(f"\n🎯 Recommendations:\n{insights['recommendations'][:200]}...")
-        print(f"\n🔮 Predictions:\n{insights['predictions'][:200]}...")
+        if insights.get('summary'):
+            print(f"\n📌 Summary:\n{insights['summary']}")
+        if insights.get('analysis'):
+            print(f"\n💡 Analysis:\n{insights['analysis'][:300]}...")
+        if insights.get('recommendations'):
+            print(f"\n🎯 Recommendations:\n{insights['recommendations'][:200]}...")
+        if insights.get('predictions'):
+            print(f"\n🔮 Predictions:\n{insights['predictions'][:200]}...")
         
         print("\n" + "="*60)
         
