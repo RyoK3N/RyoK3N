@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-12-30T20:09:58.793918",
+  "analysis_period_days": 7,
+  "repository": "RyoK3N/RyoK3N",
+  "commits": {
+    "total_commits": 36,
+    "unique_authors": 2,
+    "top_author": "Reiyo",
+    "commit_messages": [
+      "Update README.md",
+      "Create requirements.txt",
+      "Create generate_metrics.py",
+      "Create update_readme.py",
+      "Create generate_insights.py",
+      "Create analyze_repository.py",
+      "Create ai-agent-workflow.yml",
+      "\ud83d\udcca Update ML performance charts and metrics - 2025-12-30",
+      "Update update-ml-charts.yml",
+      "Create requirements.txt",
+      "Update README.md",
+      "Create update-ml-charts.yml",
+      "Create generate_charts.py",
+      "Create readme.md",
+      "\ud83d\udcca Update ML pipeline metrics - 2025-12-30",
+      "Create update-ml-metrics.yml",
+      "Update README.md",
+      "Update update-readme.yml",
+      "Update and rename snake.yml to contribution-snake.yml",
+      "Create github-activity.yml"
+    ],
+    "languages_modified": {
+      ".md": 18,
+      ".yml": 11,
+      ".svg": 6,
+      ".py": 5,
+      ".txt": 2
+    },
+    "daily_average": 5.142857142857143
+  },
+  "pull_requests": {
+    "total_recent": 0,
+    "open": 0,
+    "merged": 0,
+    "merged_titles": [],
+    "avg_merge_time_hours": 0.0
+  },
+  "issues": {
+    "total_recent": 0,
+    "open": 0,
+    "closed": 0,
+    "top_labels": {},
+    "recent_titles": []
+  },
+  "code": {
+    "languages": {
+      "Python": 100.0
+    },
+    "primary_language": "Python",
+    "total_languages": 1
+  },
+  "repository_metrics": {
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "created_at": "2024-05-22T17:22:31+00:00",
+    "updated_at": "2025-12-30T20:02:19+00:00",
+    "size_kb": 128,
+    "default_branch": "main"
+  }
+}
