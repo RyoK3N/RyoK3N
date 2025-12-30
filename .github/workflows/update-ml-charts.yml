@@ -1,0 +1,107 @@
+name: Update ML Performance Charts
+
+on:
+  schedule:
+    # Runs daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Allows manual triggering from Actions tab
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/generate_charts.py'
+      - '.github/workflows/update-ml-charts.yml'
+
+jobs:
+  generate-charts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install matplotlib numpy
+      
+      - name: Create charts directory
+        run: |
+          mkdir -p assets/charts
+      
+      - name: Generate ML performance charts
+        run: |
+          python scripts/generate_charts.py
+      
+      - name: Update experiment table in README
+        run: |
+          # Get current date
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          
+          # Generate experiment data (you can replace with real API calls)
+          cat > experiments_temp.txt << 'EOF'
+          | Experiment | Model | Accuracy | Loss | F1-Score | Status |
+          |------------|-------|----------|------|----------|--------|
+          | GTransformer-v3 | Graph Transformer | 95.8% | 0.042 | 0.961 | ✅ Deployed |
+          | PoseNet-Enhanced | CNN + Attention | 93.2% | 0.068 | 0.945 | 🔄 Training |
+          | Vision-RL-Agent | RL + Vision | 89.5% | 0.115 | 0.902 | 🧪 Experimental |
+          | BaselineNet | ResNet-50 | 87.3% | 0.142 | 0.888 | 📊 Baseline |
+          EOF
+          
+          # Update README between comment tags
+          awk '
+            BEGIN { in_section = 0 }
+            /<!--START_SECTION:experiments-->/ { 
+              print
+              in_section = 1
+              system("cat experiments_temp.txt")
+              next
+            }
+            /<!--END_SECTION:experiments-->/ {
+              in_section = 0
+            }
+            !in_section { print }
+          ' README.md > README_temp.md
+          
+          mv README_temp.md README.md
+          rm experiments_temp.txt
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add assets/charts/*.svg README.md
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Update ML performance charts and metrics - $(date +%Y-%m-%d)"
+            git push
+            echo "✅ Charts and metrics updated successfully"
+          fi
+      
+      - name: Create summary
+        run: |
+          echo "## 📊 Chart Generation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Charts generated successfully!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Generated Charts:" >> $GITHUB_STEP_SUMMARY
+          echo "- 🎯 Model Accuracy Chart" >> $GITHUB_STEP_SUMMARY
+          echo "- ⚡ Training Loss Chart" >> $GITHUB_STEP_SUMMARY
+          echo "- 📈 Dataset Growth Timeline" >> $GITHUB_STEP_SUMMARY
+          echo "- 🔥 Language Distribution" >> $GITHUB_STEP_SUMMARY
+          echo "- 🧠 Performance Dashboard" >> $GITHUB_STEP_SUMMARY
+          echo "- 📊 Historical Trends" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🕒 Generated at: $(date '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
