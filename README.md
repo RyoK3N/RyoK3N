@@ -1,5 +1,6 @@
 <div align="center">
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Reiyo%20|%20ML%20Engineer&fontSize=42&fontAlignY=32&desc=Building%20Intelligent%20Systems%20with%20Deep%20Learning%20%26%203D%20Vision&descAlignY=51&descAlign=50&animation=twinkling"/>
 
 <p align="center">
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=false&repeat=true&width=800&height=100&lines=Machine+Learning+Engineer+%7C+AI+Researcher;Computer+Vision+%26+3D+Graphics+Specialist;Deep+Learning+%7C+NLP+%7C+Reinforcement+Learning;Building+the+Future+of+AI+%F0%9F%9A%80" alt="Typing SVG" /></a>
@@ -162,6 +163,16 @@ print(f"\n💡 Philosophy: {me.life_philosophy()}")
 
 ---
 
+## 📊 GitHub Analytics
+
+<div align="center">
+  
+<img src="https://github-readme-streak-stats.demolab.com?user=RyoK3N&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D&card_width=500" alt="GitHub Streak" />
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=RyoK3N&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&card_width=500" alt="GitHub Stats" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RyoK3N&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=500" alt="Top Languages" />
+
+</div>
 
 ### 📈 Detailed Contribution Analysis
 
@@ -177,6 +188,13 @@ print(f"\n💡 Philosophy: {me.life_philosophy()}")
 
 </div>
 
+### 🏆 Achievement Showcase
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=RyoK3N&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&column=7&rank=SECRET,SSS,SS,S,AAA,AA,A" alt="GitHub Trophies"/>
+
+</div>
 
 ### 📉 Contribution Activity
 
@@ -443,7 +461,8 @@ print(reach_out())
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
-
+### 😂 Random Dev Meme
+<img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
 
 ---
 
