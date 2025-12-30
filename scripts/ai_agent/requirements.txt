@@ -1,0 +1,21 @@
+# AI Agent Requirements
+# For use with GitHub Actions workflow
+
+# GitHub API
+PyGithub>=2.1.1
+
+# HTTP Requests
+requests>=2.31.0
+
+# Date/Time handling
+python-dateutil>=2.8.2
+
+# JSON handling (built-in, but included for clarity)
+# json (standard library)
+
+# Hugging Face Integration (optional - using API directly)
+# transformers>=4.35.0
+# torch>=2.1.0
+
+# Utilities
+pathlib  # standard library in Python 3.4+
