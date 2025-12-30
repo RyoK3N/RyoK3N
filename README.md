@@ -13,6 +13,7 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=RyoK3N&label=Profile%20Views&color=blueviolet&style=for-the-badge)
 ![GitHub Followers](https://img.shields.io/github/followers/RyoK3N?label=Followers&style=for-the-badge&color=blue)
+![GitHub Stars](https://img.shields.io/github/stars/RyoK3N?label=Stars&style=for-the-badge&color=yellow)
 
 </div>
 
@@ -163,44 +164,58 @@ print(f"\n💡 Philosophy: {me.life_philosophy()}")
 
 ---
 
-## 📊 GitHub Analytics
+## 📊 GitHub Analytics Dashboard
 
 <div align="center">
-  
-<img src="https://github-readme-streak-stats.demolab.com?user=RyoK3N&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D&card_width=500" alt="GitHub Streak" />
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=RyoK3N&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&card_width=500" alt="GitHub Stats" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RyoK3N&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=500" alt="Top Languages" />
+### 🔥 Streak Stats
+<img src="https://streak-stats.demolab.com?user=RyoK3N&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D&card_width=600" alt="GitHub Streak" />
 
 </div>
 
-### 📈 Detailed Contribution Analysis
-
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RyoK3N&theme=tokyonight" alt="Profile Details"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=RyoK3N&theme=tokyonight" alt="Repos per Language"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=RyoK3N&theme=tokyonight" alt="Most Commit Language"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=RyoK3N&theme=tokyonight" alt="Stats"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=RyoK3N&theme=tokyonight&utcOffset=5.5" alt="Productive Time"/>
+### 📈 GitHub Stats
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=RyoK3N&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" alt="GitHub Stats" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RyoK3N&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
 
 </div>
 
-### 🏆 Achievement Showcase
+<div align="center">
+
+### 🎯 Contribution Metrics
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RyoK3N&theme=tokyonight" alt="Profile Details" width="100%"/>
+
+</div>
 
 <div align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=RyoK3N&theme=tokyonight" alt="Repos per Language" width="48%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=RyoK3N&theme=tokyonight" alt="Most Commit Language" width="48%"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=RyoK3N&theme=tokyonight" alt="Stats" width="48%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=RyoK3N&theme=tokyonight&utcOffset=5.5" alt="Productive Time" width="48%"/>
+
+</div>
+
+<div align="center">
+
+### 🏆 GitHub Trophies
 
 <img src="https://github-profile-trophy.vercel.app/?username=RyoK3N&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&column=7&rank=SECRET,SSS,SS,S,AAA,AA,A" alt="GitHub Trophies"/>
 
 </div>
 
-### 📉 Contribution Activity
-
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=RyoK3N&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity%20Graph" alt="Contribution Graph"/>
+### 📉 Contribution Activity Graph
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=RyoK3N&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity%20Graph" alt="Contribution Graph" width="100%"/>
 
 </div>
 
@@ -210,86 +225,57 @@ print(f"\n💡 Philosophy: {me.life_philosophy()}")
 
 <div align="center">
 
-### 🎯 Current Research & Development
+### 🎯 Highlighted Repositories
 
 </div>
 
+<div align="center">
+
+<a href="https://github.com/RyoK3N/GTransformer">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=RyoK3N&repo=GTransformer&theme=tokyonight&hide_border=true" />
+</a>
+<a href="https://github.com/RyoK3N/MocapViewer3D">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=RyoK3N&repo=MocapViewer3D&theme=tokyonight&hide_border=true" />
+</a>
+
+<a href="https://github.com/RyoK3N/2DPoseEstimation">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=RyoK3N&repo=2DPoseEstimation&theme=tokyonight&hide_border=true" />
+</a>
+<a href="https://github.com/RyoK3N/Topic-Modeled-Curriculum-Learning-for-Better-Neural-Network-Training">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=RyoK3N&repo=Topic-Modeled-Curriculum-Learning-for-Better-Neural-Network-Training&theme=tokyonight&hide_border=true" />
+</a>
+
+<a href="https://github.com/RyoK3N/AI-Projects">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=RyoK3N&repo=AI-Projects&theme=tokyonight&hide_border=true" />
+</a>
+<a href="https://github.com/RyoK3N/coreml-keras3">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=RyoK3N&repo=coreml-keras3&theme=tokyonight&hide_border=true" />
+</a>
+
+</div>
+
+### 📂 Project Categories
+
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🤖 [GTransformer](https://github.com/RyoK3N/GTransformer)
-**Graph Transformer for Pose Estimation**
-- Advanced transformer architecture for human pose estimation
-- Leverages graph neural networks for skeletal structure
-- State-of-the-art accuracy on benchmark datasets
-- Technologies: `PyTorch` `Graph Neural Networks` `Transformers`
+#### 🤖 Computer Vision & Pose Estimation
+- **[GTransformer](https://github.com/RyoK3N/GTransformer)** - Graph Transformer architecture for human pose estimation using graph neural networks
+- **[2DPoseEstimation](https://github.com/RyoK3N/2DPoseEstimation)** - End-to-end 2D human pose estimation pipeline with real-time inference
+- **[MocapViewer3D](https://github.com/RyoK3N/MocapViewer3D)** - Interactive 3D/2D motion capture visualization with camera manipulation
 
-**⭐ Star** | **🔬 Research Paper**
+**Tech Stack:** `PyTorch` `OpenCV` `Graph Neural Networks` `3D Graphics`
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🎨 [MocapViewer3D](https://github.com/RyoK3N/MocapViewer3D)
-**Interactive 3D Motion Capture Visualization**
-- Real-time 3D/2D motion capture visualization tool
-- Interactive camera manipulation & pose viewing
-- Simultaneous multi-perspective rendering
-- Technologies: `Python` `3D Graphics` `OpenGL` `Computer Vision`
+#### 🧠 Deep Learning & Training
+- **[Topic-Modeled Curriculum Learning](https://github.com/RyoK3N/Topic-Modeled-Curriculum-Learning-for-Better-Neural-Network-Training)** - Novel curriculum learning approach using topic modeling
+- **[AI-Projects](https://github.com/RyoK3N/AI-Projects)** - Collection of diverse ML experiments and research prototypes
+- **[CoreML-Keras3](https://github.com/RyoK3N/coreml-keras3)** - Keras 3.x to CoreML conversion for iOS deployment
 
-**⭐ Star** | **📖 Documentation**
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 🏃 [2DPoseEstimation](https://github.com/RyoK3N/2DPoseEstimation)
-**2D Human Pose Estimation Pipeline**
-- End-to-end pose estimation system
-- Real-time inference capabilities
-- Multiple architecture implementations
-- Technologies: `PyTorch` `OpenCV` `Deep Learning`
-
-**⭐ Star** | **🚀 Demo**
-
-</td>
-<td width="50%">
-
-### 📚 [Topic-Modeled Curriculum Learning](https://github.com/RyoK3N/Topic-Modeled-Curriculum-Learning-for-Better-Neural-Network-Training)
-**Advanced Training Methodology**
-- Novel curriculum learning approach
-- Topic modeling for data organization
-- Improved neural network training efficiency
-- Technologies: `TensorFlow` `NLP` `Machine Learning`
-
-**⭐ Star** | **📄 Paper**
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 🧠 [AI-Projects](https://github.com/RyoK3N/AI-Projects)
-**Collection of AI/ML Experiments**
-- Diverse ML project implementations
-- Research prototypes & experiments
-- Jupyter notebooks with detailed analysis
-- Technologies: `Python` `Jupyter` `Various ML Frameworks`
-
-**⭐ Star** | **🔍 Explore**
-
-</td>
-<td width="50%">
-
-### 🍎 [CoreML-Keras3](https://github.com/RyoK3N/coreml-keras3)
-**Model Conversion for iOS**
-- Keras 3.x to CoreML conversion pipeline
-- Optimized for Apple silicon
-- Production-ready iOS deployment
-- Technologies: `Keras` `CoreML` `iOS Development`
-
-**⭐ Star** | **📱 Deploy**
+**Tech Stack:** `TensorFlow` `Keras` `NLP` `Mobile ML`
 
 </td>
 </tr>
@@ -297,7 +283,7 @@ print(f"\n💡 Philosophy: {me.life_philosophy()}")
 
 ---
 
-## 💼 Professional Experience
+## 💼 Professional Experience & Expertise
 
 ```yaml
 current_role:
@@ -312,102 +298,146 @@ current_role:
 
 expertise:
   computer_vision:
-    - Human Pose Estimation (2D/3D)
-    - Motion Capture Analysis
-    - Real-time Object Detection
-    - 3D Scene Understanding
+    - "Human Pose Estimation (2D/3D) - Advanced skeletal tracking"
+    - "Motion Capture Analysis - Real-time mocap processing"
+    - "Object Detection & Tracking - Multi-object scenarios"
+    - "3D Scene Understanding - Depth estimation & reconstruction"
   
   deep_learning:
-    - Transformer Architectures
-    - Graph Neural Networks
-    - Curriculum Learning Strategies
-    - Model Optimization & Deployment
+    - "Transformer Architectures - Custom attention mechanisms"
+    - "Graph Neural Networks - Spatial reasoning on graphs"
+    - "Curriculum Learning - Optimized training strategies"
+    - "Model Optimization - Quantization & pruning"
   
-  research:
-    - Published work in ML/CV
-    - ORCID: 0009-0002-8456-7751
-    - Conference presentations
-    - Open-source contributions
+  research_publications:
+    - "ORCID: 0009-0002-8456-7751"
+    - "Focus: Computer Vision, Deep Learning, Graph Networks"
+    - "Contributions: Open-source ML tools & research implementations"
 
 technical_skills:
   advanced:
-    - PyTorch Deep Learning
-    - Computer Vision (OpenCV)
-    - 3D Graphics Programming
-    - NLP & Transformers
+    - "PyTorch for Deep Learning Architecture Design"
+    - "Computer Vision with OpenCV & Custom Models"
+    - "3D Graphics Programming & Visualization"
+    - "NLP & Transformer-based Models"
+  
   proficient:
-    - Cloud Infrastructure (AWS/GCP/Azure)
-    - MLOps & Model Deployment
-    - Distributed Training
-    - A/B Testing & Experimentation
+    - "Cloud Infrastructure (AWS/GCP/Azure)"
+    - "MLOps & CI/CD for ML Models"
+    - "Distributed Training & Model Parallelism"
+    - "A/B Testing & Production Monitoring"
+  
+  exploring:
+    - "Reinforcement Learning for Robotics"
+    - "Multimodal Learning (Vision + Language)"
+    - "Neural Rendering & NeRF"
 ```
 
 ---
 
-## 🎓 Research & Publications
+## 🎓 Research & Academic Contributions
 
 <div align="center">
 
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0002--8456--7751-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0002-8456-7751)
+[![Research Gate](https://img.shields.io/badge/Research_Gate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white)](https://orcid.org/0009-0002-8456-7751)
 
 </div>
 
 **Research Interests:**
-- 🧠 Graph Neural Networks for Structured Prediction
-- 🏃 Human Pose Estimation & Motion Analysis
-- 📚 Curriculum Learning & Training Optimization
-- 🎨 3D Computer Vision & Graphics
-- 🤖 Reinforcement Learning for Robotics
+- 🧠 **Graph Neural Networks** for structured prediction tasks
+- 🏃 **Human Pose Estimation** & motion analysis in complex scenarios
+- 📚 **Curriculum Learning** & training optimization strategies
+- 🎨 **3D Computer Vision** & graphics rendering
+- 🤖 **Reinforcement Learning** applications in robotics
 
 **Current Research:**
-- Graph Transformer architectures for human pose estimation
-- Topic-modeled curriculum learning for neural network training
-- Real-time 3D motion capture visualization systems
+- Developing graph transformer architectures for improved human pose estimation accuracy
+- Investigating topic-modeled curriculum learning for efficient neural network training
+- Building real-time 3D motion capture visualization systems with interactive controls
+
+**Academic Impact:**
+- Published research in computer vision and deep learning
+- Active contributor to open-source ML projects
+- Presenting at conferences and workshops
 
 ---
 
-## 📈 Weekly Development Breakdown
+## 📈 Coding Activity & Metrics
+
+<div align="center">
+
+### ⏱️ Weekly Development Breakdown
 
 <!--START_SECTION:waka-->
-```text
-Python       12 hrs 45 mins  ████████████░░░░░░░░  55.2%
-C++           4 hrs 32 mins  ████░░░░░░░░░░░░░░░░  19.7%
-Jupyter       3 hrs 15 mins  ███░░░░░░░░░░░░░░░░░  14.1%
-Markdown      1 hr 23 mins   █░░░░░░░░░░░░░░░░░░░   6.0%
-Other         1 hr 10 mins   █░░░░░░░░░░░░░░░░░░░   5.0%
-```
+[![wakatime](https://wakatime.com/badge/user/RyoK3N.svg)](https://wakatime.com/@RyoK3N)
 <!--END_SECTION:waka-->
+
+</div>
+
+<div align="center">
+
+### 💻 Most Used Languages (By Time)
+
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=RyoK3N&theme=tokyonight&hide_border=true&layout=compact&langs_count=8" alt="WakaTime Stats" />
+
+</div>
 
 ---
 
-## 🎯 2025 Goals & Roadmap
+## 🎯 2025 Goals & Development Roadmap
 
 <div align="center">
 
 | Q1 2025 | Q2 2025 | Q3 2025 | Q4 2025 |
 |---------|---------|---------|---------|
-| ✅ Launch GTransformer | 🚧 Publish Research Paper | 📝 Conference Submission | 🎯 Open Source Release |
-| ✅ MocapViewer3D v1.0 | 🚧 Advanced RL Projects | 📝 Production ML Pipeline | 🎯 Community Building |
-| 🚧 Curriculum Learning | 📝 3D Vision Systems | 🚧 Industry Collaboration | 🎯 Knowledge Sharing |
+| ✅ GTransformer v1.0 Launch | 🚧 Research Paper Submission | 📝 Conference Presentation | 🎯 Production Deployment |
+| ✅ MocapViewer3D Release | 🚧 Advanced RL Framework | 📝 Open-Source Contribution | 🎯 Community Workshops |
+| 🚧 Curriculum Learning Study | 📝 3D Vision Pipeline | 🚧 Industry Collaboration | 🎯 Mentorship Program |
 
 </div>
 
-**Key Objectives:**
-- 🔬 Publish research in top-tier ML/CV conferences
-- 🌟 Contribute to major open-source ML projects
-- 🏗️ Build production-grade ML systems
-- 👥 Mentor aspiring ML engineers
-- 📚 Share knowledge through blogs & tutorials
+**Key Objectives for 2025:**
+- 🔬 **Research**: Publish papers in top-tier ML/CV conferences (CVPR, NeurIPS, ICCV)
+- 🌟 **Open Source**: Contribute 500+ commits to major ML projects
+- 🏗️ **Engineering**: Build and deploy 3+ production ML systems
+- 👥 **Community**: Mentor 10+ aspiring ML engineers
+- 📚 **Knowledge Sharing**: Write 20+ technical blog posts on [oreiyo.space](https://oreiyo.space)
+- 🎤 **Speaking**: Present at 3+ ML conferences or meetups
 
 ---
 
-## 🤝 Let's Connect & Collaborate
+## 💡 Recent Activity
 
 <div align="center">
 
-### 💬 Open to Opportunities In:
+### 🔥 Latest Commits
 
-**Research Collaboration** • **Open Source Projects** • **ML Engineering Roles** • **Speaking Engagements**
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
+</div>
+
+---
+
+## 🤝 Let's Connect & Collaborate!
+
+<div align="center">
+
+### 💬 I'm Open to Opportunities In:
+
+<table>
+  <tr>
+    <td align="center">🔬<br/><b>Research<br/>Collaboration</b></td>
+    <td align="center">💻<br/><b>Open Source<br/>Projects</b></td>
+    <td align="center">🏢<br/><b>ML Engineering<br/>Roles</b></td>
+    <td align="center">🎤<br/><b>Speaking<br/>Engagements</b></td>
+  </tr>
+</table>
+
+</div>
+
+<div align="center">
 
 <p align="center">
   <a href="https://oreiyo.space"><img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Website-4285F4?style=for-the-badge" alt="Portfolio"/></a>
@@ -416,57 +446,71 @@ Other         1 hr 10 mins   █░░░░░░░░░░░░░░░░
   <a href="https://orcid.org/0009-0002-8456-7751"><img src="https://img.shields.io/badge/ORCID-Research_Profile-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID"/></a>
 </p>
 
-### 📫 Get In Touch
+</div>
+
+### 📫 How to Reach Me
 
 ```python
-def reach_out():
-    interests = {
-        "collaborate_on": ["Research projects", "Open source ML tools", "Production systems"],
-        "discuss_about": ["Computer Vision", "Deep Learning", "3D Graphics", "MLOps"],
-        "available_for": ["Technical consulting", "Speaking", "Mentoring", "Code review"]
-    }
+def lets_collaborate():
+    """
+    I'm always excited to discuss and work on:
+    - Cutting-edge ML/CV research projects
+    - Open-source AI tools and libraries
+    - Production ML system architecture
+    - Technical consulting and mentoring
+    """
     
-    contact = {
+    contact_info = {
         "email": "reiyo1113@gmail.com",
         "linkedin": "linkedin.com/in/reiyo06",
-        "portfolio": "oreiyo.space"
+        "portfolio": "oreiyo.space",
+        "research": "orcid.org/0009-0002-8456-7751"
     }
+    
+    interests = [
+        "Computer Vision & 3D Graphics",
+        "Deep Learning & Transformers",
+        "Graph Neural Networks",
+        "Reinforcement Learning",
+        "MLOps & Production Systems"
+    ]
     
     return "Let's build something amazing together! 🚀"
 
-print(reach_out())
+print(lets_collaborate())
 ```
 
-</div>
-
 ---
+
+## 🎨 Fun Extras
 
 <div align="center">
 
-### 🐍 Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RyoK3N/RyoK3N/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RyoK3N/RyoK3N/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/RyoK3N/RyoK3N/output/github-contribution-grid-snake.svg">
-</picture>
-
-</div>
-
----
-
-<div align="center">
-
-### 💭 Random Dev Quote
+### 💭 Daily Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
 ### 😂 Random Dev Meme
-<img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
+
+<img src='https://memer-new.vercel.app/' style="height: 400px;" alt="Meme"/>
+
+</div>
 
 ---
 
+<div align="center">
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
+
+### 🌟 Support My Work
+
+If you find my projects helpful, consider:
+- ⭐ Starring my repositories
+- 🔄 Sharing with your network
+- 💬 Contributing to discussions
+- 🤝 Collaborating on new ideas
+
+---
 
 **⭐️ From [RyoK3N](https://github.com/RyoK3N) with 💜**
 
@@ -474,5 +518,8 @@ print(reach_out())
 
 ![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)
 ![Open Source](https://img.shields.io/badge/Open%20Source-💚-green?style=for-the-badge)
+![AI Powered](https://img.shields.io/badge/AI%20Powered-🤖-blue?style=for-the-badge)
+
+**Last Updated:** December 2024
 
 </div>
