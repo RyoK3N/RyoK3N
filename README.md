@@ -1,6 +1,5 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Reiyo%20|%20ML%20Engineer&fontSize=42&fontAlignY=32&desc=Building%20Intelligent%20Systems%20with%20Deep%20Learning%20%26%203D%20Vision&descAlignY=51&descAlign=50&animation=twinkling"/>
 
 <p align="center">
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=false&repeat=true&width=800&height=100&lines=Machine+Learning+Engineer+%7C+AI+Researcher;Computer+Vision+%26+3D+Graphics+Specialist;Deep+Learning+%7C+NLP+%7C+Reinforcement+Learning;Building+the+Future+of+AI+%F0%9F%9A%80" alt="Typing SVG" /></a>
