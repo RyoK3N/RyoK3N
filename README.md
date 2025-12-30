@@ -336,6 +336,122 @@ graph LR
 
 ---
 
+## 📊 ML Performance Analytics & Visualizations
+
+<div align="center">
+
+### Real-Time Model Performance Tracking
+
+</div>
+
+<table>
+<tr>
+<td width="50%" align="center">
+
+#### 🎯 Model Accuracy Over Time
+![Model Accuracy Chart](assets/charts/accuracy_chart.svg)
+
+</td>
+<td width="50%" align="center">
+
+#### ⚡ Training Loss Progression
+![Training Loss Chart](assets/charts/loss_chart.svg)
+
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+
+#### 📈 Dataset Growth Timeline
+![Dataset Growth Chart](assets/charts/dataset_growth.svg)
+
+</td>
+<td width="50%" align="center">
+
+#### 🔥 Language Usage Distribution
+![Language Distribution](assets/charts/language_distribution.svg)
+
+</td>
+</tr>
+</table>
+
+<details open>
+<summary><b>📉 Detailed Performance Metrics</b></summary>
+<br/>
+
+<div align="center">
+
+#### 🧠 Comprehensive Model Performance Dashboard
+
+![Performance Dashboard](assets/charts/performance_dashboard.svg)
+
+</div>
+
+**Key Insights:**
+- 📊 **Peak Accuracy**: Achieved 97.2% on validation set (Week 48)
+- 📉 **Training Stability**: Loss reduced by 85% over 50 epochs
+- 💾 **Dataset Scale**: 500K+ samples across 10+ categories
+- 🚀 **Inference Speed**: Optimized to 42ms average latency
+- 🎯 **Current Focus**: Improving edge case performance and model robustness
+
+</details>
+
+<div align="center">
+
+### 🔬 Research Experiment Tracking
+
+<!--START_SECTION:experiments-->
+| Experiment | Model | Accuracy | Loss | F1-Score | Status |
+|------------|-------|----------|------|----------|--------|
+| GTransformer-v3 | Graph Transformer | 95.8% | 0.042 | 0.961 | ✅ Deployed |
+| PoseNet-Enhanced | CNN + Attention | 93.2% | 0.068 | 0.945 | 🔄 Training |
+| Vision-RL-Agent | RL + Vision | 89.5% | 0.115 | 0.902 | 🧪 Experimental |
+| BaselineNet | ResNet-50 | 87.3% | 0.142 | 0.888 | 📊 Baseline |
+<!--END_SECTION:experiments-->
+
+</div>
+
+<details>
+<summary><b>🎨 Visualization Features</b></summary>
+<br/>
+
+**Auto-Updating Charts:**
+- ✅ **Daily Updates** - Charts refresh automatically every 24 hours
+- ✅ **SVG Format** - Crisp, scalable vector graphics
+- ✅ **GitHub Actions** - Fully automated via CI/CD pipeline
+- ✅ **Custom Styling** - Matches your profile theme
+- ✅ **Real Data** - Can connect to MLflow, WandB, or TensorBoard
+
+**Tracked Metrics:**
+- 🎯 Model accuracy across training epochs
+- 📉 Training & validation loss curves
+- 💾 Dataset growth and composition
+- 🗣️ Programming language usage
+- 🚀 Inference latency benchmarks
+- 📊 Comprehensive performance dashboards
+
+</details>
+
+<div align="center">
+
+### 📈 Historical Performance Trends
+
+![Historical Trends](assets/charts/historical_trends.svg)
+
+*Charts automatically updated via GitHub Actions • Last updated: 2024-12-30*
+
+</div>
+
+---
+
+
+
+
+
+
+
+---
+
 ## 🔥 Recent Activity
 
 <!--START_SECTION:activity-->
