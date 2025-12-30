@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
 AI Agent - Insights Generation Module 
-Uses Hugging Face InferenceClient for serverless inference.
-Updated to use the new huggingface_hub.InferenceClient API.
+Uses Hugging Face InferenceClient with chat_completion for conversational models.
 """
 
 import os
@@ -25,13 +24,13 @@ except ImportError:
 DATA_DIR = Path(__file__).parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
-# Multiple models to try (serverless inference compatible models)
+# Models that work well with chat completion (free tier compatible)
 MODEL_LIST = [
-    "Qwen/Qwen2.5-7B-Instruct",
     "meta-llama/Llama-3.2-3B-Instruct",
     "mistralai/Mistral-7B-Instruct-v0.3",
     "microsoft/Phi-3-mini-4k-instruct",
     "HuggingFaceH4/zephyr-7b-beta",
+    "google/gemma-2-2b-it",
 ]
 
 def load_analysis_data() -> Dict[str, Any]:
@@ -52,29 +51,32 @@ def query_model(
     temperature: float = 0.7,
     retry_count: int = 2
 ) -> Optional[str]:
-    """Query a model using InferenceClient with retry logic."""
+    """Query a model using chat_completion with retry logic."""
     
     for attempt in range(retry_count):
         try:
             print(f"🧠 Querying {model.split('/')[-1]} (attempt {attempt + 1}/{retry_count})...")
             
-            response = client.text_generation(
-                prompt,
+            # Use chat_completion (chat.completions.create) for conversational models
+            messages = [{"role": "user", "content": prompt}]
+            
+            response = client.chat.completions.create(
                 model=model,
-                max_new_tokens=max_tokens,
+                messages=messages,
+                max_tokens=max_tokens,
                 temperature=temperature,
                 top_p=0.95,
-                repetition_penalty=1.1,
-                do_sample=True,
-                return_full_text=False
             )
             
-            if response and isinstance(response, str) and len(response) > 50:
-                print(f"✅ Generated {len(response)} characters")
-                return response.strip()
-            else:
-                print(f"⚠️  Response too short or invalid")
-                
+            # Extract the message content
+            if response and response.choices and len(response.choices) > 0:
+                content = response.choices[0].message.content
+                if content and len(content) > 50:
+                    print(f"✅ Generated {len(content)} characters")
+                    return content.strip()
+                else:
+                    print(f"⚠️  Response too short")
+                    
         except Exception as e:
             error_msg = str(e).lower()
             
@@ -88,10 +90,13 @@ def query_model(
                 print(f"⏳ Rate limited, waiting {wait_time}s...")
                 time.sleep(wait_time)
                 continue
+            elif "404" in error_msg or "not found" in error_msg:
+                print(f"⚠️  Model not available: {str(e)[:100]}")
+                break  # Skip to next model
             else:
                 print(f"⚠️  Error: {str(e)[:200]}")
                 if attempt < retry_count - 1:
-                    time.sleep(10)
+                    time.sleep(5)
     
     return None
 
@@ -101,7 +106,7 @@ def query_with_fallback(
     task_name: str = "generation",
     max_tokens: int = 500,
     temperature: float = 0.7
-) -> str:
+) -> Optional[str]:
     """Query with automatic model fallback."""
     print(f"\n{'='*60}")
     print(f"🎯 Starting {task_name}...")
@@ -124,7 +129,7 @@ def query_with_fallback(
         else:
             print(f"❌ Failed with {model}, trying next...")
     
-    # All models failed - return None
+    # All models failed
     print(f"❌ All models failed for {task_name}")
     return None
 
@@ -137,7 +142,7 @@ def create_analysis_prompt(data: Dict[str, Any]) -> str:
     
     recent_work = ', '.join(commits.get('commit_messages', [])[:5]) or 'No recent commits'
     
-    prompt = f"""Analyze this software repository activity and provide insights.
+    prompt = f"""Analyze this software repository's recent activity and provide insights.
 
 REPOSITORY ACTIVITY (Last 7 Days):
 • Commits: {commits.get('total_commits', 0)} commits ({commits.get('daily_average', 0):.1f}/day average)
@@ -147,7 +152,12 @@ REPOSITORY ACTIVITY (Last 7 Days):
 • Issues: {issues.get('closed', 0)} closed, {issues.get('open', 0)} open
 • Primary Language: {code.get('primary_language', 'Unknown')}
 
-Write a concise 3-4 sentence analysis covering: development activity level, key focus areas, and one specific observation. Keep it professional and natural. No bullet points or special formatting."""
+Task: Write a concise 3-4 sentence professional analysis covering:
+1. Development activity level and pace
+2. Key focus areas based on recent work
+3. One specific observation or insight
+
+Keep it natural and professional. No bullet points, headers, or special formatting."""
 
     return prompt
 
@@ -158,19 +168,24 @@ def create_recommendation_prompt(data: Dict[str, Any]) -> str:
     
     recent = ', '.join(commits.get('commit_messages', [])[:3]) or 'general development'
     
-    prompt = f"""Provide 3 specific recommendations for improving this repository.
+    prompt = f"""You are a senior software engineer. Provide 3 specific, actionable recommendations for this repository.
 
 CURRENT STATE:
-• Daily commits: {commits.get('daily_average', 0):.1f}
+• Daily commit rate: {commits.get('daily_average', 0):.1f}
 • Primary language: {code.get('primary_language', 'Unknown')}
-• Recent focus: {recent}
+• Recent work: {recent}
 
-Give exactly 3 recommendations (one sentence each) for: code quality, development workflow, and project organization.
+Task: Give exactly 3 recommendations (one brief sentence each) for improving:
+1. Code quality
+2. Development workflow
+3. Project organization
 
-Format as numbered list:
-1. [recommendation]
-2. [recommendation]
-3. [recommendation]"""
+Format your response as a simple numbered list:
+1. [First recommendation]
+2. [Second recommendation]
+3. [Third recommendation]
+
+No extra text before or after the list."""
 
     return prompt
 
@@ -182,29 +197,35 @@ def create_prediction_prompt(data: Dict[str, Any]) -> str:
     recent_activity = commits.get('commit_messages', [])[:5] + prs.get('merged_titles', [])[:3]
     activity = ', '.join(recent_activity[:5]) or 'general development'
     
-    prompt = f"""Based on recent patterns, predict 3 development focus areas for next week.
+    prompt = f"""Based on recent development patterns, predict the likely focus areas for next week.
 
 RECENT ACTIVITY:
-• {commits.get('total_commits', 0)} commits last week
+• {commits.get('total_commits', 0)} commits in the last week
 • Recent changes: {activity}
 • Primary language: {data['code'].get('primary_language', 'Unknown')}
 
-Predict 3 specific, realistic areas. Format as numbered list:
-1. [prediction]
-2. [prediction]
-3. [prediction]"""
+Task: Predict 3 specific, realistic development focus areas for next week based on these patterns.
+
+Format as a numbered list:
+1. [First prediction]
+2. [Second prediction]
+3. [Third prediction]
+
+No extra text."""
 
     return prompt
 
 def create_summary_prompt(data: Dict[str, Any]) -> str:
     """Create one-line summary."""
     commits = data["commits"]
+    recent = ', '.join(commits.get('commit_messages', [])[:2])
     
-    prompt = f"""Write ONE sentence (max 15 words) summarizing this week's development:
-• {commits.get('total_commits', 0)} commits
-• Focus: {', '.join(commits.get('commit_messages', [])[:2])}
+    prompt = f"""Write ONE compelling sentence (maximum 15 words) summarizing this week's software development:
 
-Just the sentence, nothing else."""
+• {commits.get('total_commits', 0)} commits
+• Focus: {recent}
+
+Just write the single sentence, nothing else."""
 
     return prompt
 
@@ -314,11 +335,11 @@ def main():
         if insights.get('summary'):
             print(f"\n📌 Summary:\n{insights['summary']}")
         if insights.get('analysis'):
-            print(f"\n💡 Analysis:\n{insights['analysis'][:300]}...")
+            print(f"\n💡 Analysis:\n{insights['analysis'][:400]}...")
         if insights.get('recommendations'):
-            print(f"\n🎯 Recommendations:\n{insights['recommendations'][:200]}...")
+            print(f"\n🎯 Recommendations:\n{insights['recommendations'][:250]}...")
         if insights.get('predictions'):
-            print(f"\n🔮 Predictions:\n{insights['predictions'][:200]}...")
+            print(f"\n🔮 Predictions:\n{insights['predictions'][:250]}...")
         
         print("\n" + "="*60)
         
