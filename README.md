@@ -175,13 +175,7 @@ print(f"\n💡 Philosophy: {me.life_philosophy()}")
 
 </div>
 
-### 🏆 Achievement Showcase
 
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=RyoK3N&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&column=7&rank=SECRET,SSS,SS,S,AAA,AA,A" alt="GitHub Trophies"/>
-
-</div>
 
 ### 📉 Contribution Activity
 
