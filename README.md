@@ -1131,28 +1131,6 @@ technical_skills:
 - Topic-modeled curriculum learning for neural network training
 - Real-time 3D motion capture visualization systems
 
----
-
-## 🎯 2025 Goals & Roadmap
-
-<div align="center">
-
-| Q1 2025 | Q2 2025 | Q3 2025 | Q4 2025 |
-|---------|---------|---------|---------|
-| ✅ Launch GTransformer | 🚧 Publish Research Paper | 📝 Conference Submission | 🎯 Open Source Release |
-| ✅ MocapViewer3D v1.0 | 🚧 Advanced RL Projects | 📝 Production ML Pipeline | 🎯 Community Building |
-| 🚧 Curriculum Learning | 📝 3D Vision Systems | 🚧 Industry Collaboration | 🎯 Knowledge Sharing |
-
-</div>
-
-**Key Objectives:**
-- 🔬 Publish research in top-tier ML/CV conferences
-- 🌟 Contribute to major open-source ML projects
-- 🏗️ Build production-grade ML systems
-- 👥 Mentor aspiring ML engineers
-- 📚 Share knowledge through blogs & tutorials
-
----
 
 ## 🤝 Let's Connect & Collaborate
 
