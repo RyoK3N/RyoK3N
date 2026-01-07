@@ -284,39 +284,6 @@ graph LR
 | 🚀 Active Projects | 🟢 Growing | Count | **13+** | 2026-01-06 |
 <!--END_SECTION:ml_metrics-->
 
-</div>
-
-<details>
-<summary><b>🎯 Key Workflow Features</b></summary>
-<br/>
-
-**Automation & Efficiency:**
-- ✅ Automated data preprocessing pipelines
-- ✅ Continuous model training and validation
-- ✅ Real-time performance monitoring
-- ✅ Automated hyperparameter optimization
-
-**Scalability & Performance:**
-- ✅ Distributed training on multi-GPU clusters
-- ✅ Model quantization and optimization
-- ✅ Horizontal scaling for inference
-- ✅ Efficient batch processing
-
-**Production Ready:**
-- ✅ CI/CD integration for ML models
-- ✅ A/B testing framework
-- ✅ Model versioning and rollback
-- ✅ Production monitoring and alerting
-
-**Research & Development:**
-- ✅ Experiment tracking with MLflow
-- ✅ Reproducible research workflows
-- ✅ Collaborative development environment
-- ✅ Documentation and knowledge sharing
-
-</details>
-
-<div align="center">
 
 ### 🛠️ Tech Stack Across Pipeline
 
