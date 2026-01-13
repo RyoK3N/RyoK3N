@@ -31,44 +31,67 @@ def load_blog_post() -> Dict[str, Any]:
 def generate_ghost_jwt(admin_api_key: str) -> str:
     """Generate JWT token for Ghost Admin API"""
     
-    # Split the key into ID and SECRET
-    id, secret = admin_api_key.split(':')
-    
-    # Prepare header and payload
-    iat = int(dt.now().timestamp())
-    
-    header = {'alg': 'HS256', 'typ': 'JWT', 'kid': id}
-    payload = {
-        'iat': iat,
-        'exp': iat + 5 * 60,  # Token expires in 5 minutes
-        'aud': '/admin/'
-    }
-    
-    # Create token
-    token = jwt.encode(payload, bytes.fromhex(secret), algorithm='HS256', headers=header)
-    
-    return token
+    try:
+        # Split the key into ID and SECRET
+        id_part, secret_part = admin_api_key.split(':')
+        
+        # Prepare header and payload
+        iat = int(dt.now().timestamp())
+        
+        header = {'alg': 'HS256', 'typ': 'JWT', 'kid': id_part}
+        payload = {
+            'iat': iat,
+            'exp': iat + 5 * 60,  # Token expires in 5 minutes
+            'aud': '/admin/'
+        }
+        
+        # Create token - decode if it returns bytes
+        token = jwt.encode(
+            payload, 
+            bytes.fromhex(secret_part), 
+            algorithm='HS256', 
+            headers=header
+        )
+        
+        # Handle both string and bytes return
+        if isinstance(token, bytes):
+            token = token.decode('utf-8')
+        
+        return token
+        
+    except Exception as e:
+        print(f"❌ Error generating JWT: {e}")
+        raise ValueError(f"Invalid Ghost Admin API key format: {e}")
 
-def convert_to_mobiledoc(content: str) -> Dict:
-    """Convert plain text content to Ghost's mobiledoc format"""
+def convert_to_html(content: str) -> str:
+    """Convert plain text content to simple HTML"""
     
     # Split into paragraphs
     paragraphs = [p.strip() for p in content.split('\n\n') if p.strip()]
     
-    # Build mobiledoc sections
-    sections = []
-    for para in paragraphs:
-        sections.append([1, "p", [[0, [], 0, para]]])
+    # Convert to HTML paragraphs
+    html_parts = [f"<p>{para}</p>" for para in paragraphs]
     
+    return '\n'.join(html_parts)
+
+def convert_to_mobiledoc(content: str) -> str:
+    """Convert content to Ghost's mobiledoc format"""
+    
+    # Convert to HTML first
+    html_content = convert_to_html(content)
+    
+    # Build mobiledoc structure
     mobiledoc = {
         "version": "0.3.1",
         "atoms": [],
-        "cards": [],
+        "cards": [
+            ["html", {"cardName": "html", "html": html_content}]
+        ],
         "markups": [],
-        "sections": sections
+        "sections": [[10, 0]]
     }
     
-    return mobiledoc
+    return json.dumps(mobiledoc)
 
 def create_ghost_post(blog_post: Dict, token: str) -> Dict:
     """Create a post in Ghost CMS"""
@@ -77,19 +100,19 @@ def create_ghost_post(blog_post: Dict, token: str) -> Dict:
     api_url = f"{GHOST_API_URL}/ghost/api/{GHOST_ADMIN_API_VERSION}/admin/posts/"
     
     # Convert content to mobiledoc
-    mobiledoc = convert_to_mobiledoc(blog_post['content'])
+    mobiledoc_str = convert_to_mobiledoc(blog_post['content'])
     
     # Prepare post data
     post_data = {
         "posts": [{
             "title": blog_post['title'],
-            "mobiledoc": json.dumps(mobiledoc),
-            "status": "published",  # or "draft"
+            "mobiledoc": mobiledoc_str,
+            "status": "published",
             "tags": [{"name": tag} for tag in blog_post.get('tags', [])],
-            "custom_excerpt": blog_post.get('excerpt', ''),
+            "custom_excerpt": blog_post.get('excerpt', '')[:300],  # Max 300 chars
             "published_at": dt.now().isoformat(),
-            "meta_title": blog_post['title'],
-            "meta_description": blog_post.get('excerpt', ''),
+            "meta_title": blog_post['title'][:300],
+            "meta_description": blog_post.get('excerpt', '')[:500],
         }]
     }
     
@@ -104,25 +127,42 @@ def create_ghost_post(blog_post: Dict, token: str) -> Dict:
     print(f"   URL: {api_url}")
     print(f"   Title: {blog_post['title']}")
     
-    response = requests.post(
-        api_url,
-        json=post_data,
-        headers=headers
-    )
-    
-    response.raise_for_status()
-    
-    return response.json()
+    try:
+        response = requests.post(
+            api_url,
+            json=post_data,
+            headers=headers,
+            timeout=30
+        )
+        
+        # Check for errors
+        if response.status_code not in [200, 201]:
+            print(f"❌ Ghost API Error: {response.status_code}")
+            print(f"Response: {response.text}")
+            response.raise_for_status()
+        
+        return response.json()
+        
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Request failed: {e}")
+        if hasattr(e, 'response') and e.response is not None:
+            print(f"Response text: {e.response.text}")
+        raise
 
 def save_publication_record(blog_post: Dict, ghost_response: Dict) -> None:
     """Save publication record"""
     
+    # Extract post info from response
+    published_post = ghost_response.get('posts', [{}])[0]
+    
     record = {
         "published_at": dt.now().isoformat(),
         "blog_title": blog_post['title'],
-        "ghost_response": ghost_response,
+        "ghost_id": published_post.get('id', ''),
+        "ghost_url": published_post.get('url', ''),
         "tags": blog_post.get('tags', []),
         "excerpt": blog_post.get('excerpt', ''),
+        "status": "published"
     }
     
     # Load existing records
@@ -144,6 +184,34 @@ def save_publication_record(blog_post: Dict, ghost_response: Dict) -> None:
     
     print(f"📝 Publication record saved")
 
+def verify_ghost_credentials(admin_api_key: str) -> bool:
+    """Verify Ghost credentials are valid"""
+    
+    try:
+        # Generate token
+        token = generate_ghost_jwt(admin_api_key)
+        
+        # Try to fetch site info
+        api_url = f"{GHOST_API_URL}/ghost/api/{GHOST_ADMIN_API_VERSION}/admin/site/"
+        
+        headers = {
+            'Authorization': f'Ghost {token}',
+            'Accept-Version': GHOST_ADMIN_API_VERSION
+        }
+        
+        response = requests.get(api_url, headers=headers, timeout=10)
+        
+        if response.status_code == 200:
+            print("✅ Ghost credentials verified")
+            return True
+        else:
+            print(f"⚠️  Ghost credential verification failed: {response.status_code}")
+            return False
+            
+    except Exception as e:
+        print(f"⚠️  Could not verify Ghost credentials: {e}")
+        return False
+
 def main():
     """Main Ghost publishing function"""
     try:
@@ -156,6 +224,11 @@ def main():
             raise ValueError("GHOST_ADMIN_API_KEY environment variable not set")
         
         print("✅ Admin API key found")
+        
+        # Verify credentials first
+        print("\n🔐 Verifying Ghost credentials...")
+        if not verify_ghost_credentials(admin_api_key):
+            print("⚠️  Continuing anyway...")
         
         # Load blog post
         print("\n📚 Loading generated blog post...")
@@ -173,9 +246,9 @@ def main():
         print("\n📤 Publishing to Ghost CMS...")
         ghost_response = create_ghost_post(blog_post, token)
         
-        # Extract post URL
-        published_post = ghost_response['posts'][0]
-        post_url = published_post.get('url', 'N/A')
+        # Extract post info
+        published_post = ghost_response.get('posts', [{}])[0]
+        post_url = published_post.get('url', GHOST_API_URL)
         post_id = published_post.get('id', 'N/A')
         
         print(f"\n✅ Successfully published to Ghost!")
@@ -201,12 +274,17 @@ def main():
         blog_post['ghost_url'] = post_url
         blog_post['ghost_id'] = post_id
         
-        with open(DATA_DIR / "blog_post.json", 'w') as f:
+        blog_file = DATA_DIR / "blog_post.json"
+        with open(blog_file, 'w') as f:
             json.dump(blog_post, f, indent=2)
+        
+        print(f"💾 Updated blog post file with publication info")
         
     except requests.exceptions.HTTPError as e:
         print(f"\n❌ HTTP Error: {e}")
-        print(f"Response: {e.response.text}")
+        if hasattr(e, 'response') and e.response is not None:
+            print(f"Status Code: {e.response.status_code}")
+            print(f"Response: {e.response.text}")
         raise
     except Exception as e:
         print(f"\n❌ Error: {e}")
