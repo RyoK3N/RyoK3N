@@ -11,7 +11,7 @@ import networkx as nx
 from pyvis.network import Network
 
 DATA_DIR = Path(__file__).parent / "data"
-OUTPUT_DIR = Path(__file__).parent.parent.parent / "assets"
+OUTPUT_DIR = Path(__file__).parent.parent.parent / "docs"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 # Color scheme for categories
