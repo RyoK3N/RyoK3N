@@ -534,7 +534,7 @@ The thrill of the first successful deployment of a machine learning model - the 
 [![All Posts](https://img.shields.io/badge/View_All-Posts-success?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/)
 [![RSS Feed](https://img.shields.io/badge/Subscribe-RSS-orange?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/feed.xml)
 
-*🤖 AI-generated and automatically published • Updated weekly*
+*🤖 AI-generated, human-reviewed and automatically published • Updated weekly*
 
 </div>
 
