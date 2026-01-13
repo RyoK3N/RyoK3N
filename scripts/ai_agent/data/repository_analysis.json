@@ -1,13 +1,23 @@
 {
-  "timestamp": "2026-01-13T21:33:22.903522",
+  "timestamp": "2026-01-13T22:02:14.701909",
   "username": "RyoK3N",
   "main_repository": "RyoK3N/RyoK3N",
   "main_repo_activity": {
     "commits": {
-      "total": 40,
+      "total": 50,
       "unique_authors": 3,
       "top_author": "Reiyo",
       "messages": [
+        "Create generate_rss.py",
+        "Update update_readme.py",
+        "Update update_readme.py",
+        "Update ai-agent-workflow.yml",
+        "Update generate_knowledge_graph.py",
+        "Update generate_knowledge_graph.py",
+        "Create blog.js",
+        "Create blog.css",
+        "Create generate_blog_page.py",
+        "\ud83e\udd16 AI Agent: Enhanced weekly update",
         "Create test_setup.py",
         "Update ai-agent-workflow.yml",
         "Update publish_to_ghost.py",
@@ -17,19 +27,9 @@
         "Update update_readme.py",
         "Create publish_to_ghost.py",
         "Create generate_blog.py",
-        "Create select_featured_project.py",
-        "Create generate_knowledge_graph.py",
-        "Create categorize_projects.py",
-        "Update analyze_repository.py",
-        "Update requirements.txt",
-        "\u26a1 Update GitHub activity",
-        "\ud83d\udcca Update ML pipeline metrics - 2026-01-13",
-        "\ud83e\udd16 AI Agent: Automated daily update [skip ci]",
-        "\ud83d\udcca Update ML performance charts and metrics - 2026-01-13",
-        "\ud83d\udcca Update ML pipeline metrics - 2026-01-12",
-        "\ud83e\udd16 AI Agent: Automated daily update [skip ci]"
+        "Create select_featured_project.py"
       ],
-      "daily_average": 5.714285714285714
+      "daily_average": 7.142857142857143
     },
     "pull_requests": {
       "total_recent": 0,
@@ -1297,7 +1297,8 @@
       "full_name": "RyoK3N/RyoK3N",
       "description": "Config files for my GitHub profile.",
       "languages": {
-        "Python": 100.0
+        "Python": 65.2,
+        "HTML": 34.8
       },
       "topics": [
         "config",
@@ -1307,15 +1308,18 @@
       "file_types": {
         ".md": 2,
         ".txt": 2,
-        ".py": 11,
+        ".html": 1,
+        ".py": 13,
         ".yml": 7,
         ".svg": 6,
-        ".json": 3
+        ".css": 1,
+        ".js": 1,
+        ".json": 6
       },
       "stars": 0,
       "forks": 0,
       "created_at": "2024-05-22T17:22:31+00:00",
-      "updated_at": "2026-01-13T21:28:37+00:00",
+      "updated_at": "2026-01-13T21:56:44+00:00",
       "size": 468,
       "url": "https://github.com/RyoK3N/RyoK3N",
       "homepage": "https://github.com/RyoK3N",

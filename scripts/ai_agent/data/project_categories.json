@@ -5,7 +5,8 @@
       "description": "",
       "categories": [
         "Computer Vision",
-        "Machine Learning"
+        "Machine Learning",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -37,8 +38,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -52,8 +53,8 @@
       "description": "The webpage for AiAI research group for Prof. Youshan Zhang",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Web Development"
+        "Web Development",
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -71,8 +72,8 @@
       "description": "MIDI Controller + MP3 Player : Allows you to connect your midi and play live beats to downloaded songs from youtube.",
       "categories": [
         "Data Science",
-        "Web Development",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Web Development"
       ],
       "languages": [
         "Python",
@@ -112,7 +113,8 @@
       "description": "An agent that helps you predict the next day's stock data.",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "DevOps"
       ],
       "languages": [
         "Python",
@@ -158,8 +160,8 @@
       "name": "Camera-Aware-Neural-Networks-for-Few-View-Depth-Estimation",
       "description": "",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
+        "Computer Vision",
         "Research"
       ],
       "languages": [
@@ -220,7 +222,6 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -284,9 +285,9 @@
       "name": "Ctypes",
       "description": "",
       "categories": [
-        "Web Development",
+        "Data Science",
         "Tools & Utilities",
-        "Data Science"
+        "Web Development"
       ],
       "languages": [
         "Python",
@@ -316,7 +317,8 @@
       "description": "Functions used for various computer vision problems using julia and python",
       "categories": [
         "Computer Vision",
-        "Machine Learning"
+        "Machine Learning",
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -332,7 +334,7 @@
       "description": "Fruit Loops is an algorithm to find closed loops in a set of lines ",
       "categories": [
         "Machine Learning",
-        "Data Science",
+        "Computer Vision",
         "Tools & Utilities"
       ],
       "languages": [
@@ -346,8 +348,8 @@
       "name": "Golfbot_wizardlm",
       "description": "An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions.",
       "categories": [
-        "Natural Language Processing",
         "Machine Learning",
+        "Natural Language Processing",
         "Web Development"
       ],
       "languages": [
@@ -364,7 +366,7 @@
       "categories": [
         "Machine Learning",
         "Computer Vision",
-        "Natural Language Processing"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -378,7 +380,8 @@
       "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -472,7 +475,7 @@
       "categories": [
         "Machine Learning",
         "Natural Language Processing",
-        "Research"
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -489,7 +492,7 @@
       "categories": [
         "Computer Vision",
         "3D Graphics",
-        "Machine Learning"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -504,8 +507,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps",
-        "Data Science"
+        "DevOps"
       ],
       "languages": [
         "Python"
@@ -529,7 +531,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities"
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -542,6 +544,7 @@
       "name": "Music3x",
       "description": " This is your one-stop destination for innovative music tools and projects aimed at empowering creativity and exploration in sound",
       "categories": [
+        "Data Science",
         "Web Development",
         "Tools & Utilities"
       ],
@@ -590,7 +593,8 @@
       "name": "Ollama_API",
       "description": "",
       "categories": [
-        "Natural Language Processing",
+        "Web Development",
+        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -606,8 +610,7 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Tools & Utilities",
-        "Web Development"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -623,7 +626,7 @@
       "categories": [
         "Machine Learning",
         "Web Development",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [],
       "topics": [],
@@ -651,8 +654,7 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Machine Learning",
-        "Web Development"
+        "Machine Learning"
       ],
       "languages": [
         "HTML",
@@ -668,8 +670,8 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities",
-        "Research"
+        "Research",
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -699,9 +701,8 @@
       "name": "Real-Time-Violence-Detection",
       "description": "The goal of this project is to detect violence in the video feeds of the training dataset and implement a Neural Network which classifies the videos as violent or nonviolent. The aim of this project is to develop an architecture that is capable of detecting violence in Real Time.",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Natural Language Processing"
+        "Computer Vision"
       ],
       "languages": [],
       "topics": [],
@@ -714,7 +715,7 @@
       "categories": [
         "Data Science",
         "Tools & Utilities",
-        "Research"
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -728,11 +729,11 @@
       "description": "Config files for my GitHub profile.",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Natural Language Processing"
+        "Web Development"
       ],
       "languages": [
-        "Python"
+        "Python",
+        "HTML"
       ],
       "topics": [
         "config",
@@ -745,7 +746,8 @@
       "name": "Sound_Anlysis",
       "description": "",
       "categories": [
-        "Uncategorized"
+        "Computer Vision",
+        "Machine Learning"
       ],
       "languages": [],
       "topics": [],
@@ -757,7 +759,8 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps"
+        "DevOps",
+        "Tools & Utilities"
       ],
       "languages": [
         "TypeScript",
@@ -775,8 +778,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "Natural Language Processing",
-        "Machine Learning"
+        "Natural Language Processing"
       ],
       "languages": [
         "TypeScript",
@@ -804,8 +806,9 @@
       "name": "Synthetic_Video_QA",
       "description": "",
       "categories": [
+        "Computer Vision",
         "Machine Learning",
-        "Computer Vision"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -834,7 +837,8 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities"
+        "DevOps",
+        "Web Development"
       ],
       "languages": [
         "Python",
@@ -922,8 +926,8 @@
       "name": "webwise-agent",
       "description": "An intelligent multi-agent system for web-based information retrieval and analysis",
       "categories": [
-        "Natural Language Processing",
         "Machine Learning",
+        "Natural Language Processing",
         "Web Development"
       ],
       "languages": [
@@ -935,15 +939,15 @@
     }
   ],
   "category_statistics": {
-    "Computer Vision": 14,
+    "Computer Vision": 15,
     "Machine Learning": 39,
-    "Natural Language Processing": 22,
-    "Web Development": 19,
-    "Data Science": 19,
-    "Tools & Utilities": 18,
-    "Uncategorized": 3,
-    "DevOps": 4,
     "Research": 7,
+    "Natural Language Processing": 19,
+    "Web Development": 20,
+    "Data Science": 23,
+    "Tools & Utilities": 17,
+    "Uncategorized": 2,
+    "DevOps": 6,
     "Reinforcement Learning": 1,
     "3D Graphics": 3
   },

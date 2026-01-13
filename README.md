@@ -420,7 +420,7 @@ graph LR
 
 ### Explore My Projects Interactively
 
-[![View Knowledge Graph](https://img.shields.io/badge/🕸️_Interactive_Graph-View_Live-blueviolet?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/assets/knowledge_graph.html)
+[![View Knowledge Graph](https://img.shields.io/badge/🕸️_Interactive_Graph-View_Live-blueviolet?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/knowledge-graph.html)
 
 </div>
 
@@ -434,7 +434,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](./assets/knowledge_graph.html) • [🔄 Last Updated: 2026-01-13]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-13]
 
 </div>
 
@@ -457,28 +457,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Real-Time-Violence-Detection](https://github.com/RyoK3N/Real-Time-Violence-Detection)
+### 📦 [Curriculum-_Learning](https://github.com/RyoK3N/Curriculum-_Learning)
 
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-purple?style=flat-square) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
 
-This pioneering Real-Time-Violence-Detection project brings together cutting-edge computer vision, machine learning, and natural language processing to revolutionize the way we perceive and respond to violent threats. By leveraging the power of neural networks, this innovative system enables the detection of violent tendencies in real-time, empowering individuals and organizations to take swift action in high-stakes situations. With the potential to transform crisis intervention, law enforcement, and public safety, this project represents a significant step forward in the pursuit of a safer, more secure world. By pushing the boundaries of AI-driven violence detection, this project has the potential to make a profound impact on communities worldwide.
+This groundbreaking project, Curriculum-Learning for LSTM-Based Sequence-to-Sequence Models, pushes the boundaries of artificial intelligence and natural language processing by introducing a novel adaptation technique that enhances the learning process of long short-term memory (LSTM) networks. By leveraging a curriculum-based approach, our research yields state-of-the-art improvements in sequence-to-sequence tasks, such as machine translation and text generation. This cutting-edge technology has far-reaching implications for various applications, including language translation, chatbots, and text analysis, and holds the potential to revolutionize the way we interact with machines.
 
 **💡 Why Featured This Week:**
 
-*This project deserves to be featured this week due to its cutting-edge application of computer vision, machine learning, and natural language processing techniques to detect and classify violence in real-time, showcasing a significant technical innovation in the field of human safety and security. The potential practical value of this project lies in its ability to revolutionize the way we monitor and respond to violent situations, saving lives and mitigating the impact of violence on communities worldwide.*
+*This project deserves to be featured this week because it showcases a groundbreaking application of curriculum learning in LSTM-based sequence-to-sequence models, a cutting-edge technical innovation that has the potential to revolutionize the field of natural language processing. By introducing a novel approach to optimizing model performance, this project highlights a significant practical value that can be leveraged to improve real-world NLP applications.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 0
-- 🏷️ **Categories**: Computer Vision, Machine Learning, Natural Language Processing
-- 💻 **Languages**: 
+- ⭐ **Stars**: 1
+- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Research
+- 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Real-Time-Violence-Detection)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Curriculum-_Learning)
 
 </td>
 </tr>
@@ -501,7 +501,7 @@ This pioneering Real-Time-Violence-Detection project brings together cutting-edg
 
 <div align="center">
 
-[![Read on Ghost](https://img.shields.io/badge/📖_Read_on-Ghost_Blog-black?style=for-the-badge&logo=ghost)](https://synexian.ghost.io)
+[![Read Blog](https://img.shields.io/badge/📖_Read-Tech_Blog-black?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/)
 
 </div>
 
@@ -509,17 +509,17 @@ This pioneering Real-Time-Violence-Detection project brings together cutting-edg
 <tr>
 <td>
 
-### 📰 [Deep dive into Real-Time-Violence-Detection](#)
+### 📰 [The future of Web Development](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: Coming Soon
+**Published**: January 13, 2026
 
-The eerie glow of screens illuminates a world where real-time violence detection is the unsung hero of our digital safety net...
+As I sit here, sipping on a lukewarm cup of coffee and staring at a line of code that still makes my head spin, I often find myself pondering the ques...
 
-**Tags**: `AI` `Engineering` `Real-Time-Violence-Detection` `Machine Learning`
+**Tags**: `Tech` `Machine Learning` `Web Development` `AI`
 
 <div align="center">
 
-[![Read Full Post](https://img.shields.io/badge/Read_Full_Post-→-blue?style=for-the-badge)](#)
+[![Read Full Post](https://img.shields.io/badge/Read_Full_Post-→-blue?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
 </div>
 
@@ -531,8 +531,8 @@ The eerie glow of screens illuminates a world where real-time violence detection
 
 ### 📚 More Posts
 
-[![All Posts](https://img.shields.io/badge/View_All-Posts-success?style=for-the-badge)](https://synexian.ghost.io)
-[![RSS Feed](https://img.shields.io/badge/Subscribe-RSS-orange?style=for-the-badge)](https://synexian.ghost.io/rss/)
+[![All Posts](https://img.shields.io/badge/View_All-Posts-success?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/)
+[![RSS Feed](https://img.shields.io/badge/Subscribe-RSS-orange?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/feed.xml)
 
 *🤖 AI-generated and automatically published • Updated weekly*
 
