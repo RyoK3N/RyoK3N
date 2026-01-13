@@ -41,7 +41,7 @@ def create_knowledge_graph_section():
 
 ### Explore My Projects Interactively
 
-[![View Knowledge Graph](https://img.shields.io/badge/🕸️_Interactive_Graph-View_Live-blueviolet?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/assets/knowledge_graph.html)
+[![View Knowledge Graph](https://img.shields.io/badge/🕸️_Interactive_Graph-View_Live-blueviolet?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/knowledge-graph.html)
 
 </div>
 
@@ -55,7 +55,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](./assets/knowledge_graph.html) • [🔄 Last Updated: {timestamp}]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: {timestamp}]
 
 </div>
 
