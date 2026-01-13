@@ -411,133 +411,26 @@ graph LR
 
 ---
 
-## AI-Powered Project Knowledge Graph
-
-<!--START_SECTION:knowledge_graph-->
 ## 🧠 AI-Powered Project Knowledge Graph
 
-<div align="center">
-
-### Explore My Projects Interactively
-
-[![View Knowledge Graph](https://img.shields.io/badge/🕸️_Interactive_Graph-View_Live-blueviolet?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/knowledge-graph.html)
-
-</div>
-
-The knowledge graph above provides an **interactive visualization** of my projects, categorized by AI and connected based on shared technologies and themes. Click nodes to explore, drag to rearrange, and discover the relationships between different projects.
-
-**Features:**
-- 🎨 **AI-Categorized**: Projects automatically categorized using machine learning
-- 🔗 **Smart Connections**: Related projects linked by shared languages and technologies  
-- 📊 **Data-Driven**: Node sizes represent project popularity (stars)
-- 🎯 **Interactive**: Click, drag, zoom, and explore in real-time
-
-<div align="center">
-
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-13]
-
-</div>
-
+<!--START_SECTION:knowledge_graph-->
+AI-generated knowledge graph will appear here
 <!--END_SECTION:knowledge_graph-->
 
 ---
 
-## Featured Project of the Week
-
-<!--START_SECTION:featured_project-->
 ## ⭐ Featured Project of the Week
 
-<div align="center">
-
-### 🎯 Week 3, 2026
-
-</div>
-
-<table>
-<tr>
-<td width="60%">
-
-### 📦 [Curriculum-_Learning](https://github.com/RyoK3N/Curriculum-_Learning)
-
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
-
-This groundbreaking project, Curriculum-Learning for LSTM-Based Sequence-to-Sequence Models, pushes the boundaries of artificial intelligence and natural language processing by introducing a novel adaptation technique that enhances the learning process of long short-term memory (LSTM) networks. By leveraging a curriculum-based approach, our research yields state-of-the-art improvements in sequence-to-sequence tasks, such as machine translation and text generation. This cutting-edge technology has far-reaching implications for various applications, including language translation, chatbots, and text analysis, and holds the potential to revolutionize the way we interact with machines.
-
-**💡 Why Featured This Week:**
-
-*This project deserves to be featured this week because it showcases a groundbreaking application of curriculum learning in LSTM-based sequence-to-sequence models, a cutting-edge technical innovation that has the potential to revolutionize the field of natural language processing. By introducing a novel approach to optimizing model performance, this project highlights a significant practical value that can be leveraged to improve real-world NLP applications.*
-
-</td>
-<td width="40%">
-
-**📊 Project Stats**
-
-- ⭐ **Stars**: 1
-- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Research
-- 💻 **Languages**: Python
-
-**🔗 Quick Links**
-
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Curriculum-_Learning)
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-*🤖 AI-selected and described • Updated weekly*
-
-</div>
-
+<!--START_SECTION:featured_project-->
+AI-selected featured project will appear here
 <!--END_SECTION:featured_project-->
 
 ---
 
-## Latest from My Tech Blog
-
-<!--START_SECTION:latest_blog-->
 ## 📝 Latest from My Tech Blog
 
-<div align="center">
-
-[![Read Blog](https://img.shields.io/badge/📖_Read-Tech_Blog-black?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/)
-
-</div>
-
-<table>
-<tr>
-<td>
-
-### 📰 [The future of Web Development](https://ryok3n.github.io/RyoK3N/blog/latest.html)
-
-**Published**: January 13, 2026
-
-As I sit here, sipping on a lukewarm cup of coffee and staring at a line of code that still makes my head spin, I often find myself pondering the ques...
-
-**Tags**: `Tech` `Machine Learning` `Web Development` `AI`
-
-<div align="center">
-
-[![Read Full Post](https://img.shields.io/badge/Read_Full_Post-→-blue?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/blog/latest.html)
-
-</div>
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-### 📚 More Posts
-
-[![All Posts](https://img.shields.io/badge/View_All-Posts-success?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/)
-[![RSS Feed](https://img.shields.io/badge/Subscribe-RSS-orange?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/feed.xml)
-
-*🤖 AI-generated and automatically published • Updated weekly*
-
-</div>
-
+<!--START_SECTION:latest_blog-->
+Latest blog post will appear here
 <!--END_SECTION:latest_blog-->
 
 ---
