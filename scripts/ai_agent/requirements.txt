@@ -1,16 +1,34 @@
-# AI Agent Requirements (Fixed for InferenceClient)
+# AI Agent Requirements
 
-# CRITICAL: Use huggingface-hub for InferenceClient
+# Core AI/ML
 huggingface-hub>=0.20.0
 
 # GitHub API Integration
 PyGithub>=2.3.0
 
-# HTTP Requests (for fallback)
+# HTTP Requests
 requests>=2.31.0
 
-# Date/Time handling
-python-dateutil>=2.8.2
+# Ghost CMS Integration
+ghost-client>=0.0.3
+python-ghost>=0.2.3
 
-# Optional: Environment management for local testing
+# Network Analysis & Graph Generation
+networkx>=3.2
+pyvis>=0.3.2
+
+# Data Processing
+python-dateutil>=2.8.2
+pandas>=2.1.0
+
+# Environment Management
 python-dotenv>=1.0.0
+
+# HTML/Markdown Processing
+markdown>=3.5
+beautifulsoup4>=4.12.0
+html2text>=2020.1.16
+
+# Topic Modeling & NLP
+scikit-learn>=1.3.0
+nltk>=3.8.1
