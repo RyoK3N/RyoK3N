@@ -314,7 +314,7 @@ def main():
         net = create_knowledge_graph(data)
         
         # Generate HTML
-        output_file = OUTPUT_DIR / "knowledge_graph.html"
+        output_file = OUTPUT_DIR / "knowledge-graph.html"
         net.save_graph(str(output_file))
         
         # Add custom styling
