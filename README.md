@@ -414,7 +414,30 @@ graph LR
 ## 🧠 AI-Powered Project Knowledge Graph
 
 <!--START_SECTION:knowledge_graph-->
-AI-generated knowledge graph will appear here
+## 🧠 AI-Powered Project Knowledge Graph
+
+<div align="center">
+
+### Explore My Projects Interactively
+
+[![View Knowledge Graph](https://img.shields.io/badge/🕸️_Interactive_Graph-View_Live-blueviolet?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/knowledge-graph.html)
+
+</div>
+
+The knowledge graph above provides an **interactive visualization** of my projects, categorized by AI and connected based on shared technologies and themes. Click nodes to explore, drag to rearrange, and discover the relationships between different projects.
+
+**Features:**
+- 🎨 **AI-Categorized**: Projects automatically categorized using machine learning
+- 🔗 **Smart Connections**: Related projects linked by shared languages and technologies  
+- 📊 **Data-Driven**: Node sizes represent project popularity (stars)
+- 🎯 **Interactive**: Click, drag, zoom, and explore in real-time
+
+<div align="center">
+
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-13]
+
+</div>
+
 <!--END_SECTION:knowledge_graph-->
 
 ---
@@ -422,7 +445,51 @@ AI-generated knowledge graph will appear here
 ## ⭐ Featured Project of the Week
 
 <!--START_SECTION:featured_project-->
-AI-selected featured project will appear here
+## ⭐ Featured Project of the Week
+
+<div align="center">
+
+### 🎯 Week 3, 2026
+
+</div>
+
+<table>
+<tr>
+<td width="60%">
+
+### 📦 [HANTransformer](https://github.com/RyoK3N/HANTransformer)
+
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Data Science](https://img.shields.io/badge/Data_Science-purple?style=flat-square)
+
+This is an innovative software project, HANTransformer, that revolutionizes document classification tasks through its groundbreaking application of the Hierarchical Attention Network (HAN) architecture combined with the powerful Transformer model, yielding improved accuracy and efficiency. By leveraging this cutting-edge approach on the 20 Newsgroups dataset, HANTransformer showcases exceptional technical innovation in the realm of Machine Learning and Natural Language Processing, offering a promising solution for text analysis applications. With its Python-based implementation in Jupyter Notebooks, this project has the potential to significantly impact industries that heavily rely on text-based data, such as finance, healthcare, and social media, enabling more accurate and personalized decision-making processes.
+
+**💡 Why Featured This Week:**
+
+*The HANTransformer project deserves to be featured this week because it showcases a groundbreaking application of the Transformer model to hierarchical document classification tasks, leveraging the powerful hierarchical attention mechanism to significantly improve performance on the challenging 20 Newsgroups dataset. This innovative approach demonstrates the immense practical value of the HANTransformer model, opening up new avenues for natural language processing and machine learning applications.*
+
+</td>
+<td width="40%">
+
+**📊 Project Stats**
+
+- ⭐ **Stars**: 2
+- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Data Science
+- 💻 **Languages**: Python, Jupyter Notebook
+
+**🔗 Quick Links**
+
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/HANTransformer)
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+*🤖 AI-selected and described • Updated weekly*
+
+</div>
+
 <!--END_SECTION:featured_project-->
 
 ---
@@ -430,7 +497,47 @@ AI-selected featured project will appear here
 ## 📝 Latest from My Tech Blog
 
 <!--START_SECTION:latest_blog-->
-Latest blog post will appear here
+## 📝 Latest from My Tech Blog
+
+<div align="center">
+
+[![Read Blog](https://img.shields.io/badge/📖_Read-Tech_Blog-black?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/)
+
+</div>
+
+<table>
+<tr>
+<td>
+
+### 📰 [Best practices for Data Science development](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+
+**Published**: January 13, 2026
+
+The thrill of the first successful deployment of a machine learning model - the nervous excitement of watching your carefully crafted algorithm transf...
+
+**Tags**: `AI` `Machine Learning` `Data Science` `Engineering`
+
+<div align="center">
+
+[![Read Full Post](https://img.shields.io/badge/Read_Full_Post-→-blue?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+
+</div>
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+### 📚 More Posts
+
+[![All Posts](https://img.shields.io/badge/View_All-Posts-success?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/)
+[![RSS Feed](https://img.shields.io/badge/Subscribe-RSS-orange?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/feed.xml)
+
+*🤖 AI-generated and automatically published • Updated weekly*
+
+</div>
+
 <!--END_SECTION:latest_blog-->
 
 ---

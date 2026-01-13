@@ -1,19 +1,20 @@
 {
-  "name": "Curriculum-_Learning",
-  "description": "Curriculum Learning in LSTM-Based Sequence-to-Sequence Models",
-  "ai_description": "This groundbreaking project, Curriculum-Learning for LSTM-Based Sequence-to-Sequence Models, pushes the boundaries of artificial intelligence and natural language processing by introducing a novel adaptation technique that enhances the learning process of long short-term memory (LSTM) networks. By leveraging a curriculum-based approach, our research yields state-of-the-art improvements in sequence-to-sequence tasks, such as machine translation and text generation. This cutting-edge technology has far-reaching implications for various applications, including language translation, chatbots, and text analysis, and holds the potential to revolutionize the way we interact with machines.",
-  "why_featured": "This project deserves to be featured this week because it showcases a groundbreaking application of curriculum learning in LSTM-based sequence-to-sequence models, a cutting-edge technical innovation that has the potential to revolutionize the field of natural language processing. By introducing a novel approach to optimizing model performance, this project highlights a significant practical value that can be leveraged to improve real-world NLP applications.",
+  "name": "HANTransformer",
+  "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
+  "ai_description": "This is an innovative software project, HANTransformer, that revolutionizes document classification tasks through its groundbreaking application of the Hierarchical Attention Network (HAN) architecture combined with the powerful Transformer model, yielding improved accuracy and efficiency. By leveraging this cutting-edge approach on the 20 Newsgroups dataset, HANTransformer showcases exceptional technical innovation in the realm of Machine Learning and Natural Language Processing, offering a promising solution for text analysis applications. With its Python-based implementation in Jupyter Notebooks, this project has the potential to significantly impact industries that heavily rely on text-based data, such as finance, healthcare, and social media, enabling more accurate and personalized decision-making processes.",
+  "why_featured": "The HANTransformer project deserves to be featured this week because it showcases a groundbreaking application of the Transformer model to hierarchical document classification tasks, leveraging the powerful hierarchical attention mechanism to significantly improve performance on the challenging 20 Newsgroups dataset. This innovative approach demonstrates the immense practical value of the HANTransformer model, opening up new avenues for natural language processing and machine learning applications.",
   "categories": [
     "Machine Learning",
     "Natural Language Processing",
-    "Research"
+    "Data Science"
   ],
   "languages": [
-    "Python"
+    "Python",
+    "Jupyter Notebook"
   ],
-  "stars": 1,
-  "url": "https://github.com/RyoK3N/Curriculum-_Learning",
-  "selected_date": "2026-01-13T22:03:03.304620",
+  "stars": 2,
+  "url": "https://github.com/RyoK3N/HANTransformer",
+  "selected_date": "2026-01-13T22:16:51.334342",
   "week_number": 3,
   "year": 2026
 }

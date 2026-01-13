@@ -1,13 +1,15 @@
 {
-  "timestamp": "2026-01-13T22:02:14.701909",
+  "timestamp": "2026-01-13T22:16:07.339478",
   "username": "RyoK3N",
   "main_repository": "RyoK3N/RyoK3N",
   "main_repo_activity": {
     "commits": {
-      "total": 50,
+      "total": 52,
       "unique_authors": 3,
       "top_author": "Reiyo",
       "messages": [
+        "Update README.md",
+        "\ud83e\udd16 AI Agent: Weekly update with blog & knowledge graph",
         "Create generate_rss.py",
         "Update update_readme.py",
         "Update update_readme.py",
@@ -25,11 +27,9 @@
         "Update ai-agent-workflow.yml",
         "Update README.md",
         "Update update_readme.py",
-        "Create publish_to_ghost.py",
-        "Create generate_blog.py",
-        "Create select_featured_project.py"
+        "Create publish_to_ghost.py"
       ],
-      "daily_average": 7.142857142857143
+      "daily_average": 7.428571428571429
     },
     "pull_requests": {
       "total_recent": 0,
@@ -1308,23 +1308,24 @@
       "file_types": {
         ".md": 2,
         ".txt": 2,
-        ".html": 1,
+        ".html": 4,
+        ".xml": 1,
         ".py": 13,
         ".yml": 7,
         ".svg": 6,
         ".css": 1,
         ".js": 1,
-        ".json": 6
+        ".json": 7
       },
       "stars": 0,
       "forks": 0,
       "created_at": "2024-05-22T17:22:31+00:00",
-      "updated_at": "2026-01-13T21:56:44+00:00",
+      "updated_at": "2026-01-13T22:11:33+00:00",
       "size": 468,
       "url": "https://github.com/RyoK3N/RyoK3N",
       "homepage": "https://github.com/RyoK3N",
       "has_wiki": false,
-      "has_pages": false,
+      "has_pages": true,
       "archived": false
     },
     {

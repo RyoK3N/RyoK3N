@@ -4,9 +4,8 @@
       "name": "2DPoseEstimation",
       "description": "",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Research"
+        "Computer Vision"
       ],
       "languages": [
         "Python"
@@ -71,9 +70,9 @@
       "name": "Akai_MPC_25",
       "description": "MIDI Controller + MP3 Player : Allows you to connect your midi and play live beats to downloaded songs from youtube.",
       "categories": [
+        "Web Development",
         "Data Science",
-        "Tools & Utilities",
-        "Web Development"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -88,7 +87,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -194,7 +194,8 @@
       "description": "A simple RL agent that plays chess",
       "categories": [
         "Reinforcement Learning",
-        "Machine Learning"
+        "Research",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -208,7 +209,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -222,6 +224,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
+        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -256,8 +259,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -272,7 +275,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision"
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -285,8 +288,8 @@
       "name": "Ctypes",
       "description": "",
       "categories": [
-        "Data Science",
         "Tools & Utilities",
+        "Data Science",
         "Web Development"
       ],
       "languages": [
@@ -318,7 +321,7 @@
       "categories": [
         "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -333,9 +336,9 @@
       "name": "Fruit-Loops",
       "description": "Fruit Loops is an algorithm to find closed loops in a set of lines ",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -348,8 +351,8 @@
       "name": "Golfbot_wizardlm",
       "description": "An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions.",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
+        "Machine Learning",
         "Web Development"
       ],
       "languages": [
@@ -396,7 +399,8 @@
       "description": "Classifying Hurricanes from Geospatial Images",
       "categories": [
         "Machine Learning",
-        "Computer Vision"
+        "Computer Vision",
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -425,8 +429,7 @@
       "description": "",
       "categories": [
         "Computer Vision",
-        "3D Graphics",
-        "Tools & Utilities"
+        "3D Graphics"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -475,7 +478,7 @@
       "categories": [
         "Machine Learning",
         "Natural Language Processing",
-        "Data Science"
+        "Research"
       ],
       "languages": [
         "Python",
@@ -491,8 +494,7 @@
       "description": "An interactive 3D/2D motion capture visualization tool that allows real-time manipulation of camera perspectives and skeleton pose viewing. This tool provides simultaneous 3D and 2D projective views of motion capture data, making it ideal for computer vision and animation research.",
       "categories": [
         "Computer Vision",
-        "3D Graphics",
-        "Tools & Utilities"
+        "3D Graphics"
       ],
       "languages": [
         "Python",
@@ -507,7 +509,8 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps"
+        "DevOps",
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -531,7 +534,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Machine Learning"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -593,8 +596,8 @@
       "name": "Ollama_API",
       "description": "",
       "categories": [
-        "Web Development",
-        "Data Science",
+        "Machine Learning",
+        "Natural Language Processing",
         "Tools & Utilities"
       ],
       "languages": [
@@ -609,8 +612,9 @@
       "name": "Ollama_API_",
       "description": "",
       "categories": [
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Data Science",
+        "Tools & Utilities",
+        "Web Development"
       ],
       "languages": [
         "Python",
@@ -637,8 +641,8 @@
       "name": "ProjGS",
       "description": "Projection-Guided Gaussian Splatting from Single RGB-D",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
+        "Machine Learning",
         "Research"
       ],
       "languages": [
@@ -654,7 +658,8 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Machine Learning"
+        "Machine Learning",
+        "Web Development"
       ],
       "languages": [
         "HTML",
@@ -670,8 +675,8 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Research",
-        "Tools & Utilities"
+        "Machine Learning",
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -715,7 +720,7 @@
       "categories": [
         "Data Science",
         "Tools & Utilities",
-        "Natural Language Processing"
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -729,7 +734,8 @@
       "description": "Config files for my GitHub profile.",
       "categories": [
         "Machine Learning",
-        "Web Development"
+        "Web Development",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -746,8 +752,7 @@
       "name": "Sound_Anlysis",
       "description": "",
       "categories": [
-        "Computer Vision",
-        "Machine Learning"
+        "Uncategorized"
       ],
       "languages": [],
       "topics": [],
@@ -778,7 +783,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "Natural Language Processing"
+        "Machine Learning"
       ],
       "languages": [
         "TypeScript",
@@ -806,9 +811,8 @@
       "name": "Synthetic_Video_QA",
       "description": "",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Python"
@@ -853,7 +857,9 @@
       "name": "TDA",
       "description": "",
       "categories": [
-        "Uncategorized"
+        "Data Science",
+        "Tools & Utilities",
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -939,13 +945,13 @@
     }
   ],
   "category_statistics": {
-    "Computer Vision": 15,
-    "Machine Learning": 39,
-    "Research": 7,
-    "Natural Language Processing": 19,
-    "Web Development": 20,
-    "Data Science": 23,
-    "Tools & Utilities": 17,
+    "Machine Learning": 38,
+    "Computer Vision": 13,
+    "Natural Language Processing": 16,
+    "Web Development": 21,
+    "Data Science": 25,
+    "Research": 13,
+    "Tools & Utilities": 20,
     "Uncategorized": 2,
     "DevOps": 6,
     "Reinforcement Learning": 1,
