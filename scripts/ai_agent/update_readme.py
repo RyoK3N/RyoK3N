@@ -126,19 +126,9 @@ def create_featured_project_section(featured: dict):
 def create_blog_section(blog: dict, publication: dict):
     """Create latest blog post section"""
     
-    # Get latest publication
-    latest_pub = None
-    if publication and 'publications' in publication:
-        pubs = publication['publications']
-        if pubs:
-            latest_pub = pubs[-1]
-    
-    if latest_pub:
-        blog_url = latest_pub.get('ghost_response', {}).get('posts', [{}])[0].get('url', '#')
-        pub_date = datetime.fromisoformat(latest_pub['published_at']).strftime('%B %d, %Y')
-    else:
-        blog_url = "#"
-        pub_date = "Coming Soon"
+    # Get blog URL
+    blog_url = f"https://ryok3n.github.io/RyoK3N/blog/{blog.get('slug', 'latest')}.html"
+    pub_date = datetime.fromisoformat(blog.get('created_at', datetime.now().isoformat())).strftime('%B %d, %Y')
     
     tags_badges = ' '.join([
         f"`{tag}`" for tag in blog.get('tags', [])[:4]
@@ -149,7 +139,7 @@ def create_blog_section(blog: dict, publication: dict):
 
 <div align="center">
 
-[![Read on Ghost](https://img.shields.io/badge/📖_Read_on-Ghost_Blog-black?style=for-the-badge&logo=ghost)](https://synexian.ghost.io)
+[![Read Blog](https://img.shields.io/badge/📖_Read-Tech_Blog-black?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/)
 
 </div>
 
@@ -179,8 +169,8 @@ def create_blog_section(blog: dict, publication: dict):
 
 ### 📚 More Posts
 
-[![All Posts](https://img.shields.io/badge/View_All-Posts-success?style=for-the-badge)](https://synexian.ghost.io)
-[![RSS Feed](https://img.shields.io/badge/Subscribe-RSS-orange?style=for-the-badge)](https://synexian.ghost.io/rss/)
+[![All Posts](https://img.shields.io/badge/View_All-Posts-success?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/)
+[![RSS Feed](https://img.shields.io/badge/Subscribe-RSS-orange?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/feed.xml)
 
 *🤖 AI-generated and automatically published • Updated weekly*
 
