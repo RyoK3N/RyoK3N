@@ -9,9 +9,8 @@ PyGithub>=2.3.0
 # HTTP Requests
 requests>=2.31.0
 
-# Ghost CMS Integration
-ghost-client>=0.0.3
-python-ghost>=0.2.3
+# JWT for Ghost API
+PyJWT>=2.8.0
 
 # Network Analysis & Graph Generation
 networkx>=3.2
@@ -19,16 +18,6 @@ pyvis>=0.3.2
 
 # Data Processing
 python-dateutil>=2.8.2
-pandas>=2.1.0
 
 # Environment Management
 python-dotenv>=1.0.0
-
-# HTML/Markdown Processing
-markdown>=3.5
-beautifulsoup4>=4.12.0
-html2text>=2020.1.16
-
-# Topic Modeling & NLP
-scikit-learn>=1.3.0
-nltk>=3.8.1
