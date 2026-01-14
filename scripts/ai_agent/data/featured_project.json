@@ -1,20 +1,23 @@
 {
-  "name": "RyoK3N",
-  "description": "Config files for my GitHub profile.",
-  "ai_description": "RyoK3N is a pioneering software project that revolutionizes the way developers showcase their GitHub profiles by harnessing the power of machine learning and web development. Leveraging Python and HTML, this innovative tool utilizes sophisticated algorithms to curate a visually stunning and up-to-date profile, elevating developers' online presence and increasing their visibility in the tech community. By empowering developers to refine their digital footprint, RyoK3N has the potential to democratize access to valuable networking opportunities, collaborations, and career opportunities, further solidifying its position as a groundbreaking solution for the tech-savvy generation.",
-  "why_featured": "RyoK3N deserves to be featured this week because it showcases a unique example of technical innovation, where a simple config file repository serves as a proof-of-concept for a more comprehensive GitHub profile management system, inspiring developers to think outside the box and explore novel applications of machine learning and web development. By making this project visible, we can encourage others to build upon and contribute to this exciting concept.",
+  "name": "AiAI",
+  "description": "The webpage for AiAI research group for Prof. Youshan Zhang",
+  "ai_description": "The AiAI project is a cutting-edge web development initiative that brings together machine learning expertise and research-oriented design to create an innovative online platform, specifically for Prof. Youshan Zhang's research group. By leveraging Jupyter Notebooks, Python, and a blend of HTML, CSS, and shell scripts, this project showcases exceptional technical innovation, offering a unique and dynamic interface that facilitates seamless interaction between researchers and the broader machine learning community. With its potential to accelerate knowledge sharing, collaboration, and discovery, the AiAI project has the potential to make a significant impact on the advancement of machine learning research, driving innovation and breakthroughs in the field.",
+  "why_featured": "This project deserves to be featured this week because it showcases cutting-edge Machine Learning and Web Development techniques, and its simple yet elegant webpage effectively demonstrates the practical value of Prof. Youshan Zhang's research group, AiAI, and its innovative approach to advancing the field of AI.",
   "categories": [
     "Machine Learning",
     "Web Development",
-    "Tools & Utilities"
+    "Research"
   ],
   "languages": [
+    "Jupyter Notebook",
     "Python",
-    "HTML"
+    "HTML",
+    "CSS",
+    "Shell"
   ],
   "stars": 0,
-  "url": "https://github.com/RyoK3N/RyoK3N",
-  "selected_date": "2026-01-14T00:08:00.693512",
+  "url": "https://github.com/RyoK3N/AiAI",
+  "selected_date": "2026-01-14T20:38:01.442638",
   "week_number": 3,
   "year": 2026
 }

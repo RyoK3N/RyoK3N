@@ -457,15 +457,15 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [RyoK3N](https://github.com/RyoK3N/RyoK3N)
+### 📦 [AiAI](https://github.com/RyoK3N/AiAI)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Web Development](https://img.shields.io/badge/Web_Development-purple?style=flat-square) ![Tools & Utilities](https://img.shields.io/badge/Tools_&_Utilities-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Web Development](https://img.shields.io/badge/Web_Development-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
 
-RyoK3N is a pioneering software project that revolutionizes the way developers showcase their GitHub profiles by harnessing the power of machine learning and web development. Leveraging Python and HTML, this innovative tool utilizes sophisticated algorithms to curate a visually stunning and up-to-date profile, elevating developers' online presence and increasing their visibility in the tech community. By empowering developers to refine their digital footprint, RyoK3N has the potential to democratize access to valuable networking opportunities, collaborations, and career opportunities, further solidifying its position as a groundbreaking solution for the tech-savvy generation.
+The AiAI project is a cutting-edge web development initiative that brings together machine learning expertise and research-oriented design to create an innovative online platform, specifically for Prof. Youshan Zhang's research group. By leveraging Jupyter Notebooks, Python, and a blend of HTML, CSS, and shell scripts, this project showcases exceptional technical innovation, offering a unique and dynamic interface that facilitates seamless interaction between researchers and the broader machine learning community. With its potential to accelerate knowledge sharing, collaboration, and discovery, the AiAI project has the potential to make a significant impact on the advancement of machine learning research, driving innovation and breakthroughs in the field.
 
 **💡 Why Featured This Week:**
 
-*RyoK3N deserves to be featured this week because it showcases a unique example of technical innovation, where a simple config file repository serves as a proof-of-concept for a more comprehensive GitHub profile management system, inspiring developers to think outside the box and explore novel applications of machine learning and web development. By making this project visible, we can encourage others to build upon and contribute to this exciting concept.*
+*This project deserves to be featured this week because it showcases cutting-edge Machine Learning and Web Development techniques, and its simple yet elegant webpage effectively demonstrates the practical value of Prof. Youshan Zhang's research group, AiAI, and its innovative approach to advancing the field of AI.*
 
 </td>
 <td width="40%">
@@ -473,12 +473,12 @@ RyoK3N is a pioneering software project that revolutionizes the way developers s
 **📊 Project Stats**
 
 - ⭐ **Stars**: 0
-- 🏷️ **Categories**: Machine Learning, Web Development, Tools & Utilities
-- 💻 **Languages**: Python, HTML
+- 🏷️ **Categories**: Machine Learning, Web Development, Research
+- 💻 **Languages**: Jupyter Notebook, Python, HTML
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/RyoK3N)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/AiAI)
 
 </td>
 </tr>
@@ -509,13 +509,13 @@ RyoK3N is a pioneering software project that revolutionizes the way developers s
 <tr>
 <td>
 
-### 📰 [My journey as a Machine Learning Engineer](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+### 📰 [Best practices for Machine Learning development](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
 **Published**: January 14, 2026
 
-As I stood in front of a sleek, futuristic display, watching a self-driving car navigate a complex obstacle course, I couldn't help but feel a sense o...
+As a Machine Learning Engineer, I've seen firsthand the incredible impact that well-designed models can have on businesses and society as a whole...
 
-**Tags**: `Engineering` `Tech` `Machine Learning` `AI`
+**Tags**: `Tech` `Machine Learning` `AI` `Engineering`
 
 <div align="center">
 
