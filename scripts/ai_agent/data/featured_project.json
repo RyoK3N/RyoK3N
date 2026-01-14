@@ -1,20 +1,20 @@
 {
-  "name": "HANTransformer",
-  "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
-  "ai_description": "This is an innovative software project, HANTransformer, that revolutionizes document classification tasks through its groundbreaking application of the Hierarchical Attention Network (HAN) architecture combined with the powerful Transformer model, yielding improved accuracy and efficiency. By leveraging this cutting-edge approach on the 20 Newsgroups dataset, HANTransformer showcases exceptional technical innovation in the realm of Machine Learning and Natural Language Processing, offering a promising solution for text analysis applications. With its Python-based implementation in Jupyter Notebooks, this project has the potential to significantly impact industries that heavily rely on text-based data, such as finance, healthcare, and social media, enabling more accurate and personalized decision-making processes.",
-  "why_featured": "The HANTransformer project deserves to be featured this week because it showcases a groundbreaking application of the Transformer model to hierarchical document classification tasks, leveraging the powerful hierarchical attention mechanism to significantly improve performance on the challenging 20 Newsgroups dataset. This innovative approach demonstrates the immense practical value of the HANTransformer model, opening up new avenues for natural language processing and machine learning applications.",
+  "name": "RyoK3N",
+  "description": "Config files for my GitHub profile.",
+  "ai_description": "RyoK3N is a pioneering software project that revolutionizes the way developers showcase their GitHub profiles by harnessing the power of machine learning and web development. Leveraging Python and HTML, this innovative tool utilizes sophisticated algorithms to curate a visually stunning and up-to-date profile, elevating developers' online presence and increasing their visibility in the tech community. By empowering developers to refine their digital footprint, RyoK3N has the potential to democratize access to valuable networking opportunities, collaborations, and career opportunities, further solidifying its position as a groundbreaking solution for the tech-savvy generation.",
+  "why_featured": "RyoK3N deserves to be featured this week because it showcases a unique example of technical innovation, where a simple config file repository serves as a proof-of-concept for a more comprehensive GitHub profile management system, inspiring developers to think outside the box and explore novel applications of machine learning and web development. By making this project visible, we can encourage others to build upon and contribute to this exciting concept.",
   "categories": [
     "Machine Learning",
-    "Natural Language Processing",
-    "Data Science"
+    "Web Development",
+    "Tools & Utilities"
   ],
   "languages": [
     "Python",
-    "Jupyter Notebook"
+    "HTML"
   ],
-  "stars": 2,
-  "url": "https://github.com/RyoK3N/HANTransformer",
-  "selected_date": "2026-01-13T22:16:51.334342",
+  "stars": 0,
+  "url": "https://github.com/RyoK3N/RyoK3N",
+  "selected_date": "2026-01-14T00:08:00.693512",
   "week_number": 3,
   "year": 2026
 }

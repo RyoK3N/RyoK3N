@@ -4,8 +4,9 @@
       "name": "2DPoseEstimation",
       "description": "",
       "categories": [
+        "Computer Vision",
         "Machine Learning",
-        "Computer Vision"
+        "Research"
       ],
       "languages": [
         "Python"
@@ -37,8 +38,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Data Science"
+        "Data Science",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -70,9 +71,9 @@
       "name": "Akai_MPC_25",
       "description": "MIDI Controller + MP3 Player : Allows you to connect your midi and play live beats to downloaded songs from youtube.",
       "categories": [
-        "Web Development",
         "Data Science",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Web Development"
       ],
       "languages": [
         "Python",
@@ -88,7 +89,7 @@
       "categories": [
         "Machine Learning",
         "Data Science",
-        "Research"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -162,7 +163,7 @@
       "categories": [
         "Machine Learning",
         "Computer Vision",
-        "Research"
+        "Robotics"
       ],
       "languages": [
         "C++",
@@ -194,8 +195,8 @@
       "description": "A simple RL agent that plays chess",
       "categories": [
         "Reinforcement Learning",
-        "Research",
-        "Tools & Utilities"
+        "Machine Learning",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -209,8 +210,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python"
@@ -224,7 +224,6 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -259,8 +258,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Tools & Utilities",
-        "Data Science"
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -275,7 +274,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Tools & Utilities"
+        "Computer Vision"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -336,9 +335,9 @@
       "name": "Fruit-Loops",
       "description": "Fruit Loops is an algorithm to find closed loops in a set of lines ",
       "categories": [
-        "Computer Vision",
-        "Tools & Utilities",
-        "Research"
+        "Machine Learning",
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -369,7 +368,7 @@
       "categories": [
         "Machine Learning",
         "Computer Vision",
-        "Data Science"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python"
@@ -383,8 +382,7 @@
       "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Data Science"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python",
@@ -399,8 +397,7 @@
       "description": "Classifying Hurricanes from Geospatial Images",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -413,8 +410,8 @@
       "name": "K2Cmx-Transformer",
       "description": "",
       "categories": [
-        "Natural Language Processing",
-        "Machine Learning"
+        "Machine Learning",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -429,7 +426,8 @@
       "description": "",
       "categories": [
         "Computer Vision",
-        "3D Graphics"
+        "3D Graphics",
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -478,7 +476,7 @@
       "categories": [
         "Machine Learning",
         "Natural Language Processing",
-        "Research"
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -494,6 +492,7 @@
       "description": "An interactive 3D/2D motion capture visualization tool that allows real-time manipulation of camera perspectives and skeleton pose viewing. This tool provides simultaneous 3D and 2D projective views of motion capture data, making it ideal for computer vision and animation research.",
       "categories": [
         "Computer Vision",
+        "Machine Learning",
         "3D Graphics"
       ],
       "languages": [
@@ -547,7 +546,6 @@
       "name": "Music3x",
       "description": " This is your one-stop destination for innovative music tools and projects aimed at empowering creativity and exploration in sound",
       "categories": [
-        "Data Science",
         "Web Development",
         "Tools & Utilities"
       ],
@@ -596,7 +594,6 @@
       "name": "Ollama_API",
       "description": "",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
         "Tools & Utilities"
       ],
@@ -612,9 +609,8 @@
       "name": "Ollama_API_",
       "description": "",
       "categories": [
-        "Data Science",
-        "Tools & Utilities",
-        "Web Development"
+        "Natural Language Processing",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -657,8 +653,8 @@
       "name": "Prompt_V2",
       "description": "",
       "categories": [
-        "Natural Language Processing",
         "Machine Learning",
+        "Natural Language Processing",
         "Web Development"
       ],
       "languages": [
@@ -693,7 +689,7 @@
       "categories": [
         "Machine Learning",
         "Computer Vision",
-        "3D Graphics"
+        "Robotics"
       ],
       "languages": [
         "Python"
@@ -783,7 +779,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "Machine Learning"
+        "Natural Language Processing"
       ],
       "languages": [
         "TypeScript",
@@ -825,9 +821,8 @@
       "name": "SYNX-001-Coder",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Natural Language Processing",
-        "Data Science"
+        "Reinforcement Learning",
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -842,7 +837,7 @@
       "categories": [
         "Data Science",
         "DevOps",
-        "Web Development"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -858,8 +853,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities",
-        "Research"
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -902,8 +896,9 @@
       "name": "VMP2D",
       "description": "",
       "categories": [
+        "Computer Vision",
         "Machine Learning",
-        "Computer Vision"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -917,8 +912,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -945,17 +939,18 @@
     }
   ],
   "category_statistics": {
-    "Machine Learning": 38,
     "Computer Vision": 13,
-    "Natural Language Processing": 16,
-    "Web Development": 21,
-    "Data Science": 25,
-    "Research": 13,
-    "Tools & Utilities": 20,
+    "Machine Learning": 39,
+    "Research": 9,
+    "Natural Language Processing": 18,
+    "Web Development": 19,
+    "Data Science": 21,
+    "Tools & Utilities": 19,
     "Uncategorized": 2,
     "DevOps": 6,
-    "Reinforcement Learning": 1,
-    "3D Graphics": 3
+    "Robotics": 2,
+    "Reinforcement Learning": 2,
+    "3D Graphics": 2
   },
   "total_repositories": 58,
   "timestamp": "{\"iso\": \"now\"}"

@@ -434,7 +434,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-13]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-14]
 
 </div>
 
@@ -457,28 +457,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [HANTransformer](https://github.com/RyoK3N/HANTransformer)
+### 📦 [RyoK3N](https://github.com/RyoK3N/RyoK3N)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Data Science](https://img.shields.io/badge/Data_Science-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Web Development](https://img.shields.io/badge/Web_Development-purple?style=flat-square) ![Tools & Utilities](https://img.shields.io/badge/Tools_&_Utilities-purple?style=flat-square)
 
-This is an innovative software project, HANTransformer, that revolutionizes document classification tasks through its groundbreaking application of the Hierarchical Attention Network (HAN) architecture combined with the powerful Transformer model, yielding improved accuracy and efficiency. By leveraging this cutting-edge approach on the 20 Newsgroups dataset, HANTransformer showcases exceptional technical innovation in the realm of Machine Learning and Natural Language Processing, offering a promising solution for text analysis applications. With its Python-based implementation in Jupyter Notebooks, this project has the potential to significantly impact industries that heavily rely on text-based data, such as finance, healthcare, and social media, enabling more accurate and personalized decision-making processes.
+RyoK3N is a pioneering software project that revolutionizes the way developers showcase their GitHub profiles by harnessing the power of machine learning and web development. Leveraging Python and HTML, this innovative tool utilizes sophisticated algorithms to curate a visually stunning and up-to-date profile, elevating developers' online presence and increasing their visibility in the tech community. By empowering developers to refine their digital footprint, RyoK3N has the potential to democratize access to valuable networking opportunities, collaborations, and career opportunities, further solidifying its position as a groundbreaking solution for the tech-savvy generation.
 
 **💡 Why Featured This Week:**
 
-*The HANTransformer project deserves to be featured this week because it showcases a groundbreaking application of the Transformer model to hierarchical document classification tasks, leveraging the powerful hierarchical attention mechanism to significantly improve performance on the challenging 20 Newsgroups dataset. This innovative approach demonstrates the immense practical value of the HANTransformer model, opening up new avenues for natural language processing and machine learning applications.*
+*RyoK3N deserves to be featured this week because it showcases a unique example of technical innovation, where a simple config file repository serves as a proof-of-concept for a more comprehensive GitHub profile management system, inspiring developers to think outside the box and explore novel applications of machine learning and web development. By making this project visible, we can encourage others to build upon and contribute to this exciting concept.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 2
-- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Data Science
-- 💻 **Languages**: Python, Jupyter Notebook
+- ⭐ **Stars**: 0
+- 🏷️ **Categories**: Machine Learning, Web Development, Tools & Utilities
+- 💻 **Languages**: Python, HTML
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/HANTransformer)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/RyoK3N)
 
 </td>
 </tr>
@@ -509,13 +509,13 @@ This is an innovative software project, HANTransformer, that revolutionizes docu
 <tr>
 <td>
 
-### 📰 [Best practices for Data Science development](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+### 📰 [My journey as a Machine Learning Engineer](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: January 13, 2026
+**Published**: January 14, 2026
 
-The thrill of the first successful deployment of a machine learning model - the nervous excitement of watching your carefully crafted algorithm transf...
+As I stood in front of a sleek, futuristic display, watching a self-driving car navigate a complex obstacle course, I couldn't help but feel a sense o...
 
-**Tags**: `AI` `Machine Learning` `Data Science` `Engineering`
+**Tags**: `Engineering` `Tech` `Machine Learning` `AI`
 
 <div align="center">
 
@@ -534,7 +534,7 @@ The thrill of the first successful deployment of a machine learning model - the 
 [![All Posts](https://img.shields.io/badge/View_All-Posts-success?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/)
 [![RSS Feed](https://img.shields.io/badge/Subscribe-RSS-orange?style=for-the-badge)](https://ryok3n.github.io/RyoK3N/feed.xml)
 
-*🤖 AI-generated, human-reviewed and automatically published • Updated weekly*
+*🤖 AI-generated and automatically published • Updated weekly*
 
 </div>
 
