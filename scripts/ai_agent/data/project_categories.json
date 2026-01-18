@@ -6,7 +6,7 @@
       "categories": [
         "Computer Vision",
         "Machine Learning",
-        "Research"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -38,8 +38,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -71,9 +71,9 @@
       "name": "Akai_MPC_25",
       "description": "MIDI Controller + MP3 Player : Allows you to connect your midi and play live beats to downloaded songs from youtube.",
       "categories": [
+        "Data Science",
         "Web Development",
-        "Tools & Utilities",
-        "Data Science"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -113,7 +113,8 @@
       "description": "An agent that helps you predict the next day's stock data.",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -208,7 +209,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -222,7 +224,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
+        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -256,7 +258,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
+        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -272,7 +274,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision"
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -285,8 +287,8 @@
       "name": "Ctypes",
       "description": "",
       "categories": [
-        "Data Science",
         "Tools & Utilities",
+        "Data Science",
         "Web Development"
       ],
       "languages": [
@@ -301,8 +303,8 @@
       "name": "Curriculum-_Learning",
       "description": "Curriculum Learning in LSTM-Based Sequence-to-Sequence Models",
       "categories": [
-        "Natural Language Processing",
         "Machine Learning",
+        "Natural Language Processing",
         "Research"
       ],
       "languages": [
@@ -317,8 +319,7 @@
       "description": "Functions used for various computer vision problems using julia and python",
       "categories": [
         "Computer Vision",
-        "Machine Learning",
-        "Tools & Utilities"
+        "Machine Learning"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -333,9 +334,9 @@
       "name": "Fruit-Loops",
       "description": "Fruit Loops is an algorithm to find closed loops in a set of lines ",
       "categories": [
+        "Machine Learning",
         "Computer Vision",
-        "Tools & Utilities",
-        "Research"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -350,7 +351,7 @@
       "categories": [
         "Natural Language Processing",
         "Machine Learning",
-        "Data Science"
+        "Web Development"
       ],
       "languages": [
         "Python",
@@ -380,7 +381,8 @@
       "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -395,8 +397,7 @@
       "description": "Classifying Hurricanes from Geospatial Images",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -409,8 +410,8 @@
       "name": "K2Cmx-Transformer",
       "description": "",
       "categories": [
-        "Natural Language Processing",
-        "Machine Learning"
+        "Machine Learning",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -441,7 +442,8 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Machine Learning"
+        "Machine Learning",
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -475,7 +477,7 @@
       "categories": [
         "Machine Learning",
         "Natural Language Processing",
-        "Research"
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -490,8 +492,8 @@
       "name": "MocapViewer3D",
       "description": "An interactive 3D/2D motion capture visualization tool that allows real-time manipulation of camera perspectives and skeleton pose viewing. This tool provides simultaneous 3D and 2D projective views of motion capture data, making it ideal for computer vision and animation research.",
       "categories": [
-        "Computer Vision",
-        "3D Graphics"
+        "3D Graphics",
+        "Computer Vision"
       ],
       "languages": [
         "Python",
@@ -531,7 +533,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities"
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -544,6 +546,7 @@
       "name": "Music3x",
       "description": " This is your one-stop destination for innovative music tools and projects aimed at empowering creativity and exploration in sound",
       "categories": [
+        "Data Science",
         "Web Development",
         "Tools & Utilities"
       ],
@@ -592,9 +595,8 @@
       "name": "Ollama_API",
       "description": "",
       "categories": [
-        "Data Science",
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Machine Learning",
+        "Natural Language Processing"
       ],
       "languages": [
         "Shell",
@@ -609,7 +611,7 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Tools & Utilities",
+        "Data Science",
         "Web Development"
       ],
       "languages": [
@@ -653,6 +655,7 @@
       "name": "Prompt_V2",
       "description": "",
       "categories": [
+        "Machine Learning",
         "Natural Language Processing",
         "Web Development"
       ],
@@ -670,8 +673,8 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Research",
-        "Tools & Utilities"
+        "Machine Learning",
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -686,8 +689,9 @@
       "name": "Quaternion-Capsule-Network",
       "description": "An impementation of Quaternion Capsule Networks for prediction of View matrix from 2D body keypoints ",
       "categories": [
+        "Computer Vision",
         "Machine Learning",
-        "Computer Vision"
+        "Robotics"
       ],
       "languages": [
         "Python"
@@ -715,7 +719,7 @@
       "categories": [
         "Data Science",
         "Tools & Utilities",
-        "Natural Language Processing"
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -755,12 +759,28 @@
       "url": "https://github.com/RyoK3N/Sound_Anlysis"
     },
     {
+      "name": "Synaptix",
+      "description": "Synaptix website ",
+      "categories": [
+        "Web Development",
+        "Data Science",
+        "Tools & Utilities"
+      ],
+      "languages": [
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "topics": [],
+      "stars": 0,
+      "url": "https://github.com/RyoK3N/Synaptix"
+    },
+    {
       "name": "Synexian",
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps",
-        "Tools & Utilities"
+        "DevOps"
       ],
       "languages": [
         "TypeScript",
@@ -822,7 +842,7 @@
       "categories": [
         "Machine Learning",
         "Natural Language Processing",
-        "Research"
+        "Reinforcement Learning"
       ],
       "languages": [
         "Python"
@@ -836,8 +856,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "DevOps",
-        "Web Development"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -852,6 +871,7 @@
       "name": "TDA",
       "description": "",
       "categories": [
+        "Machine Learning",
         "Data Science",
         "Tools & Utilities"
       ],
@@ -939,18 +959,19 @@
     }
   ],
   "category_statistics": {
-    "Computer Vision": 14,
-    "Machine Learning": 35,
-    "Research": 12,
-    "Natural Language Processing": 21,
-    "Web Development": 20,
-    "Data Science": 22,
-    "Tools & Utilities": 18,
+    "Computer Vision": 13,
+    "Machine Learning": 41,
+    "Data Science": 29,
+    "Natural Language Processing": 18,
+    "Web Development": 21,
+    "Research": 9,
+    "Tools & Utilities": 16,
     "Uncategorized": 2,
-    "DevOps": 5,
-    "Reinforcement Learning": 1,
-    "3D Graphics": 2
+    "DevOps": 4,
+    "Reinforcement Learning": 2,
+    "3D Graphics": 2,
+    "Robotics": 1
   },
-  "total_repositories": 58,
+  "total_repositories": 59,
   "timestamp": "{\"iso\": \"now\"}"
 }

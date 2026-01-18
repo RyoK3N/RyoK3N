@@ -434,7 +434,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-14]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-18]
 
 </div>
 
@@ -457,28 +457,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [AiAI](https://github.com/RyoK3N/AiAI)
+### 📦 [Chess-RLA](https://github.com/RyoK3N/Chess-RLA)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Web Development](https://img.shields.io/badge/Web_Development-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
+![Reinforcement Learning](https://img.shields.io/badge/Reinforcement_Learning-purple?style=flat-square) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
 
-The AiAI project is a cutting-edge web development initiative that brings together machine learning expertise and research-oriented design to create an innovative online platform, specifically for Prof. Youshan Zhang's research group. By leveraging Jupyter Notebooks, Python, and a blend of HTML, CSS, and shell scripts, this project showcases exceptional technical innovation, offering a unique and dynamic interface that facilitates seamless interaction between researchers and the broader machine learning community. With its potential to accelerate knowledge sharing, collaboration, and discovery, the AiAI project has the potential to make a significant impact on the advancement of machine learning research, driving innovation and breakthroughs in the field.
+Harnessing the power of reinforcement learning, Chess-RLA represents a groundbreaking milestone in machine learning research, marking the first-ever implementation of artificial intelligence in the strategic game of chess. By innovatively integrating advanced algorithms and techniques, this pioneering project sets a new standard for intelligent agents, pushing the boundaries of AI capabilities in complex problem-solving domains. With its far-reaching implications for robotics, game playing, and artificial general intelligence, Chess-RLA holds immense potential to inspire future breakthroughs in these fields and revolutionize the way we approach complex decision-making challenges.
 
 **💡 Why Featured This Week:**
 
-*This project deserves to be featured this week because it showcases cutting-edge Machine Learning and Web Development techniques, and its simple yet elegant webpage effectively demonstrates the practical value of Prof. Youshan Zhang's research group, AiAI, and its innovative approach to advancing the field of AI.*
+*The Chess-RLA project deserves to be featured this week because it showcases groundbreaking technical innovation, leveraging reinforcement learning (RL) to create a simple yet effective chess-playing agent that pushes the boundaries of AI research in a complex, dynamic domain. By successfully applying RL techniques to a notoriously difficult game like chess, this project demonstrates a significant advance in the field, opening up new avenues for research and potential practical applications in areas like game development and artificial intelligence.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 0
-- 🏷️ **Categories**: Machine Learning, Web Development, Research
-- 💻 **Languages**: Jupyter Notebook, Python, HTML
+- ⭐ **Stars**: 1
+- 🏷️ **Categories**: Reinforcement Learning, Machine Learning, Research
+- 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/AiAI)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Chess-RLA)
 
 </td>
 </tr>
@@ -509,13 +509,13 @@ The AiAI project is a cutting-edge web development initiative that brings togeth
 <tr>
 <td>
 
-### 📰 [Best practices for Machine Learning development](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+### 📰 [The future of Web Development](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: January 14, 2026
+**Published**: January 18, 2026
 
-As a Machine Learning Engineer, I've seen firsthand the incredible impact that well-designed models can have on businesses and society as a whole...
+As I sit here sipping on a cup of coffee, I often find myself pondering the phrase "the sky's the limit" - a mantra that has been etched in the minds ...
 
-**Tags**: `Tech` `Machine Learning` `AI` `Engineering`
+**Tags**: `Tech` `Machine Learning` `Engineering` `AI`
 
 <div align="center">
 
