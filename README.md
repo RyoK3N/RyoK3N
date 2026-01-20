@@ -411,8 +411,6 @@ graph LR
 
 ---
 
-## 🧠 AI-Powered Project Knowledge Graph
-
 <!--START_SECTION:knowledge_graph-->
 ## 🧠 AI-Powered Project Knowledge Graph
 
