@@ -4,8 +4,9 @@
       "name": "2DPoseEstimation",
       "description": "",
       "categories": [
+        "Computer Vision",
         "Machine Learning",
-        "Computer Vision"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -37,8 +38,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Data Science"
+        "Data Science",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -87,7 +88,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -101,7 +103,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [],
       "topics": [],
@@ -159,9 +162,9 @@
       "name": "Camera-Aware-Neural-Networks-for-Few-View-Depth-Estimation",
       "description": "",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Computer Vision",
+        "Research"
       ],
       "languages": [
         "C++",
@@ -208,8 +211,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python"
@@ -237,8 +239,9 @@
       "name": "Coding_Teams",
       "description": "",
       "categories": [
+        "Web Development",
         "Data Science",
-        "Web Development"
+        "Tools & Utilities"
       ],
       "languages": [
         "TypeScript",
@@ -273,7 +276,6 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
         "Data Science"
       ],
       "languages": [
@@ -287,9 +289,9 @@
       "name": "Ctypes",
       "description": "",
       "categories": [
-        "Data Science",
         "Tools & Utilities",
-        "Web Development"
+        "Data Science",
+        "Machine Learning"
       ],
       "languages": [
         "Python",
@@ -303,8 +305,8 @@
       "name": "Curriculum-_Learning",
       "description": "Curriculum Learning in LSTM-Based Sequence-to-Sequence Models",
       "categories": [
-        "Natural Language Processing",
         "Machine Learning",
+        "Natural Language Processing",
         "Research"
       ],
       "languages": [
@@ -476,7 +478,7 @@
       "categories": [
         "Machine Learning",
         "Natural Language Processing",
-        "Data Science"
+        "Research"
       ],
       "languages": [
         "Python",
@@ -533,7 +535,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities"
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -594,8 +596,8 @@
       "name": "Ollama_API",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Tools & Utilities"
+        "Natural Language Processing",
+        "Data Science"
       ],
       "languages": [
         "Shell",
@@ -609,9 +611,9 @@
       "name": "Ollama_API_",
       "description": "",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -638,9 +640,8 @@
       "name": "ProjGS",
       "description": "Projection-Guided Gaussian Splatting from Single RGB-D",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Robotics"
+        "Computer Vision"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -689,8 +690,7 @@
       "description": "An impementation of Quaternion Capsule Networks for prediction of View matrix from 2D body keypoints ",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "3D Graphics"
+        "Computer Vision"
       ],
       "languages": [
         "Python"
@@ -704,8 +704,7 @@
       "description": "The goal of this project is to detect violence in the video feeds of the training dataset and implement a Neural Network which classifies the videos as violent or nonviolent. The aim of this project is to develop an architecture that is capable of detecting violence in Real Time.",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [],
       "topics": [],
@@ -749,7 +748,7 @@
       "name": "Sound_Anlysis",
       "description": "",
       "categories": [
-        "Uncategorized"
+        "Tools & Utilities"
       ],
       "languages": [],
       "topics": [],
@@ -795,7 +794,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps"
+        "Tools & Utilities"
       ],
       "languages": [
         "TypeScript"
@@ -839,7 +838,7 @@
       "categories": [
         "Data Science",
         "DevOps",
-        "Web Development"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -855,8 +854,8 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities",
-        "Research"
+        "Machine Learning",
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -900,8 +899,7 @@
       "description": "",
       "categories": [
         "Computer Vision",
-        "Machine Learning",
-        "Data Science"
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -915,7 +913,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -930,8 +929,8 @@
       "description": "An intelligent multi-agent system for web-based information retrieval and analysis",
       "categories": [
         "Natural Language Processing",
-        "Machine Learning",
-        "Web Development"
+        "Web Development",
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -942,18 +941,16 @@
     }
   ],
   "category_statistics": {
-    "Machine Learning": 40,
-    "Computer Vision": 14,
-    "Natural Language Processing": 18,
-    "Web Development": 20,
-    "Data Science": 28,
-    "Research": 7,
-    "Tools & Utilities": 16,
-    "DevOps": 6,
+    "Computer Vision": 13,
+    "Machine Learning": 41,
+    "Data Science": 27,
+    "Natural Language Processing": 19,
+    "Web Development": 18,
+    "Research": 9,
+    "Tools & Utilities": 19,
+    "DevOps": 5,
     "Reinforcement Learning": 1,
-    "3D Graphics": 3,
-    "Robotics": 1,
-    "Uncategorized": 1
+    "3D Graphics": 2
   },
   "total_repositories": 58,
   "timestamp": "{\"iso\": \"now\"}"

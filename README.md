@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Quaternion-Capsule-Network](https://github.com/RyoK3N/Quaternion-Capsule-Network)
+### 📦 [ThemeClassifierSLM](https://github.com/RyoK3N/ThemeClassifierSLM)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Computer Vision](https://img.shields.io/badge/Computer_Vision-purple?style=flat-square) ![3D Graphics](https://img.shields.io/badge/3D_Graphics-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Data Science](https://img.shields.io/badge/Data_Science-purple?style=flat-square)
 
-Introducing the Quaternion-Capsule-Network, a groundbreaking software project that brings together the realm of machine learning, computer vision, and 3D graphics to revolutionize the prediction of view matrices from 2D body keypoints. By harnessing the power of quaternions, this innovative implementation marries geometric reasoning with deep learning capabilities, unlocking unprecedented levels of accuracy in 3D reconstruction and virtual try-on applications. This technological leap has the potential to transform industries such as film, gaming, and healthcare, enabling unparalleled levels of realism and precision in visual storytelling, character animation, and medical simulation.
+ThemeClassifierSLM is an innovative, deep learning solution for text classification that leverages the capabilities of LSTM-based neural networks to classify themes or topics in large-scale text data. What sets this project apart is its incorporation of cutting-edge techniques that significantly enhance its performance, making it an invaluable asset for data scientists and researchers in the natural language processing domain. By opening up new avenues for text analysis, ThemeClassifierSLM has the potential to revolutionize various fields, including customer service, sentiment analysis, and market research, ultimately informing more data-driven decision-making.
 
 **💡 Why Featured This Week:**
 
-*This Quaternion Capsule Network project deserves to be featured this week because it showcases a groundbreaking application of Quaternion Capsule Networks, a technically innovative architecture that enables the prediction of view matrices from 2D body keypoints, paving the way for significant advancements in 3D reconstruction, video analysis, and computer vision. By leveraging this technique, researchers and developers can unlock new possibilities in fields like augmented reality, robotics, and medical imaging, making this project a hotbed of practical value and exciting potential.*
+*This week, we're excited to feature ThemeClassifierSLM because it showcases a cutting-edge implementation of long short-term memory (LSTM) networks, a groundbreaking technical innovation that enables state-of-the-art performance in text analysis tasks, particularly in theme or topic classification. By providing a practical and accessible solution for building and training LSTM models, this project offers a significant boost to data science and NLP research, and we can't wait to share it with our audience!*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 0
-- 🏷️ **Categories**: Machine Learning, Computer Vision, 3D Graphics
+- ⭐ **Stars**: 1
+- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Data Science
 - 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Quaternion-Capsule-Network)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/ThemeClassifierSLM)
 
 </td>
 </tr>
@@ -507,13 +507,13 @@ Introducing the Quaternion-Capsule-Network, a groundbreaking software project th
 <tr>
 <td>
 
-### 📰 [The future of Data Science](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+### 📰 [Recent developments in Machine Learning and AI](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
 **Published**: January 21, 2026
 
-As I sit amidst the hum of servers and the glow of screen lights, I often find myself pondering the enigmatic whisper of a 19-year-old Ph...
+As I watched a self-driving car navigate a busy city street for the first time, I couldn't help but feel a sense of awe at the incredible progress tha...
 
-**Tags**: `Tech` `Engineering` `AI` `Machine Learning`
+**Tags**: `Engineering` `Tech` `AI` `Machine Learning`
 
 <div align="center">
 
