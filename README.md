@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-18]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-21]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 3, 2026
+### 🎯 Week 4, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Chess-RLA](https://github.com/RyoK3N/Chess-RLA)
+### 📦 [Quaternion-Capsule-Network](https://github.com/RyoK3N/Quaternion-Capsule-Network)
 
-![Reinforcement Learning](https://img.shields.io/badge/Reinforcement_Learning-purple?style=flat-square) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Computer Vision](https://img.shields.io/badge/Computer_Vision-purple?style=flat-square) ![3D Graphics](https://img.shields.io/badge/3D_Graphics-purple?style=flat-square)
 
-Harnessing the power of reinforcement learning, Chess-RLA represents a groundbreaking milestone in machine learning research, marking the first-ever implementation of artificial intelligence in the strategic game of chess. By innovatively integrating advanced algorithms and techniques, this pioneering project sets a new standard for intelligent agents, pushing the boundaries of AI capabilities in complex problem-solving domains. With its far-reaching implications for robotics, game playing, and artificial general intelligence, Chess-RLA holds immense potential to inspire future breakthroughs in these fields and revolutionize the way we approach complex decision-making challenges.
+Introducing the Quaternion-Capsule-Network, a groundbreaking software project that brings together the realm of machine learning, computer vision, and 3D graphics to revolutionize the prediction of view matrices from 2D body keypoints. By harnessing the power of quaternions, this innovative implementation marries geometric reasoning with deep learning capabilities, unlocking unprecedented levels of accuracy in 3D reconstruction and virtual try-on applications. This technological leap has the potential to transform industries such as film, gaming, and healthcare, enabling unparalleled levels of realism and precision in visual storytelling, character animation, and medical simulation.
 
 **💡 Why Featured This Week:**
 
-*The Chess-RLA project deserves to be featured this week because it showcases groundbreaking technical innovation, leveraging reinforcement learning (RL) to create a simple yet effective chess-playing agent that pushes the boundaries of AI research in a complex, dynamic domain. By successfully applying RL techniques to a notoriously difficult game like chess, this project demonstrates a significant advance in the field, opening up new avenues for research and potential practical applications in areas like game development and artificial intelligence.*
+*This Quaternion Capsule Network project deserves to be featured this week because it showcases a groundbreaking application of Quaternion Capsule Networks, a technically innovative architecture that enables the prediction of view matrices from 2D body keypoints, paving the way for significant advancements in 3D reconstruction, video analysis, and computer vision. By leveraging this technique, researchers and developers can unlock new possibilities in fields like augmented reality, robotics, and medical imaging, making this project a hotbed of practical value and exciting potential.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 1
-- 🏷️ **Categories**: Reinforcement Learning, Machine Learning, Research
+- ⭐ **Stars**: 0
+- 🏷️ **Categories**: Machine Learning, Computer Vision, 3D Graphics
 - 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Chess-RLA)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Quaternion-Capsule-Network)
 
 </td>
 </tr>
@@ -507,13 +507,13 @@ Harnessing the power of reinforcement learning, Chess-RLA represents a groundbre
 <tr>
 <td>
 
-### 📰 [The future of Web Development](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+### 📰 [The future of Data Science](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: January 18, 2026
+**Published**: January 21, 2026
 
-As I sit here sipping on a cup of coffee, I often find myself pondering the phrase "the sky's the limit" - a mantra that has been etched in the minds ...
+As I sit amidst the hum of servers and the glow of screen lights, I often find myself pondering the enigmatic whisper of a 19-year-old Ph...
 
-**Tags**: `Tech` `Machine Learning` `Engineering` `AI`
+**Tags**: `Tech` `Engineering` `AI` `Machine Learning`
 
 <div align="center">
 

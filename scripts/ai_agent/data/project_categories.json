@@ -4,9 +4,8 @@
       "name": "2DPoseEstimation",
       "description": "",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Python"
@@ -53,8 +52,8 @@
       "description": "The webpage for AiAI research group for Prof. Youshan Zhang",
       "categories": [
         "Machine Learning",
-        "Web Development",
-        "Research"
+        "Research",
+        "Web Development"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -101,7 +100,8 @@
       "name": "AutoEncoders",
       "description": "",
       "categories": [
-        "Uncategorized"
+        "Machine Learning",
+        "Data Science"
       ],
       "languages": [],
       "topics": [],
@@ -113,8 +113,7 @@
       "description": "An agent that helps you predict the next day's stock data.",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -160,9 +159,9 @@
       "name": "Camera-Aware-Neural-Networks-for-Few-View-Depth-Estimation",
       "description": "",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
-        "Research"
+        "Machine Learning",
+        "Data Science"
       ],
       "languages": [
         "C++",
@@ -238,8 +237,8 @@
       "name": "Coding_Teams",
       "description": "",
       "categories": [
-        "Web Development",
-        "Data Science"
+        "Data Science",
+        "Web Development"
       ],
       "languages": [
         "TypeScript",
@@ -274,6 +273,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
+        "Computer Vision",
         "Data Science"
       ],
       "languages": [
@@ -287,8 +287,8 @@
       "name": "Ctypes",
       "description": "",
       "categories": [
-        "Tools & Utilities",
         "Data Science",
+        "Tools & Utilities",
         "Web Development"
       ],
       "languages": [
@@ -303,8 +303,8 @@
       "name": "Curriculum-_Learning",
       "description": "Curriculum Learning in LSTM-Based Sequence-to-Sequence Models",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
+        "Machine Learning",
         "Research"
       ],
       "languages": [
@@ -334,9 +334,9 @@
       "name": "Fruit-Loops",
       "description": "Fruit Loops is an algorithm to find closed loops in a set of lines ",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -410,8 +410,8 @@
       "name": "K2Cmx-Transformer",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Machine Learning"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -442,8 +442,7 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Machine Learning",
-        "Data Science"
+        "Machine Learning"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -492,8 +491,9 @@
       "name": "MocapViewer3D",
       "description": "An interactive 3D/2D motion capture visualization tool that allows real-time manipulation of camera perspectives and skeleton pose viewing. This tool provides simultaneous 3D and 2D projective views of motion capture data, making it ideal for computer vision and animation research.",
       "categories": [
+        "Computer Vision",
         "3D Graphics",
-        "Computer Vision"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -533,7 +533,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Machine Learning"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -546,7 +546,6 @@
       "name": "Music3x",
       "description": " This is your one-stop destination for innovative music tools and projects aimed at empowering creativity and exploration in sound",
       "categories": [
-        "Data Science",
         "Web Development",
         "Tools & Utilities"
       ],
@@ -596,7 +595,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing"
+        "Tools & Utilities"
       ],
       "languages": [
         "Shell",
@@ -610,9 +609,9 @@
       "name": "Ollama_API_",
       "description": "",
       "categories": [
+        "Machine Learning",
         "Natural Language Processing",
-        "Data Science",
-        "Web Development"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -639,9 +638,9 @@
       "name": "ProjGS",
       "description": "Projection-Guided Gaussian Splatting from Single RGB-D",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
-        "Research"
+        "Machine Learning",
+        "Robotics"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -689,9 +688,9 @@
       "name": "Quaternion-Capsule-Network",
       "description": "An impementation of Quaternion Capsule Networks for prediction of View matrix from 2D body keypoints ",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Robotics"
+        "Computer Vision",
+        "3D Graphics"
       ],
       "languages": [
         "Python"
@@ -704,9 +703,9 @@
       "name": "Real-Time-Violence-Detection",
       "description": "The goal of this project is to detect violence in the video feeds of the training dataset and implement a Neural Network which classifies the videos as violent or nonviolent. The aim of this project is to develop an architecture that is capable of detecting violence in Real Time.",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Research"
+        "Computer Vision",
+        "Data Science"
       ],
       "languages": [],
       "topics": [],
@@ -719,7 +718,7 @@
       "categories": [
         "Data Science",
         "Tools & Utilities",
-        "Research"
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -733,8 +732,7 @@
       "description": "Config files for my GitHub profile.",
       "categories": [
         "Machine Learning",
-        "Web Development",
-        "Tools & Utilities"
+        "Web Development"
       ],
       "languages": [
         "Python",
@@ -759,28 +757,12 @@
       "url": "https://github.com/RyoK3N/Sound_Anlysis"
     },
     {
-      "name": "Synaptix",
-      "description": "Synaptix website ",
-      "categories": [
-        "Web Development",
-        "Data Science",
-        "Tools & Utilities"
-      ],
-      "languages": [
-        "JavaScript",
-        "CSS",
-        "HTML"
-      ],
-      "topics": [],
-      "stars": 0,
-      "url": "https://github.com/RyoK3N/Synaptix"
-    },
-    {
       "name": "Synexian",
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps"
+        "DevOps",
+        "Tools & Utilities"
       ],
       "languages": [
         "TypeScript",
@@ -813,7 +795,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "Tools & Utilities"
+        "DevOps"
       ],
       "languages": [
         "TypeScript"
@@ -842,7 +824,7 @@
       "categories": [
         "Machine Learning",
         "Natural Language Processing",
-        "Reinforcement Learning"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -856,7 +838,8 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities"
+        "DevOps",
+        "Web Development"
       ],
       "languages": [
         "Python",
@@ -871,9 +854,9 @@
       "name": "TDA",
       "description": "",
       "categories": [
-        "Machine Learning",
         "Data Science",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -946,8 +929,8 @@
       "name": "webwise-agent",
       "description": "An intelligent multi-agent system for web-based information retrieval and analysis",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
+        "Machine Learning",
         "Web Development"
       ],
       "languages": [
@@ -959,19 +942,19 @@
     }
   ],
   "category_statistics": {
-    "Computer Vision": 13,
-    "Machine Learning": 41,
-    "Data Science": 29,
+    "Machine Learning": 40,
+    "Computer Vision": 14,
     "Natural Language Processing": 18,
-    "Web Development": 21,
-    "Research": 9,
+    "Web Development": 20,
+    "Data Science": 28,
+    "Research": 7,
     "Tools & Utilities": 16,
-    "Uncategorized": 2,
-    "DevOps": 4,
-    "Reinforcement Learning": 2,
-    "3D Graphics": 2,
-    "Robotics": 1
+    "DevOps": 6,
+    "Reinforcement Learning": 1,
+    "3D Graphics": 3,
+    "Robotics": 1,
+    "Uncategorized": 1
   },
-  "total_repositories": 59,
+  "total_repositories": 58,
   "timestamp": "{\"iso\": \"now\"}"
 }
