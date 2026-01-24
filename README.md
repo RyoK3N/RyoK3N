@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Curriculum-_Learning](https://github.com/RyoK3N/Curriculum-_Learning)
+### 📦 [Buck_V1](https://github.com/RyoK3N/Buck_V1)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Data Science](https://img.shields.io/badge/Data_Science-purple?style=flat-square) ![DevOps](https://img.shields.io/badge/DevOps-purple?style=flat-square)
 
-This novel project, Curriculum-Learning, represents a pioneering application of Long Short-Term Memory (LSTM) based sequence-to-sequence models to address the complex challenges of curriculum learning in educational systems. By leveraging the power of deep learning, this research aims to optimize the learning process by dynamically adjusting the difficulty level and content of course materials, leading to improved student outcomes and increased efficiency in educational resource allocation. The technical innovation behind this project has the potential to revolutionize the way we design and implement curricula, enabling personalized learning experiences that cater to diverse student needs and abilities. Ultimately, this research has the potential to transform the field of education by providing a data-driven approach to curriculum development.
+Introducing Buck_V1, an innovative machine learning agent that revolutionizes stock market prediction by leveraging cutting-edge algorithms and data science techniques to forecast tomorrow's market trends with unprecedented accuracy. This pioneering project showcases exceptional technical innovation, seamlessly integrating Python and Jupyter Notebook to analyze vast amounts of market data and identify patterns that other models may overlook. With its potential to transform the way investors make informed decisions, Buck_V1 has the power to significantly impact the financial world by providing traders and analysts with a data-driven edge in predicting market fluctuations and capitalizing on lucrative opportunities. By harnessing the latest advancements in machine learning and data science, Buck_V1 is poised to redefine the stock market prediction landscape.
 
 **💡 Why Featured This Week:**
 
-*This project deserves to be featured this week because it presents a groundbreaking application of Curriculum Learning to LSTM-Based Sequence-to-Sequence Models, a technically innovative approach that has the potential to revolutionize the field of Natural Language Processing (NLP) by enabling more efficient and effective learning of complex language models. By tackling this challenging problem, the project showcases significant practical value by advancing the state-of-the-art in NLP and paving the way for real-world applications.*
+*This week, I'm thrilled to feature Buck_V1, a cutting-edge machine learning project that boasts a game-changing AI agent capable of predicting stock data, providing investors and analysts with a valuable tool to make informed decisions. Its innovative application of machine learning and data science techniques has the potential to revolutionize the financial industry, making it an exceptional candidate for this week's feature.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 1
-- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Research
-- 💻 **Languages**: Python
+- ⭐ **Stars**: 2
+- 🏷️ **Categories**: Machine Learning, Data Science, DevOps
+- 💻 **Languages**: Python, Jupyter Notebook
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Curriculum-_Learning)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Buck_V1)
 
 </td>
 </tr>
@@ -507,13 +507,13 @@ This novel project, Curriculum-Learning, represents a pioneering application of 
 <tr>
 <td>
 
-### 📰 [Technical Overview: Machine Learning](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+### 📰 [Technical Insights: Computer Vision Best Practices](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
 **Published**: January 24, 2026
 
-In the realm of data-driven decision-making, machine learning (ML) emerges as a powerful tool for extracting insights from complex datasets...
+Computer vision (CV) is a rapidly evolving field that enables machines to interpret and understand visual information from the world, similar to how h...
 
-**Tags**: `Engineering` `Tech` `Code` `Machine Learning`
+**Tags**: `Computer Vision` `Technical` `Engineering`
 
 <div align="center">
 

@@ -4,8 +4,8 @@
       "name": "2DPoseEstimation",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Computer Vision"
+        "Computer Vision",
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -37,8 +37,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -114,7 +114,8 @@
       "description": "An agent that helps you predict the next day's stock data.",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "DevOps"
       ],
       "languages": [
         "Python",
@@ -194,7 +195,8 @@
       "description": "A simple RL agent that plays chess",
       "categories": [
         "Reinforcement Learning",
-        "Machine Learning"
+        "Machine Learning",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -208,7 +210,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -237,7 +240,8 @@
       "description": "",
       "categories": [
         "Web Development",
-        "Data Science"
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [
         "TypeScript",
@@ -285,8 +289,8 @@
       "name": "Ctypes",
       "description": "",
       "categories": [
-        "Data Science",
         "Tools & Utilities",
+        "Data Science",
         "Web Development"
       ],
       "languages": [
@@ -348,8 +352,8 @@
       "name": "Golfbot_wizardlm",
       "description": "An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions.",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
+        "Machine Learning",
         "Web Development"
       ],
       "languages": [
@@ -366,7 +370,7 @@
       "categories": [
         "Machine Learning",
         "Computer Vision",
-        "Natural Language Processing"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -380,8 +384,7 @@
       "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Data Science"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python",
@@ -409,8 +412,8 @@
       "name": "K2Cmx-Transformer",
       "description": "",
       "categories": [
-        "Natural Language Processing",
-        "Machine Learning"
+        "Machine Learning",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -441,8 +444,7 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Machine Learning",
-        "Research"
+        "Machine Learning"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -533,7 +535,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities"
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -594,8 +596,8 @@
       "name": "Ollama_API",
       "description": "",
       "categories": [
-        "Natural Language Processing",
-        "Machine Learning"
+        "Machine Learning",
+        "Natural Language Processing"
       ],
       "languages": [
         "Shell",
@@ -610,8 +612,7 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Tools & Utilities",
-        "Data Science"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -638,9 +639,8 @@
       "name": "ProjGS",
       "description": "Projection-Guided Gaussian Splatting from Single RGB-D",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Research"
+        "Computer Vision"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -654,8 +654,8 @@
       "name": "Prompt_V2",
       "description": "",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
+        "Machine Learning",
         "Web Development"
       ],
       "languages": [
@@ -688,8 +688,8 @@
       "name": "Quaternion-Capsule-Network",
       "description": "An impementation of Quaternion Capsule Networks for prediction of View matrix from 2D body keypoints ",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
+        "Computer Vision",
         "Robotics"
       ],
       "languages": [
@@ -732,8 +732,7 @@
       "description": "Config files for my GitHub profile.",
       "categories": [
         "Machine Learning",
-        "Web Development",
-        "Tools & Utilities"
+        "Web Development"
       ],
       "languages": [
         "Python",
@@ -762,7 +761,8 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps"
+        "DevOps",
+        "Tools & Utilities"
       ],
       "languages": [
         "TypeScript",
@@ -795,7 +795,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "Tools & Utilities"
+        "DevOps"
       ],
       "languages": [
         "TypeScript"
@@ -854,8 +854,8 @@
       "name": "TDA",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -900,7 +900,7 @@
       "categories": [
         "Computer Vision",
         "Machine Learning",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -914,8 +914,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -929,9 +928,9 @@
       "name": "webwise-agent",
       "description": "An intelligent multi-agent system for web-based information retrieval and analysis",
       "categories": [
+        "Machine Learning",
         "Natural Language Processing",
-        "Web Development",
-        "Machine Learning"
+        "Web Development"
       ],
       "languages": [
         "Python"
@@ -942,14 +941,14 @@
     }
   ],
   "category_statistics": {
-    "Machine Learning": 40,
     "Computer Vision": 13,
-    "Natural Language Processing": 21,
+    "Machine Learning": 40,
+    "Natural Language Processing": 20,
     "Web Development": 20,
     "Data Science": 23,
-    "Research": 10,
-    "Tools & Utilities": 18,
-    "DevOps": 5,
+    "Research": 9,
+    "Tools & Utilities": 17,
+    "DevOps": 7,
     "Reinforcement Learning": 1,
     "3D Graphics": 2,
     "Robotics": 1,

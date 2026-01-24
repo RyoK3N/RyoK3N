@@ -1,19 +1,20 @@
 {
-  "name": "Curriculum-_Learning",
-  "description": "Curriculum Learning in LSTM-Based Sequence-to-Sequence Models",
-  "ai_description": "This novel project, Curriculum-Learning, represents a pioneering application of Long Short-Term Memory (LSTM) based sequence-to-sequence models to address the complex challenges of curriculum learning in educational systems. By leveraging the power of deep learning, this research aims to optimize the learning process by dynamically adjusting the difficulty level and content of course materials, leading to improved student outcomes and increased efficiency in educational resource allocation. The technical innovation behind this project has the potential to revolutionize the way we design and implement curricula, enabling personalized learning experiences that cater to diverse student needs and abilities. Ultimately, this research has the potential to transform the field of education by providing a data-driven approach to curriculum development.",
-  "why_featured": "This project deserves to be featured this week because it presents a groundbreaking application of Curriculum Learning to LSTM-Based Sequence-to-Sequence Models, a technically innovative approach that has the potential to revolutionize the field of Natural Language Processing (NLP) by enabling more efficient and effective learning of complex language models. By tackling this challenging problem, the project showcases significant practical value by advancing the state-of-the-art in NLP and paving the way for real-world applications.",
+  "name": "Buck_V1",
+  "description": "An agent that helps you predict the next day's stock data.",
+  "ai_description": "Introducing Buck_V1, an innovative machine learning agent that revolutionizes stock market prediction by leveraging cutting-edge algorithms and data science techniques to forecast tomorrow's market trends with unprecedented accuracy. This pioneering project showcases exceptional technical innovation, seamlessly integrating Python and Jupyter Notebook to analyze vast amounts of market data and identify patterns that other models may overlook. With its potential to transform the way investors make informed decisions, Buck_V1 has the power to significantly impact the financial world by providing traders and analysts with a data-driven edge in predicting market fluctuations and capitalizing on lucrative opportunities. By harnessing the latest advancements in machine learning and data science, Buck_V1 is poised to redefine the stock market prediction landscape.",
+  "why_featured": "This week, I'm thrilled to feature Buck_V1, a cutting-edge machine learning project that boasts a game-changing AI agent capable of predicting stock data, providing investors and analysts with a valuable tool to make informed decisions. Its innovative application of machine learning and data science techniques has the potential to revolutionize the financial industry, making it an exceptional candidate for this week's feature.",
   "categories": [
     "Machine Learning",
-    "Natural Language Processing",
-    "Research"
+    "Data Science",
+    "DevOps"
   ],
   "languages": [
-    "Python"
+    "Python",
+    "Jupyter Notebook"
   ],
-  "stars": 1,
-  "url": "https://github.com/RyoK3N/Curriculum-_Learning",
-  "selected_date": "2026-01-24T21:28:09.966911",
+  "stars": 2,
+  "url": "https://github.com/RyoK3N/Buck_V1",
+  "selected_date": "2026-01-24T21:47:18.962255",
   "week_number": 4,
   "year": 2026
 }
