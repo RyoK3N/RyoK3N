@@ -60,6 +60,14 @@ jobs:
           python scripts/ai_agent/analyze_repository.py
           echo "::endgroup::"
       
+      - name: 🔬 Step 2A - Deep Code Analysis
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "::group::Deep Code Analysis"
+          python scripts/ai_agent/analyze_code.py
+          echo "::endgroup::"
+      
       - name: 🎯 Step 2 - Categorize Projects
         env:
           HF_API_KEY: ${{ secrets.HF_API_KEY }}
