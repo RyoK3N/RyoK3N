@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-AI Agent - Technical Blog Generator with Code Snippets
-Generates in-depth technical blog posts with actual code from repositories
+AI Agent - Technical Blog Generator with Code Analysis
+Generates technical blog posts based on actual repository code
 """
 
 import os
@@ -22,14 +22,13 @@ MODELS = [
 ]
 
 def load_context_data() -> Dict[str, Any]:
-    """Load all context data including code analysis"""
+    """Load all context data"""
     context = {}
     
     files = {
-        'analysis': 'repository_analysis.json',
+        'code_analysis': 'code_analysis.json',
         'categories': 'project_categories.json',
         'featured': 'featured_project.json',
-        'code_analysis': 'code_analysis.json',
     }
     
     for key, filename in files.items():
@@ -40,366 +39,307 @@ def load_context_data() -> Dict[str, Any]:
     
     return context
 
-def select_technical_topic(context: Dict) -> tuple:
-    """Select a technical blog topic based on code analysis"""
-    
-    if 'code_analysis' not in context:
-        # Fallback to category-based selection
-        return select_category_topic(context)
-    
-    code_data = context['code_analysis']
-    
-    # Find repos with substantial code
-    substantial_repos = []
-    for repo_name, analysis in code_data.items():
-        if analysis.get('files_analyzed', 0) > 5:
-            substantial_repos.append((repo_name, analysis))
-    
-    if not substantial_repos:
-        return select_category_topic(context)
-    
-    # Select random repo
-    repo_name, analysis = random.choice(substantial_repos)
-    repo_short = repo_name.split('/')[-1]
-    
-    # Get main concepts
-    concepts = analysis.get('concepts', {})
-    main_concept = list(concepts.keys())[0] if concepts else 'programming'
-    
-    # Generate technical topics
-    topics = [
-        ("technical_deep_dive", repo_short, f"Deep Dive: Building {repo_short} - Architecture and Implementation"),
-        ("code_explained", repo_short, f"Code Walkthrough: Understanding {repo_short}'s Core Components"),
-        ("technical_patterns", main_concept, f"Design Patterns in {main_concept.replace('_', ' ').title()}: Lessons from {repo_short}"),
-        ("implementation_guide", repo_short, f"Implementation Guide: Key Algorithms in {repo_short}"),
-    ]
-    
-    return random.choice(topics)
-
-def select_category_topic(context: Dict) -> tuple:
-    """Fallback topic selection"""
-    categories = context.get('categories', {}).get('category_statistics', {})
-    if categories:
-        cat = list(categories.keys())[0]
-        return ("category", cat, f"Technical Overview: {cat}")
-    return ("general", "ML", "Machine Learning Engineering Best Practices")
-
-def get_relevant_code_snippets(context: Dict, topic_type: str, subject: str) -> List[Dict]:
-    """Get relevant code snippets for the blog topic"""
-    
-    if 'code_analysis' not in context:
-        return []
-    
-    code_data = context['code_analysis']
-    snippets = []
-    
-    for repo_name, analysis in code_data.items():
-        repo_short = repo_name.split('/')[-1]
-        
-        # Match repo or concept
-        if topic_type in ['technical_deep_dive', 'code_explained', 'implementation_guide']:
-            if subject.lower() not in repo_short.lower():
-                continue
-        
-        # Get code samples
-        for sample in analysis.get('code_samples', [])[:5]:
-            snippets.append({
-                **sample,
-                'repo': repo_short,
-                'full_repo': repo_name
-            })
-    
-    return snippets[:10]  # Top 10 snippets
-
-def format_code_snippet(snippet: Dict) -> str:
-    """Format code snippet for blog"""
-    code = snippet['code']
-    language = snippet['language']
-    name = snippet.get('name', 'Code')
-    file = snippet.get('file', '')
-    
-    # Clean code
-    lines = code.split('\n')
-    # Remove excessive blank lines
-    cleaned_lines = []
-    prev_blank = False
-    for line in lines:
-        if line.strip():
-            cleaned_lines.append(line)
-            prev_blank = False
-        elif not prev_blank:
-            cleaned_lines.append(line)
-            prev_blank = True
-    
-    code = '\n'.join(cleaned_lines[:30])  # Max 30 lines
-    
-    return f"""### {name}
-**File**: `{file}`
-
-```{language}
-{code}
-```
-"""
-
-def query_ai_for_technical_blog(client: InferenceClient, prompt: str, section: str) -> str:
-    """Query AI for blog content with technical focus"""
+def query_ai(client: InferenceClient, prompt: str, section: str, max_tokens: int = 800) -> str:
+    """Query AI with fallback"""
     
     for attempt, model in enumerate(MODELS):
         try:
-            print(f"   🤖 Querying {model.split('/')[-1]} for {section}...")
+            print(f"    Querying {model.split('/')[-1]} for {section}...")
             
             response = client.chat.completions.create(
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=1200 if section == "main" else 500,
+                max_tokens=max_tokens,
                 temperature=0.7,
             )
             
             if response and response.choices:
                 content = response.choices[0].message.content.strip()
                 
-                if len(content) > 300:
-                    print(f"   ✅ Generated {len(content)} characters")
+                if len(content) > 200:
+                    print(f"    Generated {len(content)} characters")
                     return content
                     
         except Exception as e:
-            if "503" in str(e).lower() or "loading" in str(e).lower():
+            error_str = str(e).lower()
+            if "503" in error_str or "loading" in error_str:
                 wait = 15 * (attempt + 1)
-                print(f"   ⏳ Model loading, waiting {wait}s...")
+                print(f"    Model loading, waiting {wait}s...")
                 time.sleep(wait)
                 continue
-            print(f"   ⚠️ Error: {str(e)[:100]}")
+            print(f"    Error: {str(e)[:100]}")
     
     return ""
 
-def generate_technical_introduction(client: InferenceClient, title: str, context: Dict, snippets: List[Dict]) -> str:
-    """Generate technical blog introduction"""
+def generate_technical_blog(context: Dict, client: InferenceClient) -> Dict:
+    """Generate complete technical blog post"""
     
-    # Build context about code
-    code_context = ""
-    if snippets:
-        languages = set(s['language'] for s in snippets)
-        concepts = []
-        if 'code_analysis' in context:
-            for analysis in context['code_analysis'].values():
-                concepts.extend(analysis.get('concepts', {}).keys())
-        concepts = list(set(concepts))[:5]
-        
-        code_context = f"""
-Technical Context:
-- Languages: {', '.join(languages)}
-- Key Concepts: {', '.join(concepts) if concepts else 'Software Architecture'}
-- Code Samples Available: {len(snippets)}
+    code_data = context.get('code_analysis', {})
+    
+    # Check if we have code analysis
+    if not code_data or not code_data.get('code_samples'):
+        print("  Warning: No code analysis found, generating generic blog")
+        return generate_generic_blog(context, client)
+    
+    repo_name = code_data.get('name', 'Project')
+    description = code_data.get('description', '')
+    concepts = list(code_data.get('concepts', {}).keys())[:3]
+    snippets = code_data.get('code_samples', [])[:6]
+    
+    print(f"\nGenerating technical blog about: {repo_name}")
+    print(f"  Concepts: {', '.join(concepts) if concepts else 'General'}")
+    print(f"  Code snippets: {len(snippets)}")
+    
+    # Generate title
+    concept_text = concepts[0].replace('_', ' ').title() if concepts else 'Software Architecture'
+    title = f"Technical Deep Dive: {repo_name} - {concept_text} Implementation"
+    
+    print(f"\nTitle: {title}")
+    
+    # Build context for AI
+    code_context = f"""
+Repository: {repo_name}
+Description: {description}
+Technical Focus: {', '.join(concepts) if concepts else 'Software Engineering'}
+Available Code Samples: {len(snippets)} snippets from actual implementation
+Primary Language: {code_data.get('technical_summary', {}).get('primary_language', 'Python')}
+Total Lines Analyzed: {code_data.get('total_lines', 0):,}
 """
     
-    prompt = f"""Write a compelling technical introduction for a blog post titled: "{title}"
+    # Generate Introduction
+    print("\nGenerating introduction...")
+    intro_prompt = f"""Write a technical introduction for a blog post titled: "{title}"
 
 {code_context}
 
-Context: You're a Machine Learning Engineer writing an in-depth technical article. This will include actual code examples and implementation details.
+Write 3 paragraphs that:
+1. Start with a specific technical challenge or problem this project addresses
+2. Explain the engineering approach and key technical decisions
+3. Preview what readers will learn from examining the actual code
 
-Write a 3-4 paragraph introduction that:
-1. Opens with a technical challenge or interesting problem
-2. Explains why this topic matters for software engineers
-3. Previews the technical concepts that will be covered
-4. Mentions that actual code examples will be analyzed
+Be technical and specific. Write for experienced software engineers. No emojis or casual language."""
 
-Write in a technical but engaging tone. Be specific about technical challenges. No headers or bullet points."""
-
-    content = query_ai_for_technical_blog(client, prompt, "introduction")
+    intro = query_ai(client, intro_prompt, "introduction", 600)
     
-    if not content:
-        content = f"""Building robust software systems requires deep understanding of both architecture and implementation. In this technical deep dive, we'll explore {title.lower()}, examining real code and discussing the engineering decisions that make it work.
+    if not intro:
+        intro = f"""When building {repo_name}, the primary challenge was implementing {concept_text.lower()} in a way that balances performance, maintainability, and scalability. This required careful consideration of algorithmic complexity, data structure selection, and system architecture.
 
-Whether you're building production ML systems, designing scalable architectures, or optimizing performance-critical code, understanding these patterns is essential. We'll go beyond theory and look at actual implementations, discussing trade-offs and best practices along the way.
+The implementation leverages {code_data.get('technical_summary', {}).get('primary_language', 'modern')} to create a robust solution that handles edge cases while maintaining clean, testable code. The architecture follows best practices for {concept_text.lower()}, with clear separation of concerns and modular design.
 
-This article includes code walkthroughs, architectural diagrams, and practical insights from real-world projects. Let's dive into the technical details."""
+In this technical analysis, we'll examine the actual implementation details, walking through key code sections and explaining the engineering decisions behind them. We'll cover architecture, algorithms, and optimization strategies used in production."""
     
-    return content
-
-def generate_technical_main_content(client: InferenceClient, title: str, context: Dict, snippets: List[Dict]) -> str:
-    """Generate main technical content with code analysis"""
+    # Generate Main Technical Content
+    print("Generating main content...")
     
-    # Build code examples text
-    code_examples_text = ""
-    if snippets:
-        snippet_summaries = []
-        for s in snippets[:3]:
-            snippet_summaries.append(f"- {s.get('name', 'Function')} ({s['language']}): {s['type']} with {s['lines']} lines")
-        code_examples_text = "\n".join(snippet_summaries)
+    # Build snippet summary for AI
+    snippet_summaries = []
+    for s in snippets[:4]:
+        snippet_summaries.append(f"- {s['type'].title()}: {s['name']} ({s['language']}, {s['lines']} lines)")
     
-    prompt = f"""Write the main technical content for: "{title}"
+    main_prompt = f"""Write technical content analyzing this software project: {repo_name}
 
-Available code examples to reference:
-{code_examples_text if code_examples_text else 'General software architecture patterns'}
+{code_context}
+
+Key code components available:
+{chr(10).join(snippet_summaries)}
 
 Write 5-6 detailed paragraphs covering:
-1. **Core Architecture**: Explain the system architecture and design decisions
-2. **Key Components**: Describe the main components and their responsibilities
-3. **Implementation Details**: Discuss specific implementation approaches
-4. **Technical Challenges**: Explain challenges faced and how they were solved
-5. **Performance Considerations**: Discuss optimization and scalability
-6. **Best Practices**: Share engineering best practices learned
+1. System Architecture: Overall design and component organization
+2. Core Algorithms: Key algorithmic approaches and data structures
+3. Implementation Details: Specific technical implementation choices
+4. Performance Optimization: How the code achieves efficiency
+5. Error Handling: Robustness and edge case management
+6. Extensibility: How the design supports future modifications
 
-Use technical language appropriate for experienced developers. Reference actual implementation patterns. Include specific technical details like algorithms, data structures, or design patterns used.
+Be highly technical. Reference actual implementation patterns. Use precise technical terminology. Write for senior engineers."""
 
-Write in flowing paragraphs, not bullet points. Be technically precise."""
-
-    content = query_ai_for_technical_blog(client, prompt, "main")
+    main_content = query_ai(client, main_prompt, "main content", 1200)
     
-    if not content:
-        content = """The architecture follows a modular design with clear separation of concerns. At its core, the system leverages object-oriented principles to ensure maintainability and extensibility. Each component is designed with a single responsibility, making the codebase easier to test and debug.
+    if not main_content:
+        main_content = f"""The architecture of {repo_name} follows a modular design with clear separation between data processing, business logic, and presentation layers. Each module is designed with single responsibility in mind, making the codebase maintainable and testable.
 
-Implementation details reveal interesting choices in data structure selection and algorithm optimization. For instance, the use of hash maps for O(1) lookups combined with careful memory management ensures both speed and efficiency. These decisions weren't arbitrary—they emerged from profiling and iterative optimization.
+Core algorithms leverage efficient data structures to achieve optimal time complexity. Hash-based lookups provide O(1) access times for frequent operations, while tree structures handle hierarchical data efficiently. The implementation carefully balances memory usage against computational speed.
 
-One of the key technical challenges involved balancing flexibility with performance. The initial implementation used a naive approach that was simple but slow. Through careful refactoring and the introduction of caching strategies, we achieved a 10x performance improvement while maintaining code clarity.
+Implementation details reveal thoughtful engineering decisions. Type safety is enforced through static typing, reducing runtime errors. The code includes comprehensive input validation and clear error messages. Asynchronous operations are used judiciously to prevent blocking on I/O operations.
 
-The system's scalability comes from its asynchronous design and efficient resource pooling. By leveraging concurrent processing and minimizing I/O blocking, the architecture can handle significant load without degradation. This required careful attention to thread safety and race conditions.
+Performance optimization focuses on hotspots identified through profiling. Caching strategies reduce redundant computations, while lazy evaluation defers expensive operations until necessary. Memory allocation is minimized through object pooling and efficient data structure choices.
 
-From a best practices perspective, the code demonstrates strong typing, comprehensive error handling, and extensive unit testing. These aren't just nice-to-haves—they're essential for production systems that need to be reliable and maintainable over time."""
+Error handling follows fail-fast principles with explicit exception types. The code validates assumptions early and provides clear error messages with context. Logging is structured and includes sufficient detail for debugging production issues.
+
+The extensibility of the design comes from its use of interfaces and dependency injection. New features can be added without modifying existing code. The plugin architecture allows for customization points without cluttering the core implementation."""
     
-    return content
+    # Generate Conclusion
+    print("Generating conclusion...")
+    conclusion_prompt = f"""Write a conclusion for this technical blog post about {repo_name}.
 
-def generate_code_sections(snippets: List[Dict]) -> str:
-    """Generate code walkthrough sections"""
+Summarize in 2-3 paragraphs:
+1. Key technical insights from the code analysis
+2. Practical takeaways for engineers
+3. End with a technical question or topic for discussion
+
+Be concise and actionable. Professional tone."""
+
+    conclusion = query_ai(client, conclusion_prompt, "conclusion", 400)
     
-    if not snippets:
-        return ""
+    if not conclusion:
+        conclusion = f"""The implementation of {repo_name} demonstrates solid software engineering principles applied to real-world problems. From architectural decisions to algorithmic choices, the code reflects careful consideration of trade-offs between performance, maintainability, and scalability.
+
+For engineers working on similar systems, the key takeaways include the importance of profiling before optimizing, the value of clear error messages, and the benefits of modular design. These patterns are applicable across different domains and programming languages.
+
+How would you approach optimizing the most performance-critical components while maintaining code clarity? What trade-offs would you make between memory usage and computational speed in your specific context?"""
     
-    sections = ["\n## Code Walkthrough\n"]
-    sections.append("Let's examine some key implementations:\n")
+    # Format code sections
+    code_sections = format_code_sections(snippets[:6])
     
-    for snippet in snippets[:4]:  # Include top 4 snippets
-        sections.append(format_code_snippet(snippet))
-        sections.append("")  # Blank line
-    
-    return "\n".join(sections)
+    # Combine all content
+    full_content = f"""{intro}
 
-def generate_technical_conclusion(client: InferenceClient, title: str, has_code: bool) -> str:
-    """Generate technical conclusion"""
-    
-    prompt = f"""Write a conclusion for a technical blog post: "{title}"
-
-{'The article included actual code examples and implementation details.' if has_code else ''}
-
-Write 2-3 paragraphs that:
-1. Summarize the key technical insights
-2. Encourage readers to explore the code and try implementations
-3. End with a thought-provoking question about future directions
-
-Be technical but inspiring."""
-
-    content = query_ai_for_technical_blog(client, prompt, "conclusion")
-    
-    if not content:
-        content = """The technical patterns we've explored demonstrate the importance of thoughtful system design. From architectural decisions to implementation details, each choice impacts performance, maintainability, and scalability. These aren't just academic exercises—they're practical considerations that shape real-world software.
-
-I encourage you to explore the code, experiment with the implementations, and adapt these patterns to your own projects. The best way to truly understand these concepts is through hands-on practice and iteration.
-
-What engineering challenges are you currently facing? How might these patterns apply to your work? Share your experiences and let's continue the conversation."""
-    
-    return content
-
-def main():
-    """Main technical blog generation function"""
-    try:
-        print("📝 Starting technical blog generation with code analysis...")
-        
-        # Load context
-        print("\n📚 Loading context data...")
-        context = load_context_data()
-        
-        # Select topic
-        print("\n🎯 Selecting technical topic...")
-        topic_type, subject, title = select_technical_topic(context)
-        print(f"   ✅ Topic: {title}")
-        print(f"   Type: {topic_type} | Subject: {subject}")
-        
-        # Get relevant code snippets
-        print("\n💻 Finding relevant code snippets...")
-        snippets = get_relevant_code_snippets(context, topic_type, subject)
-        print(f"   ✅ Found {len(snippets)} code snippets")
-        
-        # Initialize AI client
-        api_key = os.getenv("HF_API_KEY") or os.getenv("HF_TOKEN")
-        if not api_key:
-            raise ValueError("HF_API_KEY required for blog generation")
-        
-        client = InferenceClient(token=api_key)
-        
-        # Generate blog sections
-        print("\n✍️  Generating technical blog content...")
-        
-        print("\n📖 Section 1/3: Technical Introduction")
-        intro = generate_technical_introduction(client, title, context, snippets)
-        
-        print("\n📖 Section 2/3: Main Technical Content")
-        main = generate_technical_main_content(client, title, context, snippets)
-        
-        print("\n📖 Section 3/3: Code Examples")
-        code_sections = generate_code_sections(snippets)
-        
-        print("\n📖 Section 4/4: Conclusion")
-        conclusion = generate_technical_conclusion(client, title, len(snippets) > 0)
-        
-        # Combine content
-        full_content = f"""{intro}
-
-{main}
+{main_content}
 
 {code_sections}
 
 {conclusion}"""
-        
-        # Generate excerpt
-        excerpt = intro.split('.')[0][:150] + "..."
-        
-        # Generate tags
-        tags = ['Engineering', 'Code', 'Tech']
-        if topic_type != 'general':
-            tags.append(subject)
-        if snippets:
-            tags.extend([s['language'].title() for s in snippets[:2]])
-        tags = list(set(tags))[:5]
-        
-        # Format blog post
-        blog_post = {
-            "title": title,
-            "content": full_content,
-            "excerpt": excerpt,
-            "tags": tags,
-            "status": "draft",
-            "created_at": datetime.now().isoformat(),
-            "metadata": {
-                "topic_type": topic_type,
-                "subject": subject,
-                "code_snippets_count": len(snippets),
-                "generated_by": "AI Agent - Technical",
-                "generation_date": datetime.now().isoformat(),
-            }
+    
+    # Generate excerpt
+    excerpt = intro.split('.')[0][:150] + "..."
+    
+    # Generate tags
+    tags = ['Technical', 'Engineering', 'Code Analysis']
+    if concepts:
+        tags.extend([c.replace('_', ' ').title() for c in concepts[:2]])
+    tags = list(set(tags))[:5]
+    
+    return {
+        "title": title,
+        "content": full_content,
+        "excerpt": excerpt,
+        "tags": tags,
+        "status": "draft",
+        "created_at": datetime.now().isoformat(),
+        "metadata": {
+            "repository": repo_name,
+            "code_snippets_count": len(snippets),
+            "concepts": concepts,
+            "generated_by": "AI Agent - Technical",
+            "generation_date": datetime.now().isoformat(),
         }
+    }
+
+def format_code_sections(snippets: List[Dict]) -> str:
+    """Format code snippets for blog"""
+    
+    if not snippets:
+        return ""
+    
+    sections = ["\n## Code Analysis\n"]
+    sections.append("Let's examine the key implementations:\n")
+    
+    for i, snippet in enumerate(snippets, 1):
+        code = snippet['code']
+        language = snippet['language']
+        name = snippet.get('name', 'Implementation')
+        file = snippet.get('file', 'source')
+        snippet_type = snippet.get('type', 'code')
+        
+        # Clean code
+        lines = code.split('\n')
+        cleaned = []
+        for line in lines[:35]:  # Max 35 lines per snippet
+            if line.strip() or (cleaned and cleaned[-1].strip()):
+                cleaned.append(line)
+        
+        code = '\n'.join(cleaned).rstrip()
+        
+        sections.append(f"""### {i}. {snippet_type.title()}: {name}
+
+**Source**: `{file}`
+
+```{language}
+{code}
+```
+
+""")
+    
+    return '\n'.join(sections)
+
+def generate_generic_blog(context: Dict, client: InferenceClient) -> Dict:
+    """Generate generic blog when no code analysis available"""
+    
+    print("  Generating generic technical blog...")
+    
+    categories = context.get('categories', {}).get('category_statistics', {})
+    topic = list(categories.keys())[0] if categories else "Software Engineering"
+    
+    title = f"Technical Insights: {topic} Best Practices"
+    
+    intro_prompt = f"""Write a technical introduction about {topic} best practices.
+3 paragraphs for experienced engineers. Technical tone."""
+    
+    intro = query_ai(client, intro_prompt, "introduction", 500) or f"Technical article about {topic}."
+    
+    main_prompt = f"""Write 4-5 paragraphs about {topic} implementation best practices.
+Cover architecture, patterns, and optimization. Technical detail."""
+    
+    main = query_ai(client, main_prompt, "main", 1000) or f"Details about {topic} implementation."
+    
+    conclusion = "Apply these patterns to build robust, scalable systems. Consider your specific requirements and constraints when making architectural decisions."
+    
+    full_content = f"{intro}\n\n{main}\n\n{conclusion}"
+    
+    return {
+        "title": title,
+        "content": full_content,
+        "excerpt": intro.split('.')[0][:150] + "...",
+        "tags": [topic, "Technical", "Engineering"],
+        "status": "draft",
+        "created_at": datetime.now().isoformat(),
+        "metadata": {
+            "generated_by": "AI Agent - Generic",
+            "generation_date": datetime.now().isoformat(),
+        }
+    }
+
+def main():
+    """Main blog generation function"""
+    try:
+        print("Starting technical blog generation...")
+        
+        # Load context
+        print("\nLoading context data...")
+        context = load_context_data()
+        
+        # Initialize AI client
+        api_key = os.getenv("HF_API_KEY") or os.getenv("HF_TOKEN")
+        if not api_key:
+            raise ValueError("HF_API_KEY required")
+        
+        client = InferenceClient(token=api_key)
+        
+        # Generate blog
+        print("\nGenerating blog content with AI...")
+        blog_post = generate_technical_blog(context, client)
         
         # Save
         output_file = DATA_DIR / "blog_post.json"
         with open(output_file, 'w') as f:
             json.dump(blog_post, f, indent=2)
         
-        print(f"\n✅ Technical blog post generated!")
-        print(f"💾 Saved to {output_file}")
+        print(f"\nBlog post generated successfully!")
+        print(f"Saved to: {output_file}")
         
-        # Print summary
+        # Summary
         print("\n" + "="*60)
-        print("📝 GENERATED TECHNICAL BLOG POST")
+        print("GENERATED BLOG POST")
         print("="*60)
         print(f"Title: {blog_post['title']}")
-        print(f"Tags: {', '.join(blog_post['tags'])}")
         print(f"Length: {len(blog_post['content'])} characters")
-        print(f"Code Snippets: {len(snippets)}")
-        print(f"\nExcerpt:\n{blog_post['excerpt']}")
+        print(f"Tags: {', '.join(blog_post['tags'])}")
+        if blog_post.get('metadata', {}).get('code_snippets_count'):
+            print(f"Code Snippets: {blog_post['metadata']['code_snippets_count']}")
         print("="*60)
         
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"\nError: {e}")
         import traceback
         traceback.print_exc()
         raise
