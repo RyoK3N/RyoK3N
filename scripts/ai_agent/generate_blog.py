@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-AI Agent - Tech Blog Generator
-Generates comprehensive technical blog posts using AI
+AI Agent - Technical Blog Generator with Code Snippets
+Generates in-depth technical blog posts with actual code from repositories
 """
 
 import os
 import json
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 from huggingface_hub import InferenceClient
 import time
 import random
@@ -16,80 +16,133 @@ import random
 DATA_DIR = Path(__file__).parent / "data"
 
 MODELS = [
+    "Qwen/Qwen2.5-7B-Instruct",
     "meta-llama/Llama-3.2-3B-Instruct",
     "mistralai/Mistral-7B-Instruct-v0.3",
-    "microsoft/Phi-3-mini-4k-instruct",
-]
-
-BLOG_TOPICS = [
-    "Recent developments in Machine Learning",
-    "Best practices for {category} development",
-    "Lessons learned from building {project}",
-    "The future of {category}",
-    "Deep dive into {project}",
-    "Tips and tricks for {category} engineers",
-    "My journey with {category}",
-    "Technical challenges in {project}",
 ]
 
 def load_context_data() -> Dict[str, Any]:
-    """Load all context data for blog generation"""
+    """Load all context data including code analysis"""
     context = {}
     
-    # Load analysis
-    analysis_file = DATA_DIR / "repository_analysis.json"
-    if analysis_file.exists():
-        with open(analysis_file, 'r') as f:
-            context['analysis'] = json.load(f)
+    files = {
+        'analysis': 'repository_analysis.json',
+        'categories': 'project_categories.json',
+        'featured': 'featured_project.json',
+        'code_analysis': 'code_analysis.json',
+    }
     
-    # Load categories
-    categories_file = DATA_DIR / "project_categories.json"
-    if categories_file.exists():
-        with open(categories_file, 'r') as f:
-            context['categories'] = json.load(f)
-    
-    # Load featured project
-    featured_file = DATA_DIR / "featured_project.json"
-    if featured_file.exists():
-        with open(featured_file, 'r') as f:
-            context['featured'] = json.load(f)
+    for key, filename in files.items():
+        filepath = DATA_DIR / filename
+        if filepath.exists():
+            with open(filepath, 'r') as f:
+                context[key] = json.load(f)
     
     return context
 
-def select_blog_topic(context: Dict) -> tuple:
-    """Select a blog topic based on context"""
+def select_technical_topic(context: Dict) -> tuple:
+    """Select a technical blog topic based on code analysis"""
     
-    topics = []
+    if 'code_analysis' not in context:
+        # Fallback to category-based selection
+        return select_category_topic(context)
     
-    # Get top categories
-    if 'categories' in context:
-        cat_stats = context['categories'].get('category_statistics', {})
-        top_categories = sorted(cat_stats.items(), key=lambda x: x[1], reverse=True)[:3]
-        
-        for cat, _ in top_categories:
-            topics.append(("category", cat, f"Best practices for {cat} development"))
-            topics.append(("category", cat, f"The future of {cat}"))
+    code_data = context['code_analysis']
     
-    # Featured project topic
-    if 'featured' in context:
-        proj_name = context['featured']['name']
-        topics.append(("project", proj_name, f"Deep dive into {proj_name}"))
-        topics.append(("project", proj_name, f"Lessons learned from building {proj_name}"))
+    # Find repos with substantial code
+    substantial_repos = []
+    for repo_name, analysis in code_data.items():
+        if analysis.get('files_analyzed', 0) > 5:
+            substantial_repos.append((repo_name, analysis))
     
-    # General ML topics
-    topics.extend([
-        ("general", "ML", "Recent developments in Machine Learning and AI"),
-        ("general", "ML", "Building production ML systems: Best practices"),
-        ("general", "Tech", "My journey as a Machine Learning Engineer"),
-    ])
+    if not substantial_repos:
+        return select_category_topic(context)
     
-    # Random selection
-    topic_type, subject, title = random.choice(topics)
+    # Select random repo
+    repo_name, analysis = random.choice(substantial_repos)
+    repo_short = repo_name.split('/')[-1]
     
-    return topic_type, subject, title
+    # Get main concepts
+    concepts = analysis.get('concepts', {})
+    main_concept = list(concepts.keys())[0] if concepts else 'programming'
+    
+    # Generate technical topics
+    topics = [
+        ("technical_deep_dive", repo_short, f"Deep Dive: Building {repo_short} - Architecture and Implementation"),
+        ("code_explained", repo_short, f"Code Walkthrough: Understanding {repo_short}'s Core Components"),
+        ("technical_patterns", main_concept, f"Design Patterns in {main_concept.replace('_', ' ').title()}: Lessons from {repo_short}"),
+        ("implementation_guide", repo_short, f"Implementation Guide: Key Algorithms in {repo_short}"),
+    ]
+    
+    return random.choice(topics)
 
-def query_ai_for_blog(client: InferenceClient, prompt: str, section: str) -> str:
-    """Query AI for blog content"""
+def select_category_topic(context: Dict) -> tuple:
+    """Fallback topic selection"""
+    categories = context.get('categories', {}).get('category_statistics', {})
+    if categories:
+        cat = list(categories.keys())[0]
+        return ("category", cat, f"Technical Overview: {cat}")
+    return ("general", "ML", "Machine Learning Engineering Best Practices")
+
+def get_relevant_code_snippets(context: Dict, topic_type: str, subject: str) -> List[Dict]:
+    """Get relevant code snippets for the blog topic"""
+    
+    if 'code_analysis' not in context:
+        return []
+    
+    code_data = context['code_analysis']
+    snippets = []
+    
+    for repo_name, analysis in code_data.items():
+        repo_short = repo_name.split('/')[-1]
+        
+        # Match repo or concept
+        if topic_type in ['technical_deep_dive', 'code_explained', 'implementation_guide']:
+            if subject.lower() not in repo_short.lower():
+                continue
+        
+        # Get code samples
+        for sample in analysis.get('code_samples', [])[:5]:
+            snippets.append({
+                **sample,
+                'repo': repo_short,
+                'full_repo': repo_name
+            })
+    
+    return snippets[:10]  # Top 10 snippets
+
+def format_code_snippet(snippet: Dict) -> str:
+    """Format code snippet for blog"""
+    code = snippet['code']
+    language = snippet['language']
+    name = snippet.get('name', 'Code')
+    file = snippet.get('file', '')
+    
+    # Clean code
+    lines = code.split('\n')
+    # Remove excessive blank lines
+    cleaned_lines = []
+    prev_blank = False
+    for line in lines:
+        if line.strip():
+            cleaned_lines.append(line)
+            prev_blank = False
+        elif not prev_blank:
+            cleaned_lines.append(line)
+            prev_blank = True
+    
+    code = '\n'.join(cleaned_lines[:30])  # Max 30 lines
+    
+    return f"""### {name}
+**File**: `{file}`
+
+```{language}
+{code}
+```
+"""
+
+def query_ai_for_technical_blog(client: InferenceClient, prompt: str, section: str) -> str:
+    """Query AI for blog content with technical focus"""
     
     for attempt, model in enumerate(MODELS):
         try:
@@ -98,170 +151,174 @@ def query_ai_for_blog(client: InferenceClient, prompt: str, section: str) -> str
             response = client.chat.completions.create(
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=800 if section == "main" else 400,
+                max_tokens=1200 if section == "main" else 500,
                 temperature=0.7,
             )
             
             if response and response.choices:
                 content = response.choices[0].message.content.strip()
                 
-                if len(content) > 200:
+                if len(content) > 300:
                     print(f"   ✅ Generated {len(content)} characters")
                     return content
                     
         except Exception as e:
-            error_str = str(e).lower()
-            if "503" in error_str or "loading" in error_str:
-                wait_time = 15 * (attempt + 1)
-                print(f"   ⏳ Model loading, waiting {wait_time}s...")
-                time.sleep(wait_time)
+            if "503" in str(e).lower() or "loading" in str(e).lower():
+                wait = 15 * (attempt + 1)
+                print(f"   ⏳ Model loading, waiting {wait}s...")
+                time.sleep(wait)
                 continue
             print(f"   ⚠️ Error: {str(e)[:100]}")
     
     return ""
 
-def generate_blog_introduction(client: InferenceClient, title: str, context: Dict) -> str:
-    """Generate blog introduction"""
+def generate_technical_introduction(client: InferenceClient, title: str, context: Dict, snippets: List[Dict]) -> str:
+    """Generate technical blog introduction"""
     
-    prompt = f"""Write an engaging introduction for a technical blog post titled: "{title}"
+    # Build context about code
+    code_context = ""
+    if snippets:
+        languages = set(s['language'] for s in snippets)
+        concepts = []
+        if 'code_analysis' in context:
+            for analysis in context['code_analysis'].values():
+                concepts.extend(analysis.get('concepts', {}).keys())
+        concepts = list(set(concepts))[:5]
+        
+        code_context = f"""
+Technical Context:
+- Languages: {', '.join(languages)}
+- Key Concepts: {', '.join(concepts) if concepts else 'Software Architecture'}
+- Code Samples Available: {len(snippets)}
+"""
+    
+    prompt = f"""Write a compelling technical introduction for a blog post titled: "{title}"
 
-Context: You're a Machine Learning Engineer sharing insights from your experience.
-The blog is on https://synexian.ghost.io
+{code_context}
 
-Write a 2-3 paragraph introduction that:
-1. Hooks the reader with an interesting opening
-2. Provides context for why this topic matters
-3. Previews what the reader will learn
+Context: You're a Machine Learning Engineer writing an in-depth technical article. This will include actual code examples and implementation details.
 
-Write in a professional yet conversational tone. No headers or bullet points."""
+Write a 3-4 paragraph introduction that:
+1. Opens with a technical challenge or interesting problem
+2. Explains why this topic matters for software engineers
+3. Previews the technical concepts that will be covered
+4. Mentions that actual code examples will be analyzed
 
-    content = query_ai_for_blog(client, prompt, "introduction")
+Write in a technical but engaging tone. Be specific about technical challenges. No headers or bullet points."""
+
+    content = query_ai_for_technical_blog(client, prompt, "introduction")
     
     if not content:
-        # Fallback
-        content = f"""Technology evolves at breakneck speed, and staying current is both a challenge and an opportunity. Today, I want to share my thoughts on {title.lower()}, drawing from hands-on experience and recent developments in the field.
+        content = f"""Building robust software systems requires deep understanding of both architecture and implementation. In this technical deep dive, we'll explore {title.lower()}, examining real code and discussing the engineering decisions that make it work.
 
-In this post, we'll explore practical insights, lessons learned, and emerging trends that every developer should be aware of. Whether you're just starting out or are a seasoned professional, there's something here for you."""
+Whether you're building production ML systems, designing scalable architectures, or optimizing performance-critical code, understanding these patterns is essential. We'll go beyond theory and look at actual implementations, discussing trade-offs and best practices along the way.
+
+This article includes code walkthroughs, architectural diagrams, and practical insights from real-world projects. Let's dive into the technical details."""
     
     return content
 
-def generate_blog_main_content(client: InferenceClient, title: str, topic_type: str, subject: str, context: Dict) -> str:
-    """Generate main blog content"""
+def generate_technical_main_content(client: InferenceClient, title: str, context: Dict, snippets: List[Dict]) -> str:
+    """Generate main technical content with code analysis"""
     
-    # Build context-aware prompt
-    context_info = ""
-    if topic_type == "project" and 'featured' in context:
-        featured = context['featured']
-        context_info = f"""Project details:
-- Name: {featured['name']}
-- Description: {featured['description']}
-- Technologies: {', '.join(featured['languages'])}
-- Categories: {', '.join(featured['categories'])}"""
+    # Build code examples text
+    code_examples_text = ""
+    if snippets:
+        snippet_summaries = []
+        for s in snippets[:3]:
+            snippet_summaries.append(f"- {s.get('name', 'Function')} ({s['language']}): {s['type']} with {s['lines']} lines")
+        code_examples_text = "\n".join(snippet_summaries)
     
-    elif topic_type == "category" and 'categories' in context:
-        repos = [r for r in context['categories']['categorized_repositories'] 
-                if subject in r['categories']][:5]
-        project_names = [r['name'] for r in repos]
-        context_info = f"""Related projects in {subject}:
-{chr(10).join(f'- {name}' for name in project_names)}"""
-    
-    prompt = f"""Write the main content for a technical blog post titled: "{title}"
+    prompt = f"""Write the main technical content for: "{title}"
 
-{context_info}
+Available code examples to reference:
+{code_examples_text if code_examples_text else 'General software architecture patterns'}
 
-Write 4-5 paragraphs covering:
-1. Key concepts and fundamentals
-2. Practical examples or case studies
-3. Best practices and recommendations
-4. Common pitfalls to avoid
-5. Future directions or trends
+Write 5-6 detailed paragraphs covering:
+1. **Core Architecture**: Explain the system architecture and design decisions
+2. **Key Components**: Describe the main components and their responsibilities
+3. **Implementation Details**: Discuss specific implementation approaches
+4. **Technical Challenges**: Explain challenges faced and how they were solved
+5. **Performance Considerations**: Discuss optimization and scalability
+6. **Best Practices**: Share engineering best practices learned
 
-Use a technical but accessible writing style. Include specific details and actionable insights.
-No headers, bullet points, or special formatting - just flowing paragraphs."""
+Use technical language appropriate for experienced developers. Reference actual implementation patterns. Include specific technical details like algorithms, data structures, or design patterns used.
 
-    content = query_ai_for_blog(client, prompt, "main")
+Write in flowing paragraphs, not bullet points. Be technically precise."""
+
+    content = query_ai_for_technical_blog(client, prompt, "main")
     
     if not content:
-        # Fallback
-        content = f"""When working with {subject}, the fundamentals matter immensely. I've learned that a solid understanding of core concepts pays dividends as projects grow in complexity. The key is to balance theoretical knowledge with hands-on practice.
+        content = """The architecture follows a modular design with clear separation of concerns. At its core, the system leverages object-oriented principles to ensure maintainability and extensibility. Each component is designed with a single responsibility, making the codebase easier to test and debug.
 
-In my experience, the most successful projects share common traits: clean architecture, comprehensive testing, and continuous monitoring. These aren't just buzzwords—they're practical necessities that distinguish production-ready systems from proof-of-concepts.
+Implementation details reveal interesting choices in data structure selection and algorithm optimization. For instance, the use of hash maps for O(1) lookups combined with careful memory management ensures both speed and efficiency. These decisions weren't arbitrary—they emerged from profiling and iterative optimization.
 
-Looking ahead, the landscape continues to evolve rapidly. New tools and frameworks emerge regularly, each promising to solve yesterday's problems more elegantly. The challenge isn't just keeping up with these developments, but knowing when to adopt new approaches versus sticking with proven solutions.
+One of the key technical challenges involved balancing flexibility with performance. The initial implementation used a naive approach that was simple but slow. Through careful refactoring and the introduction of caching strategies, we achieved a 10x performance improvement while maintaining code clarity.
 
-What matters most is building systems that solve real problems effectively. Whether you're working on cutting-edge research or practical applications, focusing on fundamentals and best practices will serve you well."""
+The system's scalability comes from its asynchronous design and efficient resource pooling. By leveraging concurrent processing and minimizing I/O blocking, the architecture can handle significant load without degradation. This required careful attention to thread safety and race conditions.
+
+From a best practices perspective, the code demonstrates strong typing, comprehensive error handling, and extensive unit testing. These aren't just nice-to-haves—they're essential for production systems that need to be reliable and maintainable over time."""
     
     return content
 
-def generate_blog_conclusion(client: InferenceClient, title: str) -> str:
-    """Generate blog conclusion"""
+def generate_code_sections(snippets: List[Dict]) -> str:
+    """Generate code walkthrough sections"""
     
-    prompt = f"""Write a conclusion for a technical blog post titled: "{title}"
+    if not snippets:
+        return ""
+    
+    sections = ["\n## Code Walkthrough\n"]
+    sections.append("Let's examine some key implementations:\n")
+    
+    for snippet in snippets[:4]:  # Include top 4 snippets
+        sections.append(format_code_snippet(snippet))
+        sections.append("")  # Blank line
+    
+    return "\n".join(sections)
+
+def generate_technical_conclusion(client: InferenceClient, title: str, has_code: bool) -> str:
+    """Generate technical conclusion"""
+    
+    prompt = f"""Write a conclusion for a technical blog post: "{title}"
+
+{'The article included actual code examples and implementation details.' if has_code else ''}
 
 Write 2-3 paragraphs that:
-1. Summarize the key takeaways
-2. Encourage readers to apply what they've learned
-3. End with a call to action or thought-provoking question
+1. Summarize the key technical insights
+2. Encourage readers to explore the code and try implementations
+3. End with a thought-provoking question about future directions
 
-Conversational and inspiring tone."""
+Be technical but inspiring."""
 
-    content = query_ai_for_blog(client, prompt, "conclusion")
+    content = query_ai_for_technical_blog(client, prompt, "conclusion")
     
     if not content:
-        # Fallback
-        content = """As we've explored, success in this field comes down to continuous learning and practical application. The concepts we've discussed aren't just theoretical—they're tools you can use immediately in your own projects.
+        content = """The technical patterns we've explored demonstrate the importance of thoughtful system design. From architectural decisions to implementation details, each choice impacts performance, maintainability, and scalability. These aren't just academic exercises—they're practical considerations that shape real-world software.
 
-I encourage you to experiment, build, and share your own experiences. The best way to truly understand these ideas is to put them into practice. What will you build next?"""
+I encourage you to explore the code, experiment with the implementations, and adapt these patterns to your own projects. The best way to truly understand these concepts is through hands-on practice and iteration.
+
+What engineering challenges are you currently facing? How might these patterns apply to your work? Share your experiences and let's continue the conversation."""
     
     return content
 
-def format_blog_post(title: str, intro: str, main: str, conclusion: str, metadata: Dict) -> Dict:
-    """Format blog post with metadata"""
-    
-    # Combine content
-    full_content = f"""{intro}
-
-{main}
-
-{conclusion}"""
-    
-    # Generate excerpt (first 150 chars)
-    excerpt = intro.split('.')[0][:150] + "..."
-    
-    # Generate tags
-    tags = []
-    if metadata.get('topic_type') == 'project':
-        tags.append(metadata['subject'])
-    if metadata.get('topic_type') == 'category':
-        tags.append(metadata['subject'])
-    
-    tags.extend(["Machine Learning", "AI", "Tech", "Engineering"])
-    tags = list(set(tags))[:5]  # Max 5 unique tags
-    
-    return {
-        "title": title,
-        "content": full_content,
-        "excerpt": excerpt,
-        "tags": tags,
-        "status": "draft",  # Will be published by Ghost script
-        "created_at": datetime.now().isoformat(),
-        "metadata": metadata,
-    }
-
 def main():
-    """Main blog generation function"""
+    """Main technical blog generation function"""
     try:
-        print("📝 Starting tech blog generation...")
+        print("📝 Starting technical blog generation with code analysis...")
         
         # Load context
         print("\n📚 Loading context data...")
         context = load_context_data()
         
         # Select topic
-        print("\n🎯 Selecting blog topic...")
-        topic_type, subject, title = select_blog_topic(context)
+        print("\n🎯 Selecting technical topic...")
+        topic_type, subject, title = select_technical_topic(context)
         print(f"   ✅ Topic: {title}")
         print(f"   Type: {topic_type} | Subject: {subject}")
+        
+        # Get relevant code snippets
+        print("\n💻 Finding relevant code snippets...")
+        snippets = get_relevant_code_snippets(context, topic_type, subject)
+        print(f"   ✅ Found {len(snippets)} code snippets")
         
         # Initialize AI client
         api_key = os.getenv("HF_API_KEY") or os.getenv("HF_TOKEN")
@@ -271,44 +328,73 @@ def main():
         client = InferenceClient(token=api_key)
         
         # Generate blog sections
-        print("\n✍️  Generating blog content with AI...")
+        print("\n✍️  Generating technical blog content...")
         
-        print("\n📖 Section 1/3: Introduction")
-        intro = generate_blog_introduction(client, title, context)
+        print("\n📖 Section 1/3: Technical Introduction")
+        intro = generate_technical_introduction(client, title, context, snippets)
         
-        print("\n📖 Section 2/3: Main Content")
-        main = generate_blog_main_content(client, title, topic_type, subject, context)
+        print("\n📖 Section 2/3: Main Technical Content")
+        main = generate_technical_main_content(client, title, context, snippets)
         
-        print("\n📖 Section 3/3: Conclusion")
-        conclusion = generate_blog_conclusion(client, title)
+        print("\n📖 Section 3/3: Code Examples")
+        code_sections = generate_code_sections(snippets)
+        
+        print("\n📖 Section 4/4: Conclusion")
+        conclusion = generate_technical_conclusion(client, title, len(snippets) > 0)
+        
+        # Combine content
+        full_content = f"""{intro}
+
+{main}
+
+{code_sections}
+
+{conclusion}"""
+        
+        # Generate excerpt
+        excerpt = intro.split('.')[0][:150] + "..."
+        
+        # Generate tags
+        tags = ['Engineering', 'Code', 'Tech']
+        if topic_type != 'general':
+            tags.append(subject)
+        if snippets:
+            tags.extend([s['language'].title() for s in snippets[:2]])
+        tags = list(set(tags))[:5]
         
         # Format blog post
-        print("\n🎨 Formatting blog post...")
-        blog_post = format_blog_post(
-            title, intro, main, conclusion,
-            metadata={
+        blog_post = {
+            "title": title,
+            "content": full_content,
+            "excerpt": excerpt,
+            "tags": tags,
+            "status": "draft",
+            "created_at": datetime.now().isoformat(),
+            "metadata": {
                 "topic_type": topic_type,
                 "subject": subject,
-                "generated_by": "AI Agent",
+                "code_snippets_count": len(snippets),
+                "generated_by": "AI Agent - Technical",
                 "generation_date": datetime.now().isoformat(),
             }
-        )
+        }
         
         # Save
         output_file = DATA_DIR / "blog_post.json"
         with open(output_file, 'w') as f:
             json.dump(blog_post, f, indent=2)
         
-        print(f"\n✅ Blog post generated!")
+        print(f"\n✅ Technical blog post generated!")
         print(f"💾 Saved to {output_file}")
         
         # Print summary
         print("\n" + "="*60)
-        print("📝 GENERATED BLOG POST")
+        print("📝 GENERATED TECHNICAL BLOG POST")
         print("="*60)
         print(f"Title: {blog_post['title']}")
         print(f"Tags: {', '.join(blog_post['tags'])}")
         print(f"Length: {len(blog_post['content'])} characters")
+        print(f"Code Snippets: {len(snippets)}")
         print(f"\nExcerpt:\n{blog_post['excerpt']}")
         print("="*60)
         
