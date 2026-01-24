@@ -70,9 +70,9 @@
       "name": "Akai_MPC_25",
       "description": "MIDI Controller + MP3 Player : Allows you to connect your midi and play live beats to downloaded songs from youtube.",
       "categories": [
+        "Data Science",
         "Web Development",
-        "Tools & Utilities",
-        "Data Science"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -102,7 +102,7 @@
       "categories": [
         "Machine Learning",
         "Data Science",
-        "Research"
+        "Tools & Utilities"
       ],
       "languages": [],
       "topics": [],
@@ -194,8 +194,7 @@
       "description": "A simple RL agent that plays chess",
       "categories": [
         "Reinforcement Learning",
-        "Machine Learning",
-        "Research"
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -209,8 +208,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python"
@@ -224,7 +222,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
+        "Natural Language Processing",
         "Tools & Utilities"
       ],
       "languages": [
@@ -239,8 +237,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "Data Science",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [
         "TypeScript",
@@ -275,7 +272,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -288,8 +285,8 @@
       "name": "Ctypes",
       "description": "",
       "categories": [
-        "Tools & Utilities",
         "Data Science",
+        "Tools & Utilities",
         "Web Development"
       ],
       "languages": [
@@ -321,7 +318,7 @@
       "categories": [
         "Computer Vision",
         "Machine Learning",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -336,9 +333,9 @@
       "name": "Fruit-Loops",
       "description": "Fruit Loops is an algorithm to find closed loops in a set of lines ",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -398,9 +395,8 @@
       "name": "Hurricane_Classification",
       "description": "Classifying Hurricanes from Geospatial Images",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -445,7 +441,8 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Machine Learning"
+        "Machine Learning",
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -496,7 +493,7 @@
       "categories": [
         "Computer Vision",
         "3D Graphics",
-        "Machine Learning"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -549,7 +546,8 @@
       "name": "Music3x",
       "description": " This is your one-stop destination for innovative music tools and projects aimed at empowering creativity and exploration in sound",
       "categories": [
-        "Web Development"
+        "Web Development",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -597,8 +595,7 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Tools & Utilities",
-        "Data Science"
+        "Machine Learning"
       ],
       "languages": [
         "Shell",
@@ -612,9 +609,9 @@
       "name": "Ollama_API_",
       "description": "",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -630,7 +627,7 @@
       "categories": [
         "Machine Learning",
         "Web Development",
-        "Data Science"
+        "Tools & Utilities"
       ],
       "languages": [],
       "topics": [],
@@ -641,8 +638,9 @@
       "name": "ProjGS",
       "description": "Projection-Guided Gaussian Splatting from Single RGB-D",
       "categories": [
+        "Computer Vision",
         "Machine Learning",
-        "Computer Vision"
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -656,8 +654,8 @@
       "name": "Prompt_V2",
       "description": "",
       "categories": [
-        "Natural Language Processing",
         "Machine Learning",
+        "Natural Language Processing",
         "Web Development"
       ],
       "languages": [
@@ -705,8 +703,9 @@
       "name": "Real-Time-Violence-Detection",
       "description": "The goal of this project is to detect violence in the video feeds of the training dataset and implement a Neural Network which classifies the videos as violent or nonviolent. The aim of this project is to develop an architecture that is capable of detecting violence in Real Time.",
       "categories": [
+        "Machine Learning",
         "Computer Vision",
-        "Machine Learning"
+        "Research"
       ],
       "languages": [],
       "topics": [],
@@ -718,8 +717,8 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -733,7 +732,8 @@
       "description": "Config files for my GitHub profile.",
       "categories": [
         "Machine Learning",
-        "Web Development"
+        "Web Development",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -762,8 +762,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps",
-        "Tools & Utilities"
+        "DevOps"
       ],
       "languages": [
         "TypeScript",
@@ -838,8 +837,8 @@
       "name": "Task001",
       "description": "",
       "categories": [
-        "DevOps",
         "Data Science",
+        "DevOps",
         "Web Development"
       ],
       "languages": [
@@ -855,9 +854,8 @@
       "name": "TDA",
       "description": "",
       "categories": [
-        "Data Science",
-        "Research",
-        "Tools & Utilities"
+        "Machine Learning",
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -902,7 +900,7 @@
       "categories": [
         "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -916,7 +914,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -930,9 +929,9 @@
       "name": "webwise-agent",
       "description": "An intelligent multi-agent system for web-based information retrieval and analysis",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
-        "Web Development"
+        "Web Development",
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -943,12 +942,12 @@
     }
   ],
   "category_statistics": {
-    "Machine Learning": 41,
+    "Machine Learning": 40,
     "Computer Vision": 13,
-    "Natural Language Processing": 20,
+    "Natural Language Processing": 21,
     "Web Development": 20,
-    "Data Science": 25,
-    "Research": 9,
+    "Data Science": 23,
+    "Research": 10,
     "Tools & Utilities": 18,
     "DevOps": 5,
     "Reinforcement Learning": 1,

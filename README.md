@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [AiAI](https://github.com/RyoK3N/AiAI)
+### 📦 [Curriculum-_Learning](https://github.com/RyoK3N/Curriculum-_Learning)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Web Development](https://img.shields.io/badge/Web_Development-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
 
-AiAI is an innovative web platform that brings together cutting-edge machine learning techniques and visually stunning web development to serve as the digital frontdoor for Prof. Youshan Zhang's pioneering research group. What sets this project apart is its unique ability to seamlessly integrate Jupyter notebooks, allowing researchers to showcase complex models and results in an intuitive and engaging manner, making it accessible to a broader audience. This technical innovation has far-reaching implications, enabling researchers to share their discoveries more effectively and democratize access to AI knowledge. By harnessing the power of web development, AiAI has the potential to revolutionize the way we share and collaborate on AI research, paving the way for groundbreaking discoveries and breakthroughs.
+This novel project, Curriculum-Learning, represents a pioneering application of Long Short-Term Memory (LSTM) based sequence-to-sequence models to address the complex challenges of curriculum learning in educational systems. By leveraging the power of deep learning, this research aims to optimize the learning process by dynamically adjusting the difficulty level and content of course materials, leading to improved student outcomes and increased efficiency in educational resource allocation. The technical innovation behind this project has the potential to revolutionize the way we design and implement curricula, enabling personalized learning experiences that cater to diverse student needs and abilities. Ultimately, this research has the potential to transform the field of education by providing a data-driven approach to curriculum development.
 
 **💡 Why Featured This Week:**
 
-*AiAI's innovative project deserves to be featured this week because of its pioneering application of machine learning and web development in creating an interactive research group webpage that showcases cutting-edge research and collaboration opportunities under Prof. Youshan Zhang. By leveraging technical innovation, this project has the potential to revolutionize the way researchers share and engage with each other's work, and its practical value lies in its potential to facilitate meaningful connections and knowledge sharing within the academic community.*
+*This project deserves to be featured this week because it presents a groundbreaking application of Curriculum Learning to LSTM-Based Sequence-to-Sequence Models, a technically innovative approach that has the potential to revolutionize the field of Natural Language Processing (NLP) by enabling more efficient and effective learning of complex language models. By tackling this challenging problem, the project showcases significant practical value by advancing the state-of-the-art in NLP and paving the way for real-world applications.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 0
-- 🏷️ **Categories**: Machine Learning, Web Development, Research
-- 💻 **Languages**: Jupyter Notebook, Python, HTML
+- ⭐ **Stars**: 1
+- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Research
+- 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/AiAI)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Curriculum-_Learning)
 
 </td>
 </tr>
@@ -511,9 +511,9 @@ AiAI is an innovative web platform that brings together cutting-edge machine lea
 
 **Published**: January 24, 2026
 
-In the heart of today's digital landscape, one of the most intriguing technical challenges lies in the realm of predictive analytics...
+In the realm of data-driven decision-making, machine learning (ML) emerges as a powerful tool for extracting insights from complex datasets...
 
-**Tags**: `Engineering` `Machine Learning` `Code` `Tech`
+**Tags**: `Engineering` `Tech` `Code` `Machine Learning`
 
 <div align="center">
 
