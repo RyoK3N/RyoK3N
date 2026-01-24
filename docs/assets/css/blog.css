@@ -36,6 +36,36 @@ body {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.95);
 }
+# Add this CSS to the blog.css for better code display
+"""
+.post-content pre {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.post-content code {
+    background: #2d2d2d;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Fira Code', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #e6e6e6;
+}
+
+.post-content pre code {
+    background: transparent;
+    padding: 0;
+    color: #e6e6e6;
+}
+
+.post-content h3 {
+    color: var(--primary);
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
 
 .nav-container {
     max-width: 1200px;
