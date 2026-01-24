@@ -63,6 +63,8 @@ jobs:
       - name: Deep Code Analysis
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}  
+          GITHUB_REPOSITORY: ${{ github.repository }}  
         run: |
           echo "::group::Deep Code Analysis"
           python scripts/ai_agent/analyze_code.py
@@ -71,6 +73,8 @@ jobs:
       - name: 🔬 Step 2A - Deep Code Analysis
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}  
+          GITHUB_REPOSITORY: ${{ github.repository }}  
         run: |
           echo "::group::Deep Code Analysis"
           python scripts/ai_agent/analyze_code.py
