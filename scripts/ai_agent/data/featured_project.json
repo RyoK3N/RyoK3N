@@ -1,19 +1,23 @@
 {
-  "name": "ThemeClassifierSLM",
-  "description": "ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks.",
-  "ai_description": "ThemeClassifierSLM is an innovative, deep learning solution for text classification that leverages the capabilities of LSTM-based neural networks to classify themes or topics in large-scale text data. What sets this project apart is its incorporation of cutting-edge techniques that significantly enhance its performance, making it an invaluable asset for data scientists and researchers in the natural language processing domain. By opening up new avenues for text analysis, ThemeClassifierSLM has the potential to revolutionize various fields, including customer service, sentiment analysis, and market research, ultimately informing more data-driven decision-making.",
-  "why_featured": "This week, we're excited to feature ThemeClassifierSLM because it showcases a cutting-edge implementation of long short-term memory (LSTM) networks, a groundbreaking technical innovation that enables state-of-the-art performance in text analysis tasks, particularly in theme or topic classification. By providing a practical and accessible solution for building and training LSTM models, this project offers a significant boost to data science and NLP research, and we can't wait to share it with our audience!",
+  "name": "AiAI",
+  "description": "The webpage for AiAI research group for Prof. Youshan Zhang",
+  "ai_description": "AiAI is an innovative web platform that brings together cutting-edge machine learning techniques and visually stunning web development to serve as the digital frontdoor for Prof. Youshan Zhang's pioneering research group. What sets this project apart is its unique ability to seamlessly integrate Jupyter notebooks, allowing researchers to showcase complex models and results in an intuitive and engaging manner, making it accessible to a broader audience. This technical innovation has far-reaching implications, enabling researchers to share their discoveries more effectively and democratize access to AI knowledge. By harnessing the power of web development, AiAI has the potential to revolutionize the way we share and collaborate on AI research, paving the way for groundbreaking discoveries and breakthroughs.",
+  "why_featured": "AiAI's innovative project deserves to be featured this week because of its pioneering application of machine learning and web development in creating an interactive research group webpage that showcases cutting-edge research and collaboration opportunities under Prof. Youshan Zhang. By leveraging technical innovation, this project has the potential to revolutionize the way researchers share and engage with each other's work, and its practical value lies in its potential to facilitate meaningful connections and knowledge sharing within the academic community.",
   "categories": [
     "Machine Learning",
-    "Natural Language Processing",
-    "Data Science"
+    "Web Development",
+    "Research"
   ],
   "languages": [
-    "Python"
+    "Jupyter Notebook",
+    "Python",
+    "HTML",
+    "CSS",
+    "Shell"
   ],
-  "stars": 1,
-  "url": "https://github.com/RyoK3N/ThemeClassifierSLM",
-  "selected_date": "2026-01-21T21:57:34.794098",
+  "stars": 0,
+  "url": "https://github.com/RyoK3N/AiAI",
+  "selected_date": "2026-01-24T21:08:54.100470",
   "week_number": 4,
   "year": 2026
 }

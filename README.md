@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-21]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-24]
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [ThemeClassifierSLM](https://github.com/RyoK3N/ThemeClassifierSLM)
+### 📦 [AiAI](https://github.com/RyoK3N/AiAI)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Data Science](https://img.shields.io/badge/Data_Science-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Web Development](https://img.shields.io/badge/Web_Development-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
 
-ThemeClassifierSLM is an innovative, deep learning solution for text classification that leverages the capabilities of LSTM-based neural networks to classify themes or topics in large-scale text data. What sets this project apart is its incorporation of cutting-edge techniques that significantly enhance its performance, making it an invaluable asset for data scientists and researchers in the natural language processing domain. By opening up new avenues for text analysis, ThemeClassifierSLM has the potential to revolutionize various fields, including customer service, sentiment analysis, and market research, ultimately informing more data-driven decision-making.
+AiAI is an innovative web platform that brings together cutting-edge machine learning techniques and visually stunning web development to serve as the digital frontdoor for Prof. Youshan Zhang's pioneering research group. What sets this project apart is its unique ability to seamlessly integrate Jupyter notebooks, allowing researchers to showcase complex models and results in an intuitive and engaging manner, making it accessible to a broader audience. This technical innovation has far-reaching implications, enabling researchers to share their discoveries more effectively and democratize access to AI knowledge. By harnessing the power of web development, AiAI has the potential to revolutionize the way we share and collaborate on AI research, paving the way for groundbreaking discoveries and breakthroughs.
 
 **💡 Why Featured This Week:**
 
-*This week, we're excited to feature ThemeClassifierSLM because it showcases a cutting-edge implementation of long short-term memory (LSTM) networks, a groundbreaking technical innovation that enables state-of-the-art performance in text analysis tasks, particularly in theme or topic classification. By providing a practical and accessible solution for building and training LSTM models, this project offers a significant boost to data science and NLP research, and we can't wait to share it with our audience!*
+*AiAI's innovative project deserves to be featured this week because of its pioneering application of machine learning and web development in creating an interactive research group webpage that showcases cutting-edge research and collaboration opportunities under Prof. Youshan Zhang. By leveraging technical innovation, this project has the potential to revolutionize the way researchers share and engage with each other's work, and its practical value lies in its potential to facilitate meaningful connections and knowledge sharing within the academic community.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 1
-- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Data Science
-- 💻 **Languages**: Python
+- ⭐ **Stars**: 0
+- 🏷️ **Categories**: Machine Learning, Web Development, Research
+- 💻 **Languages**: Jupyter Notebook, Python, HTML
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/ThemeClassifierSLM)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/AiAI)
 
 </td>
 </tr>
@@ -507,13 +507,13 @@ ThemeClassifierSLM is an innovative, deep learning solution for text classificat
 <tr>
 <td>
 
-### 📰 [Recent developments in Machine Learning and AI](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+### 📰 [Technical Overview: Machine Learning](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: January 21, 2026
+**Published**: January 24, 2026
 
-As I watched a self-driving car navigate a busy city street for the first time, I couldn't help but feel a sense of awe at the incredible progress tha...
+In the heart of today's digital landscape, one of the most intriguing technical challenges lies in the realm of predictive analytics...
 
-**Tags**: `Engineering` `Tech` `AI` `Machine Learning`
+**Tags**: `Engineering` `Machine Learning` `Code` `Tech`
 
 <div align="center">
 
