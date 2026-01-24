@@ -308,33 +308,69 @@ def select_repository_for_analysis(categories_data: Dict) -> Optional[str]:
     candidates.sort(key=lambda x: x[1], reverse=True)
     return candidates[0][0]
 
+def get_username_from_env() -> str:
+    """Get username from REPOSITORY environment variable"""
+    repo_env = os.getenv('REPOSITORY', '')
+    
+    if not repo_env:
+        # Fallback: try to get from GitHub context
+        github_repository = os.getenv('GITHUB_REPOSITORY', '')
+        if github_repository:
+            repo_env = github_repository
+    
+    if '/' in repo_env:
+        return repo_env.split('/')[0]
+    
+    raise ValueError(
+        "Could not determine username. "
+        "Please set REPOSITORY or GITHUB_REPOSITORY environment variable "
+        "in format 'username/repo'"
+    )
+
 def main():
     """Main code analysis function"""
     try:
         print("Starting deep code analysis...")
         
+        # Get username with better error handling
+        try:
+            username = get_username_from_env()
+            print(f"Username: {username}")
+        except ValueError as e:
+            print(f"Error: {e}")
+            print("\nEnvironment variables:")
+            print(f"  REPOSITORY: {os.getenv('REPOSITORY', 'NOT SET')}")
+            print(f"  GITHUB_REPOSITORY: {os.getenv('GITHUB_REPOSITORY', 'NOT SET')}")
+            
+            # Create empty analysis file so workflow doesn't fail
+            output_file = DATA_DIR / "code_analysis.json"
+            with open(output_file, 'w') as f:
+                json.dump({}, f, indent=2)
+            print(f"\nCreated empty analysis file: {output_file}")
+            print("Workflow will continue with generic blog generation")
+            return
+        
         # Load categorized projects
         categories_file = DATA_DIR / "project_categories.json"
         if not categories_file.exists():
             print("Error: project_categories.json not found")
+            print("Creating empty analysis file...")
+            output_file = DATA_DIR / "code_analysis.json"
+            with open(output_file, 'w') as f:
+                json.dump({}, f, indent=2)
             return
         
         with open(categories_file, 'r') as f:
             categories_data = json.load(f)
-        
-        # Get username
-        repo_env = os.getenv('REPOSITORY', '')
-        if '/' in repo_env:
-            username = repo_env.split('/')[0]
-        else:
-            print("Error: REPOSITORY environment variable not set correctly")
-            return
         
         # Select repository to analyze
         repo_name = select_repository_for_analysis(categories_data)
         
         if not repo_name:
             print("No suitable repository found for analysis")
+            output_file = DATA_DIR / "code_analysis.json"
+            with open(output_file, 'w') as f:
+                json.dump({}, f, indent=2)
             return
         
         repo_full_name = f"{username}/{repo_name}"
@@ -368,7 +404,13 @@ def main():
         print(f"Error: {e}")
         import traceback
         traceback.print_exc()
-        raise
+        
+        # Create empty analysis file so workflow doesn't completely fail
+        output_file = DATA_DIR / "code_analysis.json"
+        with open(output_file, 'w') as f:
+            json.dump({}, f, indent=2)
+        print(f"\nCreated empty analysis file: {output_file}")
+        print("Workflow will continue with generic blog generation")
 
 if __name__ == "__main__":
     main()
