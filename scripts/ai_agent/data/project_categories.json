@@ -4,8 +4,9 @@
       "name": "2DPoseEstimation",
       "description": "",
       "categories": [
+        "Machine Learning",
         "Computer Vision",
-        "Machine Learning"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -37,8 +38,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Data Science"
+        "Data Science",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -52,8 +53,8 @@
       "description": "The webpage for AiAI research group for Prof. Youshan Zhang",
       "categories": [
         "Machine Learning",
-        "Web Development",
-        "Research"
+        "Research",
+        "Web Development"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -102,7 +103,7 @@
       "categories": [
         "Machine Learning",
         "Data Science",
-        "Tools & Utilities"
+        "Research"
       ],
       "languages": [],
       "topics": [],
@@ -114,8 +115,7 @@
       "description": "An agent that helps you predict the next day's stock data.",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "DevOps"
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -163,7 +163,7 @@
       "categories": [
         "Machine Learning",
         "Computer Vision",
-        "Research"
+        "Robotics"
       ],
       "languages": [
         "C++",
@@ -225,7 +225,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
+        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -276,7 +276,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -322,7 +322,7 @@
       "categories": [
         "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -369,8 +369,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Python"
@@ -384,7 +383,8 @@
       "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -399,7 +399,8 @@
       "description": "Classifying Hurricanes from Geospatial Images",
       "categories": [
         "Machine Learning",
-        "Computer Vision"
+        "Computer Vision",
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -412,8 +413,8 @@
       "name": "K2Cmx-Transformer",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Machine Learning"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -597,6 +598,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
+        "Data Science",
         "Natural Language Processing"
       ],
       "languages": [
@@ -612,6 +614,7 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
+        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -628,7 +631,7 @@
       "categories": [
         "Machine Learning",
         "Web Development",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [],
       "topics": [],
@@ -654,8 +657,8 @@
       "name": "Prompt_V2",
       "description": "",
       "categories": [
-        "Natural Language Processing",
         "Machine Learning",
+        "Natural Language Processing",
         "Web Development"
       ],
       "languages": [
@@ -690,7 +693,7 @@
       "categories": [
         "Machine Learning",
         "Computer Vision",
-        "Robotics"
+        "Research"
       ],
       "languages": [
         "Python"
@@ -705,7 +708,7 @@
       "categories": [
         "Machine Learning",
         "Computer Vision",
-        "Research"
+        "Natural Language Processing"
       ],
       "languages": [],
       "topics": [],
@@ -717,8 +720,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities",
-        "Natural Language Processing"
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -749,7 +751,8 @@
       "name": "Sound_Anlysis",
       "description": "",
       "categories": [
-        "Uncategorized"
+        "Data Science",
+        "Research"
       ],
       "languages": [],
       "topics": [],
@@ -795,7 +798,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps"
+        "Tools & Utilities"
       ],
       "languages": [
         "TypeScript"
@@ -941,18 +944,17 @@
     }
   ],
   "category_statistics": {
-    "Computer Vision": 13,
     "Machine Learning": 40,
-    "Natural Language Processing": 20,
+    "Computer Vision": 13,
+    "Data Science": 28,
+    "Natural Language Processing": 19,
     "Web Development": 20,
-    "Data Science": 23,
-    "Research": 9,
-    "Tools & Utilities": 17,
-    "DevOps": 7,
-    "Reinforcement Learning": 1,
-    "3D Graphics": 2,
+    "Research": 10,
+    "Tools & Utilities": 18,
+    "DevOps": 5,
     "Robotics": 1,
-    "Uncategorized": 1
+    "Reinforcement Learning": 1,
+    "3D Graphics": 2
   },
   "total_repositories": 58,
   "timestamp": "{\"iso\": \"now\"}"

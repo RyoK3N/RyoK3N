@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Buck_V1](https://github.com/RyoK3N/Buck_V1)
+### 📦 [Curriculum-_Learning](https://github.com/RyoK3N/Curriculum-_Learning)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Data Science](https://img.shields.io/badge/Data_Science-purple?style=flat-square) ![DevOps](https://img.shields.io/badge/DevOps-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
 
-Introducing Buck_V1, an innovative machine learning agent that revolutionizes stock market prediction by leveraging cutting-edge algorithms and data science techniques to forecast tomorrow's market trends with unprecedented accuracy. This pioneering project showcases exceptional technical innovation, seamlessly integrating Python and Jupyter Notebook to analyze vast amounts of market data and identify patterns that other models may overlook. With its potential to transform the way investors make informed decisions, Buck_V1 has the power to significantly impact the financial world by providing traders and analysts with a data-driven edge in predicting market fluctuations and capitalizing on lucrative opportunities. By harnessing the latest advancements in machine learning and data science, Buck_V1 is poised to redefine the stock market prediction landscape.
+This cutting-edge project, "Curriculum-Learning," revolutionizes the field of Natural Language Processing (NLP) by integrating curriculum learning into LSTM-based sequence-to-sequence models. By leveraging this innovative approach, our project showcases a significant technical breakthrough that significantly improves the learning efficiency and adaptability of these models, ultimately leading to enhanced language understanding and generation capabilities. With far-reaching potential applications in areas such as language translation, text summarization, and sentiment analysis, this project has the potential to fundamentally reshape the way we approach NLP tasks, driving transformative impact in industries ranging from healthcare to education and beyond.
 
 **💡 Why Featured This Week:**
 
-*This week, I'm thrilled to feature Buck_V1, a cutting-edge machine learning project that boasts a game-changing AI agent capable of predicting stock data, providing investors and analysts with a valuable tool to make informed decisions. Its innovative application of machine learning and data science techniques has the potential to revolutionize the financial industry, making it an exceptional candidate for this week's feature.*
+*This project deserves to be featured this week because it showcases a groundbreaking application of curriculum learning in LSTM-based sequence-to-sequence models, a technical innovation that has the potential to revolutionize the field of Natural Language Processing (NLP) by enabling more effective and efficient learning of complex text sequences. The project's practical value lies in its potential to improve the performance and interpretability of NLP models, making it a significant contribution to the advancement of the field.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 2
-- 🏷️ **Categories**: Machine Learning, Data Science, DevOps
-- 💻 **Languages**: Python, Jupyter Notebook
+- ⭐ **Stars**: 1
+- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Research
+- 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Buck_V1)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Curriculum-_Learning)
 
 </td>
 </tr>
@@ -507,13 +507,13 @@ Introducing Buck_V1, an innovative machine learning agent that revolutionizes st
 <tr>
 <td>
 
-### 📰 [Technical Insights: Computer Vision Best Practices](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+### 📰 [Technical Deep Dive: GTransformer - Data Processing Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
 **Published**: January 24, 2026
 
-Computer vision (CV) is a rapidly evolving field that enables machines to interpret and understand visual information from the world, similar to how h...
+The project "GTransformer" tackles a critical challenge in the realm of data processing, specifically in the context of deep learning and computer vis...
 
-**Tags**: `Computer Vision` `Technical` `Engineering`
+**Tags**: `Technical` `Deep Learning` `Engineering` `Code Analysis`
 
 <div align="center">
 

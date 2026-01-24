@@ -1,20 +1,19 @@
 {
-  "name": "Buck_V1",
-  "description": "An agent that helps you predict the next day's stock data.",
-  "ai_description": "Introducing Buck_V1, an innovative machine learning agent that revolutionizes stock market prediction by leveraging cutting-edge algorithms and data science techniques to forecast tomorrow's market trends with unprecedented accuracy. This pioneering project showcases exceptional technical innovation, seamlessly integrating Python and Jupyter Notebook to analyze vast amounts of market data and identify patterns that other models may overlook. With its potential to transform the way investors make informed decisions, Buck_V1 has the power to significantly impact the financial world by providing traders and analysts with a data-driven edge in predicting market fluctuations and capitalizing on lucrative opportunities. By harnessing the latest advancements in machine learning and data science, Buck_V1 is poised to redefine the stock market prediction landscape.",
-  "why_featured": "This week, I'm thrilled to feature Buck_V1, a cutting-edge machine learning project that boasts a game-changing AI agent capable of predicting stock data, providing investors and analysts with a valuable tool to make informed decisions. Its innovative application of machine learning and data science techniques has the potential to revolutionize the financial industry, making it an exceptional candidate for this week's feature.",
+  "name": "Curriculum-_Learning",
+  "description": "Curriculum Learning in LSTM-Based Sequence-to-Sequence Models",
+  "ai_description": "This cutting-edge project, \"Curriculum-Learning,\" revolutionizes the field of Natural Language Processing (NLP) by integrating curriculum learning into LSTM-based sequence-to-sequence models. By leveraging this innovative approach, our project showcases a significant technical breakthrough that significantly improves the learning efficiency and adaptability of these models, ultimately leading to enhanced language understanding and generation capabilities. With far-reaching potential applications in areas such as language translation, text summarization, and sentiment analysis, this project has the potential to fundamentally reshape the way we approach NLP tasks, driving transformative impact in industries ranging from healthcare to education and beyond.",
+  "why_featured": "This project deserves to be featured this week because it showcases a groundbreaking application of curriculum learning in LSTM-based sequence-to-sequence models, a technical innovation that has the potential to revolutionize the field of Natural Language Processing (NLP) by enabling more effective and efficient learning of complex text sequences. The project's practical value lies in its potential to improve the performance and interpretability of NLP models, making it a significant contribution to the advancement of the field.",
   "categories": [
     "Machine Learning",
-    "Data Science",
-    "DevOps"
+    "Natural Language Processing",
+    "Research"
   ],
   "languages": [
-    "Python",
-    "Jupyter Notebook"
+    "Python"
   ],
-  "stars": 2,
-  "url": "https://github.com/RyoK3N/Buck_V1",
-  "selected_date": "2026-01-24T21:47:18.962255",
+  "stars": 1,
+  "url": "https://github.com/RyoK3N/Curriculum-_Learning",
+  "selected_date": "2026-01-24T22:05:22.859327",
   "week_number": 4,
   "year": 2026
 }

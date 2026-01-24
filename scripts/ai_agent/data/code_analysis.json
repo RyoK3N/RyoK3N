@@ -1,1 +1,149 @@
-{}
+{
+  "repository": "RyoK3N/GTransformer",
+  "name": "GTransformer",
+  "description": "",
+  "files_analyzed": 11,
+  "total_lines": 1744,
+  "languages": {
+    "python": 11
+  },
+  "concepts": {
+    "data_processing": 9,
+    "deep_learning": 7,
+    "computer_vision": 2,
+    "neural_network": 1
+  },
+  "code_samples": [
+    {
+      "type": "function",
+      "name": "parse_args",
+      "code": "def parse_args():\n    parser = argparse.ArgumentParser(description='Training script for KTPFormer')\n    \n    # Training hyperparameters\n    parser.add_argument('--random_seed', type=int, default=100,\n                        help='Random seed for reproducibility')\n    parser.add_argument('--data_fraction', type=float, default=0.06,\n                        help='Fraction of data to use for training')\n    parser.add_argument('--batch_size', type=int, default=256,\n                        help='Batch size for training')\n    parser.add_argument('--learning_rate', type=float, default=1e-3,\n                        help='Learning rate')\n    parser.add_argument('--weight_decay', type=float, default=1e-4,\n                        help='Weight decay for optimizer')\n    parser.add_argument('--warmup_epochs', type=int, default=5,\n                        help='Number of epochs for learning rate warmup')\n    parser.add_argument('--epochs', type=int, default=50,\n                        help='Number of epochs to train')\n    parser.add_argument('--num_workers', type=int, default=0,\n                        help='Number of workers for data loading')\n    parser.add_argument('--device', type=str, default='auto',",
+      "language": "python",
+      "file": "train.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "visualize_model_graph",
+      "code": "def visualize_model_graph(model, writer, input_size=(1, 31, 2):\n    \"\"\"\n    Visualize model architecture and activations in TensorBoard.\n    \"\"\"\n    try:\n        # Create dummy input\n        dummy_input = torch.randn(input_size).to(next(model.parameters()).device)\n        \n        # Add graph to tensorboard\n        writer.add_graph(model, dummy_input)\n        writer.flush()\n        \n        # Add model summary as text\n        total_params = sum(p.numel() for p in model.parameters())\n        trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)\n        model_summary = (\n            f\"Model Summary:\\n\"\n            f\"Total parameters: {total_params:,}\\n\"\n            f\"Trainable parameters: {trainable_params:,}\\n\"\n            f\"Input shape: {input_size}\\n\"\n        )",
+      "language": "python",
+      "file": "train.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "visualize_activations",
+      "code": "def visualize_activations(writer, activations, global_step, prefix=''):\n    \"\"\"Visualize layer activations in tensorboard\"\"\"\n    for name, activation in activations.items():\n        # Histogram of activation values\n        writer.add_histogram(f'{prefix}Activations/{name}', activation.flatten(), global_step)\n        \n        # Statistics\n        writer.add_scalar(f'{prefix}Activations/{name}_mean', activation.mean().item(), global_step)\n        writer.add_scalar(f'{prefix}Activations/{name}_std', activation.std().item(), global_step)\n        \n        # If the activation is 3D (batch, joints, features), visualize the feature maps\n        if len(activation.shape) == 3:\n            feature_maps = activation[0].detach().cpu().numpy()  # Take first batch\n            fig, axes = plt.subplots(1, min(4, feature_maps.shape[1]), figsize=(15, 3))\n            if not isinstance(axes, np.ndarray):\n                axes = [axes]\n            for i, ax in enumerate(axes):\n                if i < feature_maps.shape[1]:\n                    im = ax.imshow(feature_maps[:, i].reshape(-1, 1), cmap='viridis')\n                    ax.set_title(f'Feature {i}')\n                    plt.colorbar(im, ax=ax)",
+      "language": "python",
+      "file": "train.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "visualize_graph_conv",
+      "code": "def visualize_graph_conv(writer, model, keypoints, camera_matrix, skeleton, global_step):\n    \"\"\"Visualize graph convolution operations\"\"\"\n    model.track_activations = True\n    outputs, activations = model(keypoints)\n    model.track_activations = False\n    \n    # Visualize input skeleton\n    fig = plt.figure(figsize=(10, 10))\n    keypoints_np = keypoints[0].cpu().numpy().reshape(-1, 2)\n    \n    # Plot connections\n    for child, parent in skeleton.get_connection_indices():\n        plt.plot([keypoints_np[child, 0], keypoints_np[parent, 0]],\n                [keypoints_np[child, 1], keypoints_np[parent, 1]],\n                'b-', alpha=0.6)\n    \n    # Plot joints\n    plt.scatter(keypoints_np[:, 0], keypoints_np[:, 1], c='red')\n    plt.title('Input Skeleton')\n    writer.add_figure('Graph/InputSkeleton', fig, global_step)\n    plt.close(fig)",
+      "language": "python",
+      "file": "train.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "validate",
+      "code": "def validate(epoch, show_visualization=True):\n        model.eval()\n        val_loss = 0.0\n        val_frob_loss = 0.0\n        val_recon_loss = 0.0\n        \n        with torch.no_grad():\n            for i, batch_data in enumerate(val_loader):\n                keypoints_2d, keypoints_3d, camera_matrix = batch_data[0], batch_data[1], batch_data[2]\n                keypoints_2d = keypoints_2d.to(args.device).view(-1, 31, 2)  # Ensure correct shape\n                keypoints_3d = keypoints_3d.to(args.device).view(-1, 31, 3)  # Ensure correct shape\n                camera_matrix = camera_matrix.to(args.device).view(-1, 4, 4)  # Ensure correct shape\n                \n                model.track_activations = True\n                outputs = model(keypoints_2d)\n                if isinstance(outputs, tuple):\n                    outputs, activations = outputs\n                \n                loss, frob_loss, recon_loss = weighted_frobenius_loss(\n                    outputs, \n                    camera_matrix,",
+      "language": "python",
+      "file": "train.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "clip_outliers_camera_matrix",
+      "code": "def clip_outliers_camera_matrix(self, camera_matrix):\n        # Ensure camera_matrix is the right shape (4,4)\n        camera_matrix = camera_matrix.reshape(4, 4)\n        \n        # Create a copy to avoid modifying the original\n        cleaned_camera_matrix = camera_matrix.copy()\n        \n        # Get the translation vector (last row)\n        translation = camera_matrix[3, :3]\n        \n        # Define clip bounds (e.g., 5th and 95th percentiles)\n        lower_bound = np.percentile(translation, 5)\n        upper_bound = np.percentile(translation, 95)\n        \n        # Clip the translation values\n        clipped_translation = np.clip(translation, lower_bound, upper_bound)\n        \n        # Replace the last row with clipped values\n        cleaned_camera_matrix[3, :3] = clipped_translation\n        \n        # Flatten the cleaned camera matrix",
+      "language": "python",
+      "file": "dataset/mocap_dataset.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "weighted_frobenius_loss",
+      "code": "def weighted_frobenius_loss(pred: torch.Tensor, target: torch.Tensor, points_3d: torch.Tensor, points_2d: torch.Tensor, alpha: float = 0.7):\n    \"\"\"\n    Frobenius norm and reconstruction error\n    \n    Args:\n        pred: Predicted camera matrix (B, 16)\n        target: Target camera matrix (B, 16)\n        points_3d: 3D keypoints (B, N, 3)\n        points_2d: 2D keypoints (B, N, 2)\n        alpha: Weight for combining losses (default: 0.7)\n    \"\"\"\n    # Frobenius norm loss for ground truth camera matrices vs predicted camera matrices\n    pred_matrix = pred.view(-1, 4, 4)\n    target_matrix = target.view(-1, 4, 4)\n    frob_norm = torch.norm(pred_matrix - target_matrix, p='fro', dim=(1, 2))\n    frob_loss = torch.mean(frob_norm)\n    \n    # Reconstruction loss for ground truth 2D points vs predicted 2D points\n    batch_size = pred.shape[0]\n    recon_loss = 0.0\n    ",
+      "language": "python",
+      "file": "model/loss.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "find_projection_matrix_dlt",
+      "code": "def find_projection_matrix_dlt(points_3d, points_2d, view_matrix):\n    \"\"\"Find projection matrix using Direct Linear Transform.\"\"\"\n    # Convert 3D points to camera space\n    points_homogeneous = np.hstack([points_3d, np.ones((len(points_3d), 1))])\n    points_camera = points_homogeneous @ view_matrix.T\n    \n    # Normalize 2D points\n    points_2d_homogeneous = np.hstack([points_2d, np.ones((len(points_2d), 1))])\n    \n    # Build the DLT matrix\n    A = []\n    for i in range(len(points_3d)):\n        X = points_camera[i]\n        x = points_2d_homogeneous[i]\n        \n        A.append([\n            X[0], X[1], X[2], X[3], 0, 0, 0, 0, -x[0]*X[0], -x[0]*X[1], -x[0]*X[2], -x[0]*X[3]\n        ])\n        A.append([\n            0, 0, 0, 0, X[0], X[1], X[2], X[3], -x[1]*X[0], -x[1]*X[1], -x[1]*X[2], -x[1]*X[3]\n        ])",
+      "language": "python",
+      "file": "model/loss.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "forward",
+      "code": "def forward(self, x):\n        # Ensure input is on the correct device\n        x = x.to(self.device)\n        \n        activations = {} if self.track_activations else None\n        \n        B = x.shape[0]\n        x = x.view(B, self.num_joints, 2)\n        \n        if self.track_activations:\n            activations['input'] = x.detach()\n        \n        x = self.input_layer(x)\n        if self.track_activations:\n            activations['after_input_layer'] = x.detach()\n        \n        x = self.pos_drop(x)\n        x = self.kpa(x)\n        if self.track_activations:\n            activations['after_kpa'] = x.detach()\n",
+      "language": "python",
+      "file": "model/model.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "initialize_weights",
+      "code": "def initialize_weights(m: nn.Module):\n    \"\"\"\n    Initialize model weights using Xavier/Glorot initialization.\n    \n    Args:\n        m (nn.Module): Model layer to initialize\n    \"\"\"\n    if isinstance(m, nn.Linear):\n        # Xavier/Glorot initialization for linear layers\n        nn.init.xavier_uniform_(m.weight)\n        if m.bias is not None:\n            nn.init.zeros_(m.bias)\n            \n    elif isinstance(m, nn.LayerNorm):\n        # Initialize LayerNorm with ones \n        nn.init.ones_(m.weight)\n        nn.init.zeros_(m.bias)\n            \n    elif isinstance(m, nn.Parameter):\n        # Initialize other parameters with Xavier/Glorot\n        nn.init.xavier_uniform_(m) ",
+      "language": "python",
+      "file": "model/weights.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "get_spatial_graph",
+      "code": "def get_spatial_graph(skeleton: Skeleton, strategy: str = 'distance'):\n    num_joints = len(skeleton.joint_names)\n    adj = np.zeros((num_joints, num_joints), dtype=np.float32)\n    \n    if strategy == 'connectivity':\n        # Use skeleton connectivity\n        for child, parent in skeleton.get_connection_indices():\n            adj[child, parent] = 1.0\n            adj[parent, child] = 1.0\n    else:  # distance-based\n        # Create fully connected graph with distance-based weights\n        for i in range(num_joints):\n            for j in range(i + 1, num_joints):\n                # Check if joints are connected in skeleton\n                connected = any((i, j) == (c, p) or (j, i) == (c, p) \n                              for c, p in skeleton.get_connection_indices())\n                if connected:\n                    adj[i, j] = adj[j, i] = 1.0\n                else:\n                    # Add weaker connections for non-directly connected joints\n                    adj[i, j] = adj[j, i] = 0.1",
+      "language": "python",
+      "file": "utils/graph_utils.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "sanity_check",
+      "code": "def sanity_check(dataset):\n    \"\"\"\n    Perform basic sanity checks on the dataset.\n    \"\"\"\n    print(\"\\nPerforming sanity check on 50 samples...\")\n    for i in tqdm(range(min(50, len(dataset)))):\n        try:\n            sample = dataset[i]\n            \n            # Check number of elements in sample\n            assert len(sample) == 5, \"Sample should contain 5 elements (keypoints_2d, keypoints_3d, camera_matrix, joint_names, indices)\"\n            \n            keypoints_2d, keypoints_3d, camera_matrix, joint_names, indices = sample\n            \n            # Check keypoints_2d shape\n            assert isinstance(keypoints_2d, torch.Tensor), \"keypoints_2d should be a torch.Tensor\"\n            assert keypoints_2d.dim() == 1, \"keypoints_2d should be a 1D tensor\"\n            assert keypoints_2d.size(0) == dataset.num_joints * 2, f\"keypoints_2d should have shape ({dataset.num_joints * 2},)\"\n            \n            # Check keypoints_3d shape\n            assert isinstance(keypoints_3d, torch.Tensor), \"keypoints_3d should be a torch.Tensor\"",
+      "language": "python",
+      "file": "utils/sanity_checks.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "test_mongodb_connection",
+      "code": "def test_mongodb_connection():\n    # Load environment variables\n    load_dotenv()\n    \n    # Get MongoDB connection details from environment variables\n    uri = os.getenv('MONGO_URI')\n    db_name = os.getenv('MONGO_DB_NAME')\n    collection_name = os.getenv('MONGO_COLLECTION_NAME')\n    \n    print(f\"Attempting to connect with:\")\n    print(f\"Database: {db_name}\")\n    print(f\"Collection: {collection_name}\")\n    \n    try:\n        # Create a MongoDB client\n        client = MongoClient(uri, serverSelectionTimeoutMS=5000)\n        \n        # Test the connection\n        client.server_info()\n        print(\"\u2705 Successfully connected to MongoDB server\")\n        ",
+      "language": "python",
+      "file": "utils/test_mongodb_connection.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "visualize_keypoint_skeleton",
+      "code": "def visualize_keypoint_skeleton(keypoints, skeleton, return_fig=False):\n    \"\"\"Visualize skeleton with keypoints\"\"\"\n    fig = plt.figure(figsize=(10, 10))\n    keypoints_2d = keypoints.reshape(-1, 2)\n    \n    # Plot connections\n    for child, parent in skeleton.get_connection_indices():\n        plt.plot([keypoints_2d[child, 0], keypoints_2d[parent, 0]],\n                [keypoints_2d[child, 1], keypoints_2d[parent, 1]],\n                'b-', alpha=0.6)\n    \n    # Plot joints\n    plt.scatter(keypoints_2d[:, 0], keypoints_2d[:, 1], c='red')\n    plt.title('Skeleton Visualization')\n    plt.grid(True)\n    \n    if return_fig:\n        return fig\n    plt.show()\n    plt.close()\n",
+      "language": "python",
+      "file": "utils/viz_kps.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "visualize_graph_convolutions",
+      "code": "def visualize_graph_convolutions(skeleton, activations, writer, global_step):\n    \"\"\"Visualize graph convolutions and attention maps\"\"\"\n    try:\n        # Plot base skeleton structure\n        if 'input' in activations:\n            input_keypoints = activations['input'][0].cpu().numpy()\n            fig = skeleton.plot_graph_with_keypoints(input_keypoints)\n            plt.title(\"Graph Structure with Input Keypoints\")\n            writer.add_figure('Graph/Structure', fig, global_step)\n            plt.close(fig)\n        \n        # Plot KPA attention maps if available\n        if 'after_kpa' in activations:\n            kpa_act = activations['after_kpa'][0].cpu().numpy()\n            fig = plt.figure(figsize=(15, 5))\n            \n            # Plot attention heatmap\n            plt.subplot(131)\n            attention_map = kpa_act @ kpa_act.T\n            plt.imshow(attention_map, cmap='viridis')\n            plt.colorbar()",
+      "language": "python",
+      "file": "utils/viz_kps.py",
+      "lines": 21
+    }
+  ],
+  "technical_summary": {
+    "primary_language": "python",
+    "main_concepts": [
+      "data_processing",
+      "deep_learning",
+      "computer_vision",
+      "neural_network"
+    ],
+    "complexity_score": 17.44,
+    "code_quality": "production"
+  }
+}
