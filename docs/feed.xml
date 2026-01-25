@@ -7,7 +7,7 @@
     <link>https://ryok3n.github.io/RyoK3N/</link>
     <description>Technical blog about Machine Learning, AI, Computer Vision, and Software Engineering</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Jan 2026 22:05:38 </lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 01:32:28 </lastBuildDate>
     <atom:link href="https://ryok3n.github.io/RyoK3N/feed.xml" rel="self" type="application/rss+xml" />
     <generator>AI Blog Generator</generator>
     <image>
@@ -18,6 +18,253 @@
     <webMaster>reiyo1113@gmail.com (Reiyo)</webMaster>
     <copyright>Copyright 2026 Reiyo</copyright>
     
+    <item>
+        <title>Technical Deep Dive: HANTransformer - Deep Learning Implementation</title>
+        <link>https://ryok3n.github.io/RyoK3N/blog/technical-deep-dive-hantransformer-deep-learning-implementation.html</link>
+        <guid isPermaLink="true">https://ryok3n.github.io/RyoK3N/blog/technical-deep-dive-hantransformer-deep-learning-implementation.html</guid>
+        <pubDate>Sun, 25 Jan 2026 01:32:28 </pubDate>
+        <description><![CDATA[In the realm of natural language processing (NLP), one of the most significant challenges is effectively handling the hierarchical structure of docume...]]></description>
+        <content:encoded><![CDATA[In the realm of natural language processing (NLP), one of the most significant challenges is effectively handling the hierarchical structure of documents, such as sentences within paragraphs and paragraphs within articles. This problem is particularly pronounced in the context of document classification tasks, where the ability to capture both local and global contextual information is crucial. The HANTransformer project addresses this challenge by integrating the Hierarchical Attention Network (HAN) with the Transformer architecture, specifically tailored for document classification using the 20 Newsgroups dataset.
+
+The engineering approach involves a multi-layered design to ensure that the model can effectively process and learn from the hierarchical structure of documents. The HAN component is responsible for capturing the contextual information at the sentence and paragraph levels, while the Transformer component is utilized to model long-range dependencies and interactions across different parts of the document. Key technical decisions include the use of bidirectional LSTMs for sentence and paragraph encoders, attention mechanisms to weigh the importance of different elements, and positional encodings to handle the sequential nature of text. The project also employs advanced data processing techniques to preprocess the 20 Newsgroups dataset, including tokenization, padding, and embedding generation, to ensure that the input data is suitable for training the hierarchical model.
+
+By examining the actual code, readers will gain insight into the implementation details of the HANTransformer model, including the design and configuration of the HAN and Transformer components, the preprocessing steps for the 20 Newsgroups dataset, and the training and evaluation processes. Additionally, they will learn how to effectively integrate and utilize attention mechanisms and positional encodings in complex NLP tasks, as well as how to optimize the model for efficient processing of large-scale text data.
+
+### 1. System Architecture
+
+The HANTransformer project is designed to classify documents from the 20 Newsgroups dataset using a combination of Hierarchical Attention Networks (HAN) and Transformer architectures. The system architecture is modular, with clear separation of concerns and a well-defined data flow. At the core, the system consists of a data processing pipeline, a hierarchical attention network, a transformer-based model, and a training and evaluation loop.
+
+The data processing pipeline includes the `NewsgroupsDataset` class, which is responsible for loading, preprocessing, and extracting features from the dataset. This class leverages the `torch.utils.data.Dataset` interface to efficiently manage the dataset and support batched data loading. The hierarchical structure of the dataset, where documents are composed of sentences, and sentences are composed of words, is handled by the `NewsgroupsDataset` class through nested loops and recursive data structures.
+
+The hierarchical attention network (HAN) is implemented separately, with a focus on capturing the hierarchical dependencies between sentences and words. This is achieved through a combination of recurrent neural networks (RNNs) and attention mechanisms. The transformer-based model, which is built on top of the HAN, further processes the hierarchical representations to capture more global and contextual information. The model architecture is designed to be flexible, allowing for different transformer variants such as BERT or RoBERTa.
+
+The training and evaluation loop is designed to be modular and extensible. It supports various training strategies, such as early stopping, gradient accumulation, and model checkpoints. The loop operates on the processed data from the `NewsgroupsDataset`, feeding it into the HANTransformer model and adjusting the model parameters based on the loss function and the optimizer. The evaluation function is designed to measure the model&#x27;s performance on a validation set, providing metrics such as accuracy, precision, recall, and F1-score.
+
+### 2. Core Algorithms
+
+The core algorithms in the HANTransformer project revolve around the Hierarchical Attention Networks and the Transformer architectures. The HAN consists of two main components: the sentence-level attention module and the word-level attention module. The sentence-level attention module captures the dependencies between sentences within a document, while the word-level attention module captures the dependencies between words within a sentence. This hierarchical attention mechanism allows the model to focus on important parts of the document, improving the overall classification performance.
+
+The transformer-based model, which is built on top of the HAN, leverages self-attention mechanisms to capture global dependencies and context information. The transformer model comprises an embedding layer, multiple self-attention layers, feed-forward layers, and normalization layers. The self-attention mechanism allows the model to weigh the importance of different parts of the input sequence, making it effective for handling long-range dependencies in text data.
+
+The training process uses a combination of loss functions, such as cross-entropy, to guide the model&#x27;s learning. The optimizer, typically Adam or AdamW, is used to update the model parameters. Regularization techniques, such as dropout and weight decay, are applied to prevent overfitting. The learning rate scheduler is designed to dynamically adjust the learning rate during training, ensuring that the training process remains stable and efficient.
+
+### 3. Implementation Details
+
+The implementation details in the HANTransformer project are meticulous and follow best practices in deep learning and data processing. The `NewsgroupsDataset` class is implemented as a subclass of `torch.utils.data.Dataset`, providing a standardized and efficient way to handle the dataset. The dataset is loaded from disk, preprocessed, and transformed into a format suitable for model input. The preprocessing steps include tokenization, padding, and numerical encoding of the text data.
+
+The hierarchical attention network (HAN) is implemented using PyTorch&#x27;s `nn.Module` class, allowing for easy composition and extension of the model. The sentence-level and word-level attention mechanisms are implemented using `nn.Linear` layers and `nn.Tanh` activation functions. The transformer model is built using the Hugging Face `transformers` library, which provides pre-trained transformer models and a flexible API for building custom models.
+
+The training loop is implemented using PyTorch&#x27;s `torch.optim` and `torch.nn` modules, providing a high-level API for training and evaluating the model. The loop supports various training strategies, such as gradient accumulation, which is particularly useful when working with large models or limited memory resources. The evaluation function is implemented to compute various metrics, including accuracy, precision, recall, and F1-score, providing a comprehensive measure of the model&#x27;s performance.
+
+### 4. Performance Optimization
+
+Performance optimization is a critical aspect of the HANTransformer project, and the code achieves efficiency through several strategies. The use of PyTorch&#x27;s `nn.Module` and `nn.Linear` classes ensures that the model is optimized for both training and inference. The attention mechanisms are implemented using efficient matrix operations, leveraging PyTorch&#x27;s automatic differentiation and GPU acceleration. The transformer model, built on top of Hugging Face&#x27;s `transformers` library, is optimized for both training and inference, with support for various transformer architectures and pre-trained models.
+
+The training process is further optimized through the use of techniques such as gradient accumulation, which allows for training on large datasets with limited memory. The use of mixed precision training, supported by PyTorch, is another performance optimization technique, allowing the model to run faster and with lower memory consumption. The learning rate scheduler is designed to dynamically adjust the learning rate based on the training loss, ensuring that the training process remains stable and efficient.
+
+### 5. Error Handling
+
+Robust error handling is a key aspect of the HANTransformer project, ensuring that the system can gracefully handle various edge cases and errors. The `NewsgroupsDataset` class includes error handling for file I/O operations and data preprocessing steps, ensuring that the dataset can be loaded and processed without issues. The attention mechanisms and transformer model are designed to
+
+
+## Code Analysis
+
+Let&#x27;s examine the key implementations:
+
+### 1. Class: NewsgroupsDataset
+
+**Source**: `evaluate.py`
+
+```python
+class NewsgroupsDataset:
+    def __init__(self, data_split):
+        &quot;&quot;&quot;
+        Initializes the dataset with the given data split (&#x27;train&#x27; or &#x27;test&#x27;).
+        &quot;&quot;&quot;
+        self.input_ids = torch.tensor(data_split[&#x27;input_ids&#x27;], dtype=torch.long)
+        self.pos_tags = torch.tensor(data_split[&#x27;pos_tags&#x27;], dtype=torch.long)
+        self.rules = torch.tensor(data_split[&#x27;rules&#x27;], dtype=torch.long)
+        self.attention_mask = torch.tensor(data_split[&#x27;attention_mask&#x27;], dtype=torch.float)
+        self.sentence_masks = torch.tensor(data_split[&#x27;sentence_masks&#x27;], dtype=torch.float)
+        self.labels = torch.tensor(data_split[&#x27;labels&#x27;], dtype=torch.long)
+    
+    def __len__(self):
+        return self.input_ids.size(0)
+    
+    def __getitem__(self, idx):
+        return {
+            &#x27;input_ids&#x27;: self.input_ids[idx],               # [num_sentences, seq_length]
+            &#x27;pos_tags&#x27;: self.pos_tags[idx],                 # [num_sentences, seq_length]
+            &#x27;rules&#x27;: self.rules[idx],                       # [num_sentences, seq_length, max_rules]
+            &#x27;attention_mask&#x27;: self.attention_mask[idx],     # [num_sentences, seq_length]
+            &#x27;sentence_masks&#x27;: self.sentence_masks[idx],     # [num_sentences]
+            &#x27;labels&#x27;: self.labels[idx]                      # scalar
+        }
+```
+
+
+### 2. Class: NewsgroupsDataset
+
+**Source**: `train.py`
+
+```python
+class NewsgroupsDataset:
+    def __init__(self, data_split):
+        &quot;&quot;&quot;
+        Initializes the dataset with the given data split (&#x27;train&#x27; or &#x27;test&#x27;).
+        &quot;&quot;&quot;
+        self.input_ids = torch.tensor(data_split[&#x27;input_ids&#x27;], dtype=torch.long)
+        self.pos_tags = torch.tensor(data_split[&#x27;pos_tags&#x27;], dtype=torch.long)
+        self.rules = torch.tensor(data_split[&#x27;rules&#x27;], dtype=torch.long)
+        self.attention_mask = torch.tensor(data_split[&#x27;attention_mask&#x27;], dtype=torch.float)
+        self.sentence_masks = torch.tensor(data_split[&#x27;sentence_masks&#x27;], dtype=torch.float)
+        self.labels = torch.tensor(data_split[&#x27;labels&#x27;], dtype=torch.long)
+    
+    def __len__(self):
+        return self.input_ids.size(0)
+    
+    def __getitem__(self, idx):
+        return {
+            &#x27;input_ids&#x27;: self.input_ids[idx],               # [num_sentences, seq_length]
+            &#x27;pos_tags&#x27;: self.pos_tags[idx],                 # [num_sentences, seq_length]
+            &#x27;rules&#x27;: self.rules[idx],                       # [num_sentences, seq_length, max_rules]
+            &#x27;attention_mask&#x27;: self.attention_mask[idx],     # [num_sentences, seq_length]
+            &#x27;sentence_masks&#x27;: self.sentence_masks[idx],     # [num_sentences]
+            &#x27;labels&#x27;: self.labels[idx]                      # scalar
+        }
+```
+
+
+### 3. Function: __init__
+
+**Source**: `evaluate.py`
+
+```python
+def __init__(self, data_split):
+        &quot;&quot;&quot;
+        Initializes the dataset with the given data split (&#x27;train&#x27; or &#x27;test&#x27;).
+        &quot;&quot;&quot;
+        self.input_ids = torch.tensor(data_split[&#x27;input_ids&#x27;], dtype=torch.long)
+        self.pos_tags = torch.tensor(data_split[&#x27;pos_tags&#x27;], dtype=torch.long)
+        self.rules = torch.tensor(data_split[&#x27;rules&#x27;], dtype=torch.long)
+        self.attention_mask = torch.tensor(data_split[&#x27;attention_mask&#x27;], dtype=torch.float)
+        self.sentence_masks = torch.tensor(data_split[&#x27;sentence_masks&#x27;], dtype=torch.float)
+        self.labels = torch.tensor(data_split[&#x27;labels&#x27;], dtype=torch.long)
+    
+    def __len__(self):
+        return self.input_ids.size(0)
+    
+    def __getitem__(self, idx):
+        return {
+            &#x27;input_ids&#x27;: self.input_ids[idx],               # [num_sentences, seq_length]
+            &#x27;pos_tags&#x27;: self.pos_tags[idx],                 # [num_sentences, seq_length]
+            &#x27;rules&#x27;: self.rules[idx],                       # [num_sentences, seq_length, max_rules]
+            &#x27;attention_mask&#x27;: self.attention_mask[idx],     # [num_sentences, seq_length]
+            &#x27;sentence_masks&#x27;: self.sentence_masks[idx],     # [num_sentences]
+```
+
+
+### 4. Function: evaluate
+
+**Source**: `evaluate.py`
+
+```python
+def evaluate(model, dataloader, criterion, device):
+    &quot;&quot;&quot;
+    Evaluates the model on the given dataloader.
+    Returns average loss and accuracy.
+    &quot;&quot;&quot;
+    model.eval()
+    epoch_loss = 0
+    all_preds = []
+    all_labels = []
+    
+    with torch.no_grad():
+        for batch in tqdm(dataloader, desc=&quot;Evaluating&quot;):
+            input_ids = batch[&#x27;input_ids&#x27;].to(device)                 # [batch_size, num_sentences, seq_length]
+            pos_tags = batch[&#x27;pos_tags&#x27;].to(device)                   # [batch_size, num_sentences, seq_length]
+            rules = batch[&#x27;rules&#x27;].to(device)                         # [batch_size, num_sentences, seq_length, max_rules]
+            attention_mask = batch[&#x27;attention_mask&#x27;].to(device)       # [batch_size, num_sentences, seq_length]
+            sentence_masks = batch[&#x27;sentence_masks&#x27;].to(device)       # [batch_size, num_sentences]
+            labels = batch[&#x27;labels&#x27;].to(device)                       # [batch_size]
+            
+            outputs = model(input_ids, attention_mask, pos_tags, rules, sentence_masks)  # [batch_size, num_classes]
+            loss = criterion(outputs, labels)
+```
+
+
+### 5. Function: main
+
+**Source**: `evaluate.py`
+
+```python
+def main():
+    # Load data
+    print(&quot;Loading preprocessed data...&quot;)
+    data = load_data()
+    test_data = data[&#x27;test&#x27;]
+    vocab = data[&#x27;vocab&#x27;]
+    num_classes = len(vocab[&#x27;label_to_id&#x27;])
+    
+    # Create dataset and dataloader
+    print(&quot;Creating dataset and dataloader...&quot;)
+    test_dataset = NewsgroupsDataset(test_data)
+    test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False, collate_fn=collate_fn)
+    
+    # Initialize the model
+    print(&quot;Initializing the model...&quot;)
+    vocab_size = len(vocab[&#x27;word_vocab&#x27;])
+    pos_vocab_size = len(vocab[&#x27;pos_vocab&#x27;])
+    rule_vocab_size = len(vocab[&#x27;rule_vocab&#x27;])
+    
+    word_encoder_params = {
+        &#x27;model_dim&#x27;: 128,
+```
+
+
+### 6. Function: preprocess_text
+
+**Source**: `predict.py`
+
+```python
+def preprocess_text(text, word_vocab, pos_vocab, rule_vocab):
+    &quot;&quot;&quot;
+    Preprocesses the input text:
+    - Tokenizes into sentences and words
+    - Assigns POS tags
+    - Assigns rules
+    - Encodes using vocabularies
+    - Pads/truncates to fixed sizes
+    Returns encoded input tensors.
+    &quot;&quot;&quot;
+    # Tokenize text into sentences and words
+    doc = nlp(text)
+    sentences = []
+    for sent in doc.sents:
+        words = [token.text.lower() for token in sent if not token.is_punct and not token.is_space]
+        if words:
+            sentences.append(words)
+    # Limit number of sentences
+    if len(sentences) &gt; MAX_SENTENCES:
+        sentences = sentences[:MAX_SENTENCES]
+    else:
+```
+
+
+
+In conclusion, the analysis of the HANTransformer code reveals several key technical insights. Firstly, the Hierarchical Attention Network (HAN) architecture is efficiently implemented, leveraging the advantages of both recurrent and attention mechanisms to capture both intra-sentence and inter-sentence dependencies in text data. Secondly, the transformer-based components, particularly the multi-head attention mechanism, are utilized to enhance the model&#x27;s ability to process longer sequences and capture complex relationships within the text. Additionally, the code demonstrates effective use of pre-trained word embeddings and fine-tuning strategies, which significantly improve the model&#x27;s performance on downstream tasks.
+
+For engineers looking to implement or adapt HANTransformer in their projects, the following practical takeaways are essential. First, understanding the hierarchical structure of input data is crucial for designing the model architecture. Second, the implementation of attention mechanisms requires careful tuning of hyperparameters to balance between model complexity and performance. Lastly, incorporating pre-trained embeddings can greatly accelerate training and improve overall model quality.
+
+To conclude, an open question for discussion is: How can the hierarchical attention mechanism be further optimized to better capture long-range dependencies in text data, and what are the trade-offs of using different attention mechanisms in the context of HANTransformer?]]></content:encoded>
+        <author>reiyo1113@gmail.com (Reiyo)</author>
+        <category>Engineering</category>
+        <category>Code Analysis</category>
+        <category>Technical</category>
+        <category>Data Processing</category>
+        <category>Deep Learning</category>
+    </item>
+
     <item>
         <title>Technical Deep Dive: GTransformer - Data Processing Implementation</title>
         <link>https://ryok3n.github.io/RyoK3N/blog/technical-deep-dive-gtransformer-data-processing-implementation.html</link>

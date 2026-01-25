@@ -1,19 +1,20 @@
 {
-  "name": "Curriculum-_Learning",
-  "description": "Curriculum Learning in LSTM-Based Sequence-to-Sequence Models",
-  "ai_description": "This cutting-edge project, \"Curriculum-Learning,\" revolutionizes the field of Natural Language Processing (NLP) by integrating curriculum learning into LSTM-based sequence-to-sequence models. By leveraging this innovative approach, our project showcases a significant technical breakthrough that significantly improves the learning efficiency and adaptability of these models, ultimately leading to enhanced language understanding and generation capabilities. With far-reaching potential applications in areas such as language translation, text summarization, and sentiment analysis, this project has the potential to fundamentally reshape the way we approach NLP tasks, driving transformative impact in industries ranging from healthcare to education and beyond.",
-  "why_featured": "This project deserves to be featured this week because it showcases a groundbreaking application of curriculum learning in LSTM-based sequence-to-sequence models, a technical innovation that has the potential to revolutionize the field of Natural Language Processing (NLP) by enabling more effective and efficient learning of complex text sequences. The project's practical value lies in its potential to improve the performance and interpretability of NLP models, making it a significant contribution to the advancement of the field.",
+  "name": "MocapViewer3D",
+  "description": "An interactive 3D/2D motion capture visualization tool that allows real-time manipulation of camera perspectives and skeleton pose viewing. This tool provides simultaneous 3D and 2D projective views of motion capture data, making it ideal for computer vision and animation research.",
+  "ai_description": "Introducing MocapViewer3D, a groundbreaking interactive 3D/2D motion capture visualization tool that revolutionizes the way researchers and animators interpret and manipulate motion capture data. By seamlessly combining real-time camera perspective adjustments and skeleton pose viewing, this innovative tool unlocks unprecedented levels of depth and insight, allowing users to explore and analyze motion capture data in ways previously unimaginable. The potential applications of MocapViewer3D are vast, ranging from advancing computer vision and animation research to enhancing performance capture and simulation in the film and gaming industries, ultimately driving innovation and creativity in the digital arts. By marrying cutting-edge technology with intuitive user interface, MocapViewer3D is poised to redefine the field of motion capture and 3D graphics.",
+  "why_featured": "MocapViewer3D deserves to be featured this week because it showcases a groundbreaking technical innovation in the intersection of computer vision and 3D graphics, enabling researchers and animators to seamlessly visualize and manipulate motion capture data in a fully interactive environment. This tool's practical value lies in its ability to accelerate research and workflow efficiency, making it an invaluable resource for the computer vision and animation communities.",
   "categories": [
-    "Machine Learning",
-    "Natural Language Processing",
-    "Research"
+    "Computer Vision",
+    "3D Graphics",
+    "Tools & Utilities"
   ],
   "languages": [
-    "Python"
+    "Python",
+    "Jupyter Notebook"
   ],
-  "stars": 1,
-  "url": "https://github.com/RyoK3N/Curriculum-_Learning",
-  "selected_date": "2026-01-24T22:05:22.859327",
+  "stars": 0,
+  "url": "https://github.com/RyoK3N/MocapViewer3D",
+  "selected_date": "2026-01-25T01:32:10.462284",
   "week_number": 4,
   "year": 2026
 }

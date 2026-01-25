@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-24]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-25]
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Curriculum-_Learning](https://github.com/RyoK3N/Curriculum-_Learning)
+### 📦 [MocapViewer3D](https://github.com/RyoK3N/MocapViewer3D)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
+![Computer Vision](https://img.shields.io/badge/Computer_Vision-purple?style=flat-square) ![3D Graphics](https://img.shields.io/badge/3D_Graphics-purple?style=flat-square) ![Tools & Utilities](https://img.shields.io/badge/Tools_&_Utilities-purple?style=flat-square)
 
-This cutting-edge project, "Curriculum-Learning," revolutionizes the field of Natural Language Processing (NLP) by integrating curriculum learning into LSTM-based sequence-to-sequence models. By leveraging this innovative approach, our project showcases a significant technical breakthrough that significantly improves the learning efficiency and adaptability of these models, ultimately leading to enhanced language understanding and generation capabilities. With far-reaching potential applications in areas such as language translation, text summarization, and sentiment analysis, this project has the potential to fundamentally reshape the way we approach NLP tasks, driving transformative impact in industries ranging from healthcare to education and beyond.
+Introducing MocapViewer3D, a groundbreaking interactive 3D/2D motion capture visualization tool that revolutionizes the way researchers and animators interpret and manipulate motion capture data. By seamlessly combining real-time camera perspective adjustments and skeleton pose viewing, this innovative tool unlocks unprecedented levels of depth and insight, allowing users to explore and analyze motion capture data in ways previously unimaginable. The potential applications of MocapViewer3D are vast, ranging from advancing computer vision and animation research to enhancing performance capture and simulation in the film and gaming industries, ultimately driving innovation and creativity in the digital arts. By marrying cutting-edge technology with intuitive user interface, MocapViewer3D is poised to redefine the field of motion capture and 3D graphics.
 
 **💡 Why Featured This Week:**
 
-*This project deserves to be featured this week because it showcases a groundbreaking application of curriculum learning in LSTM-based sequence-to-sequence models, a technical innovation that has the potential to revolutionize the field of Natural Language Processing (NLP) by enabling more effective and efficient learning of complex text sequences. The project's practical value lies in its potential to improve the performance and interpretability of NLP models, making it a significant contribution to the advancement of the field.*
+*MocapViewer3D deserves to be featured this week because it showcases a groundbreaking technical innovation in the intersection of computer vision and 3D graphics, enabling researchers and animators to seamlessly visualize and manipulate motion capture data in a fully interactive environment. This tool's practical value lies in its ability to accelerate research and workflow efficiency, making it an invaluable resource for the computer vision and animation communities.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 1
-- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Research
-- 💻 **Languages**: Python
+- ⭐ **Stars**: 0
+- 🏷️ **Categories**: Computer Vision, 3D Graphics, Tools & Utilities
+- 💻 **Languages**: Python, Jupyter Notebook
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Curriculum-_Learning)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/MocapViewer3D)
 
 </td>
 </tr>
@@ -507,13 +507,13 @@ This cutting-edge project, "Curriculum-Learning," revolutionizes the field of Na
 <tr>
 <td>
 
-### 📰 [Technical Deep Dive: GTransformer - Data Processing Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
+### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: January 24, 2026
+**Published**: January 25, 2026
 
-The project "GTransformer" tackles a critical challenge in the realm of data processing, specifically in the context of deep learning and computer vis...
+In the realm of natural language processing (NLP), one of the most significant challenges is effectively handling the hierarchical structure of docume...
 
-**Tags**: `Technical` `Deep Learning` `Engineering` `Code Analysis`
+**Tags**: `Engineering` `Code Analysis` `Technical` `Data Processing`
 
 <div align="center">
 

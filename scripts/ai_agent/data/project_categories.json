@@ -4,8 +4,8 @@
       "name": "2DPoseEstimation",
       "description": "",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
+        "Machine Learning",
         "Data Science"
       ],
       "languages": [
@@ -38,8 +38,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -53,8 +53,8 @@
       "description": "The webpage for AiAI research group for Prof. Youshan Zhang",
       "categories": [
         "Machine Learning",
-        "Research",
-        "Web Development"
+        "Web Development",
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -88,7 +88,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -103,7 +104,7 @@
       "categories": [
         "Machine Learning",
         "Data Science",
-        "Research"
+        "Tools & Utilities"
       ],
       "languages": [],
       "topics": [],
@@ -163,7 +164,7 @@
       "categories": [
         "Machine Learning",
         "Computer Vision",
-        "Robotics"
+        "Research"
       ],
       "languages": [
         "C++",
@@ -260,7 +261,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
+        "Natural Language Processing",
         "Tools & Utilities"
       ],
       "languages": [
@@ -276,7 +277,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -321,8 +322,7 @@
       "description": "Functions used for various computer vision problems using julia and python",
       "categories": [
         "Computer Vision",
-        "Machine Learning",
-        "Tools & Utilities"
+        "Machine Learning"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -352,8 +352,8 @@
       "name": "Golfbot_wizardlm",
       "description": "An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions.",
       "categories": [
-        "Natural Language Processing",
         "Machine Learning",
+        "Natural Language Processing",
         "Web Development"
       ],
       "languages": [
@@ -369,7 +369,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision"
+        "Computer Vision",
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -399,8 +400,7 @@
       "description": "Classifying Hurricanes from Geospatial Images",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -429,8 +429,8 @@
       "description": "",
       "categories": [
         "Computer Vision",
-        "3D Graphics",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "3D Graphics"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -478,8 +478,7 @@
       "description": "A repository for revising ML concepts in Python and Julia",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Research"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python",
@@ -549,6 +548,7 @@
       "name": "Music3x",
       "description": " This is your one-stop destination for innovative music tools and projects aimed at empowering creativity and exploration in sound",
       "categories": [
+        "Data Science",
         "Web Development",
         "Tools & Utilities"
       ],
@@ -598,7 +598,6 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
         "Natural Language Processing"
       ],
       "languages": [
@@ -614,8 +613,8 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Data Science",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -658,8 +657,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Web Development"
+        "Natural Language Processing"
       ],
       "languages": [
         "HTML",
@@ -675,7 +673,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Machine Learning",
+        "Tools & Utilities",
         "Research"
       ],
       "languages": [
@@ -691,8 +689,8 @@
       "name": "Quaternion-Capsule-Network",
       "description": "An impementation of Quaternion Capsule Networks for prediction of View matrix from 2D body keypoints ",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
+        "Machine Learning",
         "Research"
       ],
       "languages": [
@@ -707,8 +705,7 @@
       "description": "The goal of this project is to detect violence in the video feeds of the training dataset and implement a Neural Network which classifies the videos as violent or nonviolent. The aim of this project is to develop an architecture that is capable of detecting violence in Real Time.",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Natural Language Processing"
+        "Computer Vision"
       ],
       "languages": [],
       "topics": [],
@@ -720,7 +717,8 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -734,7 +732,8 @@
       "description": "Config files for my GitHub profile.",
       "categories": [
         "Machine Learning",
-        "Web Development"
+        "Web Development",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -751,8 +750,7 @@
       "name": "Sound_Anlysis",
       "description": "",
       "categories": [
-        "Data Science",
-        "Research"
+        "Uncategorized"
       ],
       "languages": [],
       "topics": [],
@@ -764,8 +762,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps",
-        "Tools & Utilities"
+        "DevOps"
       ],
       "languages": [
         "TypeScript",
@@ -783,7 +780,8 @@
       "description": "",
       "categories": [
         "Web Development",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Machine Learning"
       ],
       "languages": [
         "TypeScript",
@@ -858,6 +856,7 @@
       "description": "",
       "categories": [
         "Data Science",
+        "Machine Learning",
         "Tools & Utilities"
       ],
       "languages": [
@@ -944,17 +943,17 @@
     }
   ],
   "category_statistics": {
-    "Machine Learning": 40,
     "Computer Vision": 13,
-    "Data Science": 28,
-    "Natural Language Processing": 19,
-    "Web Development": 20,
-    "Research": 10,
+    "Machine Learning": 41,
+    "Data Science": 27,
+    "Natural Language Processing": 20,
+    "Web Development": 19,
+    "Research": 9,
     "Tools & Utilities": 18,
     "DevOps": 5,
-    "Robotics": 1,
     "Reinforcement Learning": 1,
-    "3D Graphics": 2
+    "3D Graphics": 2,
+    "Uncategorized": 1
   },
   "total_repositories": 58,
   "timestamp": "{\"iso\": \"now\"}"

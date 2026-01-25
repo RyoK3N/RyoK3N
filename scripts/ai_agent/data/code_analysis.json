@@ -1,149 +1,152 @@
 {
-  "repository": "RyoK3N/GTransformer",
-  "name": "GTransformer",
-  "description": "",
-  "files_analyzed": 11,
-  "total_lines": 1744,
+  "repository": "RyoK3N/HANTransformer",
+  "name": "HANTransformer",
+  "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
+  "files_analyzed": 5,
+  "total_lines": 1378,
   "languages": {
-    "python": 11
+    "python": 5
   },
   "concepts": {
-    "data_processing": 9,
-    "deep_learning": 7,
-    "computer_vision": 2,
-    "neural_network": 1
+    "deep_learning": 5,
+    "data_processing": 4,
+    "machine_learning": 3,
+    "nlp": 3,
+    "neural_network": 1,
+    "computer_vision": 1
   },
   "code_samples": [
     {
+      "type": "class",
+      "name": "NewsgroupsDataset",
+      "code": "class NewsgroupsDataset:\n    def __init__(self, data_split):\n        \"\"\"\n        Initializes the dataset with the given data split ('train' or 'test').\n        \"\"\"\n        self.input_ids = torch.tensor(data_split['input_ids'], dtype=torch.long)\n        self.pos_tags = torch.tensor(data_split['pos_tags'], dtype=torch.long)\n        self.rules = torch.tensor(data_split['rules'], dtype=torch.long)\n        self.attention_mask = torch.tensor(data_split['attention_mask'], dtype=torch.float)\n        self.sentence_masks = torch.tensor(data_split['sentence_masks'], dtype=torch.float)\n        self.labels = torch.tensor(data_split['labels'], dtype=torch.long)\n    \n    def __len__(self):\n        return self.input_ids.size(0)\n    \n    def __getitem__(self, idx):\n        return {\n            'input_ids': self.input_ids[idx],               # [num_sentences, seq_length]\n            'pos_tags': self.pos_tags[idx],                 # [num_sentences, seq_length]\n            'rules': self.rules[idx],                       # [num_sentences, seq_length, max_rules]\n            'attention_mask': self.attention_mask[idx],     # [num_sentences, seq_length]\n            'sentence_masks': self.sentence_masks[idx],     # [num_sentences]\n            'labels': self.labels[idx]                      # scalar\n        }\n",
+      "language": "python",
+      "file": "evaluate.py",
+      "lines": 25
+    },
+    {
+      "type": "class",
+      "name": "NewsgroupsDataset",
+      "code": "class NewsgroupsDataset:\n    def __init__(self, data_split):\n        \"\"\"\n        Initializes the dataset with the given data split ('train' or 'test').\n        \"\"\"\n        self.input_ids = torch.tensor(data_split['input_ids'], dtype=torch.long)\n        self.pos_tags = torch.tensor(data_split['pos_tags'], dtype=torch.long)\n        self.rules = torch.tensor(data_split['rules'], dtype=torch.long)\n        self.attention_mask = torch.tensor(data_split['attention_mask'], dtype=torch.float)\n        self.sentence_masks = torch.tensor(data_split['sentence_masks'], dtype=torch.float)\n        self.labels = torch.tensor(data_split['labels'], dtype=torch.long)\n    \n    def __len__(self):\n        return self.input_ids.size(0)\n    \n    def __getitem__(self, idx):\n        return {\n            'input_ids': self.input_ids[idx],               # [num_sentences, seq_length]\n            'pos_tags': self.pos_tags[idx],                 # [num_sentences, seq_length]\n            'rules': self.rules[idx],                       # [num_sentences, seq_length, max_rules]\n            'attention_mask': self.attention_mask[idx],     # [num_sentences, seq_length]\n            'sentence_masks': self.sentence_masks[idx],     # [num_sentences]\n            'labels': self.labels[idx]                      # scalar\n        }\n",
+      "language": "python",
+      "file": "train.py",
+      "lines": 25
+    },
+    {
       "type": "function",
-      "name": "parse_args",
-      "code": "def parse_args():\n    parser = argparse.ArgumentParser(description='Training script for KTPFormer')\n    \n    # Training hyperparameters\n    parser.add_argument('--random_seed', type=int, default=100,\n                        help='Random seed for reproducibility')\n    parser.add_argument('--data_fraction', type=float, default=0.06,\n                        help='Fraction of data to use for training')\n    parser.add_argument('--batch_size', type=int, default=256,\n                        help='Batch size for training')\n    parser.add_argument('--learning_rate', type=float, default=1e-3,\n                        help='Learning rate')\n    parser.add_argument('--weight_decay', type=float, default=1e-4,\n                        help='Weight decay for optimizer')\n    parser.add_argument('--warmup_epochs', type=int, default=5,\n                        help='Number of epochs for learning rate warmup')\n    parser.add_argument('--epochs', type=int, default=50,\n                        help='Number of epochs to train')\n    parser.add_argument('--num_workers', type=int, default=0,\n                        help='Number of workers for data loading')\n    parser.add_argument('--device', type=str, default='auto',",
+      "name": "__init__",
+      "code": "def __init__(self, data_split):\n        \"\"\"\n        Initializes the dataset with the given data split ('train' or 'test').\n        \"\"\"\n        self.input_ids = torch.tensor(data_split['input_ids'], dtype=torch.long)\n        self.pos_tags = torch.tensor(data_split['pos_tags'], dtype=torch.long)\n        self.rules = torch.tensor(data_split['rules'], dtype=torch.long)\n        self.attention_mask = torch.tensor(data_split['attention_mask'], dtype=torch.float)\n        self.sentence_masks = torch.tensor(data_split['sentence_masks'], dtype=torch.float)\n        self.labels = torch.tensor(data_split['labels'], dtype=torch.long)\n    \n    def __len__(self):\n        return self.input_ids.size(0)\n    \n    def __getitem__(self, idx):\n        return {\n            'input_ids': self.input_ids[idx],               # [num_sentences, seq_length]\n            'pos_tags': self.pos_tags[idx],                 # [num_sentences, seq_length]\n            'rules': self.rules[idx],                       # [num_sentences, seq_length, max_rules]\n            'attention_mask': self.attention_mask[idx],     # [num_sentences, seq_length]\n            'sentence_masks': self.sentence_masks[idx],     # [num_sentences]",
+      "language": "python",
+      "file": "evaluate.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "evaluate",
+      "code": "def evaluate(model, dataloader, criterion, device):\n    \"\"\"\n    Evaluates the model on the given dataloader.\n    Returns average loss and accuracy.\n    \"\"\"\n    model.eval()\n    epoch_loss = 0\n    all_preds = []\n    all_labels = []\n    \n    with torch.no_grad():\n        for batch in tqdm(dataloader, desc=\"Evaluating\"):\n            input_ids = batch['input_ids'].to(device)                 # [batch_size, num_sentences, seq_length]\n            pos_tags = batch['pos_tags'].to(device)                   # [batch_size, num_sentences, seq_length]\n            rules = batch['rules'].to(device)                         # [batch_size, num_sentences, seq_length, max_rules]\n            attention_mask = batch['attention_mask'].to(device)       # [batch_size, num_sentences, seq_length]\n            sentence_masks = batch['sentence_masks'].to(device)       # [batch_size, num_sentences]\n            labels = batch['labels'].to(device)                       # [batch_size]\n            \n            outputs = model(input_ids, attention_mask, pos_tags, rules, sentence_masks)  # [batch_size, num_classes]\n            loss = criterion(outputs, labels)",
+      "language": "python",
+      "file": "evaluate.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "main",
+      "code": "def main():\n    # Load data\n    print(\"Loading preprocessed data...\")\n    data = load_data()\n    test_data = data['test']\n    vocab = data['vocab']\n    num_classes = len(vocab['label_to_id'])\n    \n    # Create dataset and dataloader\n    print(\"Creating dataset and dataloader...\")\n    test_dataset = NewsgroupsDataset(test_data)\n    test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False, collate_fn=collate_fn)\n    \n    # Initialize the model\n    print(\"Initializing the model...\")\n    vocab_size = len(vocab['word_vocab'])\n    pos_vocab_size = len(vocab['pos_vocab'])\n    rule_vocab_size = len(vocab['rule_vocab'])\n    \n    word_encoder_params = {\n        'model_dim': 128,",
+      "language": "python",
+      "file": "evaluate.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "preprocess_text",
+      "code": "def preprocess_text(text, word_vocab, pos_vocab, rule_vocab):\n    \"\"\"\n    Preprocesses the input text:\n    - Tokenizes into sentences and words\n    - Assigns POS tags\n    - Assigns rules\n    - Encodes using vocabularies\n    - Pads/truncates to fixed sizes\n    Returns encoded input tensors.\n    \"\"\"\n    # Tokenize text into sentences and words\n    doc = nlp(text)\n    sentences = []\n    for sent in doc.sents:\n        words = [token.text.lower() for token in sent if not token.is_punct and not token.is_space]\n        if words:\n            sentences.append(words)\n    # Limit number of sentences\n    if len(sentences) > MAX_SENTENCES:\n        sentences = sentences[:MAX_SENTENCES]\n    else:",
+      "language": "python",
+      "file": "predict.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "main",
+      "code": "def main():\n    # Load vocabularies and label mappings\n    word_vocab, pos_vocab, rule_vocab, target_names = load_vocab()\n    \n    # Initialize the model\n    vocab_size = len(word_vocab)\n    pos_vocab_size = len(pos_vocab)\n    rule_vocab_size = len(rule_vocab)\n    num_classes = len(target_names)\n    \n    word_encoder_params = {\n        'model_dim': 128,\n        'num_heads': 4,\n        'ff_dim': 512,\n        'num_layers': 2,\n        'dropout': 0.1,\n    }\n    sentence_encoder_params = {\n        'model_dim': 128,  # Should match fusion_dim\n        'num_heads': 4,\n        'ff_dim': 512,",
+      "language": "python",
+      "file": "predict.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "encode_pos",
+      "code": "def encode_pos(tokenized_texts, pos_vocab, max_sentences=MAX_SENTENCES, max_words=MAX_WORDS):\n    \"\"\"\n    Encodes POS tags into IDs and pads/truncates them.\n    \"\"\"\n    encoded_pos = []\n    for doc in tokenized_texts:\n        encoded_doc = []\n        for sent in doc[:max_sentences]:\n            doc_spacy = nlp(\" \".join(sent[:max_words]))\n            pos_tags = [token.pos_ for token in doc_spacy]\n            encoded_sent = [pos_vocab.get(pos, pos_vocab['<UNK>']) for pos in pos_tags]\n            if len(encoded_sent) < max_words:\n                encoded_sent += [pos_vocab['<PAD>']] * (max_words - len(encoded_sent))\n            else:\n                encoded_sent = encoded_sent[:max_words]\n            encoded_doc.append(encoded_sent)\n        if len(encoded_doc) < max_sentences:\n            pad_sentence = [pos_vocab['<PAD>']] * max_words\n            encoded_doc += [pad_sentence] * (max_sentences - len(encoded_doc))\n        encoded_pos.append(encoded_doc)\n    return encoded_pos",
+      "language": "python",
+      "file": "preprocess.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "encode_rules",
+      "code": "def encode_rules(tokenized_texts, rule_vocab, max_sentences=MAX_SENTENCES, max_words=MAX_WORDS, max_rules=MAX_RULES):\n    \"\"\"\n    Encodes rules into IDs and pads/truncates them.\n    \"\"\"\n    encoded_rules = []\n    for doc in tokenized_texts:\n        encoded_doc = []\n        for sent in doc[:max_sentences]:\n            doc_spacy = nlp(\" \".join(sent[:max_words]))\n            pos_tags = [token.pos_ for token in doc_spacy]\n            word_rules = assign_rules(pos_tags)\n            encoded_sent = []\n            for rules in word_rules[:max_words]:\n                encoded_rule = [rule_vocab.get(rule, rule_vocab['<PAD>']) for rule in rules]\n                if len(encoded_rule) < max_rules:\n                    encoded_rule += [rule_vocab['<PAD>']] * (max_rules - len(encoded_rule))\n                encoded_sent.append(encoded_rule)\n            if len(encoded_sent) < max_words:\n                pad_rule = [rule_vocab['<PAD>']] * max_rules\n                encoded_sent += [pad_rule] * (max_words - len(encoded_sent))\n            encoded_doc.append(encoded_sent)",
+      "language": "python",
+      "file": "preprocess.py",
+      "lines": 21
+    },
+    {
+      "type": "function",
+      "name": "__init__",
+      "code": "def __init__(self, data_split):\n        \"\"\"\n        Initializes the dataset with the given data split ('train' or 'test').\n        \"\"\"\n        self.input_ids = torch.tensor(data_split['input_ids'], dtype=torch.long)\n        self.pos_tags = torch.tensor(data_split['pos_tags'], dtype=torch.long)\n        self.rules = torch.tensor(data_split['rules'], dtype=torch.long)\n        self.attention_mask = torch.tensor(data_split['attention_mask'], dtype=torch.float)\n        self.sentence_masks = torch.tensor(data_split['sentence_masks'], dtype=torch.float)\n        self.labels = torch.tensor(data_split['labels'], dtype=torch.long)\n    \n    def __len__(self):\n        return self.input_ids.size(0)\n    \n    def __getitem__(self, idx):\n        return {\n            'input_ids': self.input_ids[idx],               # [num_sentences, seq_length]\n            'pos_tags': self.pos_tags[idx],                 # [num_sentences, seq_length]\n            'rules': self.rules[idx],                       # [num_sentences, seq_length, max_rules]\n            'attention_mask': self.attention_mask[idx],     # [num_sentences, seq_length]\n            'sentence_masks': self.sentence_masks[idx],     # [num_sentences]",
       "language": "python",
       "file": "train.py",
       "lines": 21
     },
     {
       "type": "function",
-      "name": "visualize_model_graph",
-      "code": "def visualize_model_graph(model, writer, input_size=(1, 31, 2):\n    \"\"\"\n    Visualize model architecture and activations in TensorBoard.\n    \"\"\"\n    try:\n        # Create dummy input\n        dummy_input = torch.randn(input_size).to(next(model.parameters()).device)\n        \n        # Add graph to tensorboard\n        writer.add_graph(model, dummy_input)\n        writer.flush()\n        \n        # Add model summary as text\n        total_params = sum(p.numel() for p in model.parameters())\n        trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)\n        model_summary = (\n            f\"Model Summary:\\n\"\n            f\"Total parameters: {total_params:,}\\n\"\n            f\"Trainable parameters: {trainable_params:,}\\n\"\n            f\"Input shape: {input_size}\\n\"\n        )",
+      "name": "train_epoch",
+      "code": "def train_epoch(model, dataloader, criterion, optimizer, device):\n    \"\"\"\n    Trains the model for one epoch.\n    \"\"\"\n    model.train()\n    epoch_loss = 0\n    all_preds = []\n    all_labels = []\n    \n    for batch in tqdm(dataloader, desc=\"Training\"):\n        input_ids = batch['input_ids'].to(device)                 # [batch_size, num_sentences, seq_length]\n        pos_tags = batch['pos_tags'].to(device)                   # [batch_size, num_sentences, seq_length]\n        rules = batch['rules'].to(device)                         # [batch_size, num_sentences, seq_length, max_rules]\n        attention_mask = batch['attention_mask'].to(device)       # [batch_size, num_sentences, seq_length]\n        sentence_masks = batch['sentence_masks'].to(device)       # [batch_size, num_sentences]\n        labels = batch['labels'].to(device)                       # [batch_size]\n        \n        optimizer.zero_grad()\n        outputs = model(input_ids, attention_mask, pos_tags, rules, sentence_masks)  # [batch_size, num_classes]\n        loss = criterion(outputs, labels)\n        loss.backward()",
       "language": "python",
       "file": "train.py",
       "lines": 21
     },
     {
       "type": "function",
-      "name": "visualize_activations",
-      "code": "def visualize_activations(writer, activations, global_step, prefix=''):\n    \"\"\"Visualize layer activations in tensorboard\"\"\"\n    for name, activation in activations.items():\n        # Histogram of activation values\n        writer.add_histogram(f'{prefix}Activations/{name}', activation.flatten(), global_step)\n        \n        # Statistics\n        writer.add_scalar(f'{prefix}Activations/{name}_mean', activation.mean().item(), global_step)\n        writer.add_scalar(f'{prefix}Activations/{name}_std', activation.std().item(), global_step)\n        \n        # If the activation is 3D (batch, joints, features), visualize the feature maps\n        if len(activation.shape) == 3:\n            feature_maps = activation[0].detach().cpu().numpy()  # Take first batch\n            fig, axes = plt.subplots(1, min(4, feature_maps.shape[1]), figsize=(15, 3))\n            if not isinstance(axes, np.ndarray):\n                axes = [axes]\n            for i, ax in enumerate(axes):\n                if i < feature_maps.shape[1]:\n                    im = ax.imshow(feature_maps[:, i].reshape(-1, 1), cmap='viridis')\n                    ax.set_title(f'Feature {i}')\n                    plt.colorbar(im, ax=ax)",
+      "name": "eval_epoch",
+      "code": "def eval_epoch(model, dataloader, criterion, device):\n    \"\"\"\n    Evaluates the model on the validation/test set.\n    \"\"\"\n    model.eval()\n    epoch_loss = 0\n    all_preds = []\n    all_labels = []\n    \n    with torch.no_grad():\n        for batch in tqdm(dataloader, desc=\"Evaluating\"):\n            input_ids = batch['input_ids'].to(device)\n            pos_tags = batch['pos_tags'].to(device)\n            rules = batch['rules'].to(device)\n            attention_mask = batch['attention_mask'].to(device)\n            sentence_masks = batch['sentence_masks'].to(device)\n            labels = batch['labels'].to(device)\n            \n            outputs = model(input_ids, attention_mask, pos_tags, rules, sentence_masks)\n            loss = criterion(outputs, labels)\n            epoch_loss += loss.item()",
       "language": "python",
       "file": "train.py",
       "lines": 21
     },
     {
       "type": "function",
-      "name": "visualize_graph_conv",
-      "code": "def visualize_graph_conv(writer, model, keypoints, camera_matrix, skeleton, global_step):\n    \"\"\"Visualize graph convolution operations\"\"\"\n    model.track_activations = True\n    outputs, activations = model(keypoints)\n    model.track_activations = False\n    \n    # Visualize input skeleton\n    fig = plt.figure(figsize=(10, 10))\n    keypoints_np = keypoints[0].cpu().numpy().reshape(-1, 2)\n    \n    # Plot connections\n    for child, parent in skeleton.get_connection_indices():\n        plt.plot([keypoints_np[child, 0], keypoints_np[parent, 0]],\n                [keypoints_np[child, 1], keypoints_np[parent, 1]],\n                'b-', alpha=0.6)\n    \n    # Plot joints\n    plt.scatter(keypoints_np[:, 0], keypoints_np[:, 1], c='red')\n    plt.title('Input Skeleton')\n    writer.add_figure('Graph/InputSkeleton', fig, global_step)\n    plt.close(fig)",
+      "name": "main",
+      "code": "def main():\n    # Load data\n    print(\"Loading preprocessed data...\")\n    data = load_data()\n    train_data = data['train']\n    test_data = data['test']\n    vocab = data['vocab']\n    num_classes = len(vocab['label_to_id'])\n    \n    # Create datasets and dataloaders\n    print(\"Creating datasets and dataloaders...\")\n    train_dataset = NewsgroupsDataset(train_data)\n    test_dataset = NewsgroupsDataset(test_data)\n    \n    train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True, collate_fn=collate_fn)\n    test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False, collate_fn=collate_fn)\n    \n    # Initialize the model\n    print(\"Initializing the model...\")\n    vocab_size = len(vocab['word_vocab'])\n    pos_vocab_size = len(vocab['pos_vocab'])",
       "language": "python",
       "file": "train.py",
       "lines": 21
     },
     {
       "type": "function",
-      "name": "validate",
-      "code": "def validate(epoch, show_visualization=True):\n        model.eval()\n        val_loss = 0.0\n        val_frob_loss = 0.0\n        val_recon_loss = 0.0\n        \n        with torch.no_grad():\n            for i, batch_data in enumerate(val_loader):\n                keypoints_2d, keypoints_3d, camera_matrix = batch_data[0], batch_data[1], batch_data[2]\n                keypoints_2d = keypoints_2d.to(args.device).view(-1, 31, 2)  # Ensure correct shape\n                keypoints_3d = keypoints_3d.to(args.device).view(-1, 31, 3)  # Ensure correct shape\n                camera_matrix = camera_matrix.to(args.device).view(-1, 4, 4)  # Ensure correct shape\n                \n                model.track_activations = True\n                outputs = model(keypoints_2d)\n                if isinstance(outputs, tuple):\n                    outputs, activations = outputs\n                \n                loss, frob_loss, recon_loss = weighted_frobenius_loss(\n                    outputs, \n                    camera_matrix,",
+      "name": "assign_rules",
+      "code": "def assign_rules(pos_tags):\n    \"\"\"\n    Assigns dummy rules based on POS tags.\n    \"\"\"\n    rules = []\n    for pos in pos_tags:\n        word_rules = []\n        if pos.startswith('N'):\n            word_rules.append('rule1')\n        if pos.startswith('V'):\n            word_rules.append('rule2')\n        if not word_rules:\n            word_rules.append('rule3')\n        # Ensure max_rules_per_word\n        word_rules = word_rules[:MAX_RULES_PER_WORD]\n        rules.append(word_rules)\n    return rules\n",
       "language": "python",
-      "file": "train.py",
-      "lines": 21
+      "file": "predict.py",
+      "lines": 18
     },
     {
       "type": "function",
-      "name": "clip_outliers_camera_matrix",
-      "code": "def clip_outliers_camera_matrix(self, camera_matrix):\n        # Ensure camera_matrix is the right shape (4,4)\n        camera_matrix = camera_matrix.reshape(4, 4)\n        \n        # Create a copy to avoid modifying the original\n        cleaned_camera_matrix = camera_matrix.copy()\n        \n        # Get the translation vector (last row)\n        translation = camera_matrix[3, :3]\n        \n        # Define clip bounds (e.g., 5th and 95th percentiles)\n        lower_bound = np.percentile(translation, 5)\n        upper_bound = np.percentile(translation, 95)\n        \n        # Clip the translation values\n        clipped_translation = np.clip(translation, lower_bound, upper_bound)\n        \n        # Replace the last row with clipped values\n        cleaned_camera_matrix[3, :3] = clipped_translation\n        \n        # Flatten the cleaned camera matrix",
+      "name": "assign_rules",
+      "code": "def assign_rules(pos_tags):\n    \"\"\"\n    Assigns dummy rules based on POS tags.\n    \"\"\"\n    rules = []\n    for pos in pos_tags:\n        word_rules = []\n        if pos.startswith('N'):\n            word_rules.append('rule1')\n        if pos.startswith('V'):\n            word_rules.append('rule2')\n        if not word_rules:\n            word_rules.append('rule3')\n        # Ensure max_rules_per_word\n        word_rules = word_rules[:MAX_RULES]\n        rules.append(word_rules)\n    return rules\n",
       "language": "python",
-      "file": "dataset/mocap_dataset.py",
-      "lines": 21
-    },
-    {
-      "type": "function",
-      "name": "weighted_frobenius_loss",
-      "code": "def weighted_frobenius_loss(pred: torch.Tensor, target: torch.Tensor, points_3d: torch.Tensor, points_2d: torch.Tensor, alpha: float = 0.7):\n    \"\"\"\n    Frobenius norm and reconstruction error\n    \n    Args:\n        pred: Predicted camera matrix (B, 16)\n        target: Target camera matrix (B, 16)\n        points_3d: 3D keypoints (B, N, 3)\n        points_2d: 2D keypoints (B, N, 2)\n        alpha: Weight for combining losses (default: 0.7)\n    \"\"\"\n    # Frobenius norm loss for ground truth camera matrices vs predicted camera matrices\n    pred_matrix = pred.view(-1, 4, 4)\n    target_matrix = target.view(-1, 4, 4)\n    frob_norm = torch.norm(pred_matrix - target_matrix, p='fro', dim=(1, 2))\n    frob_loss = torch.mean(frob_norm)\n    \n    # Reconstruction loss for ground truth 2D points vs predicted 2D points\n    batch_size = pred.shape[0]\n    recon_loss = 0.0\n    ",
-      "language": "python",
-      "file": "model/loss.py",
-      "lines": 21
-    },
-    {
-      "type": "function",
-      "name": "find_projection_matrix_dlt",
-      "code": "def find_projection_matrix_dlt(points_3d, points_2d, view_matrix):\n    \"\"\"Find projection matrix using Direct Linear Transform.\"\"\"\n    # Convert 3D points to camera space\n    points_homogeneous = np.hstack([points_3d, np.ones((len(points_3d), 1))])\n    points_camera = points_homogeneous @ view_matrix.T\n    \n    # Normalize 2D points\n    points_2d_homogeneous = np.hstack([points_2d, np.ones((len(points_2d), 1))])\n    \n    # Build the DLT matrix\n    A = []\n    for i in range(len(points_3d)):\n        X = points_camera[i]\n        x = points_2d_homogeneous[i]\n        \n        A.append([\n            X[0], X[1], X[2], X[3], 0, 0, 0, 0, -x[0]*X[0], -x[0]*X[1], -x[0]*X[2], -x[0]*X[3]\n        ])\n        A.append([\n            0, 0, 0, 0, X[0], X[1], X[2], X[3], -x[1]*X[0], -x[1]*X[1], -x[1]*X[2], -x[1]*X[3]\n        ])",
-      "language": "python",
-      "file": "model/loss.py",
-      "lines": 21
-    },
-    {
-      "type": "function",
-      "name": "forward",
-      "code": "def forward(self, x):\n        # Ensure input is on the correct device\n        x = x.to(self.device)\n        \n        activations = {} if self.track_activations else None\n        \n        B = x.shape[0]\n        x = x.view(B, self.num_joints, 2)\n        \n        if self.track_activations:\n            activations['input'] = x.detach()\n        \n        x = self.input_layer(x)\n        if self.track_activations:\n            activations['after_input_layer'] = x.detach()\n        \n        x = self.pos_drop(x)\n        x = self.kpa(x)\n        if self.track_activations:\n            activations['after_kpa'] = x.detach()\n",
-      "language": "python",
-      "file": "model/model.py",
-      "lines": 21
-    },
-    {
-      "type": "function",
-      "name": "initialize_weights",
-      "code": "def initialize_weights(m: nn.Module):\n    \"\"\"\n    Initialize model weights using Xavier/Glorot initialization.\n    \n    Args:\n        m (nn.Module): Model layer to initialize\n    \"\"\"\n    if isinstance(m, nn.Linear):\n        # Xavier/Glorot initialization for linear layers\n        nn.init.xavier_uniform_(m.weight)\n        if m.bias is not None:\n            nn.init.zeros_(m.bias)\n            \n    elif isinstance(m, nn.LayerNorm):\n        # Initialize LayerNorm with ones \n        nn.init.ones_(m.weight)\n        nn.init.zeros_(m.bias)\n            \n    elif isinstance(m, nn.Parameter):\n        # Initialize other parameters with Xavier/Glorot\n        nn.init.xavier_uniform_(m) ",
-      "language": "python",
-      "file": "model/weights.py",
-      "lines": 21
-    },
-    {
-      "type": "function",
-      "name": "get_spatial_graph",
-      "code": "def get_spatial_graph(skeleton: Skeleton, strategy: str = 'distance'):\n    num_joints = len(skeleton.joint_names)\n    adj = np.zeros((num_joints, num_joints), dtype=np.float32)\n    \n    if strategy == 'connectivity':\n        # Use skeleton connectivity\n        for child, parent in skeleton.get_connection_indices():\n            adj[child, parent] = 1.0\n            adj[parent, child] = 1.0\n    else:  # distance-based\n        # Create fully connected graph with distance-based weights\n        for i in range(num_joints):\n            for j in range(i + 1, num_joints):\n                # Check if joints are connected in skeleton\n                connected = any((i, j) == (c, p) or (j, i) == (c, p) \n                              for c, p in skeleton.get_connection_indices())\n                if connected:\n                    adj[i, j] = adj[j, i] = 1.0\n                else:\n                    # Add weaker connections for non-directly connected joints\n                    adj[i, j] = adj[j, i] = 0.1",
-      "language": "python",
-      "file": "utils/graph_utils.py",
-      "lines": 21
-    },
-    {
-      "type": "function",
-      "name": "sanity_check",
-      "code": "def sanity_check(dataset):\n    \"\"\"\n    Perform basic sanity checks on the dataset.\n    \"\"\"\n    print(\"\\nPerforming sanity check on 50 samples...\")\n    for i in tqdm(range(min(50, len(dataset)))):\n        try:\n            sample = dataset[i]\n            \n            # Check number of elements in sample\n            assert len(sample) == 5, \"Sample should contain 5 elements (keypoints_2d, keypoints_3d, camera_matrix, joint_names, indices)\"\n            \n            keypoints_2d, keypoints_3d, camera_matrix, joint_names, indices = sample\n            \n            # Check keypoints_2d shape\n            assert isinstance(keypoints_2d, torch.Tensor), \"keypoints_2d should be a torch.Tensor\"\n            assert keypoints_2d.dim() == 1, \"keypoints_2d should be a 1D tensor\"\n            assert keypoints_2d.size(0) == dataset.num_joints * 2, f\"keypoints_2d should have shape ({dataset.num_joints * 2},)\"\n            \n            # Check keypoints_3d shape\n            assert isinstance(keypoints_3d, torch.Tensor), \"keypoints_3d should be a torch.Tensor\"",
-      "language": "python",
-      "file": "utils/sanity_checks.py",
-      "lines": 21
-    },
-    {
-      "type": "function",
-      "name": "test_mongodb_connection",
-      "code": "def test_mongodb_connection():\n    # Load environment variables\n    load_dotenv()\n    \n    # Get MongoDB connection details from environment variables\n    uri = os.getenv('MONGO_URI')\n    db_name = os.getenv('MONGO_DB_NAME')\n    collection_name = os.getenv('MONGO_COLLECTION_NAME')\n    \n    print(f\"Attempting to connect with:\")\n    print(f\"Database: {db_name}\")\n    print(f\"Collection: {collection_name}\")\n    \n    try:\n        # Create a MongoDB client\n        client = MongoClient(uri, serverSelectionTimeoutMS=5000)\n        \n        # Test the connection\n        client.server_info()\n        print(\"\u2705 Successfully connected to MongoDB server\")\n        ",
-      "language": "python",
-      "file": "utils/test_mongodb_connection.py",
-      "lines": 21
-    },
-    {
-      "type": "function",
-      "name": "visualize_keypoint_skeleton",
-      "code": "def visualize_keypoint_skeleton(keypoints, skeleton, return_fig=False):\n    \"\"\"Visualize skeleton with keypoints\"\"\"\n    fig = plt.figure(figsize=(10, 10))\n    keypoints_2d = keypoints.reshape(-1, 2)\n    \n    # Plot connections\n    for child, parent in skeleton.get_connection_indices():\n        plt.plot([keypoints_2d[child, 0], keypoints_2d[parent, 0]],\n                [keypoints_2d[child, 1], keypoints_2d[parent, 1]],\n                'b-', alpha=0.6)\n    \n    # Plot joints\n    plt.scatter(keypoints_2d[:, 0], keypoints_2d[:, 1], c='red')\n    plt.title('Skeleton Visualization')\n    plt.grid(True)\n    \n    if return_fig:\n        return fig\n    plt.show()\n    plt.close()\n",
-      "language": "python",
-      "file": "utils/viz_kps.py",
-      "lines": 21
-    },
-    {
-      "type": "function",
-      "name": "visualize_graph_convolutions",
-      "code": "def visualize_graph_convolutions(skeleton, activations, writer, global_step):\n    \"\"\"Visualize graph convolutions and attention maps\"\"\"\n    try:\n        # Plot base skeleton structure\n        if 'input' in activations:\n            input_keypoints = activations['input'][0].cpu().numpy()\n            fig = skeleton.plot_graph_with_keypoints(input_keypoints)\n            plt.title(\"Graph Structure with Input Keypoints\")\n            writer.add_figure('Graph/Structure', fig, global_step)\n            plt.close(fig)\n        \n        # Plot KPA attention maps if available\n        if 'after_kpa' in activations:\n            kpa_act = activations['after_kpa'][0].cpu().numpy()\n            fig = plt.figure(figsize=(15, 5))\n            \n            # Plot attention heatmap\n            plt.subplot(131)\n            attention_map = kpa_act @ kpa_act.T\n            plt.imshow(attention_map, cmap='viridis')\n            plt.colorbar()",
-      "language": "python",
-      "file": "utils/viz_kps.py",
-      "lines": 21
+      "file": "preprocess.py",
+      "lines": 18
     }
   ],
   "technical_summary": {
     "primary_language": "python",
     "main_concepts": [
-      "data_processing",
       "deep_learning",
-      "computer_vision",
+      "data_processing",
+      "machine_learning",
+      "nlp",
       "neural_network"
     ],
-    "complexity_score": 17.44,
-    "code_quality": "production"
+    "complexity_score": 13.78,
+    "code_quality": "prototype"
   }
 }
