@@ -1,20 +1,19 @@
 {
-  "name": "MocapViewer3D",
-  "description": "An interactive 3D/2D motion capture visualization tool that allows real-time manipulation of camera perspectives and skeleton pose viewing. This tool provides simultaneous 3D and 2D projective views of motion capture data, making it ideal for computer vision and animation research.",
-  "ai_description": "Introducing MocapViewer3D, a groundbreaking interactive 3D/2D motion capture visualization tool that revolutionizes the way researchers and animators interpret and manipulate motion capture data. By seamlessly combining real-time camera perspective adjustments and skeleton pose viewing, this innovative tool unlocks unprecedented levels of depth and insight, allowing users to explore and analyze motion capture data in ways previously unimaginable. The potential applications of MocapViewer3D are vast, ranging from advancing computer vision and animation research to enhancing performance capture and simulation in the film and gaming industries, ultimately driving innovation and creativity in the digital arts. By marrying cutting-edge technology with intuitive user interface, MocapViewer3D is poised to redefine the field of motion capture and 3D graphics.",
-  "why_featured": "MocapViewer3D deserves to be featured this week because it showcases a groundbreaking technical innovation in the intersection of computer vision and 3D graphics, enabling researchers and animators to seamlessly visualize and manipulate motion capture data in a fully interactive environment. This tool's practical value lies in its ability to accelerate research and workflow efficiency, making it an invaluable resource for the computer vision and animation communities.",
+  "name": "Quaternion-Capsule-Network",
+  "description": "An impementation of Quaternion Capsule Networks for prediction of View matrix from 2D body keypoints ",
+  "ai_description": "We are pioneering the development of a Quaternion Capsule Network (QCN) specifically designed to predict view matrices from 2D body keypoints, pushing the boundaries of computer vision and machine learning in robotics. By leveraging the power of quaternions to encode spatial relationships, our QCN offers unparalleled accuracy and efficiency in fusing visual and kinematic data. This innovative approach has vast potential applications in fields such as humanoid robotics, 3D reconstruction, and gesture recognition, poised to revolutionize the way we interact with and understand the physical world.",
+  "why_featured": "This project deserves to be featured this week because it showcases a groundbreaking application of Quaternion Capsule Networks in Computer Vision, enabling the prediction of a View matrix from 2D body keypoints, a crucial aspect of robotics and 3D vision, and represents a significant technical innovation in the field. By successfully integrating this cutting-edge technique, the project has the potential to revolutionize the way robots perceive and interact with their environment.",
   "categories": [
+    "Machine Learning",
     "Computer Vision",
-    "3D Graphics",
-    "Tools & Utilities"
+    "Robotics"
   ],
   "languages": [
-    "Python",
-    "Jupyter Notebook"
+    "Python"
   ],
   "stars": 0,
-  "url": "https://github.com/RyoK3N/MocapViewer3D",
-  "selected_date": "2026-01-25T01:32:10.462284",
-  "week_number": 4,
+  "url": "https://github.com/RyoK3N/Quaternion-Capsule-Network",
+  "selected_date": "2026-02-01T02:02:01.903660",
+  "week_number": 5,
   "year": 2026
 }

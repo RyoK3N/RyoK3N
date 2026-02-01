@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-01-25]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-02-01]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 4, 2026
+### 🎯 Week 5, 2026
 
 </div>
 
@@ -455,15 +455,15 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [MocapViewer3D](https://github.com/RyoK3N/MocapViewer3D)
+### 📦 [Quaternion-Capsule-Network](https://github.com/RyoK3N/Quaternion-Capsule-Network)
 
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-purple?style=flat-square) ![3D Graphics](https://img.shields.io/badge/3D_Graphics-purple?style=flat-square) ![Tools & Utilities](https://img.shields.io/badge/Tools_&_Utilities-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Computer Vision](https://img.shields.io/badge/Computer_Vision-purple?style=flat-square) ![Robotics](https://img.shields.io/badge/Robotics-purple?style=flat-square)
 
-Introducing MocapViewer3D, a groundbreaking interactive 3D/2D motion capture visualization tool that revolutionizes the way researchers and animators interpret and manipulate motion capture data. By seamlessly combining real-time camera perspective adjustments and skeleton pose viewing, this innovative tool unlocks unprecedented levels of depth and insight, allowing users to explore and analyze motion capture data in ways previously unimaginable. The potential applications of MocapViewer3D are vast, ranging from advancing computer vision and animation research to enhancing performance capture and simulation in the film and gaming industries, ultimately driving innovation and creativity in the digital arts. By marrying cutting-edge technology with intuitive user interface, MocapViewer3D is poised to redefine the field of motion capture and 3D graphics.
+We are pioneering the development of a Quaternion Capsule Network (QCN) specifically designed to predict view matrices from 2D body keypoints, pushing the boundaries of computer vision and machine learning in robotics. By leveraging the power of quaternions to encode spatial relationships, our QCN offers unparalleled accuracy and efficiency in fusing visual and kinematic data. This innovative approach has vast potential applications in fields such as humanoid robotics, 3D reconstruction, and gesture recognition, poised to revolutionize the way we interact with and understand the physical world.
 
 **💡 Why Featured This Week:**
 
-*MocapViewer3D deserves to be featured this week because it showcases a groundbreaking technical innovation in the intersection of computer vision and 3D graphics, enabling researchers and animators to seamlessly visualize and manipulate motion capture data in a fully interactive environment. This tool's practical value lies in its ability to accelerate research and workflow efficiency, making it an invaluable resource for the computer vision and animation communities.*
+*This project deserves to be featured this week because it showcases a groundbreaking application of Quaternion Capsule Networks in Computer Vision, enabling the prediction of a View matrix from 2D body keypoints, a crucial aspect of robotics and 3D vision, and represents a significant technical innovation in the field. By successfully integrating this cutting-edge technique, the project has the potential to revolutionize the way robots perceive and interact with their environment.*
 
 </td>
 <td width="40%">
@@ -471,12 +471,12 @@ Introducing MocapViewer3D, a groundbreaking interactive 3D/2D motion capture vis
 **📊 Project Stats**
 
 - ⭐ **Stars**: 0
-- 🏷️ **Categories**: Computer Vision, 3D Graphics, Tools & Utilities
-- 💻 **Languages**: Python, Jupyter Notebook
+- 🏷️ **Categories**: Machine Learning, Computer Vision, Robotics
+- 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/MocapViewer3D)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Quaternion-Capsule-Network)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ Introducing MocapViewer3D, a groundbreaking interactive 3D/2D motion capture vis
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: January 25, 2026
+**Published**: February 01, 2026
 
-In the realm of natural language processing (NLP), one of the most significant challenges is effectively handling the hierarchical structure of docume...
+The project "HANTransformer" addresses the challenge of accurately classifying documents in a high-dimensional space, specifically focusing on the 20 ...
 
-**Tags**: `Engineering` `Code Analysis` `Technical` `Data Processing`
+**Tags**: `Data Processing` `Technical` `Deep Learning` `Engineering`
 
 <div align="center">
 

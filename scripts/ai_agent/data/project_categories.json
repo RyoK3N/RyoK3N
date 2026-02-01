@@ -53,8 +53,8 @@
       "description": "The webpage for AiAI research group for Prof. Youshan Zhang",
       "categories": [
         "Machine Learning",
-        "Web Development",
-        "Research"
+        "Research",
+        "Web Development"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -89,7 +89,7 @@
       "categories": [
         "Machine Learning",
         "Data Science",
-        "Research"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -102,9 +102,7 @@
       "name": "AutoEncoders",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Data Science",
-        "Tools & Utilities"
+        "Uncategorized"
       ],
       "languages": [],
       "topics": [],
@@ -116,7 +114,8 @@
       "description": "An agent that helps you predict the next day's stock data.",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "DevOps"
       ],
       "languages": [
         "Python",
@@ -322,7 +321,8 @@
       "description": "Functions used for various computer vision problems using julia and python",
       "categories": [
         "Computer Vision",
-        "Machine Learning"
+        "Machine Learning",
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -337,9 +337,9 @@
       "name": "Fruit-Loops",
       "description": "Fruit Loops is an algorithm to find closed loops in a set of lines ",
       "categories": [
+        "Machine Learning",
         "Computer Vision",
-        "Tools & Utilities",
-        "Research"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -352,8 +352,8 @@
       "name": "Golfbot_wizardlm",
       "description": "An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions.",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
+        "Machine Learning",
         "Web Development"
       ],
       "languages": [
@@ -369,8 +369,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Python"
@@ -383,8 +382,8 @@
       "name": "HANTransformer",
       "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
+        "Machine Learning",
         "Data Science"
       ],
       "languages": [
@@ -429,8 +428,8 @@
       "description": "",
       "categories": [
         "Computer Vision",
-        "Tools & Utilities",
-        "3D Graphics"
+        "3D Graphics",
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -478,7 +477,8 @@
       "description": "A repository for revising ML concepts in Python and Julia",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Research"
       ],
       "languages": [
         "Python",
@@ -495,7 +495,7 @@
       "categories": [
         "Computer Vision",
         "3D Graphics",
-        "Tools & Utilities"
+        "Machine Learning"
       ],
       "languages": [
         "Python",
@@ -535,7 +535,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Machine Learning"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -548,7 +548,6 @@
       "name": "Music3x",
       "description": " This is your one-stop destination for innovative music tools and projects aimed at empowering creativity and exploration in sound",
       "categories": [
-        "Data Science",
         "Web Development",
         "Tools & Utilities"
       ],
@@ -597,8 +596,8 @@
       "name": "Ollama_API",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Tools & Utilities"
       ],
       "languages": [
         "Shell",
@@ -642,7 +641,8 @@
       "description": "Projection-Guided Gaussian Splatting from Single RGB-D",
       "categories": [
         "Machine Learning",
-        "Computer Vision"
+        "Computer Vision",
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -657,7 +657,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing"
+        "Natural Language Processing",
+        "Web Development"
       ],
       "languages": [
         "HTML",
@@ -673,7 +674,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities",
+        "Machine Learning",
         "Research"
       ],
       "languages": [
@@ -689,9 +690,9 @@
       "name": "Quaternion-Capsule-Network",
       "description": "An impementation of Quaternion Capsule Networks for prediction of View matrix from 2D body keypoints ",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Research"
+        "Computer Vision",
+        "Robotics"
       ],
       "languages": [
         "Python"
@@ -704,8 +705,9 @@
       "name": "Real-Time-Violence-Detection",
       "description": "The goal of this project is to detect violence in the video feeds of the training dataset and implement a Neural Network which classifies the videos as violent or nonviolent. The aim of this project is to develop an architecture that is capable of detecting violence in Real Time.",
       "categories": [
+        "Computer Vision",
         "Machine Learning",
-        "Computer Vision"
+        "Research"
       ],
       "languages": [],
       "topics": [],
@@ -716,9 +718,7 @@
       "name": "Revisions",
       "description": "",
       "categories": [
-        "Data Science",
-        "Tools & Utilities",
-        "Natural Language Processing"
+        "Uncategorized"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -762,7 +762,8 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps"
+        "DevOps",
+        "Tools & Utilities"
       ],
       "languages": [
         "TypeScript",
@@ -780,8 +781,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "Natural Language Processing",
-        "Machine Learning"
+        "Natural Language Processing"
       ],
       "languages": [
         "TypeScript",
@@ -856,8 +856,8 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Machine Learning",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -901,8 +901,7 @@
       "description": "",
       "categories": [
         "Computer Vision",
-        "Machine Learning",
-        "Data Science"
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -916,7 +915,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science"
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -944,16 +944,17 @@
   ],
   "category_statistics": {
     "Computer Vision": 13,
-    "Machine Learning": 41,
-    "Data Science": 27,
-    "Natural Language Processing": 20,
-    "Web Development": 19,
-    "Research": 9,
-    "Tools & Utilities": 18,
-    "DevOps": 5,
+    "Machine Learning": 39,
+    "Data Science": 23,
+    "Natural Language Processing": 19,
+    "Web Development": 20,
+    "Research": 10,
+    "Tools & Utilities": 19,
+    "Uncategorized": 3,
+    "DevOps": 6,
     "Reinforcement Learning": 1,
     "3D Graphics": 2,
-    "Uncategorized": 1
+    "Robotics": 1
   },
   "total_repositories": 58,
   "timestamp": "{\"iso\": \"now\"}"
