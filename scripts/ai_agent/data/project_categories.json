@@ -6,7 +6,7 @@
       "categories": [
         "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Research"
       ],
       "languages": [
         "Python"
@@ -53,8 +53,8 @@
       "description": "The webpage for AiAI research group for Prof. Youshan Zhang",
       "categories": [
         "Machine Learning",
-        "Research",
-        "Web Development"
+        "Web Development",
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -72,8 +72,8 @@
       "description": "MIDI Controller + MP3 Player : Allows you to connect your midi and play live beats to downloaded songs from youtube.",
       "categories": [
         "Data Science",
-        "Web Development",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Web Development"
       ],
       "languages": [
         "Python",
@@ -89,7 +89,7 @@
       "categories": [
         "Machine Learning",
         "Data Science",
-        "Tools & Utilities"
+        "Research"
       ],
       "languages": [
         "Python"
@@ -102,7 +102,9 @@
       "name": "AutoEncoders",
       "description": "",
       "categories": [
-        "Uncategorized"
+        "Machine Learning",
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [],
       "topics": [],
@@ -114,8 +116,7 @@
       "description": "An agent that helps you predict the next day's stock data.",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "DevOps"
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -162,8 +163,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Research"
+        "Computer Vision"
       ],
       "languages": [
         "C++",
@@ -210,8 +210,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python"
@@ -260,7 +259,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
+        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -322,7 +321,7 @@
       "categories": [
         "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Tools & Utilities"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -337,9 +336,9 @@
       "name": "Fruit-Loops",
       "description": "Fruit Loops is an algorithm to find closed loops in a set of lines ",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
-        "Tools & Utilities"
+        "Tools & Utilities",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -382,8 +381,8 @@
       "name": "HANTransformer",
       "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
       "categories": [
-        "Natural Language Processing",
         "Machine Learning",
+        "Natural Language Processing",
         "Data Science"
       ],
       "languages": [
@@ -398,8 +397,9 @@
       "name": "Hurricane_Classification",
       "description": "Classifying Hurricanes from Geospatial Images",
       "categories": [
+        "Computer Vision",
         "Machine Learning",
-        "Computer Vision"
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -548,6 +548,7 @@
       "name": "Music3x",
       "description": " This is your one-stop destination for innovative music tools and projects aimed at empowering creativity and exploration in sound",
       "categories": [
+        "Machine Learning",
         "Web Development",
         "Tools & Utilities"
       ],
@@ -629,7 +630,7 @@
       "categories": [
         "Machine Learning",
         "Web Development",
-        "Data Science"
+        "3D Graphics"
       ],
       "languages": [],
       "topics": [],
@@ -640,8 +641,8 @@
       "name": "ProjGS",
       "description": "Projection-Guided Gaussian Splatting from Single RGB-D",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
+        "Machine Learning",
         "Research"
       ],
       "languages": [
@@ -707,7 +708,7 @@
       "categories": [
         "Computer Vision",
         "Machine Learning",
-        "Research"
+        "Natural Language Processing"
       ],
       "languages": [],
       "topics": [],
@@ -718,7 +719,9 @@
       "name": "Revisions",
       "description": "",
       "categories": [
-        "Uncategorized"
+        "Data Science",
+        "Tools & Utilities",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -758,6 +761,24 @@
       "url": "https://github.com/RyoK3N/Sound_Anlysis"
     },
     {
+      "name": "Synexcript",
+      "description": "Synexcript is an open-source Python library that helps teams manage, version, test, and optimize prompts for Large Language Models (LLMs). ",
+      "categories": [
+        "Machine Learning",
+        "Natural Language Processing",
+        "Data Science"
+      ],
+      "languages": [
+        "Python",
+        "Shell",
+        "Makefile",
+        "Dockerfile"
+      ],
+      "topics": [],
+      "stars": 0,
+      "url": "https://github.com/RyoK3N/Synexcript"
+    },
+    {
       "name": "Synexian",
       "description": "",
       "categories": [
@@ -795,8 +816,7 @@
       "name": "synexian-webflow-smoketest",
       "description": "",
       "categories": [
-        "Web Development",
-        "Tools & Utilities"
+        "Web Development"
       ],
       "languages": [
         "TypeScript"
@@ -810,7 +830,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision"
+        "Computer Vision",
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -855,9 +876,7 @@
       "name": "TDA",
       "description": "",
       "categories": [
-        "Data Science",
-        "Tools & Utilities",
-        "Research"
+        "Uncategorized"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -915,8 +934,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -944,18 +962,18 @@
   ],
   "category_statistics": {
     "Computer Vision": 13,
-    "Machine Learning": 39,
-    "Data Science": 23,
-    "Natural Language Processing": 19,
-    "Web Development": 20,
+    "Machine Learning": 41,
     "Research": 10,
-    "Tools & Utilities": 19,
-    "Uncategorized": 3,
-    "DevOps": 6,
+    "Natural Language Processing": 21,
+    "Web Development": 20,
+    "Data Science": 25,
+    "Tools & Utilities": 17,
+    "DevOps": 5,
     "Reinforcement Learning": 1,
-    "3D Graphics": 2,
-    "Robotics": 1
+    "3D Graphics": 3,
+    "Robotics": 1,
+    "Uncategorized": 2
   },
-  "total_repositories": 58,
+  "total_repositories": 59,
   "timestamp": "{\"iso\": \"now\"}"
 }

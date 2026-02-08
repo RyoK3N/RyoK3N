@@ -1,19 +1,19 @@
 {
-  "name": "Quaternion-Capsule-Network",
-  "description": "An impementation of Quaternion Capsule Networks for prediction of View matrix from 2D body keypoints ",
-  "ai_description": "We are pioneering the development of a Quaternion Capsule Network (QCN) specifically designed to predict view matrices from 2D body keypoints, pushing the boundaries of computer vision and machine learning in robotics. By leveraging the power of quaternions to encode spatial relationships, our QCN offers unparalleled accuracy and efficiency in fusing visual and kinematic data. This innovative approach has vast potential applications in fields such as humanoid robotics, 3D reconstruction, and gesture recognition, poised to revolutionize the way we interact with and understand the physical world.",
-  "why_featured": "This project deserves to be featured this week because it showcases a groundbreaking application of Quaternion Capsule Networks in Computer Vision, enabling the prediction of a View matrix from 2D body keypoints, a crucial aspect of robotics and 3D vision, and represents a significant technical innovation in the field. By successfully integrating this cutting-edge technique, the project has the potential to revolutionize the way robots perceive and interact with their environment.",
+  "name": "ThemeClassifierSLM",
+  "description": "ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks.",
+  "ai_description": "ThemeClassifierSLM is a groundbreaking LSTM-based neural network model revolutionizing text classification by harnessing advanced techniques to tackle the complexities of theme extraction in text data, yielding unparalleled accuracy and reliability. By integrating sophisticated neural network architectures and machine learning algorithms, this project showcases a technical marvel that sets a new standard for text analysis tasks. With its potential to unlock the full potential of natural language processing, ThemeClassifierSLM has the power to transform industries ranging from content moderation to sentiment analysis, and has the potential to make a significant impact in the field of data science.",
+  "why_featured": "This week, we're shining the spotlight on ThemeClassifierSLM, a cutting-edge LSTM-based neural network model that showcases a remarkable technical innovation in text analysis tasks, making it an absolute must-see for the Machine Learning, Natural Language Processing, and Data Science communities. With its sophisticated techniques and exceptional performance, this project deserves to be featured this week for its groundbreaking contributions to the field of natural language processing.",
   "categories": [
     "Machine Learning",
-    "Computer Vision",
-    "Robotics"
+    "Natural Language Processing",
+    "Data Science"
   ],
   "languages": [
     "Python"
   ],
-  "stars": 0,
-  "url": "https://github.com/RyoK3N/Quaternion-Capsule-Network",
-  "selected_date": "2026-02-01T02:02:01.903660",
-  "week_number": 5,
+  "stars": 1,
+  "url": "https://github.com/RyoK3N/ThemeClassifierSLM",
+  "selected_date": "2026-02-08T02:13:02.446932",
+  "week_number": 6,
   "year": 2026
 }

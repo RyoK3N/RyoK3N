@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-02-01]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-02-08]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 5, 2026
+### 🎯 Week 6, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Quaternion-Capsule-Network](https://github.com/RyoK3N/Quaternion-Capsule-Network)
+### 📦 [ThemeClassifierSLM](https://github.com/RyoK3N/ThemeClassifierSLM)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Computer Vision](https://img.shields.io/badge/Computer_Vision-purple?style=flat-square) ![Robotics](https://img.shields.io/badge/Robotics-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Data Science](https://img.shields.io/badge/Data_Science-purple?style=flat-square)
 
-We are pioneering the development of a Quaternion Capsule Network (QCN) specifically designed to predict view matrices from 2D body keypoints, pushing the boundaries of computer vision and machine learning in robotics. By leveraging the power of quaternions to encode spatial relationships, our QCN offers unparalleled accuracy and efficiency in fusing visual and kinematic data. This innovative approach has vast potential applications in fields such as humanoid robotics, 3D reconstruction, and gesture recognition, poised to revolutionize the way we interact with and understand the physical world.
+ThemeClassifierSLM is a groundbreaking LSTM-based neural network model revolutionizing text classification by harnessing advanced techniques to tackle the complexities of theme extraction in text data, yielding unparalleled accuracy and reliability. By integrating sophisticated neural network architectures and machine learning algorithms, this project showcases a technical marvel that sets a new standard for text analysis tasks. With its potential to unlock the full potential of natural language processing, ThemeClassifierSLM has the power to transform industries ranging from content moderation to sentiment analysis, and has the potential to make a significant impact in the field of data science.
 
 **💡 Why Featured This Week:**
 
-*This project deserves to be featured this week because it showcases a groundbreaking application of Quaternion Capsule Networks in Computer Vision, enabling the prediction of a View matrix from 2D body keypoints, a crucial aspect of robotics and 3D vision, and represents a significant technical innovation in the field. By successfully integrating this cutting-edge technique, the project has the potential to revolutionize the way robots perceive and interact with their environment.*
+*This week, we're shining the spotlight on ThemeClassifierSLM, a cutting-edge LSTM-based neural network model that showcases a remarkable technical innovation in text analysis tasks, making it an absolute must-see for the Machine Learning, Natural Language Processing, and Data Science communities. With its sophisticated techniques and exceptional performance, this project deserves to be featured this week for its groundbreaking contributions to the field of natural language processing.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 0
-- 🏷️ **Categories**: Machine Learning, Computer Vision, Robotics
+- ⭐ **Stars**: 1
+- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Data Science
 - 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Quaternion-Capsule-Network)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/ThemeClassifierSLM)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ We are pioneering the development of a Quaternion Capsule Network (QCN) specific
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: February 01, 2026
+**Published**: February 08, 2026
 
-The project "HANTransformer" addresses the challenge of accurately classifying documents in a high-dimensional space, specifically focusing on the 20 ...
+The project "HANTransformer" addresses the challenge of accurately classifying documents into relevant categories within large datasets, a common task...
 
-**Tags**: `Data Processing` `Technical` `Deep Learning` `Engineering`
+**Tags**: `Code Analysis` `Deep Learning` `Technical` `Engineering`
 
 <div align="center">
 
