@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-02-08]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-02-15]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 6, 2026
+### 🎯 Week 7, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [ThemeClassifierSLM](https://github.com/RyoK3N/ThemeClassifierSLM)
+### 📦 [HANTransformer](https://github.com/RyoK3N/HANTransformer)
 
 ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Data Science](https://img.shields.io/badge/Data_Science-purple?style=flat-square)
 
-ThemeClassifierSLM is a groundbreaking LSTM-based neural network model revolutionizing text classification by harnessing advanced techniques to tackle the complexities of theme extraction in text data, yielding unparalleled accuracy and reliability. By integrating sophisticated neural network architectures and machine learning algorithms, this project showcases a technical marvel that sets a new standard for text analysis tasks. With its potential to unlock the full potential of natural language processing, ThemeClassifierSLM has the power to transform industries ranging from content moderation to sentiment analysis, and has the potential to make a significant impact in the field of data science.
+Introducing HANTransformer, a groundbreaking software project that revolutionizes document classification tasks by harnessing the power of Hierarchical Attention Network with Transformer (HANTransformer) on the 20 Newsgroups dataset. This innovative approach not only outperforms traditional machine learning methods but also leverages the strengths of both hierarchical and transformer models to achieve unparalleled accuracy. With far-reaching potential applications in information retrieval, text summarization, and sentiment analysis, HANTransformer has the potential to transform the way we process and understand vast amounts of unstructured data, driving significant impact in various industries and fields. By pushing the boundaries of NLP, this cutting-edge project showcases the exciting possibilities of intersection between machine learning, data science, and natural language processing.
 
 **💡 Why Featured This Week:**
 
-*This week, we're shining the spotlight on ThemeClassifierSLM, a cutting-edge LSTM-based neural network model that showcases a remarkable technical innovation in text analysis tasks, making it an absolute must-see for the Machine Learning, Natural Language Processing, and Data Science communities. With its sophisticated techniques and exceptional performance, this project deserves to be featured this week for its groundbreaking contributions to the field of natural language processing.*
+*The HANTransformer project deserves to be featured this week because it showcases a groundbreaking technical innovation that combines the strengths of Hierarchical Attention Networks and Transformers to achieve exceptional performance in document classification tasks, demonstrating the immense practical value of this breakthrough in the field of Natural Language Processing. By leveraging this novel approach on the 20 Newsgroups dataset, researchers can unlock new possibilities for automating content analysis and classification, revolutionizing industries from social media moderation to text-based information retrieval.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 1
+- ⭐ **Stars**: 2
 - 🏷️ **Categories**: Machine Learning, Natural Language Processing, Data Science
-- 💻 **Languages**: Python
+- 💻 **Languages**: Python, Jupyter Notebook
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/ThemeClassifierSLM)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/HANTransformer)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ ThemeClassifierSLM is a groundbreaking LSTM-based neural network model revolutio
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: February 08, 2026
+**Published**: February 15, 2026
 
-The project "HANTransformer" addresses the challenge of accurately classifying documents into relevant categories within large datasets, a common task...
+The primary technical challenge addressed by the HANTransformer project is the efficient and accurate classification of documents, particularly within...
 
-**Tags**: `Code Analysis` `Deep Learning` `Technical` `Engineering`
+**Tags**: `Deep Learning` `Engineering` `Data Processing` `Technical`
 
 <div align="center">
 

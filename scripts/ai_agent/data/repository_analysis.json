@@ -1,27 +1,31 @@
 {
-  "timestamp": "2026-02-08T02:12:29.140663",
+  "timestamp": "2026-02-15T01:57:28.239978",
   "username": "RyoK3N",
   "main_repository": "RyoK3N/RyoK3N",
   "main_repo_activity": {
     "commits": {
-      "total": 12,
-      "unique_authors": 1,
+      "total": 16,
+      "unique_authors": 2,
       "top_author": "github-actions[bot]",
       "messages": [
-        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-08",
-        "\ud83d\udcca Update ML pipeline metrics - 2026-02-07",
-        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-07",
-        "\ud83d\udcca Update ML pipeline metrics - 2026-02-06",
-        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-06",
-        "\ud83d\udcca Update ML pipeline metrics - 2026-02-05",
-        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-05",
-        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-04",
-        "\ud83d\udcca Update ML pipeline metrics - 2026-02-03",
-        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-03",
-        "\ud83d\udcca Update ML pipeline metrics - 2026-02-02",
-        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-02"
+        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-15",
+        "\ud83d\udcca Update ML pipeline metrics - 2026-02-14",
+        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-14",
+        "\ud83d\udcca Update ML pipeline metrics - 2026-02-13",
+        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-13",
+        "\ud83d\udcca Update ML pipeline metrics - 2026-02-12",
+        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-12",
+        "\ud83d\udcca Update ML pipeline metrics - 2026-02-11",
+        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-11",
+        "\ud83d\udcca Update ML pipeline metrics - 2026-02-10",
+        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-10",
+        "\ud83d\udcca Update ML pipeline metrics - 2026-02-09",
+        "\ud83d\udcca Update ML performance charts and metrics - 2026-02-09",
+        "\u26a1 Update GitHub activity",
+        "\ud83d\udcca Update ML pipeline metrics - 2026-02-08",
+        "\ud83e\udd16 AI Agent: Weekly update with blog & knowledge graph"
       ],
-      "daily_average": 1.7142857142857142
+      "daily_average": 2.2857142857142856
     },
     "pull_requests": {
       "total_recent": 0,
@@ -1312,8 +1316,8 @@
       "stars": 0,
       "forks": 0,
       "created_at": "2024-05-22T17:22:31+00:00",
-      "updated_at": "2026-02-08T01:18:10+00:00",
-      "size": 1203,
+      "updated_at": "2026-02-15T01:03:55+00:00",
+      "size": 1351,
       "url": "https://github.com/RyoK3N/RyoK3N",
       "homepage": "https://github.com/RyoK3N",
       "has_wiki": false,
@@ -1334,44 +1338,6 @@
       "updated_at": "2025-05-24T15:13:55+00:00",
       "size": 0,
       "url": "https://github.com/RyoK3N/Sound_Anlysis",
-      "homepage": "",
-      "has_wiki": true,
-      "has_pages": false,
-      "archived": false
-    },
-    {
-      "name": "Synexcript",
-      "full_name": "RyoK3N/Synexcript",
-      "description": "Synexcript is an open-source Python library that helps teams manage, version, test, and optimize prompts for Large Language Models (LLMs). ",
-      "languages": {
-        "Python": 97.01,
-        "Shell": 1.83,
-        "Makefile": 0.86,
-        "Dockerfile": 0.3
-      },
-      "topics": [],
-      "readme_content": "# Synexcript\n\n[![PyPI version](https://badge.fury.io/py/synexcript.svg)](https://badge.fury.io/py/synexcript)\n[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)\n[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)\n\n**Advanced Prompt Engineering Library for LLMs**\n\nSynexcript is an open-source Python library that helps teams manage, version, test, and optimize prompts for Large Language Models (LLMs). By combining Git-like version control, comprehensive testing frameworks, and research-backed prompt engineering techniques, Synexcript aims to become the industry standard for enterprise prompt management.\n\n## Features\n\n- \ud83d\udd04 **Version Control**: Git-like operations for prompts (commit, branch, merge, diff, rollback)\n- \ud83e\uddea **A/B Testing**: Statistical significance testing for prompt variants\n- \ud83d\udcca **Evaluation Metrics**: BLEU, ROUGE, F1, semantic similarity, and LLM-as-judge\n- \ud83d\udd2c **Research-Backed Techniques**: Chain-of-Thought, Few-Shot, Self-Consistency, and more\n- \ud83d\udd0c **Multi-Provider Support**: OpenAI, Anthropic, and extensible for others\n- \ud83d\udcdd **Template Rendering**: Jinja2-based variable substitution\n- \ud83d\udd12 **Type Safety**: Full type hints and Pydantic validation\n\n## Installation\n\n```bash\npip install synexcript\n```\n\nFor development:\n\n```bash\npip install synexcript[dev]\n```\n\n## Quick Start\n\n### Basic Usage\n\n```python\nfrom synexcript import Prompt, PromptHub\n\n# Create a prompt\nprompt = Prompt(\n    content=\"Summarize the following text: {{text}}\",\n    parameters={\"temperature\": 0.7, \"max_tokens\": 150}\n)\n\n# Initialize version control\nhub = PromptHub(\"my_project\")\n\n# Save prompt\nhub.save(\n    prompt_id=\"summarizer\",\n    prompt=prompt,\n    message=\"Initial version\",\n    tags=[\"production\"]\n)\n\n# Load prompt\nloaded_prompt = hub.load(\"summarizer\")\n\n# Render with variables\nresult = loaded_prompt.render({\"text\": \"Long article content...\"})\nprint(result)\n```\n\n### Using with LLM Providers\n\n```python\nimport asyncio\nfrom synexcript import Prompt, AnthropicProvider\n\nasync def main():\n    # Initialize provider\n    provider = AnthropicProvider(api_key=\"sk-ant-...\")\n    \n    # Create and execute prompt\n    prompt = Prompt(content=\"Write a haiku about {{topic}}\")\n    response = await provider.generate(\n        prompt=prompt.render({\"topic\": \"ocean\"}),\n        model=\"claude-sonnet-4-20250514\"\n    )\n    \n    print(response.content)\n\nasyncio.run(main())\n```\n\n### Applying Prompt Engineering Techniques\n\n```python\nfrom synexcript import Prompt\nfrom synexcript.techniques import ChainOfThought, FewShot, Example\n\n# Create base prompt\nprompt = Prompt(content=\"Solve: {{problem}}\")\n\n# Apply Chain-of-Thought\ncot = ChainOfThought()\ncot_prompt = prompt.apply_technique(cot)\n\n# Apply Few-Shot with examples\nfew_shot = FewShot(\n    examples=[\n        Example(input=\"2+2\", output=\"4\"),\n        Example(input=\"3*3\", output=\"9\"),\n    ]\n)\nfew_shot_prompt = prompt.apply_technique(few_shot)\n```\n\n### A/B Testing\n\n```python\nimport asyncio\nfrom synexcript import Prompt, ABTest, OpenAIProvider\nfrom synexcript.testing import ExactMatchEvaluator, BLEUEvaluator\n\nasync def run_test():\n    # Define variants\n    prompt_a = Prompt(content=\"Translate to French: {{text}}\")\n    prompt_b = Prompt(content=\"Please translate the following text to French: {{text}}\")\n    \n    # Create test\n    ab_test = ABTest(\n        variants=[\n            (\"baseline\", prompt_a),\n            (\"improved\", prompt_b),\n        ],\n        test_set=[\n            {\"text\": \"Hello\", \"expected\": \"Bonjour\"},\n            {\"text\": \"Thank you\", \"expected\": \"Merci\"},\n        ],\n        evaluators=[ExactMatchEvaluator(), BLEUEvaluator()],\n    )\n    \n    # Run test\n    provider = OpenAIProvider(api_key=\"sk-...\")\n    result = await ab_test.run(provider)\n    \n    print(f\"Winner: {result.winner}\")\n    print(f\"P-value: {result.analysis.p_value}\")\n\nasyncio.run(run_test())\n```\n\n## Version Control Operations\n\n```python\nfrom synexcript import PromptHub, Prompt\n\nhub = PromptHub(\"./prompts\")\n\n# Save versions\nhub.save(\"greeting\", prompt_v1, \"Initial version\")\nhub.save(\"greeting\", prompt_v2, \"Improved tone\")\n\n# List versions\nversions = hub.list_versions(\"greeting\")\n\n# Compare versions\ndiff = hub.diff(\"greeting\", \"1.0.0\", \"1.0.1\")\nprint(diff.content_diff)\n\n# Rollback\nhub.rollback(\"greeting\", \"1.0.0\")\n\n# Tag versions\nhub.tag(\"greeting\", \"1.0.0\", \"production\")\n```\n\n## Supported Techniques\n\n| Category | Techniques |\n|----------|------------|\n| In-Context Learning | FewShot, ZeroShot |\n| Thought Generation | ChainOfThought, ZeroShotCoT, PlanAndSolve |\n| Ensembling | SelfConsistency |\n\n## Documentation\n\nFull documentation: [https://synexcript.readthedocs.io](https://synexcript.readthedocs.io)\n\n## Requirements\n\n- Python 3.9+\n- pydantic >= 2.0.0\n- pyyaml >= 6.0\n- jinja2 >= 3.1.0\n- httpx >= 0.24.0\n\n## License\n\nApache License 2.0 - See [LICENSE](LICENSE) for details.\n\n## Contributing\n\nContributions are welcome! Please read ",
-      "file_types": {
-        ".yaml": 1,
-        ".md": 21,
-        ".in": 1,
-        ".yml": 6,
-        ".ini": 1,
-        ".toml": 2,
-        ".txt": 3,
-        ".cfg": 1,
-        ".py": 72,
-        ".rst": 5,
-        ".bat": 1,
-        ".MD": 1,
-        ".sh": 6
-      },
-      "stars": 0,
-      "forks": 0,
-      "created_at": "2026-02-01T21:40:29+00:00",
-      "updated_at": "2026-02-08T00:44:22+00:00",
-      "size": 374,
-      "url": "https://github.com/RyoK3N/Synexcript",
       "homepage": "",
       "has_wiki": true,
       "has_pages": false,
@@ -1700,5 +1666,5 @@
       "archived": false
     }
   ],
-  "total_repositories": 59
+  "total_repositories": 58
 }
