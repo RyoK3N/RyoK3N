@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-02-15]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-02-22]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 7, 2026
+### 🎯 Week 8, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [HANTransformer](https://github.com/RyoK3N/HANTransformer)
+### 📦 [Chess-RLA](https://github.com/RyoK3N/Chess-RLA)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Data Science](https://img.shields.io/badge/Data_Science-purple?style=flat-square)
+![Reinforcement Learning](https://img.shields.io/badge/Reinforcement_Learning-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square) ![Tools & Utilities](https://img.shields.io/badge/Tools_&_Utilities-purple?style=flat-square)
 
-Introducing HANTransformer, a groundbreaking software project that revolutionizes document classification tasks by harnessing the power of Hierarchical Attention Network with Transformer (HANTransformer) on the 20 Newsgroups dataset. This innovative approach not only outperforms traditional machine learning methods but also leverages the strengths of both hierarchical and transformer models to achieve unparalleled accuracy. With far-reaching potential applications in information retrieval, text summarization, and sentiment analysis, HANTransformer has the potential to transform the way we process and understand vast amounts of unstructured data, driving significant impact in various industries and fields. By pushing the boundaries of NLP, this cutting-edge project showcases the exciting possibilities of intersection between machine learning, data science, and natural language processing.
+Introducing Chess-RLA, a groundbreaking Reinforcement Learning (RL) agent designed to conquer the strategic world of chess. By pushing the boundaries of machine learning, this innovative project combines cutting-edge RL techniques with the timeless complexity of the game, yielding a highly intelligent opponent that can learn, adapt, and evolve over time. With its potential to revolutionize the fields of artificial intelligence, game theory, and cognitive science, Chess-RLA has the potential to not only outmaneuver human opponents but also provide valuable insights into the workings of the human brain and decision-making processes.
 
 **💡 Why Featured This Week:**
 
-*The HANTransformer project deserves to be featured this week because it showcases a groundbreaking technical innovation that combines the strengths of Hierarchical Attention Networks and Transformers to achieve exceptional performance in document classification tasks, demonstrating the immense practical value of this breakthrough in the field of Natural Language Processing. By leveraging this novel approach on the 20 Newsgroups dataset, researchers can unlock new possibilities for automating content analysis and classification, revolutionizing industries from social media moderation to text-based information retrieval.*
+*I'd love to highlight Chess-RLA as a standout project this week because of its groundbreaking application of reinforcement learning (RL) to one of the world's oldest and most complex strategy games, demonstrating a pioneering effort in technical innovation and a significant leap forward in the field of artificial intelligence. By tackling the notoriously challenging domain of chess, Chess-RLA showcases the exciting potential of RL to revolutionize complex problem-solving and decision-making in various domains.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 2
-- 🏷️ **Categories**: Machine Learning, Natural Language Processing, Data Science
-- 💻 **Languages**: Python, Jupyter Notebook
+- ⭐ **Stars**: 1
+- 🏷️ **Categories**: Reinforcement Learning, Research, Tools & Utilities
+- 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/HANTransformer)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Chess-RLA)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ Introducing HANTransformer, a groundbreaking software project that revolutionize
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: February 15, 2026
+**Published**: February 22, 2026
 
-The primary technical challenge addressed by the HANTransformer project is the efficient and accurate classification of documents, particularly within...
+The project titled "HANTransformer - Deep Learning Implementation" addresses the challenge of accurately classifying documents into predefined categor...
 
-**Tags**: `Deep Learning` `Engineering` `Data Processing` `Technical`
+**Tags**: `Deep Learning` `Data Processing` `Engineering` `Code Analysis`
 
 <div align="center">
 
