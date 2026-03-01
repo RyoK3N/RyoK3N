@@ -38,8 +38,8 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Data Science"
+        "Data Science",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -72,8 +72,7 @@
       "description": "MIDI Controller + MP3 Player : Allows you to connect your midi and play live beats to downloaded songs from youtube.",
       "categories": [
         "Data Science",
-        "Tools & Utilities",
-        "Web Development"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -88,8 +87,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Research"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -102,7 +100,9 @@
       "name": "AutoEncoders",
       "description": "",
       "categories": [
-        "Uncategorized"
+        "Machine Learning",
+        "Data Science",
+        "Tools & Utilities"
       ],
       "languages": [],
       "topics": [],
@@ -138,7 +138,7 @@
         "yfinance",
         "yfinance-api"
       ],
-      "stars": 2,
+      "stars": 3,
       "url": "https://github.com/RyoK3N/Buck_V1"
     },
     {
@@ -194,8 +194,8 @@
       "description": "A simple RL agent that plays chess",
       "categories": [
         "Reinforcement Learning",
-        "Research",
-        "Tools & Utilities"
+        "Machine Learning",
+        "Research"
       ],
       "languages": [
         "Python"
@@ -209,8 +209,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python"
@@ -259,7 +258,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
+        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -275,7 +274,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Tools & Utilities"
+        "Data Science"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -351,8 +350,8 @@
       "name": "Golfbot_wizardlm",
       "description": "An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions.",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
+        "Machine Learning",
         "Web Development"
       ],
       "languages": [
@@ -368,8 +367,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Python"
@@ -459,8 +457,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps",
-        "Tools & Utilities"
+        "DevOps"
       ],
       "languages": [
         "Python",
@@ -495,7 +492,7 @@
       "categories": [
         "Computer Vision",
         "3D Graphics",
-        "Tools & Utilities"
+        "Machine Learning"
       ],
       "languages": [
         "Python",
@@ -535,7 +532,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Machine Learning"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -597,7 +594,7 @@
       "description": "",
       "categories": [
         "Natural Language Processing",
-        "Web Development",
+        "Data Science",
         "Tools & Utilities"
       ],
       "languages": [
@@ -642,7 +639,7 @@
       "categories": [
         "Computer Vision",
         "Machine Learning",
-        "Robotics"
+        "Research"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -674,7 +671,7 @@
       "description": "",
       "categories": [
         "Data Science",
-        "Tools & Utilities",
+        "Machine Learning",
         "Research"
       ],
       "languages": [
@@ -690,8 +687,8 @@
       "name": "Quaternion-Capsule-Network",
       "description": "An impementation of Quaternion Capsule Networks for prediction of View matrix from 2D body keypoints ",
       "categories": [
-        "Machine Learning",
         "Computer Vision",
+        "Machine Learning",
         "Robotics"
       ],
       "languages": [
@@ -705,9 +702,9 @@
       "name": "Real-Time-Violence-Detection",
       "description": "The goal of this project is to detect violence in the video feeds of the training dataset and implement a Neural Network which classifies the videos as violent or nonviolent. The aim of this project is to develop an architecture that is capable of detecting violence in Real Time.",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Natural Language Processing"
+        "Computer Vision",
+        "Data Science"
       ],
       "languages": [],
       "topics": [],
@@ -718,7 +715,9 @@
       "name": "Revisions",
       "description": "",
       "categories": [
-        "Uncategorized"
+        "Data Science",
+        "Tools & Utilities",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -732,7 +731,8 @@
       "description": "Config files for my GitHub profile.",
       "categories": [
         "Machine Learning",
-        "Web Development"
+        "Web Development",
+        "Tools & Utilities"
       ],
       "languages": [
         "Python",
@@ -794,7 +794,8 @@
       "name": "synexian-webflow-smoketest",
       "description": "",
       "categories": [
-        "Web Development"
+        "Web Development",
+        "Tools & Utilities"
       ],
       "languages": [
         "TypeScript"
@@ -807,8 +808,9 @@
       "name": "Synthetic_Video_QA",
       "description": "",
       "categories": [
+        "Computer Vision",
         "Machine Learning",
-        "Computer Vision"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -853,7 +855,9 @@
       "name": "TDA",
       "description": "",
       "categories": [
-        "Uncategorized"
+        "Data Science",
+        "Tools & Utilities",
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -897,7 +901,8 @@
       "description": "",
       "categories": [
         "Computer Vision",
-        "Machine Learning"
+        "Machine Learning",
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -925,8 +930,8 @@
       "name": "webwise-agent",
       "description": "An intelligent multi-agent system for web-based information retrieval and analysis",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
+        "Machine Learning",
         "Web Development"
       ],
       "languages": [
@@ -939,17 +944,17 @@
   ],
   "category_statistics": {
     "Computer Vision": 13,
-    "Machine Learning": 36,
+    "Machine Learning": 39,
     "Research": 10,
     "Natural Language Processing": 21,
-    "Web Development": 21,
-    "Data Science": 19,
+    "Web Development": 19,
+    "Data Science": 27,
     "Tools & Utilities": 17,
-    "Uncategorized": 4,
     "DevOps": 5,
     "Reinforcement Learning": 1,
     "3D Graphics": 2,
-    "Robotics": 2
+    "Robotics": 1,
+    "Uncategorized": 1
   },
   "total_repositories": 58,
   "timestamp": "{\"iso\": \"now\"}"

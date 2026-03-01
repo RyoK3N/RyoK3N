@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-02-22]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-03-01]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 8, 2026
+### 🎯 Week 9, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Chess-RLA](https://github.com/RyoK3N/Chess-RLA)
+### 📦 [Fruit-Loops](https://github.com/RyoK3N/Fruit-Loops)
 
-![Reinforcement Learning](https://img.shields.io/badge/Reinforcement_Learning-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square) ![Tools & Utilities](https://img.shields.io/badge/Tools_&_Utilities-purple?style=flat-square)
+![Computer Vision](https://img.shields.io/badge/Computer_Vision-purple?style=flat-square) ![Tools & Utilities](https://img.shields.io/badge/Tools_&_Utilities-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
 
-Introducing Chess-RLA, a groundbreaking Reinforcement Learning (RL) agent designed to conquer the strategic world of chess. By pushing the boundaries of machine learning, this innovative project combines cutting-edge RL techniques with the timeless complexity of the game, yielding a highly intelligent opponent that can learn, adapt, and evolve over time. With its potential to revolutionize the fields of artificial intelligence, game theory, and cognitive science, Chess-RLA has the potential to not only outmaneuver human opponents but also provide valuable insights into the workings of the human brain and decision-making processes.
+Fruit-Loops is a groundbreaking algorithmic solution that exploits cutting-edge computer vision techniques to detect and analyze closed loops in a set of lines, revolutionizing the field of pattern recognition and shape analysis. By leveraging advanced Python programming, this project showcases innovative approach to image processing and feature extraction, enabling robust and efficient identification of complex shapes. With far-reaching implications in various fields, including robotics, computer-aided design, and biomedical imaging, Fruit-Loops has the potential to significantly impact industries reliant on accurate pattern recognition and shape analysis.
 
 **💡 Why Featured This Week:**
 
-*I'd love to highlight Chess-RLA as a standout project this week because of its groundbreaking application of reinforcement learning (RL) to one of the world's oldest and most complex strategy games, demonstrating a pioneering effort in technical innovation and a significant leap forward in the field of artificial intelligence. By tackling the notoriously challenging domain of chess, Chess-RLA showcases the exciting potential of RL to revolutionize complex problem-solving and decision-making in various domains.*
+*This week's featured project, Fruit Loops, is a game-changer in the realm of computer vision, boasting a technically innovative approach to detecting closed loops in a set of lines using cutting-edge algorithms. Its potential to revolutionize applications in robotics, engineering, and even gaming makes it an exciting addition to the community's research and tool development landscape.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 1
-- 🏷️ **Categories**: Reinforcement Learning, Research, Tools & Utilities
+- ⭐ **Stars**: 0
+- 🏷️ **Categories**: Computer Vision, Tools & Utilities, Research
 - 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Chess-RLA)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Fruit-Loops)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ Introducing Chess-RLA, a groundbreaking Reinforcement Learning (RL) agent design
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: February 22, 2026
+**Published**: March 01, 2026
 
-The project titled "HANTransformer - Deep Learning Implementation" addresses the challenge of accurately classifying documents into predefined categor...
+The project "HANTransformer" addresses the challenge of accurately classifying documents with varying lengths and complex structures, a common issue i...
 
-**Tags**: `Deep Learning` `Data Processing` `Engineering` `Code Analysis`
+**Tags**: `Code Analysis` `Technical` `Data Processing` `Deep Learning`
 
 <div align="center">
 
