@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-03-01]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-03-08]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 9, 2026
+### 🎯 Week 10, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Fruit-Loops](https://github.com/RyoK3N/Fruit-Loops)
+### 📦 [Buck_V1](https://github.com/RyoK3N/Buck_V1)
 
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-purple?style=flat-square) ![Tools & Utilities](https://img.shields.io/badge/Tools_&_Utilities-purple?style=flat-square) ![Research](https://img.shields.io/badge/Research-purple?style=flat-square)
+![DevOps](https://img.shields.io/badge/DevOps-purple?style=flat-square) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square)
 
-Fruit-Loops is a groundbreaking algorithmic solution that exploits cutting-edge computer vision techniques to detect and analyze closed loops in a set of lines, revolutionizing the field of pattern recognition and shape analysis. By leveraging advanced Python programming, this project showcases innovative approach to image processing and feature extraction, enabling robust and efficient identification of complex shapes. With far-reaching implications in various fields, including robotics, computer-aided design, and biomedical imaging, Fruit-Loops has the potential to significantly impact industries reliant on accurate pattern recognition and shape analysis.
+Buck_V1 is an innovative DevOps and Machine Learning project built with Python, Jupyter Notebook. An agent that helps you predict the next day's stock data. This project demonstrates cutting-edge techniques and has attracted 3 stars from the developer community, showcasing its value and impact.
 
 **💡 Why Featured This Week:**
 
-*This week's featured project, Fruit Loops, is a game-changer in the realm of computer vision, boasting a technically innovative approach to detecting closed loops in a set of lines using cutting-edge algorithms. Its potential to revolutionize applications in robotics, engineering, and even gaming makes it an exciting addition to the community's research and tool development landscape.*
+*Combining cutting-edge DevOps and Machine Learning, this project represents the future of software development.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 0
-- 🏷️ **Categories**: Computer Vision, Tools & Utilities, Research
-- 💻 **Languages**: Python
+- ⭐ **Stars**: 3
+- 🏷️ **Categories**: DevOps, Machine Learning
+- 💻 **Languages**: Python, Jupyter Notebook
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Fruit-Loops)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Buck_V1)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ Fruit-Loops is a groundbreaking algorithmic solution that exploits cutting-edge 
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: March 01, 2026
+**Published**: March 08, 2026
 
-The project "HANTransformer" addresses the challenge of accurately classifying documents with varying lengths and complex structures, a common issue i...
+The project "HANTransformer" addresses the challenge of efficiently processing and classifying large, unstructured text documents, specifically focusi...
 
-**Tags**: `Code Analysis` `Technical` `Data Processing` `Deep Learning`
+**Tags**: `Deep Learning` `Data Processing` `Engineering` `Technical`
 
 <div align="center">
 

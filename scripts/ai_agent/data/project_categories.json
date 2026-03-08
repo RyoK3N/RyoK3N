@@ -4,9 +4,7 @@
       "name": "2DPoseEstimation",
       "description": "",
       "categories": [
-        "Computer Vision",
-        "Machine Learning",
-        "Research"
+        "Uncategorized"
       ],
       "languages": [
         "Python"
@@ -19,8 +17,7 @@
       "name": "Agent-train",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Natural Language Processing",
+        "Tools & Utilities",
         "Web Development"
       ],
       "languages": [
@@ -37,9 +34,7 @@
       "name": "AI-Projects",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Data Science",
-        "Natural Language Processing"
+        "Uncategorized"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -53,7 +48,6 @@
       "description": "The webpage for AiAI research group for Prof. Youshan Zhang",
       "categories": [
         "Machine Learning",
-        "Research",
         "Web Development"
       ],
       "languages": [
@@ -71,8 +65,7 @@
       "name": "Akai_MPC_25",
       "description": "MIDI Controller + MP3 Player : Allows you to connect your midi and play live beats to downloaded songs from youtube.",
       "categories": [
-        "Data Science",
-        "Tools & Utilities"
+        "Robotics"
       ],
       "languages": [
         "Python",
@@ -86,8 +79,7 @@
       "name": "Anomaly_Detection_for_Stocks",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Data Science"
+        "Uncategorized"
       ],
       "languages": [
         "Python"
@@ -100,9 +92,7 @@
       "name": "AutoEncoders",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Data Science",
-        "Tools & Utilities"
+        "Uncategorized"
       ],
       "languages": [],
       "topics": [],
@@ -113,8 +103,8 @@
       "name": "Buck_V1",
       "description": "An agent that helps you predict the next day's stock data.",
       "categories": [
-        "Machine Learning",
-        "Data Science"
+        "DevOps",
+        "Machine Learning"
       ],
       "languages": [
         "Python",
@@ -145,9 +135,7 @@
       "name": "Calendly-API",
       "description": "Scripts of ETL pipelines for Calendly",
       "categories": [
-        "Data Science",
-        "Web Development",
-        "DevOps"
+        "Uncategorized"
       ],
       "languages": [
         "Python"
@@ -161,8 +149,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Research"
+        "Computer Vision"
       ],
       "languages": [
         "C++",
@@ -179,8 +166,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Data Science",
-        "Web Development"
+        "Tools & Utilities"
       ],
       "languages": [
         "Python"
@@ -194,8 +180,7 @@
       "description": "A simple RL agent that plays chess",
       "categories": [
         "Reinforcement Learning",
-        "Machine Learning",
-        "Research"
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -208,8 +193,7 @@
       "name": "CMX_tf_base",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Natural Language Processing"
+        "Uncategorized"
       ],
       "languages": [
         "Python"
@@ -223,8 +207,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Web Development"
       ],
       "languages": [
         "Python"
@@ -237,9 +220,7 @@
       "name": "Coding_Teams",
       "description": "",
       "categories": [
-        "Web Development",
-        "Data Science",
-        "Tools & Utilities"
+        "Uncategorized"
       ],
       "languages": [
         "TypeScript",
@@ -257,9 +238,8 @@
       "name": "Coding_Teams-Autogen",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Data Science",
-        "Tools & Utilities"
+        "Web Development",
+        "DevOps"
       ],
       "languages": [
         "Python",
@@ -273,8 +253,7 @@
       "name": "coreml-keras3",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Data Science"
+        "Uncategorized"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -287,9 +266,8 @@
       "name": "Ctypes",
       "description": "",
       "categories": [
-        "Tools & Utilities",
-        "Data Science",
-        "Web Development"
+        "Mobile Development",
+        "Machine Learning"
       ],
       "languages": [
         "Python",
@@ -304,8 +282,7 @@
       "description": "Curriculum Learning in LSTM-Based Sequence-to-Sequence Models",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Research"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python"
@@ -318,9 +295,7 @@
       "name": "CV_101",
       "description": "Functions used for various computer vision problems using julia and python",
       "categories": [
-        "Computer Vision",
-        "Machine Learning",
-        "Data Science"
+        "Uncategorized"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -335,9 +310,7 @@
       "name": "Fruit-Loops",
       "description": "Fruit Loops is an algorithm to find closed loops in a set of lines ",
       "categories": [
-        "Computer Vision",
-        "Tools & Utilities",
-        "Research"
+        "Uncategorized"
       ],
       "languages": [
         "Python"
@@ -350,9 +323,8 @@
       "name": "Golfbot_wizardlm",
       "description": "An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions.",
       "categories": [
-        "Natural Language Processing",
         "Machine Learning",
-        "Web Development"
+        "Data Science"
       ],
       "languages": [
         "Python",
@@ -367,7 +339,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Computer Vision"
+        "Data Science"
       ],
       "languages": [
         "Python"
@@ -381,8 +353,7 @@
       "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Data Science"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python",
@@ -396,7 +367,6 @@
       "name": "Hurricane_Classification",
       "description": "Classifying Hurricanes from Geospatial Images",
       "categories": [
-        "Machine Learning",
         "Computer Vision"
       ],
       "languages": [
@@ -410,8 +380,7 @@
       "name": "K2Cmx-Transformer",
       "description": "",
       "categories": [
-        "Natural Language Processing",
-        "Machine Learning"
+        "Uncategorized"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -425,9 +394,8 @@
       "name": "Kabsch_Algorithm",
       "description": "",
       "categories": [
-        "Computer Vision",
-        "3D Graphics",
-        "Tools & Utilities"
+        "Machine Learning",
+        "Computer Vision"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -441,8 +409,7 @@
       "name": "Kp2cmx-Transformer",
       "description": "",
       "categories": [
-        "Natural Language Processing",
-        "Machine Learning"
+        "Uncategorized"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -457,7 +424,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps"
+        "Machine Learning"
       ],
       "languages": [
         "Python",
@@ -474,8 +441,7 @@
       "description": "A repository for revising ML concepts in Python and Julia",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Research"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python",
@@ -490,7 +456,6 @@
       "name": "MocapViewer3D",
       "description": "An interactive 3D/2D motion capture visualization tool that allows real-time manipulation of camera perspectives and skeleton pose viewing. This tool provides simultaneous 3D and 2D projective views of motion capture data, making it ideal for computer vision and animation research.",
       "categories": [
-        "Computer Vision",
         "3D Graphics",
         "Machine Learning"
       ],
@@ -507,8 +472,7 @@
       "description": "",
       "categories": [
         "Web Development",
-        "DevOps",
-        "Data Science"
+        "Mobile Development"
       ],
       "languages": [
         "Python"
@@ -531,8 +495,7 @@
       "name": "Monday_CRM_Metrics",
       "description": "",
       "categories": [
-        "Data Science",
-        "Tools & Utilities"
+        "Uncategorized"
       ],
       "languages": [
         "Python"
@@ -545,8 +508,8 @@
       "name": "Music3x",
       "description": " This is your one-stop destination for innovative music tools and projects aimed at empowering creativity and exploration in sound",
       "categories": [
-        "Web Development",
-        "Tools & Utilities"
+        "Machine Learning",
+        "Natural Language Processing"
       ],
       "languages": [
         "Python",
@@ -575,9 +538,7 @@
       "name": "Ollama-chatbot-lamma2",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Natural Language Processing",
-        "Web Development"
+        "Machine Learning"
       ],
       "languages": [
         "Python",
@@ -593,9 +554,7 @@
       "name": "Ollama_API",
       "description": "",
       "categories": [
-        "Natural Language Processing",
-        "Data Science",
-        "Tools & Utilities"
+        "Uncategorized"
       ],
       "languages": [
         "Shell",
@@ -609,8 +568,7 @@
       "name": "Ollama_API_",
       "description": "",
       "categories": [
-        "Natural Language Processing",
-        "Tools & Utilities"
+        "Uncategorized"
       ],
       "languages": [
         "Python",
@@ -625,8 +583,7 @@
       "description": "This is a platform that has hosted an AI agent called Picatron that will assist users in creating their own artwork or NFts and Mint the same using Kaliedoscope, this digital asset is then stored in MetaMask.  Also the user can sell their NFTs which are stored in MetaMask on Opensea",
       "categories": [
         "Machine Learning",
-        "Web Development",
-        "Data Science"
+        "Reinforcement Learning"
       ],
       "languages": [],
       "topics": [],
@@ -637,9 +594,8 @@
       "name": "ProjGS",
       "description": "Projection-Guided Gaussian Splatting from Single RGB-D",
       "categories": [
-        "Computer Vision",
-        "Machine Learning",
-        "Research"
+        "Research",
+        "Robotics"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -653,9 +609,7 @@
       "name": "Prompt_V2",
       "description": "",
       "categories": [
-        "Natural Language Processing",
-        "Machine Learning",
-        "Web Development"
+        "Uncategorized"
       ],
       "languages": [
         "HTML",
@@ -670,9 +624,7 @@
       "name": "QCN",
       "description": "",
       "categories": [
-        "Data Science",
-        "Machine Learning",
-        "Research"
+        "Uncategorized"
       ],
       "languages": [
         "Jupyter Notebook",
@@ -687,9 +639,7 @@
       "name": "Quaternion-Capsule-Network",
       "description": "An impementation of Quaternion Capsule Networks for prediction of View matrix from 2D body keypoints ",
       "categories": [
-        "Computer Vision",
-        "Machine Learning",
-        "Robotics"
+        "Uncategorized"
       ],
       "languages": [
         "Python"
@@ -703,8 +653,7 @@
       "description": "The goal of this project is to detect violence in the video feeds of the training dataset and implement a Neural Network which classifies the videos as violent or nonviolent. The aim of this project is to develop an architecture that is capable of detecting violence in Real Time.",
       "categories": [
         "Machine Learning",
-        "Computer Vision",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [],
       "topics": [],
@@ -715,9 +664,7 @@
       "name": "Revisions",
       "description": "",
       "categories": [
-        "Data Science",
-        "Tools & Utilities",
-        "Natural Language Processing"
+        "Uncategorized"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -731,8 +678,7 @@
       "description": "Config files for my GitHub profile.",
       "categories": [
         "Machine Learning",
-        "Web Development",
-        "Tools & Utilities"
+        "3D Graphics"
       ],
       "languages": [
         "Python",
@@ -760,9 +706,7 @@
       "name": "Synexian",
       "description": "",
       "categories": [
-        "Web Development",
-        "DevOps",
-        "Tools & Utilities"
+        "Uncategorized"
       ],
       "languages": [
         "TypeScript",
@@ -779,8 +723,8 @@
       "name": "Synexian-Webapp",
       "description": "",
       "categories": [
-        "Web Development",
-        "Natural Language Processing"
+        "Machine Learning",
+        "Web Development"
       ],
       "languages": [
         "TypeScript",
@@ -794,8 +738,7 @@
       "name": "synexian-webflow-smoketest",
       "description": "",
       "categories": [
-        "Web Development",
-        "Tools & Utilities"
+        "Uncategorized"
       ],
       "languages": [
         "TypeScript"
@@ -808,9 +751,8 @@
       "name": "Synthetic_Video_QA",
       "description": "",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Python"
@@ -824,8 +766,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Data Science"
+        "Natural Language Processing"
       ],
       "languages": [
         "Python"
@@ -838,9 +779,7 @@
       "name": "Task001",
       "description": "",
       "categories": [
-        "Data Science",
-        "DevOps",
-        "Web Development"
+        "Uncategorized"
       ],
       "languages": [
         "Python",
@@ -855,9 +794,7 @@
       "name": "TDA",
       "description": "",
       "categories": [
-        "Data Science",
-        "Tools & Utilities",
-        "Natural Language Processing"
+        "Uncategorized"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -870,9 +807,8 @@
       "name": "ThemeClassifierSLM",
       "description": "ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks.",
       "categories": [
-        "Machine Learning",
         "Natural Language Processing",
-        "Data Science"
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -886,8 +822,7 @@
       "description": "",
       "categories": [
         "Machine Learning",
-        "Natural Language Processing",
-        "Research"
+        "Natural Language Processing"
       ],
       "languages": [
         "Jupyter Notebook"
@@ -900,9 +835,8 @@
       "name": "VMP2D",
       "description": "",
       "categories": [
-        "Computer Vision",
         "Machine Learning",
-        "Data Science"
+        "Computer Vision"
       ],
       "languages": [
         "Python"
@@ -915,8 +849,7 @@
       "name": "VMTransformer",
       "description": "",
       "categories": [
-        "Machine Learning",
-        "Data Science"
+        "Machine Learning"
       ],
       "languages": [
         "Python",
@@ -931,8 +864,7 @@
       "description": "An intelligent multi-agent system for web-based information retrieval and analysis",
       "categories": [
         "Natural Language Processing",
-        "Machine Learning",
-        "Web Development"
+        "Machine Learning"
       ],
       "languages": [
         "Python"
@@ -943,18 +875,19 @@
     }
   ],
   "category_statistics": {
-    "Computer Vision": 13,
-    "Machine Learning": 39,
-    "Research": 10,
-    "Natural Language Processing": 21,
-    "Web Development": 19,
-    "Data Science": 27,
-    "Tools & Utilities": 17,
-    "DevOps": 5,
-    "Reinforcement Learning": 1,
+    "Uncategorized": 24,
+    "Tools & Utilities": 2,
+    "Web Development": 7,
+    "Machine Learning": 28,
+    "Robotics": 2,
+    "DevOps": 2,
+    "Computer Vision": 6,
+    "Reinforcement Learning": 2,
+    "Mobile Development": 2,
+    "Natural Language Processing": 8,
+    "Data Science": 2,
     "3D Graphics": 2,
-    "Robotics": 1,
-    "Uncategorized": 1
+    "Research": 1
   },
   "total_repositories": 58,
   "timestamp": "{\"iso\": \"now\"}"
