@@ -1,19 +1,19 @@
 {
-  "name": "Buck_V1",
-  "description": "An agent that helps you predict the next day's stock data.",
-  "ai_description": "Buck_V1 is an innovative DevOps and Machine Learning project built with Python, Jupyter Notebook. An agent that helps you predict the next day's stock data. This project demonstrates cutting-edge techniques and has attracted 3 stars from the developer community, showcasing its value and impact.",
-  "why_featured": "Combining cutting-edge DevOps and Machine Learning, this project represents the future of software development.",
+  "name": "HANTransformer",
+  "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
+  "ai_description": "A standout Machine Learning and Natural Language Processing project, HANTransformer utilizes Python, Jupyter Notebook for maximum performance and flexibility. Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset. The 2 stars it has received reflect its quality and usefulness to developers worldwide.",
+  "why_featured": "This project stands out for its innovative approach to Machine Learning and has garnered 2 stars from the community.",
   "categories": [
-    "DevOps",
-    "Machine Learning"
+    "Machine Learning",
+    "Natural Language Processing"
   ],
   "languages": [
     "Python",
     "Jupyter Notebook"
   ],
-  "stars": 3,
-  "url": "https://github.com/RyoK3N/Buck_V1",
-  "selected_date": "2026-03-08T01:50:49.838392",
-  "week_number": 10,
+  "stars": 2,
+  "url": "https://github.com/RyoK3N/HANTransformer",
+  "selected_date": "2026-03-15T02:02:54.648091",
+  "week_number": 11,
   "year": 2026
 }
