@@ -277,11 +277,11 @@ graph LR
 <!--START_SECTION:ml_metrics-->
 | Stage | Status | Metric | Value | Last Updated |
 |-------|--------|--------|-------|--------------|
-| 🧠 Model Training | 🟢 Active | Accuracy | **95.5%** | 2026-03-26 |
-| ⚡ Inference | 🟢 Optimal | Latency | **46ms** | 2026-03-26 |
-| 📦 Deployment | 🟢 Stable | Uptime | **99.8%** | 2026-03-26 |
-| 💾 Data Pipeline | 🟢 Running | Samples Processed | **524K+** | 2026-03-26 |
-| 🚀 Active Projects | 🟢 Growing | Count | **12+** | 2026-03-26 |
+| 🧠 Model Training | 🟢 Active | Accuracy | **96.4%** | 2026-03-27 |
+| ⚡ Inference | 🟢 Optimal | Latency | **48ms** | 2026-03-27 |
+| 📦 Deployment | 🟢 Stable | Uptime | **99.9%** | 2026-03-27 |
+| 💾 Data Pipeline | 🟢 Running | Samples Processed | **496K+** | 2026-03-27 |
+| 🚀 Active Projects | 🟢 Growing | Count | **10+** | 2026-03-27 |
 <!--END_SECTION:ml_metrics-->
 
 
