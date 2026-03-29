@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-03-22]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-03-29]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 12, 2026
+### 🎯 Week 13, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Buck_V1](https://github.com/RyoK3N/Buck_V1)
+### 📦 [ML-Rev101](https://github.com/RyoK3N/ML-Rev101)
 
-![DevOps](https://img.shields.io/badge/DevOps-purple?style=flat-square) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square)
 
-A standout DevOps and Machine Learning project, Buck_V1 utilizes Python, Jupyter Notebook for maximum performance and flexibility. An agent that helps you predict the next day's stock data. The 3 stars it has received reflect its quality and usefulness to developers worldwide.
+A standout Machine Learning and Natural Language Processing project, ML-Rev101 utilizes Python, C++ for maximum performance and flexibility. A repository for revising ML concepts in Python and Julia The 0 stars it has received reflect its quality and usefulness to developers worldwide.
 
 **💡 Why Featured This Week:**
 
-*With 3 stars and active development, this project demonstrates both technical excellence and practical utility.*
+*This project stands out for its innovative approach to Machine Learning and has garnered 0 stars from the community.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 3
-- 🏷️ **Categories**: DevOps, Machine Learning
-- 💻 **Languages**: Python, Jupyter Notebook
+- ⭐ **Stars**: 0
+- 🏷️ **Categories**: Machine Learning, Natural Language Processing
+- 💻 **Languages**: Python, C++, Julia
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Buck_V1)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/ML-Rev101)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ A standout DevOps and Machine Learning project, Buck_V1 utilizes Python, Jupyter
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: March 22, 2026
+**Published**: March 29, 2026
 
-The project "HANTransformer" addresses the challenge of accurately classifying documents from the 20 Newsgroups dataset using a hybrid approach that c...
+The HANTransformer project addresses the challenge of accurately classifying documents into categories, particularly with large and diverse datasets l...
 
-**Tags**: `Technical` `Deep Learning` `Engineering` `Data Processing`
+**Tags**: `Data Processing` `Technical` `Engineering` `Deep Learning`
 
 <div align="center">
 

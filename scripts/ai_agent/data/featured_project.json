@@ -1,19 +1,20 @@
 {
-  "name": "Buck_V1",
-  "description": "An agent that helps you predict the next day's stock data.",
-  "ai_description": "A standout DevOps and Machine Learning project, Buck_V1 utilizes Python, Jupyter Notebook for maximum performance and flexibility. An agent that helps you predict the next day's stock data. The 3 stars it has received reflect its quality and usefulness to developers worldwide.",
-  "why_featured": "With 3 stars and active development, this project demonstrates both technical excellence and practical utility.",
+  "name": "ML-Rev101",
+  "description": "A repository for revising ML concepts in Python and Julia",
+  "ai_description": "A standout Machine Learning and Natural Language Processing project, ML-Rev101 utilizes Python, C++ for maximum performance and flexibility. A repository for revising ML concepts in Python and Julia The 0 stars it has received reflect its quality and usefulness to developers worldwide.",
+  "why_featured": "This project stands out for its innovative approach to Machine Learning and has garnered 0 stars from the community.",
   "categories": [
-    "DevOps",
-    "Machine Learning"
+    "Machine Learning",
+    "Natural Language Processing"
   ],
   "languages": [
     "Python",
-    "Jupyter Notebook"
+    "C++",
+    "Julia"
   ],
-  "stars": 3,
-  "url": "https://github.com/RyoK3N/Buck_V1",
-  "selected_date": "2026-03-22T01:55:46.972109",
-  "week_number": 12,
+  "stars": 0,
+  "url": "https://github.com/RyoK3N/ML-Rev101",
+  "selected_date": "2026-03-29T02:02:29.583138",
+  "week_number": 13,
   "year": 2026
 }
