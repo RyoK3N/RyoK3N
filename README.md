@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-03-29]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-04-05]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 13, 2026
+### 🎯 Week 14, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [ML-Rev101](https://github.com/RyoK3N/ML-Rev101)
+### 📦 [HANTransformer](https://github.com/RyoK3N/HANTransformer)
 
 ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square)
 
-A standout Machine Learning and Natural Language Processing project, ML-Rev101 utilizes Python, C++ for maximum performance and flexibility. A repository for revising ML concepts in Python and Julia The 0 stars it has received reflect its quality and usefulness to developers worldwide.
+Exploring the intersection of Machine Learning and Natural Language Processing, HANTransformer leverages Python, Jupyter Notebook to deliver powerful solutions. Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset. With 2 stars, it represents a significant contribution to the open-source ecosystem.
 
 **💡 Why Featured This Week:**
 
-*This project stands out for its innovative approach to Machine Learning and has garnered 0 stars from the community.*
+*This project stands out for its innovative approach to Machine Learning and has garnered 2 stars from the community.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 0
+- ⭐ **Stars**: 2
 - 🏷️ **Categories**: Machine Learning, Natural Language Processing
-- 💻 **Languages**: Python, C++, Julia
+- 💻 **Languages**: Python, Jupyter Notebook
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/ML-Rev101)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/HANTransformer)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ A standout Machine Learning and Natural Language Processing project, ML-Rev101 u
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: March 29, 2026
+**Published**: April 05, 2026
 
-The HANTransformer project addresses the challenge of accurately classifying documents into categories, particularly with large and diverse datasets l...
+The project "HANTransformer" addresses the challenge of accurately classifying documents within a large, diverse dataset, such as the 20 Newsgroups da...
 
-**Tags**: `Data Processing` `Technical` `Engineering` `Deep Learning`
+**Tags**: `Data Processing` `Code Analysis` `Technical` `Engineering`
 
 <div align="center">
 

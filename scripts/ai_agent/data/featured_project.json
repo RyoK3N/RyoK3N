@@ -1,20 +1,19 @@
 {
-  "name": "ML-Rev101",
-  "description": "A repository for revising ML concepts in Python and Julia",
-  "ai_description": "A standout Machine Learning and Natural Language Processing project, ML-Rev101 utilizes Python, C++ for maximum performance and flexibility. A repository for revising ML concepts in Python and Julia The 0 stars it has received reflect its quality and usefulness to developers worldwide.",
-  "why_featured": "This project stands out for its innovative approach to Machine Learning and has garnered 0 stars from the community.",
+  "name": "HANTransformer",
+  "description": "Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset.",
+  "ai_description": "Exploring the intersection of Machine Learning and Natural Language Processing, HANTransformer leverages Python, Jupyter Notebook to deliver powerful solutions. Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset. With 2 stars, it represents a significant contribution to the open-source ecosystem.",
+  "why_featured": "This project stands out for its innovative approach to Machine Learning and has garnered 2 stars from the community.",
   "categories": [
     "Machine Learning",
     "Natural Language Processing"
   ],
   "languages": [
     "Python",
-    "C++",
-    "Julia"
+    "Jupyter Notebook"
   ],
-  "stars": 0,
-  "url": "https://github.com/RyoK3N/ML-Rev101",
-  "selected_date": "2026-03-29T02:02:29.583138",
-  "week_number": 13,
+  "stars": 2,
+  "url": "https://github.com/RyoK3N/HANTransformer",
+  "selected_date": "2026-04-05T02:02:26.143080",
+  "week_number": 14,
   "year": 2026
 }
