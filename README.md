@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-04-05]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-04-12]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 14, 2026
+### 🎯 Week 15, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [HANTransformer](https://github.com/RyoK3N/HANTransformer)
+### 📦 [Buck_V1](https://github.com/RyoK3N/Buck_V1)
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square)
+![DevOps](https://img.shields.io/badge/DevOps-purple?style=flat-square) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square)
 
-Exploring the intersection of Machine Learning and Natural Language Processing, HANTransformer leverages Python, Jupyter Notebook to deliver powerful solutions. Leveraging Hierarchical Attention Network with Transformer (HANTransformer) for document classification tasks using 20 Newsgroups dataset. With 2 stars, it represents a significant contribution to the open-source ecosystem.
+A standout DevOps and Machine Learning project, Buck_V1 utilizes Python, Jupyter Notebook for maximum performance and flexibility. An agent that helps you predict the next day's stock data. The 3 stars it has received reflect its quality and usefulness to developers worldwide.
 
 **💡 Why Featured This Week:**
 
-*This project stands out for its innovative approach to Machine Learning and has garnered 2 stars from the community.*
+*With 3 stars and active development, this project demonstrates both technical excellence and practical utility.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 2
-- 🏷️ **Categories**: Machine Learning, Natural Language Processing
+- ⭐ **Stars**: 3
+- 🏷️ **Categories**: DevOps, Machine Learning
 - 💻 **Languages**: Python, Jupyter Notebook
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/HANTransformer)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Buck_V1)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ Exploring the intersection of Machine Learning and Natural Language Processing, 
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: April 05, 2026
+**Published**: April 12, 2026
 
-The project "HANTransformer" addresses the challenge of accurately classifying documents within a large, diverse dataset, such as the 20 Newsgroups da...
+The problem of accurately classifying documents into categories, especially when dealing with large volumes of unstructured text, poses significant ch...
 
-**Tags**: `Data Processing` `Code Analysis` `Technical` `Engineering`
+**Tags**: `Engineering` `Code Analysis` `Data Processing` `Technical`
 
 <div align="center">
 
