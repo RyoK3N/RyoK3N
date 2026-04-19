@@ -1,19 +1,18 @@
 {
-  "name": "Buck_V1",
-  "description": "An agent that helps you predict the next day's stock data.",
-  "ai_description": "A standout DevOps and Machine Learning project, Buck_V1 utilizes Python, Jupyter Notebook for maximum performance and flexibility. An agent that helps you predict the next day's stock data. The 3 stars it has received reflect its quality and usefulness to developers worldwide.",
-  "why_featured": "With 3 stars and active development, this project demonstrates both technical excellence and practical utility.",
+  "name": "ThemeClassifierSLM",
+  "description": "ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks.",
+  "ai_description": "ThemeClassifierSLM is an innovative Natural Language Processing and Machine Learning project built with Python. ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks. This project demonstrates cutting-edge techniques and has attracted 1 stars from the developer community, showcasing its value and impact.",
+  "why_featured": "Combining cutting-edge Natural Language Processing and Machine Learning, this project represents the future of software development.",
   "categories": [
-    "DevOps",
+    "Natural Language Processing",
     "Machine Learning"
   ],
   "languages": [
-    "Python",
-    "Jupyter Notebook"
+    "Python"
   ],
-  "stars": 3,
-  "url": "https://github.com/RyoK3N/Buck_V1",
-  "selected_date": "2026-04-12T02:07:29.584003",
-  "week_number": 15,
+  "stars": 1,
+  "url": "https://github.com/RyoK3N/ThemeClassifierSLM",
+  "selected_date": "2026-04-19T02:11:20.405633",
+  "week_number": 16,
   "year": 2026
 }

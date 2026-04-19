@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-04-12]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-04-19]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 15, 2026
+### 🎯 Week 16, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [Buck_V1](https://github.com/RyoK3N/Buck_V1)
+### 📦 [ThemeClassifierSLM](https://github.com/RyoK3N/ThemeClassifierSLM)
 
-![DevOps](https://img.shields.io/badge/DevOps-purple?style=flat-square) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square)
+![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square)
 
-A standout DevOps and Machine Learning project, Buck_V1 utilizes Python, Jupyter Notebook for maximum performance and flexibility. An agent that helps you predict the next day's stock data. The 3 stars it has received reflect its quality and usefulness to developers worldwide.
+ThemeClassifierSLM is an innovative Natural Language Processing and Machine Learning project built with Python. ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks. This project demonstrates cutting-edge techniques and has attracted 1 stars from the developer community, showcasing its value and impact.
 
 **💡 Why Featured This Week:**
 
-*With 3 stars and active development, this project demonstrates both technical excellence and practical utility.*
+*Combining cutting-edge Natural Language Processing and Machine Learning, this project represents the future of software development.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 3
-- 🏷️ **Categories**: DevOps, Machine Learning
-- 💻 **Languages**: Python, Jupyter Notebook
+- ⭐ **Stars**: 1
+- 🏷️ **Categories**: Natural Language Processing, Machine Learning
+- 💻 **Languages**: Python
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Buck_V1)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/ThemeClassifierSLM)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ A standout DevOps and Machine Learning project, Buck_V1 utilizes Python, Jupyter
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: April 12, 2026
+**Published**: April 19, 2026
 
-The problem of accurately classifying documents into categories, especially when dealing with large volumes of unstructured text, poses significant ch...
+The project "HANTransformer" addresses the challenge of efficiently processing and classifying large, hierarchically structured documents, such as new...
 
-**Tags**: `Engineering` `Code Analysis` `Data Processing` `Technical`
+**Tags**: `Code Analysis` `Data Processing` `Engineering` `Deep Learning`
 
 <div align="center">
 
