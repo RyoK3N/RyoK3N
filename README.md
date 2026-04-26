@@ -432,7 +432,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-04-19]
+[📊 View Full Graph](https://ryok3n.github.io/RyoK3N/knowledge-graph.html) • [🔄 Last Updated: 2026-04-26]
 
 </div>
 
@@ -447,7 +447,7 @@ The knowledge graph above provides an **interactive visualization** of my projec
 
 <div align="center">
 
-### 🎯 Week 16, 2026
+### 🎯 Week 17, 2026
 
 </div>
 
@@ -455,28 +455,28 @@ The knowledge graph above provides an **interactive visualization** of my projec
 <tr>
 <td width="60%">
 
-### 📦 [ThemeClassifierSLM](https://github.com/RyoK3N/ThemeClassifierSLM)
+### 📦 [Golfbot_wizardlm](https://github.com/RyoK3N/Golfbot_wizardlm)
 
-![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-purple?style=flat-square) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-purple?style=flat-square) ![Data Science](https://img.shields.io/badge/Data_Science-purple?style=flat-square)
 
-ThemeClassifierSLM is an innovative Natural Language Processing and Machine Learning project built with Python. ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks. This project demonstrates cutting-edge techniques and has attracted 1 stars from the developer community, showcasing its value and impact.
+Exploring the intersection of Machine Learning and Data Science, Golfbot_wizardlm leverages Python, HTML to deliver powerful solutions. An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions. With 0 stars, it represents a significant contribution to the open-source ecosystem.
 
 **💡 Why Featured This Week:**
 
-*Combining cutting-edge Natural Language Processing and Machine Learning, this project represents the future of software development.*
+*This project stands out for its innovative approach to Machine Learning and has garnered 0 stars from the community.*
 
 </td>
 <td width="40%">
 
 **📊 Project Stats**
 
-- ⭐ **Stars**: 1
-- 🏷️ **Categories**: Natural Language Processing, Machine Learning
-- 💻 **Languages**: Python
+- ⭐ **Stars**: 0
+- 🏷️ **Categories**: Machine Learning, Data Science
+- 💻 **Languages**: Python, HTML
 
 **🔗 Quick Links**
 
-[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/ThemeClassifierSLM)
+[![View Project](https://img.shields.io/badge/View-Project-blue?style=for-the-badge&logo=github)](https://github.com/RyoK3N/Golfbot_wizardlm)
 
 </td>
 </tr>
@@ -509,11 +509,11 @@ ThemeClassifierSLM is an innovative Natural Language Processing and Machine Lear
 
 ### 📰 [Technical Deep Dive: HANTransformer - Deep Learning Implementation](https://ryok3n.github.io/RyoK3N/blog/latest.html)
 
-**Published**: April 19, 2026
+**Published**: April 26, 2026
 
-The project "HANTransformer" addresses the challenge of efficiently processing and classifying large, hierarchically structured documents, such as new...
+The project titled "Technical Deep Dive: HANTransformer - Deep Learning Implementation" addresses the challenge of accurately classifying documents in...
 
-**Tags**: `Code Analysis` `Data Processing` `Engineering` `Deep Learning`
+**Tags**: `Data Processing` `Engineering` `Deep Learning` `Technical`
 
 <div align="center">
 

@@ -1,18 +1,19 @@
 {
-  "name": "ThemeClassifierSLM",
-  "description": "ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks.",
-  "ai_description": "ThemeClassifierSLM is an innovative Natural Language Processing and Machine Learning project built with Python. ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks. This project demonstrates cutting-edge techniques and has attracted 1 stars from the developer community, showcasing its value and impact.",
-  "why_featured": "Combining cutting-edge Natural Language Processing and Machine Learning, this project represents the future of software development.",
+  "name": "Golfbot_wizardlm",
+  "description": "An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions.",
+  "ai_description": "Exploring the intersection of Machine Learning and Data Science, Golfbot_wizardlm leverages Python, HTML to deliver powerful solutions. An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions. With 0 stars, it represents a significant contribution to the open-source ecosystem.",
+  "why_featured": "This project stands out for its innovative approach to Machine Learning and has garnered 0 stars from the community.",
   "categories": [
-    "Natural Language Processing",
-    "Machine Learning"
+    "Machine Learning",
+    "Data Science"
   ],
   "languages": [
-    "Python"
+    "Python",
+    "HTML"
   ],
-  "stars": 1,
-  "url": "https://github.com/RyoK3N/ThemeClassifierSLM",
-  "selected_date": "2026-04-19T02:11:20.405633",
-  "week_number": 16,
+  "stars": 0,
+  "url": "https://github.com/RyoK3N/Golfbot_wizardlm",
+  "selected_date": "2026-04-26T02:14:37.841153",
+  "week_number": 17,
   "year": 2026
 }
