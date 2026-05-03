@@ -1,19 +1,18 @@
 {
-  "name": "Golfbot_wizardlm",
-  "description": "An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions.",
-  "ai_description": "Exploring the intersection of Machine Learning and Data Science, Golfbot_wizardlm leverages Python, HTML to deliver powerful solutions. An agent made using Ollama and LangChain to answer user queries based on Golf. The agent has access to various tools that support retrieving golf-related information, such as rules, ball speed calculation , ball trajectory calculation , swing speed calculation , player statistics, weather conditions for golfing, and equipment suggestions. With 0 stars, it represents a significant contribution to the open-source ecosystem.",
-  "why_featured": "This project stands out for its innovative approach to Machine Learning and has garnered 0 stars from the community.",
+  "name": "Curriculum-_Learning",
+  "description": "Curriculum Learning in LSTM-Based Sequence-to-Sequence Models",
+  "ai_description": "Exploring the intersection of Machine Learning and Natural Language Processing, Curriculum-_Learning leverages Python to deliver powerful solutions. Curriculum Learning in LSTM-Based Sequence-to-Sequence Models With 1 stars, it represents a significant contribution to the open-source ecosystem.",
+  "why_featured": "With 1 stars and active development, this project demonstrates both technical excellence and practical utility.",
   "categories": [
     "Machine Learning",
-    "Data Science"
+    "Natural Language Processing"
   ],
   "languages": [
-    "Python",
-    "HTML"
+    "Python"
   ],
-  "stars": 0,
-  "url": "https://github.com/RyoK3N/Golfbot_wizardlm",
-  "selected_date": "2026-04-26T02:14:37.841153",
-  "week_number": 17,
+  "stars": 1,
+  "url": "https://github.com/RyoK3N/Curriculum-_Learning",
+  "selected_date": "2026-05-03T02:30:47.376341",
+  "week_number": 18,
   "year": 2026
 }
