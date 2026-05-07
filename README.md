@@ -24,7 +24,7 @@
 
 ## About
 
-ML Engineer at **Synexian Labs** (New Jersey, USA) focused on computer vision, deep learning, and 3D graphics. I build systems that go from research prototype to production — with a particular interest in pose estimation, graph neural networks, and real-time visualization.
+AI Engineer focused on computer vision, deep learning, and 3D graphics. I build systems that go from research prototype to production — with a particular interest in pose estimation, graph neural networks, and real-time visualization.
 
 Currently working on:
 - **GTransformer** — Graph Transformer architectures for human pose estimation
