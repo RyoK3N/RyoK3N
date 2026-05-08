@@ -58,7 +58,12 @@ Currently working on:
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Drogon](https://img.shields.io/badge/Drogon-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Pistache](https://img.shields.io/badge/Pistache-4B8BBE?style=flat-square&logo=c&logoColor=white)
+![Falcon](https://img.shields.io/badge/Falcon-DA291C?style=flat-square&logo=falcon&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Sanic](https://img.shields.io/badge/Sanic-FF006E?style=flat-square&logo=sanic&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 
 ---
