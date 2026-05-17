@@ -1,18 +1,19 @@
 {
-  "name": "Chess-RLA",
-  "description": "A simple RL agent that plays chess",
-  "ai_description": "Exploring the intersection of Reinforcement Learning and Machine Learning, Chess-RLA leverages Python to deliver powerful solutions. A simple RL agent that plays chess With 1 stars, it represents a significant contribution to the open-source ecosystem.",
-  "why_featured": "Combining cutting-edge Reinforcement Learning and Machine Learning, this project represents the future of software development.",
+  "name": "Buck_V1",
+  "description": "An agent that helps you predict the next day's stock data.",
+  "ai_description": "Exploring the intersection of DevOps and Machine Learning, Buck_V1 leverages Python, Jupyter Notebook to deliver powerful solutions. An agent that helps you predict the next day's stock data. With 3 stars, it represents a significant contribution to the open-source ecosystem.",
+  "why_featured": "This project stands out for its innovative approach to DevOps and has garnered 3 stars from the community.",
   "categories": [
-    "Reinforcement Learning",
+    "DevOps",
     "Machine Learning"
   ],
   "languages": [
-    "Python"
+    "Python",
+    "Jupyter Notebook"
   ],
-  "stars": 1,
-  "url": "https://github.com/RyoK3N/Chess-RLA",
-  "selected_date": "2026-05-10T02:33:26.924628",
-  "week_number": 19,
+  "stars": 3,
+  "url": "https://github.com/RyoK3N/Buck_V1",
+  "selected_date": "2026-05-17T02:40:28.015562",
+  "week_number": 20,
   "year": 2026
 }
