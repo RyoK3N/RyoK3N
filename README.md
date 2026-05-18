@@ -120,7 +120,7 @@ Other         1 hr 10 mins   █░░░░░░░░░░░░░░░░
 ## Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#4](https://github.com/RyoK3N/Synexcript/pull/4) in [RyoK3N/Synexcript](https://github.com/RyoK3N/Synexcript)
+1. ℹ️ Labeled PR [#5](https://github.com/RyoK3N/Buck_V1/pull/5) in [RyoK3N/Buck_V1](https://github.com/RyoK3N/Buck_V1)
 <!--END_SECTION:activity-->
 
 ---
