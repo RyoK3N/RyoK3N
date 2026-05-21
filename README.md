@@ -26,11 +26,6 @@
 
 AI Engineer focused on computer vision, deep learning, and 3D graphics. I build systems that go from research prototype to production — with a particular interest in pose estimation, graph neural networks, and real-time visualization.
 
-Currently working on:
-- **GTransformer** — Graph Transformer architectures for human pose estimation
-- **MocapViewer3D** — Real-time 3D motion capture visualization tools
-- **Topic-Modeled Curriculum Learning** — Smarter training strategies for neural networks
-
 ---
 
 ## Tech
