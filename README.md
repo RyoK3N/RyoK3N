@@ -80,10 +80,10 @@ AI Engineer focused on computer vision, deep learning, and 3D graphics. I build 
 
 | Model | Accuracy | F1 | Status |
 |-------|----------|----|--------|
-| GTransformer-v3 | 95.8% | 0.961 | ✅ Deployed |
-| PoseNet-Enhanced | 93.2% | 0.945 | 🔄 Training |
-| Vision-RL-Agent | 89.5% | 0.902 | 🧪 Experimental |
-| BaselineNet (ResNet-50) | 87.3% | 0.888 | 📊 Baseline |
+| GTransformer-v3 | 95.8% | 0.961 |  Deployed |
+| PoseNet-Enhanced | 93.2% | 0.945 |  Training |
+| Vision-RL-Agent | 89.5% | 0.902 |  Experimental |
+| BaselineNet (ResNet-50) | 87.3% | 0.888 |  Baseline |
 
 ---
 
