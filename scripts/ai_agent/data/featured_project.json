@@ -1,18 +1,22 @@
 {
-  "name": "ThemeClassifierSLM",
-  "description": "ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks.",
-  "ai_description": "ThemeClassifierSLM is an innovative Natural Language Processing and Machine Learning project built with Python. ThemeClassifierSLM is an advanced LSTM-based neural network model designed for theme or topic classification in text data. This repository provides an implementation of the model, incorporating several sophisticated techniques to enhance its performance in text analysis tasks. This project demonstrates cutting-edge techniques and has attracted 1 stars from the developer community, showcasing its value and impact.",
-  "why_featured": "Combining cutting-edge Natural Language Processing and Machine Learning, this project represents the future of software development.",
+  "name": "AiAI",
+  "description": "The webpage for AiAI research group for Prof. Youshan Zhang",
+  "ai_description": "Exploring the intersection of Machine Learning and Web Development, AiAI leverages Jupyter Notebook, Python to deliver powerful solutions. The webpage for AiAI research group for Prof. Youshan Zhang With 0 stars, it represents a significant contribution to the open-source ecosystem.",
+  "why_featured": "This project stands out for its innovative approach to Machine Learning and has garnered 0 stars from the community.",
   "categories": [
-    "Natural Language Processing",
-    "Machine Learning"
+    "Machine Learning",
+    "Web Development"
   ],
   "languages": [
-    "Python"
+    "Jupyter Notebook",
+    "Python",
+    "HTML",
+    "CSS",
+    "Shell"
   ],
-  "stars": 1,
-  "url": "https://github.com/RyoK3N/ThemeClassifierSLM",
-  "selected_date": "2026-05-24T02:48:32.604864",
-  "week_number": 21,
+  "stars": 0,
+  "url": "https://github.com/RyoK3N/AiAI",
+  "selected_date": "2026-05-31T02:57:47.894894",
+  "week_number": 22,
   "year": 2026
 }
