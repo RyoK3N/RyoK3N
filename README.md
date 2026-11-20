@@ -12,7 +12,6 @@
 
 *Building intelligent systems that understand and interact with the world*
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-oreiyo.space-6366f1?style=flat-square&logoColor=white)](https://oreiyo.space)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-reiyo06-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/reiyo06)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0002--8456--7751-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0002-8456-7751)
 [![Email](https://img.shields.io/badge/Email-reiyo1113@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:reiyo1113@gmail.com)
