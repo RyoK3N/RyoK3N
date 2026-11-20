@@ -99,7 +99,7 @@ Other         1 hr 10 mins   █░░░░░░░░░░░░░░░░
 
 <div align="center">
 
-**Open to:** Research Collaboration · Open Source · ML Engineering Roles · Speaking
+**Open to:** Research Collaboration · Open Source · AI/ML Engineering Roles 
 
 *"The best way to predict the future is to invent it." — Alan Kay*
 
