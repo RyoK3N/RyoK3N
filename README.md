@@ -9,7 +9,6 @@
 ╚═╝  ╚═╝╚══════╝╚═╝   ╚═╝    ╚═════╝ 
 ```
 
-### Machine Learning Engineer · Computer Vision · 3D Graphics
 
 *Building intelligent systems that understand and interact with the world*
 
@@ -63,27 +62,6 @@ AI Engineer focused on computer vision, deep learning, and 3D graphics. I build 
 
 ---
 
-## Projects
-
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [**GTransformer**](https://github.com/RyoK3N/GTransformer) | Graph Transformer for human pose estimation using skeletal GNNs | PyTorch · GNN · Transformers |
-| [**MocapViewer3D**](https://github.com/RyoK3N/MocapViewer3D) | Real-time 3D/2D motion capture viewer with multi-perspective rendering | Python · OpenGL · OpenCV |
-| [**2DPoseEstimation**](https://github.com/RyoK3N/2DPoseEstimation) | End-to-end pose estimation pipeline with real-time inference | PyTorch · OpenCV |
-| [**Topic-Modeled CL**](https://github.com/RyoK3N/Topic-Modeled-Curriculum-Learning-for-Better-Neural-Network-Training) | Curriculum learning via topic modeling for better NN training | TensorFlow · NLP |
-| [**CoreML-Keras3**](https://github.com/RyoK3N/coreml-keras3) | Keras 3.x → CoreML conversion pipeline for iOS deployment | Keras · CoreML |
-| [**Golfbot WizardLM**](https://github.com/RyoK3N/Golfbot_wizardlm) | LangChain agent with golf-domain tools — rules, stats, trajectory | Ollama · LangChain |
-
----
-
-## Research Experiments
-
-| Model | Accuracy | F1 | Status |
-|-------|----------|----|--------|
-| GTransformer-v3 | 95.8% | 0.961 |  Deployed |
-| PoseNet-Enhanced | 93.2% | 0.945 |  Training |
-| Vision-RL-Agent | 89.5% | 0.902 |  Experimental |
-| BaselineNet (ResNet-50) | 87.3% | 0.888 |  Baseline |
 
 ---
 
